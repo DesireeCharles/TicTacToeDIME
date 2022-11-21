@@ -1,0 +1,35 @@
+Process _qkfs8WEDEe2_a7bdJY2Qaw {
+  modelName "home"
+  description "home"
+  dataFlowView true
+  processType Basic
+  isStateful false
+  DataContext _qx5PwWEDEe2_a7bdJY2Qaw at 20,20 size 210,545 {
+  	dfViewWorkaround true
+  }
+  
+  StartSIB _qx8TEWEDEe2_a7bdJY2Qaw at 330,20 size 100,65 {
+  	-ControlFlow-> _7nCn8WEDEe2_a7bdJY2Qaw  decorate "" at (0,0) {
+  		id _8F_00WEDEe2_a7bdJY2Qaw
+  		concurrent true
+  	}
+  }
+  
+  EndSIB _qx86IWEDEe2_a7bdJY2Qaw at 330,500 size 100,65 {
+  	branchName "success"
+  }
+  
+  ProcessSIB _7nCn8WEDEe2_a7bdJY2Qaw at 320,170 size 120,65 {
+  	libraryComponentUID "_23l2QWEDEe2_a7bdJY2Qaw"
+  	label "showInternalArea"
+  	ignoredBranch [  ]
+  	-BranchConnector-> _7nX_IWEDEe2_a7bdJY2Qaw   {
+  		id _7nZ0UWEDEe2_a7bdJY2Qaw
+  		concurrent true
+  	}
+  }
+  
+  Branch _7nX_IWEDEe2_a7bdJY2Qaw at 320,245 size 120,25 {
+  	name "success"
+  }
+}
