@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<entry key="file-storage">standalone/data/files</entry>
+	<entry key="app-storage">standalone/data/files/testapp</entry>
+	<entry key="native-domain-storage">standalone/data/files/native-domain</entry>
+</properties>
