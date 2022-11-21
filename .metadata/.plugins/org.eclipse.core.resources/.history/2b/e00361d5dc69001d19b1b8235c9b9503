@@ -1,0 +1,15 @@
+<a href *ngIf="isLink" (click)="showModal($event)" role="button" [class.not-active]="disabled" data-toggle="modal"><span *ngIf="hasBeforeIcon" [ngClass]="beforeIconClass"></span><span *ngIf="hasBeforeIcon" >&nbsp;</span>{{label}}<span *ngIf="hasAfterIcon" >&nbsp;</span><span *ngIf="hasAfterIcon" [ngClass]="afterIconClass"></span></a>
+<button *ngIf="!isLink" (click)="showModal($event)" type="button" [ngClass]="modalClass" [disabled]="disabled" data-toggle="modal"><span *ngIf="hasBeforeIcon" [ngClass]="beforeIconClass"></span><span *ngIf="hasBeforeIcon" >&nbsp;</span>{{label}}<span *ngIf="hasAfterIcon" >&nbsp;</span><span *ngIf="hasAfterIcon" [ngClass]="afterIconClass"></span></button>
+<div *ngIf="isShown" class="modal fade in" tabindex="-1" role="dialog" style="display: block; text-align: initial;">
+	<div  class="modal-dialog" [ngClass]="[modalSizeClass]" role="document">
+		<div class="modal-content">
+	    	<div class="modal-header">
+		        <button type="button" class="close" (click)="closeModal($event)" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" style="text-align:left!important">{{title}}</h4>
+	      	</div>
+		    <div class="modal-body" style="max-height: 80vh;overflow-y: auto;">
+		    	<ng-content></ng-content>
+		    </div>
+		</div>
+	</div>
+</div>

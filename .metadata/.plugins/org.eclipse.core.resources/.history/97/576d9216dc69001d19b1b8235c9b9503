@@ -1,0 +1,1 @@
+/bin/sh -c cd /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/target/dywa-app/app-business && javac @/home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/target/dywa-app/app-business/target/classes/org.codehaus.plexus.compiler.javac.JavacCompiler16980453307399091197arguments -J-Xmx2048m -J-Xms512m

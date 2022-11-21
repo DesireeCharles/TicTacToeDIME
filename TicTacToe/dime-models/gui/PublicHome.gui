@@ -1,0 +1,135 @@
+GUI _LmrS0Ej8EeaK4_MRcoLfnw {
+  fullWidth false
+  disableAutoLayout false
+  additionalJavaScript [  ]
+  additionalStylesheets [  ]
+  title "PublicHome"
+  DataContext _Lmz1sEj8EeaK4_MRcoLfnw at 10,30 size 200,410 {
+  	dfViewWorkaround true
+  }
+  
+  Template _Lm3gEEj8EeaK4_MRcoLfnw at 270,30 size 390,410 {
+  	blockName "body"
+  	disableAutoLayout false
+  	Jumbotron _6CcloEmAEeaUSpYQeYyxnQ at 10,30 size 370,350 {
+  		generalStyle GeneralStyling _hH5ScTD2EemwX93gZgy7kw {
+  				tallness Fitting
+  				marginBottom None
+  				attributes [  ]
+  				marginTop None
+  			}
+  		MoveUp _6Cj6YEmAEeaUSpYQeYyxnQ at 2,2 size 14,7 {
+  		}
+  		
+  		MoveDown _6ClvkEmAEeaUSpYQeYyxnQ at 2,10 size 14,7 {
+  		}
+  		
+  		Row _pqsksE_OEeauEZ95mLTQ7g at 10,30 size 350,290 {
+  			generalStyle GeneralStyling _hH5SczD2EemwX93gZgy7kw {
+  					tallness Fitting
+  					marginBottom None
+  					attributes [  ]
+  					marginTop None
+  				}
+  			MoveUp _pq6nIE_OEeauEZ95mLTQ7g at 2,2 size 14,7 {
+  			}
+  			
+  			MoveDown _pq7OME_OEeauEZ95mLTQ7g at 2,10 size 14,7 {
+  			}
+  			
+  			Col _prJ3sE_OEeauEZ95mLTQ7g at 10,30 size 320,240 {
+  				wideness Full
+  				layout Layout _hH55gTD2EemwX93gZgy7kw {
+  						size Default
+  						offset None
+  						alignment Center
+  					}
+  				generalStyle GeneralStyling _hH6gkTD2EemwX93gZgy7kw {
+  						tallness Fitting
+  						marginBottom None
+  						attributes [  ]
+  						marginTop None
+  					}
+  				MoveLeft _prX6IE_OEeauEZ95mLTQ7g at 2,2 size 7,14 {
+  				}
+  				
+  				MoveRight _prYhME_OEeauEZ95mLTQ7g at 10,2 size 7,14 {
+  				}
+  				
+  				Headline _uAT6EE_OEeauEZ95mLTQ7g at 10,30 size 300,50 {
+  					size Big
+  					content [ StaticContent _hH6gkzD2EemwX93gZgy7kw {
+  							renderMarkdown false
+  							maxChars 0
+  							html false
+  							rawContent "Welcome."
+  						} ]
+  					generalStyle GeneralStyling _hH6glTD2EemwX93gZgy7kw {
+  							tallness Fitting
+  							marginBottom None
+  							attributes [  ]
+  							marginTop Triple
+  						}
+  					MoveUp _uAjxsE_OEeauEZ95mLTQ7g at 2,2 size 14,7 {
+  					}
+  					
+  					MoveDown _uAk_0E_OEeauEZ95mLTQ7g at 2,10 size 14,7 {
+  					}
+  				}
+  				
+  				Button _MF6_kE_LEeauEZ95mLTQ7g at 10,150 size 200,60 {
+  					displayLabel "Login"
+  					label "Login"
+  					styling ButtonStyling _hH7HoTD2EemwX93gZgy7kw {
+  							fullWidth false
+  							size Default
+  							disabled false
+  							color Green
+  						}
+  					options ButtonOptions _hH7HozD2EemwX93gZgy7kw {
+  							isLink false
+  							submitsForm true
+  						}
+  					disabled false
+  					icon Icon _hH7HpTD2EemwX93gZgy7kw {
+  							postIcon LogIn
+  							preIcon None
+  						}
+  					generalStyle GeneralStyling _hH7HpzD2EemwX93gZgy7kw {
+  							tallness Fitting
+  							marginBottom None
+  							attributes [  ]
+  							marginTop Double
+  						}
+  					MoveUp _MGIa8E_LEeauEZ95mLTQ7g at 2,2 size 14,7 {
+  					}
+  					
+  					MoveDown _MGJCAE_LEeauEZ95mLTQ7g at 2,10 size 14,7 {
+  					}
+  				}
+  				
+  				Headline _rgv38F-TEea6DvTF5PmsmA at 10,90 size 300,50 {
+  					size Small
+  					content [ StaticContent _hH7HqTD2EemwX93gZgy7kw {
+  							renderMarkdown false
+  							maxChars 0
+  							html false
+  							rawContent "Test\n"
+  						} ]
+  					generalStyle GeneralStyling _hH7usTD2EemwX93gZgy7kw {
+  							tallness Fitting
+  							marginBottom None
+  							attributes [  ]
+  							marginTop Single
+  						}
+  					MoveUp _rg5o8F-TEea6DvTF5PmsmA at 2,2 size 14,7 {
+  					}
+  					
+  					MoveDown _rg96YF-TEea6DvTF5PmsmA at 2,10 size 14,7 {
+  					}
+  				}
+  			}
+  		}
+  	}
+  }
+}

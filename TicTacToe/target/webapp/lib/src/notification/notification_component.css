@@ -1,0 +1,21 @@
+.dime-alter-hidden {
+    position: absolute;
+    top: -500px;
+    opacity: 1;
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -ms-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+}
+
+.dime-alter-show {
+    position: fixed;
+    top: 0;
+    opacity: 1;
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -ms-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+}

@@ -1,0 +1,39 @@
+<div [ngClass]="rowClass">
+	<div [ngClass]="colClass" style="max-width: 450px; margin: auto">
+		<div class="panel panel-primary" style="background-color: #eee;margin-top: 30px;color: black;">
+			<div class="panel-body" style="margin: 15px;">
+			<h2 style="margin: 20px 0;">Please login...</h2>
+			<div class="alert alert-danger" *ngIf="!correct">Incorrect Username or Password.</div>
+				<form [ngFormModel]="loginForm" class="form-horizontal text-left">
+					<div [class.has-error]="!loginForm.find('username').valid && !loginForm.find('username').pristine">
+						<label for="username" class="control-label">Username</label>
+						<input
+								[ngFormControl]="loginForm.controls['username']"
+								type="text"
+								class="form-control"
+								id="username"
+								autocomplete="email"
+								autofocus
+							>
+					</div>
+					<div [class.has-error]="!loginForm.find('password').valid && !loginForm.find('password').pristine" style="margin-top: 5px;">
+						<label for="password" class="control-label">Password</label>
+						<input
+								[ngFormControl]="loginForm.controls['password']"
+								type="password"
+								autocomplete="current-password"
+								class="form-control"
+								id="password"
+							>
+					</div>
+					<div *ngIf="!loginForm.valid && !loginForm.find('password').pristine && !loginForm.find('username').pristine" class="alert alert-danger" style="margin-top:30px;">Form is invalid</div>
+					<div class="row">
+						<div class="col-xs-12 text-right">
+							<button style="margin-top: 15px;min-width: 120px;" [disabled]="!loginForm.valid" type="submit" (click)="submitForm(loginForm.value)" class="btn btn-success" dime="login-button" >Login</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
