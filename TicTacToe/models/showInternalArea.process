@@ -1,0 +1,17 @@
+Process _Z1vjQWmsEe221-657GXeOQ {
+  modelName "showInternalArea"
+  description "showInternalArea"
+  dataFlowView true
+  processType Basic
+  isStateful false
+  DataContext _aFDxoWmsEe221-657GXeOQ at 20,20 size 210,545 {
+  	dfViewWorkaround true
+  }
+  
+  StartSIB _aFE_wWmsEe221-657GXeOQ at 330,20 size 100,65 {
+  }
+  
+  EndSIB _aFG08WmsEe221-657GXeOQ at 330,500 size 100,65 {
+  	branchName "success"
+  }
+}

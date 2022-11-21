@@ -1,0 +1,17 @@
+<suppressions xmlns="https://jeremylong.github.io/DependencyCheck/dependency-suppression.1.3.xsd">
+    <suppress>
+        <notes><![CDATA[
+            This suppresses a false positive identified on org.apache.james:apache-mime4j-dom which is a dependency of
+            org.jboss.resteasy:resteasy-multipart-provider.
+
+            CVE-2021-40525 refers to Apache James ManagedSieves: "Apache James ManagedSieve implementation
+            alongside with the file storage for sieve scripts is vulnerable to path traversal, allowing reading and
+            writing any file." https://nvd.nist.gov/vuln/detail/CVE-2021-40525
+
+            Since MVN repository (https://mvnrepository.com/artifact/org.apache.james/apache-mime4j-dom/0.8.3)
+            doesn't list CVE-2021-40525 as a direct vulnerability of org.apache.james:apache-mime4j-dom,
+            we consider it a false positive.
+      ]]></notes>
+        <vulnerabilityName>CVE-2021-40525</vulnerabilityName>
+    </suppress>
+</suppressions>

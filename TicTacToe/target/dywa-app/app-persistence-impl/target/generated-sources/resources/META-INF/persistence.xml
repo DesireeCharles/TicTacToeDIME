@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0"
+	xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+      http://java.sun.com/xml/ns/persistence
+      http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+	<persistence-unit name="pu">
+		<jta-data-source>java:jboss/datasources/ExampleDS</jta-data-source>
+
+		<class>de.ls5.dywa.generated.util.DomainFile</class>
+		<class>de.ls5.dywa.generated.util.EnumMapping</class>
+		<!-- generated entities -->
+
+		<shared-cache-mode>ALL</shared-cache-mode>
+		<properties>
+			<property name="hibernate.hbm2ddl.auto" value="update" />
+
+			<property name="hibernate.jdbc.batch_size" value="64" />
+			<property name="hibernate.default_batch_fetch_size" value="64" />
+
+			<property name="hibernate.generate_statistics" value="false" />
+			<property name="hibernate.cache.use_second_level_cache" value="true" />
+			<property name="hibernate.cache.use_query_cache" value="true" />
+
+			<property name="hibernate.show_sql" value="false" />
+			<property name="hibernate.format_sql" value="false" />
+			<property name="hibernate.use_sql_comments" value="false" />
+			<property name="hibernate.archive.autodetection" value="class, hbm" />
+
+
+			<property name="eclipselink.ddl-generation" value="create-tables"/>
+			<property name="eclipselink.ddl-generation.output-mode" value="database" />
+
+			<property name="eclipselink.cache.coordination.protocol" value="jms"/>
+			<property name="eclipselink.cache.coordination.jms.topic" value="java:/jms/topic/DyWACacheTopic"/>
+			<property name="eclipselink.cache.coordination.jms.factory" value="java:/ConnectionFactory"/>
+
+			<property name="eclipselink.target-server" value="JBoss"/>
+			<property name="eclipselink.deploy-on-startup" value="True" />
+
+			<property name="eclipselink.weaving" value="static"/>
+			<property name="eclipselink.weaving.internal" value="false"/>
+			<property name="eclipselink.id-validation" value="NEGATIVE"/>
+
+			<property name="eclipselink.logging.parameters" value="true"/>
+		</properties>
+	</persistence-unit>
+</persistence>

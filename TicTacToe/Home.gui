@@ -1,0 +1,54 @@
+GUI _Gquf4GmsEe221-657GXeOQ {
+  fullWidth false
+  disableAutoLayout false
+  additionalJavaScript [  ]
+  additionalStylesheets [  ]
+  title "Home"
+  DataContext _GsFx0GmsEe221-657GXeOQ at 10,10 size 180,130 {
+  	dfViewWorkaround true
+  }
+  
+  Template _GszjgGmsEe221-657GXeOQ at 240,10 size 150,190 {
+  	blockName ""
+  	disableAutoLayout false
+  	generalStyle GeneralStyling _HApFgGmsEe221-657GXeOQ {
+  			tallness Fitting
+  			marginBottom None
+  			attributes [  ]
+  			marginTop None
+  		}
+  	Row _HDN4YGmsEe221-657GXeOQ at 10,30 size 130,130 {
+  		generalStyle GeneralStyling _HIXeIGmsEe221-657GXeOQ {
+  				tallness Fitting
+  				marginBottom None
+  				attributes [  ]
+  				marginTop None
+  			}
+  		MoveUp _HEuUQGmsEe221-657GXeOQ at 2,2 size 14,7 {
+  		}
+  		
+  		MoveDown _HGICcGmsEe221-657GXeOQ at 2,10 size 14,7 {
+  		}
+  		
+  		Col _HGyJwGmsEe221-657GXeOQ at 10,30 size 100,80 {
+  			wideness Full
+  			layout Layout _HILQ4GmsEe221-657GXeOQ {
+  					size Default
+  					offset None
+  					alignment Left
+  				}
+  			generalStyle GeneralStyling _HIJbsGmsEe221-657GXeOQ {
+  					tallness Fitting
+  					marginBottom None
+  					attributes [  ]
+  					marginTop None
+  				}
+  			MoveLeft _HHLyYGmsEe221-657GXeOQ at 2,2 size 7,14 {
+  			}
+  			
+  			MoveRight _HH0rkGmsEe221-657GXeOQ at 10,2 size 7,14 {
+  			}
+  		}
+  	}
+  }
+}

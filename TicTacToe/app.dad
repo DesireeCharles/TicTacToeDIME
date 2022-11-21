@@ -1,0 +1,30 @@
+DAD _xxR2sGmpEe221-657GXeOQ {
+  mode Development
+  postScripts [  ]
+  appName "Unnamed DyWA App"
+  errorMessage ""
+  additionalStylesheets [  ]
+  preScripts [  ]
+  externalResources [  ]
+  Start _MUSJYGmsEe221-657GXeOQ at 150,70 size 30,30 {
+  	-RootInteractionPointer-> _gLGi0WmsEe221-657GXeOQ via (253,84) decorate "" at (0,0) decorate "Text" at (0,0) {
+  		id _iJN1UGmsEe221-657GXeOQ
+  	}
+  	
+  	-StartupProcessPointer-> _d5fFgGmsEe221-657GXeOQ via (77,84) decorate "" at (0,0) decorate "Text" at (0,0) {
+  		id _ilF5AGmsEe221-657GXeOQ
+  	}
+  }
+  
+  DataComponent _OeQtoGmsEe221-657GXeOQ at 298,53 size 128,32 {
+  	libraryComponentUID "_E1_L0GmsEe221-657GXeOQ"
+  }
+  
+  ProcessComponent _d5fFgGmsEe221-657GXeOQ at 13,120 size 128,32 {
+  	libraryComponentUID "_b5F7EWmsEe221-657GXeOQ"
+  }
+  
+  ProcessComponent _gLGi0WmsEe221-657GXeOQ at 190,120 size 128,32 {
+  	libraryComponentUID "_Tksb8GmsEe221-657GXeOQ"
+  }
+}
