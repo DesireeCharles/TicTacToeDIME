@@ -36,6 +36,7 @@ import 'package:app/src/modal/Modal.dart' as modal;
 import 'package:app/src/panel/Panel.dart' as panel;
 
 //file guard imports
+import 'package:app/src/models/FileGuardsaLmrS0Ej8EeaK4_MRcoLfnwPublicHome.dart';
 //special element imports
 //table component imports
 //form component imports
@@ -175,6 +176,18 @@ class PublicHomeaLmrS0Ej8EeaK4_MRcoLfnw extends dime.DIMEComponent implements On
   		
   		
   		
+  		/// loads an image file download for an image component	
+  		String loadaEoWNEGnbEe2xCJpb6ooUzAImage(fileRef)
+  		{
+  			//prepare guard compound
+  			FileGuardaEoWNEGnbEe2xCJpb6ooUzACompound guardContainer = new FileGuardaEoWNEGnbEe2xCJpb6ooUzACompound();
+  			guardContainer.context = fileRef;
+  			
+  			// private interactable
+  			String guardData = guardContainer.toQueryParams();
+  			return guardData;
+  			
+  		}
   	
   		
   		

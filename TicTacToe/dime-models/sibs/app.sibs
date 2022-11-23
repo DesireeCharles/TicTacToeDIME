@@ -1,0 +1,8 @@
+package app.demo
+
+sib SayHello : info.scce.dime.app.demo.Native#sayHello
+  name : text
+  -> success
+  
+sib test : info.scce.dime.app.demo.Native#test
+->success

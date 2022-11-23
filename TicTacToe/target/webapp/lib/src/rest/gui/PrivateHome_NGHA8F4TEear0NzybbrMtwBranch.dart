@@ -9,6 +9,12 @@ import 'package:app/src/core/dime_process_service.dart';
 class PrivateHome_NGHA8F4TEear0NzybbrMtwBranch extends ContinueProcessRequest {
 	
 	
+	Go_to_Game branch_Go_to_Game;
+	
+	PrivateHome_NGHA8F4TEear0NzybbrMtwBranch.forGo_to_GameBranch(
+	) {
+		branch_Go_to_Game = new Go_to_Game();
+	}
 
 	String toJSON() {
 		return jsonEncode(toJSOG());
@@ -18,7 +24,22 @@ class PrivateHome_NGHA8F4TEear0NzybbrMtwBranch extends ContinueProcessRequest {
 	{
 		Map<String,dynamic> jsonObj = new Map();
 		
+		if(branch_Go_to_Game!=null) {
+			return branch_Go_to_Game.toJSOG();
+		}
 		throw new Exception("Exhaustive IF PrivateHome_NGHA8F4TEear0NzybbrMtwBranch.dart");
 	}
 }
 	
+	class Go_to_Game {
+		
+
+		Map<String,dynamic> toJSOG()
+		{
+			
+			Map<String,dynamic> jsonObj = new Map();
+					
+			return jsonObj;
+		}
+		
+	}

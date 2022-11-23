@@ -19,12 +19,15 @@ import 'package:app/src/gui/PublicHomeaLmrS0Ej8EeaK4_MRcoLfnw.dart';
 import 'package:app/src/rest/gui/PrivateHome_NGHA8F4TEear0NzybbrMtwInput.dart';
 import 'package:app/src/rest/gui/PrivateHome_NGHA8F4TEear0NzybbrMtwBranch.dart';
 import 'package:app/src/gui/PrivateHomeaNGHA8F4TEear0NzybbrMtw.dart';
+import 'package:app/src/rest/gui/Game_AzVAIWnXEe2xCJpb6ooUzAInput.dart';
+import 'package:app/src/rest/gui/Game_AzVAIWnXEe2xCJpb6ooUzABranch.dart';
+import 'package:app/src/gui/GameaAzVAIWnXEe2xCJpb6ooUzA.dart';
 //NF model outputs
 
 @Component(
   	selector: 'Home-aLWgagF_45_SEeakMeYoloYxpg-process',
   	directives: const [
-  		coreDirectives,login.Login,PublicHomeaLmrS0Ej8EeaK4_MRcoLfnw,PrivateHomeaNGHA8F4TEear0NzybbrMtw
+  		coreDirectives,login.Login,PublicHomeaLmrS0Ej8EeaK4_MRcoLfnw,PrivateHomeaNGHA8F4TEear0NzybbrMtw,GameaAzVAIWnXEe2xCJpb6ooUzA
   	],
 	template: '''
 	<login-form 
@@ -51,8 +54,18 @@ import 'package:app/src/gui/PrivateHomeaNGHA8F4TEear0NzybbrMtw.dart';
 			[currentbranch]="currentBranch"
 			[modalDialog]="false"
 			[ismajorpage]="true"
+			(actiongotogameevent) = "eventaH3uuoWnlEe2xCJpb6ooUzAGo_to_GameTrigger(\$event)"
 		>
 		</privatehome-tag>
+		<game-tag
+			*ngIf="isVisible(majorSIB,'__4Ia0WnkEe2xCJpb6ooUzA')"
+			[guiId]="'_AzVAIWnXEe2xCJpb6ooUzA'"
+			[runtimeId]="runtimeId"
+			[currentbranch]="currentBranch"
+			[modalDialog]="false"
+			[ismajorpage]="true"
+		>
+		</game-tag>
 	</template>
 	'''
 )
@@ -92,6 +105,8 @@ class ProcessaLWgagF_45_SEeakMeYoloYxpgComponent extends GUIProcess implements O
 	PublicHome_LmrS0Ej8EeaK4_MRcoLfnwInput minora_45_xUtUGUQEea0lrrxwspd7gInput;
 	PrivateHome_NGHA8F4TEear0NzybbrMtwInput majora3huTEGUQEea0lrrxwspd7gInput;
 	PrivateHome_NGHA8F4TEear0NzybbrMtwInput minora3huTEGUQEea0lrrxwspd7gInput;
+	Game_AzVAIWnXEe2xCJpb6ooUzAInput majora_4Ia0WnkEe2xCJpb6ooUzAInput;
+	Game_AzVAIWnXEe2xCJpb6ooUzAInput minora_4Ia0WnkEe2xCJpb6ooUzAInput;
 	
 	final DIMEProcessService _processService;
 	
@@ -108,6 +123,10 @@ class ProcessaLWgagF_45_SEeakMeYoloYxpgComponent extends GUIProcess implements O
 	// GUISIB PrivateHome
 	@ViewChildren(PrivateHomeaNGHA8F4TEear0NzybbrMtw)
 	List<PrivateHomeaNGHA8F4TEear0NzybbrMtw> componenta3huTEGUQEea0lrrxwspd7g;
+	// GUISIBs of Process Home
+	// GUISIB Game
+	@ViewChildren(GameaAzVAIWnXEe2xCJpb6ooUzA)
+	List<GameaAzVAIWnXEe2xCJpb6ooUzA> componenta_4Ia0WnkEe2xCJpb6ooUzA;
 	
 	ProcessaLWgagF_45_SEeakMeYoloYxpgComponent(this._processService,this._router,this._notificationService,AbstractRoutes routes): super(routes);
 
@@ -187,6 +206,24 @@ class ProcessaLWgagF_45_SEeakMeYoloYxpgComponent extends GUIProcess implements O
 				}
 			}
 		}
+		if(isVisible(majorSIB,'__4Ia0WnkEe2xCJpb6ooUzA')) {
+			majora_4Ia0WnkEe2xCJpb6ooUzAInput = majorInput as Game_AzVAIWnXEe2xCJpb6ooUzAInput;
+			if(componenta_4Ia0WnkEe2xCJpb6ooUzA != null) {
+				componenta_4Ia0WnkEe2xCJpb6ooUzA.forEach((n)=>n.updateInputs(
+				));
+			}
+		} else if(isVisible(minorSIB,'__4Ia0WnkEe2xCJpb6ooUzA')) {
+			Game_AzVAIWnXEe2xCJpb6ooUzAInput newInput = minorInput as Game_AzVAIWnXEe2xCJpb6ooUzAInput;
+			bool hasChanged = minora_4Ia0WnkEe2xCJpb6ooUzAInput!=null?minora_4Ia0WnkEe2xCJpb6ooUzAInput.inpusChanged(newInput):true;
+			minora_4Ia0WnkEe2xCJpb6ooUzAInput = newInput;
+			if(componenta_4Ia0WnkEe2xCJpb6ooUzA != null) {
+				componenta_4Ia0WnkEe2xCJpb6ooUzA.forEach((n)=>n.updateInputs(
+				));
+				if(hasChanged) {
+					componenta_4Ia0WnkEe2xCJpb6ooUzA.forEach((n)=>n.restartComponent());			
+				}
+			}
+		}
 		
 		
 	}
@@ -209,4 +246,22 @@ class ProcessaLWgagF_45_SEeakMeYoloYxpgComponent extends GUIProcess implements O
 		.catchError((e)=>processError(e));
 	}
 	// Branches for GUISIB PrivateHome of Process Home
+	// Branch Go to Game
+	void eventaH3uuoWnlEe2xCJpb6ooUzAGo_to_GameTrigger(Map<String,dynamic> map)
+	{
+		var result = new PrivateHome_NGHA8F4TEear0NzybbrMtwBranch.forGo_to_GameBranch(
+		);
+		_processService.continueProcess(
+			deserializer,
+			getActiveProcesses()[runtimeId].runtime,
+			getRuntimeId(),
+			'_NGHA8F4TEear0NzybbrMtw',
+			'Go_to_Game/branch/public',
+			result.toJSOG(),
+			parentRuntimeId:getParentRuntimeId()
+		)
+		.then((cpr)=>processResponse(_processService,cpr))
+		.catchError((e)=>processError(e));
+	}
+	// Branches for GUISIB Game of Process Home
 }

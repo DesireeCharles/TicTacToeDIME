@@ -1,3 +1,0 @@
-<div class="progress-bar-container" [class.visible]="visible">
-	<div class="progress-bar progress-bar-striped active"></div>
-</div>

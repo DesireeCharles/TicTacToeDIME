@@ -1,36 +1,64 @@
 Process _LWgagF-SEeakMeYoloYxpg {
   modelName "Home"
-  processType Basic
   description "Home"
-  isStateful false
   dataFlowView true
+  processType Basic
+  isStateful false
   StartSIB _LYO40F-SEeakMeYoloYxpg at 50,50 size 100,65 {
   	-ControlFlow-> _-xUtUGUQEea0lrrxwspd7g  decorate "Polyline" at (2,0) {
   		id _OaoS0F-SEeakMeYoloYxpg
+  		concurrent true
   	}
   }
   
   GUISIB _-xUtUGUQEea0lrrxwspd7g at 50,150 size 100,65 {
-  	name "PublicHome"
+  	cacheGUI false
   	majorPage true
   	libraryComponentUID "_LmrS0Ej8EeaK4_MRcoLfnw"
+  	name "PublicHome"
   	label "PublicHome"
+  	ignoredBranch [  ]
   	-BranchConnector-> _-xgTgGUQEea0lrrxwspd7g   {
   		id _-xlzEGUQEea0lrrxwspd7g
+  		concurrent true
   	}
   }
   
   Branch _-xgTgGUQEea0lrrxwspd7g at 170,170 size 100,25 {
   	name "Login"
-  	-ControlFlow-> _3huTEGUQEea0lrrxwspd7g  decorate "Polyline" at (2,0) {
-  		id _B0yeUGUREea0lrrxwspd7g
+  	-ControlFlow-> _3huTEGUQEea0lrrxwspd7g  decorate "" at (0,0) {
+  		id _FZ5_AWteEe2x_c6ogIlfZw
+  		concurrent true
   	}
   }
   
   GUISIB _3huTEGUQEea0lrrxwspd7g at 300,150 size 100,65 {
-  	name "PrivateHome"
+  	cacheGUI false
   	majorPage true
   	libraryComponentUID "_NGHA8F4TEear0NzybbrMtw"
+  	name "PrivateHome"
   	label "PrivateHome"
+  	ignoredBranch [  ]
+  	-BranchConnector-> _H3uuoWnlEe2xCJpb6ooUzA   {
+  		id _H3wj0WnlEe2xCJpb6ooUzA
+  		concurrent true
+  	}
+  }
+  
+  GUISIB __4Ia0WnkEe2xCJpb6ooUzA at 580,150 size 120,65 {
+  	cacheGUI false
+  	majorPage true
+  	libraryComponentUID "_AzVAIWnXEe2xCJpb6ooUzA"
+  	name "Game"
+  	label "Game"
+  	ignoredBranch [  ]
+  }
+  
+  Branch _H3uuoWnlEe2xCJpb6ooUzA at 420,130 size 120,25 {
+  	name "Go to Game"
+  	-ControlFlow-> __4Ia0WnkEe2xCJpb6ooUzA  decorate "" at (0,0) {
+  		id _IMmLYWnlEe2xCJpb6ooUzA
+  		concurrent true
+  	}
   }
 }

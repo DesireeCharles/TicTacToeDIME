@@ -4,11 +4,11 @@ GUI _AzVAIWnXEe2xCJpb6ooUzA {
   additionalJavaScript [  ]
   additionalStylesheets [  ]
   title "Game"
-  DataContext _AzdjAWnXEe2xCJpb6ooUzA at 10,10 size 180,130 {
+  DataContext _AzdjAWnXEe2xCJpb6ooUzA at 10,90 size 180,80 {
   	dfViewWorkaround true
   }
   
-  Template _AzhNYWnXEe2xCJpb6ooUzA at 240,10 size 170,260 {
+  Template _AzhNYWnXEe2xCJpb6ooUzA at 240,10 size 320,220 {
   	blockName ""
   	disableAutoLayout false
   	generalStyle GeneralStyling _AzoiIGnXEe2xCJpb6ooUzA {
@@ -17,57 +17,34 @@ GUI _AzVAIWnXEe2xCJpb6ooUzA {
   			attributes [  ]
   			marginTop None
   		}
-  	Row _Az0IUWnXEe2xCJpb6ooUzA at 10,30 size 150,200 {
-  		generalStyle GeneralStyling _A0Q0QGnXEe2xCJpb6ooUzA {
+  	Headline _0zu5QGnkEe2xCJpb6ooUzA at 10,30 size 300,50 {
+  		size Big
+  		content [ StaticContent _00AmEGnkEe2xCJpb6ooUzA {
+  				renderMarkdown false
+  				maxChars 0
+  				html false
+  				rawContent "TicTacToe\n"
+  				styling TextStyling _00B0MGnkEe2xCJpb6ooUzA {
+  						small false
+  						highlight false
+  						deleted false
+  						underline false
+  						bold false
+  						alignment Left
+  						italic false
+  						color Default
+  					}
+  			} ]
+  		generalStyle GeneralStyling _0z21EGnkEe2xCJpb6ooUzA {
   				tallness Fitting
   				marginBottom None
   				attributes [  ]
   				marginTop None
   			}
-  		MoveUp _Az5A0WnXEe2xCJpb6ooUzA at 2,2 size 14,7 {
+  		MoveUp _0zzxwWnkEe2xCJpb6ooUzA at 2,2 size 14,7 {
   		}
   		
-  		MoveDown _Az6O8WnXEe2xCJpb6ooUzA at 2,10 size 14,7 {
-  		}
-  		
-  		Col _A0BjsGnXEe2xCJpb6ooUzA at 10,30 size 120,150 {
-  			wideness Full
-  			layout Layout _A0Nw8GnXEe2xCJpb6ooUzA {
-  					size Default
-  					offset None
-  					alignment Left
-  				}
-  			generalStyle GeneralStyling _A0Mi0GnXEe2xCJpb6ooUzA {
-  					tallness Fitting
-  					marginBottom None
-  					attributes [  ]
-  					marginTop None
-  				}
-  			MoveLeft _A0Cx0WnXEe2xCJpb6ooUzA at 2,2 size 7,14 {
-  			}
-  			
-  			MoveRight _A0D_8WnXEe2xCJpb6ooUzA at 10,2 size 7,14 {
-  			}
-  			
-  			Image _D8a4AGnXEe2xCJpb6ooUzA at 10,30 size 100,90 {
-  				dimensionX -1
-  				dimensionY -1
-  				styling ImageStyling _D8nsUGnXEe2xCJpb6ooUzA {
-  						border Default
-  						responsive true
-  					}
-  				generalStyle GeneralStyling _D8meMGnXEe2xCJpb6ooUzA {
-  						tallness Fitting
-  						marginBottom None
-  						attributes [  ]
-  						marginTop None
-  					}
-  				MoveUp _D8kpAWnXEe2xCJpb6ooUzA at 2,2 size 14,7 {
-  				}
-  				
-  				MoveDown _D8lQEWnXEe2xCJpb6ooUzA at 2,10 size 14,7 {
-  				}
-  			}
+  		MoveDown _0z0_4WnkEe2xCJpb6ooUzA at 2,10 size 14,7 {
   		}
   	}
   }

@@ -87,6 +87,9 @@ class PrivateHomeaNGHA8F4TEear0NzybbrMtw extends dime.DIMEComponent implements O
   	
   	
   	
+  	// branch Go to Game as info.scce.dime.gui.editor.graphiti.api.CButton@223ff66c (id: _5EDe8WnkEe2xCJpb6ooUzA) in info.scce.dime.gui.editor.graphiti.api.CGUI@3b65aee7 (id: _NGHA8F4TEear0NzybbrMtw)
+  	@Output('actiongotogameevent') Stream<Map<String,dynamic>> get evt_actiongotogameevent => actiongotogameevent.stream;
+  	StreamController<Map<String,dynamic>> actiongotogameevent = new StreamController();
   	
   	@ViewChildren(modal.Modal)
   	List<modal.Modal> modals;
@@ -115,6 +118,10 @@ class PrivateHomeaNGHA8F4TEear0NzybbrMtw extends dime.DIMEComponent implements O
 						
 		
 			  	
+		// branch Go to Game declaration
+		if(this.actiongotogameevent!=null) {
+			  			this.actiongotogameevent = new StreamController<Map<String,dynamic>>();  				
+		}
 			
 		updateImageHash();
 	}
@@ -174,6 +181,13 @@ class PrivateHomeaNGHA8F4TEear0NzybbrMtw extends dime.DIMEComponent implements O
   		{
   			// static button redirect
   			html.window.location.href=''+getLogoutURL.toString()+'';
+  		}
+  		/// callback, if the button Go to Game is clicked
+  			void actiongotogameeventa5EDe8WnkEe2xCJpb6ooUzAEventTrigger()
+  		
+  		{
+  			Map<String,dynamic> data = new Map();
+  			this.actiongotogameevent.add(data);
   		}
   		
   		
