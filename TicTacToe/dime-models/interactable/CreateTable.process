@@ -1,0 +1,47 @@
+Process _r_xxsW8FEe2hmY3gzoFrzA {
+  modelName "CreateTable"
+  description "CreateTable"
+  dataFlowView true
+  processType Basic
+  isStateful false
+  DataContext _r_zm4W8FEe2hmY3gzoFrzA at 20,0 size 210,545 {
+  	dfViewWorkaround true
+  }
+  
+  StartSIB _r_zm428FEe2hmY3gzoFrzA at 330,20 size 100,65 {
+  	-ControlFlow-> _KEzEgW8GEe2hmY3gzoFrzA  decorate "" at (0,0) {
+  		id _SyT8UW8IEe2hmY3gzoFrzA
+  		concurrent true
+  	}
+  }
+  
+  EndSIB _r_zm5W8FEe2hmY3gzoFrzA at 320,480 size 100,65 {
+  	branchName "success"
+  }
+  
+  GUISIB _KEzEgW8GEe2hmY3gzoFrzA at 310,160 size 120,90 {
+  	cacheGUI false
+  	majorPage true
+  	libraryComponentUID "_Dt340GtPEe25lcL0UO2uNA"
+  	name "GameView"
+  	label "GameView"
+  	ignoredBranch [  ]
+  	ComplexInputPort _KE-qsW8GEe2hmY3gzoFrzA at 5,67 size 110,18 {
+  		libraryComponentUID "_VSmZMGtiEe25lcL0UO2uNA"
+  		isList false
+  		name "table"
+  	}
+  	-BranchConnector-> _KFH0oW8GEe2hmY3gzoFrzA   {
+  		id _KFJCwW8GEe2hmY3gzoFrzA
+  		concurrent true
+  	}
+  }
+  
+  Branch _KFH0oW8GEe2hmY3gzoFrzA at 310,300 size 120,25 {
+  	name "Back"
+  	-ControlFlow-> _r_zm5W8FEe2hmY3gzoFrzA  decorate "" at (0,0) {
+  		id _Nxs0EW8GEe2hmY3gzoFrzA
+  		concurrent true
+  	}
+  }
+}

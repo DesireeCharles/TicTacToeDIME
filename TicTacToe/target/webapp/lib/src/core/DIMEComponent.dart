@@ -60,7 +60,8 @@ abstract class DIMEComponent {
   }
 
   String get getLogoutURL {
-    return '${service.DIMEProcessService.getBaseUrl()}/logout';
+    final local = const bool.fromEnvironment('local', defaultValue: true);
+  	return "${local ? '#' : ''}/logout";
   }
 
   html.Window get window => html.window;

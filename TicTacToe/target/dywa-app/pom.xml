@@ -17,7 +17,7 @@
 
         <de.ls5.dywa.version>0.9-SNAPSHOT</de.ls5.dywa.version>
         <hibernate.version>5.3.24.Final</hibernate.version>
-        <shiro.version>1.9.1</shiro.version>
+        <shiro.version>1.10.0</shiro.version>
 
         <webdev.path>${user.home}/.pub-cache/bin/webdev</webdev.path>
 
@@ -27,7 +27,7 @@
 
     <modules>
         <!--
-        If a module will added or removed,
+        If a module will be added or removed,
         adjust the development.Dockerfile accordingly.
         -->
         <module>app-addon</module>

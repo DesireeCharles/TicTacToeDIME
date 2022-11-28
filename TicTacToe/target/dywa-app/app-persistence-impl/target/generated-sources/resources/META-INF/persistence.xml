@@ -10,6 +10,11 @@
 		<class>de.ls5.dywa.generated.util.DomainFile</class>
 		<class>de.ls5.dywa.generated.util.EnumMapping</class>
 		<!-- generated entities -->
+        <class>de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.ConcreteUserImpl</class>
+        <class>de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.BaseUserImpl</class>
+        <class>de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TableImpl</class>
+        <class>de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.RowImpl</class>
+        <class>de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryImpl</class>
 
 		<shared-cache-mode>ALL</shared-cache-mode>
 		<properties>

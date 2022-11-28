@@ -1,0 +1,108 @@
+<div class="row">
+	<div class="col-sm-12">
+<div 
+  class="jumbotron">
+<div 
+ class="row">
+<div
+
+[ngStyle]="{ 'margin-bottom':'30px' }"
+class="col-md-4 text-left"
+>
+<img
+	
+	[ngStyle]="{ 'margin-bottom':'30px' , 'width':'350px' , 'height':'350px' }"
+	alt="PublicHome image"
+	class="img img-responsive"
+	src="img/PublicHome/home.png"
+>
+</div>
+<div
+
+[ngStyle]="{ 'margin-bottom':'30px' }"
+class="col-md-4 text-center"
+>
+<h1
+
+[ngStyle]="{ 'margin-top':'45px' }"
+> 
+<span aria-live="polite" aria-atomic="true" class="text-left">
+Tic Tac Toe Game
+</span>
+</h1>
+</div>
+<div
+
+[ngStyle]="{ 'margin-bottom':'30px' }"
+class="col-md-4 text-right"
+>
+<img
+	
+	[ngStyle]="{ 'margin-bottom':'30px' , 'width':'350px' , 'height':'350px' }"
+	alt="PublicHome image"
+	class="img img-responsive"
+	src="img/PublicHome/home1.png"
+>
+</div>
+</div>
+<div 
+ class="row">
+<div
+
+class="col-md-12 text-center"
+>
+<!-- beginn box -->
+<div 
+  class="container page-content">
+<ul 
+ class="list-group">
+<li 
+  class="list-group-item">
+    <h4 class="list-group-item-heading" >
+    <span aria-live="polite" aria-atomic="true" class="text-center text-primary">
+    <strong>
+    <mark>
+    <em>
+    How to play
+    </em>
+    </mark>
+    </strong>
+    </span>
+    </h4>
+    <p class="list-group-item-text" >
+<span aria-live="polite" aria-atomic="true" class="text-left text-primary">
+<strong>
+<em>
+The game is played on a grid that's 3 squares by 3 squares.
+One player is X, and the other player is (or the computer) is O. 
+Players take turns putting their marks in empty squares. 
+The first player to get 3 of her marks in a row (up, down, across, or diagonally) is the winner. 
+When all 9 squares are full, the game is over. 
+If no player has 3 marks in a row, the game ends in a tie. 
+</em>
+</strong>
+</span>
+	</p>
+ </li>
+</ul>
+</div>
+<!-- end box -->
+<!-- beginn button Play -->
+<button 
+ [ngStyle]="{ 'margin-top':'30px' }"
+	data-cinco-id="_MF6_kE_LEeauEZ95mLTQ7g"
+	tabindex="0" aria-label="Play"
+	[disabled]="isBusy()"
+type="button"
+(click)="actionplayeventaMF6_kE_LEeauEZ95mLTQ7gEventTrigger()
+"
+class="btn btn-info btn-lg">
+ Play
+ <span aria-hidden="true" aria-label="icon heart" class="glyphicon glyphicon-heart" style="left:2px"></span>
+</button>
+<!-- end button Play -->
+</div>
+</div>
+</div>
+	</div>
+</div>

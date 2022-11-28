@@ -11,11 +11,13 @@ import 'package:app/src/notification/notification_component.dart';
 import 'package:app/src/progress-bar/progress_bar_component.dart';
 import 'package:app/src/services/TableDndService.dart';
 import 'package:app/src/services/ProgressService.dart';
+import 'package:app/src/services/AuthService.dart';
+
 /*
  * Routables
  */
-//Route to home
-import 'package:app/src/dad/ProcesshomeaTksb8GmsEe221_45_657GXeOQComponent.template.dart' as ng;
+//Route to Home
+import 'package:app/src/dad/ProcessHomeaLWgagF_45_SEeakMeYoloYxpgComponent.template.dart' as ng;
 
 @Component(
     selector: 'app',
@@ -31,6 +33,7 @@ import 'package:app/src/dad/ProcesshomeaTksb8GmsEe221_45_657GXeOQComponent.templ
     	ClassProvider(NotificationService),
     	ClassProvider(ProgressService), 
 		ClassProvider(TableDndService),
+		ClassProvider(AuthService),
         ClassProvider(AbstractRoutes, useClass: Routes),
 	]
 )
@@ -47,7 +50,7 @@ class AppComponent implements OnInit {
     @override
 	void ngOnInit() async {
     	this._notificationService.component = notificationComponent;
-    	print("GENERATED AT 2022/11/21 15:55:50");
+    	print("GENERATED AT 2022/11/28 15:02:34");
 	}
 }
 
@@ -55,11 +58,11 @@ class AppComponent implements OnInit {
 class Routes implements AbstractRoutes{
 	static final root = RouteDefinition(
 	    routePath: RoutePath(path: 'home'),
-	    component: ng.ProcessaTksb8GmsEe221_45_657GXeOQComponentNgFactory,
+	    component: ng.ProcessaLWgagF_45_SEeakMeYoloYxpgComponentNgFactory,
 	  );
-	static final ProcessagLGi0WmsEe221_45_657GXeOQURL = RouteDefinition(
+	static final Processa_TU1IF_45_UEea6DvTF5PmsmAURL = RouteDefinition(
 	    routePath: RoutePath(path: 'home'),
-	    component: ng.ProcessaTksb8GmsEe221_45_657GXeOQComponentNgFactory,
+	    component: ng.ProcessaLWgagF_45_SEeakMeYoloYxpgComponentNgFactory,
 	  );
   static final Error = RouteDefinition(
     routePath: RoutePath(path: 'error'),
@@ -69,6 +72,10 @@ class Routes implements AbstractRoutes{
   	 routePath: RoutePath(path: 'maintenance'),
   	 component: ng.MaintenanceNgFactory,
   );
+  static final Logout = RouteDefinition(
+  	routePath: RoutePath(path: 'logout'),
+  	component: ng.LogoutNgFactory,
+  );
   static final NotFound = RouteDefinition(
     path: '.+',
     component: ng.NotFoundNgFactory,
@@ -77,9 +84,10 @@ class Routes implements AbstractRoutes{
   static final all = <RouteDefinition>[
   	  root,
 	  RouteDefinition.redirect(
-	    path: '/', redirectTo: ProcessagLGi0WmsEe221_45_657GXeOQURL.toUrl()
+	    path: '/', redirectTo: Processa_TU1IF_45_UEea6DvTF5PmsmAURL.toUrl()
 	  ),
-	  ProcessagLGi0WmsEe221_45_657GXeOQURL,
+	  Processa_TU1IF_45_UEea6DvTF5PmsmAURL,
+	  Logout,
 	  Maintenance,
 	  NotFound
   ];
@@ -87,9 +95,10 @@ class Routes implements AbstractRoutes{
   @override
   RouteDefinition getByName(String typeName) {
   	switch(typeName) {
-  		case 'ProcessagLGi0WmsEe221_45_657GXeOQURL': return ProcessagLGi0WmsEe221_45_657GXeOQURL;
+  		case 'Processa_TU1IF_45_UEea6DvTF5PmsmAURL': return Processa_TU1IF_45_UEea6DvTF5PmsmAURL;
 		case 'root': return root;
   		case 'Maintenance': return Maintenance;
+  		case 'Logout': return Logout;
   		default: return NotFound;
   	}
   }

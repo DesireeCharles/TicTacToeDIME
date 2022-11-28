@@ -1,0 +1,1456 @@
+import 'dart:core' as core;
+import 'dart:convert';
+import '../models/FileReference.dart';
+import '../models/Selectives.dart';
+import '../commons/Exceptions.dart';
+
+class DataCastUtil {
+	
+	const DataCastUtil();
+	static ConcreteUser castToConcreteUser(core.Object o) => o as ConcreteUser;
+	static DIMEList<ConcreteUser> castToListConcreteUser(DIMEList<core.Object> os) => new DIMEList.from(os.cast<ConcreteUser>());
+	static DIMEList<ConcreteUser> newListConcreteUser() => new DIMEList<ConcreteUser>();
+	
+	static BaseUser castToBaseUser(core.Object o) => o as BaseUser;
+	static DIMEList<BaseUser> castToListBaseUser(DIMEList<core.Object> os) => new DIMEList.from(os.cast<BaseUser>());
+	static DIMEList<BaseUser> newListBaseUser() => new DIMEList<BaseUser>();
+	
+	static Table castToTable(core.Object o) => o as Table;
+	static DIMEList<Table> castToListTable(DIMEList<core.Object> os) => new DIMEList.from(os.cast<Table>());
+	static DIMEList<Table> newListTable() => new DIMEList<Table>();
+	
+	static Row castToRow(core.Object o) => o as Row;
+	static DIMEList<Row> castToListRow(DIMEList<core.Object> os) => new DIMEList.from(os.cast<Row>());
+	static DIMEList<Row> newListRow() => new DIMEList<Row>();
+	
+	static Entry castToEntry(core.Object o) => o as Entry;
+	static DIMEList<Entry> castToListEntry(DIMEList<core.Object> os) => new DIMEList.from(os.cast<Entry>());
+	static DIMEList<Entry> newListEntry() => new DIMEList<Entry>();
+}
+class ConcreteUser extends BaseModel
+{
+	core.bool _baseUserHasBeenSet = false;
+	core.bool baseUserHasBeenChanged() => _baseUserHasBeenSet||(_baseUser==null?false:_baseUser.hasChanged()) ;
+	BaseUser _baseUser;
+	core.bool _dywaSwitchedToHasBeenSet = false;
+	core.bool dywaSwitchedToHasBeenChanged() => _dywaSwitchedToHasBeenSet||(_dywaSwitchedTo==null?false:_dywaSwitchedTo.hasChanged()) ;
+	ConcreteUser _dywaSwitchedTo;
+	
+	static ConcreteUser fromId(core.int id) {
+		var m = new ConcreteUser();
+		m.dywa_id = id;
+		return m;
+	}
+	
+	
+	// reflection methods to read and wirte dart properties by string name
+	
+	core.dynamic $$getProperty(core.String prop) {
+	  var propMap = {
+	  'baseUser': this.baseUser, 
+	  'dywaSwitchedTo': this.dywaSwitchedTo
+	  };
+	
+	  if (!propMap.containsKey(prop)) throw NoSuchPropertyException(prop);
+	  return propMap[prop];
+	}
+	
+	void $$setProperty(core.String prop, core.dynamic value) {
+	  switch (prop) {
+	  case 'baseUser': this.baseUser = value; return;
+	  case 'dywaSwitchedTo': this.dywaSwitchedTo = value; return;
+	    default: throw NoSuchPropertyException(prop);
+	  }
+	}
+	
+	core.bool $$hasProperty(core.String prop) {
+	  try {
+	    $$getProperty(prop);
+	    return true;
+	  } on NoSuchPropertyException catch (e) {
+	    return false;
+	  }
+	}
+	
+	ConcreteUser({core.Map<core.String,core.dynamic> cache, jsog}) {
+		if (cache == null) {
+			cache = new core.Map();
+		}
+
+		// default constructor
+		if (jsog == null) {
+			
+			this.dywa_id = -1;
+			this.dywa_version = 0;
+			this.dywa_name = null;
+			
+			// properties
+		}
+		// from jsog
+		else {
+			core.String jsogId = jsog['@id'];
+			cache[jsogId] = this;
+			
+			this.dywa_id = jsog['dywaId'];
+			this.dywa_version = jsog['dywaVersion'];
+			this.dywa_name = jsog['dywaName'];
+			
+			// properties
+			if (jsog.containsKey("baseUser")) {
+				core.Map<core.String,core.dynamic> jsogObj = jsog["baseUser"];
+				if(jsogObj != null) {
+					BaseUser valueafPY24MwNEeWZVvvwxpYu8A;
+					
+					core.String jsogId;
+					
+					if (jsogObj.containsKey('@ref')) {
+						jsogId = jsogObj['@ref'];
+					}
+					else {
+					 	jsogId = jsogObj['@id'];
+					}
+					if (cache.containsKey(jsogId)) {
+						valueafPY24MwNEeWZVvvwxpYu8A = cache[jsogId];
+					}
+					else {
+						if (jsogObj != null) {
+							if (jsogObj['dywaRuntimeType'] == "de.ls5.dywa.generated.rest.types.BaseUser") {
+								valueafPY24MwNEeWZVvvwxpYu8A = new BaseUser(cache: cache, jsog: jsogObj);
+							}
+							else {
+								valueafPY24MwNEeWZVvvwxpYu8A = new BaseUser(cache: cache,jsog: jsogObj);
+							}
+						}
+						else {
+							valueafPY24MwNEeWZVvvwxpYu8A = new BaseUser(cache: cache,jsog: jsogObj);
+						}
+					}
+					this._baseUser = valueafPY24MwNEeWZVvvwxpYu8A;
+				}
+			}
+			
+			
+			_baseUserHasBeenSet = false;
+			if (jsog.containsKey("dywaSwitchedTo")) {
+				core.Map<core.String,core.dynamic> jsogObj = jsog["dywaSwitchedTo"];
+				if(jsogObj != null) {
+					ConcreteUser valueaTo_45__cG8lEe2e7ONkcN16xA;
+					
+					core.String jsogId;
+					
+					if (jsogObj.containsKey('@ref')) {
+						jsogId = jsogObj['@ref'];
+					}
+					else {
+					 	jsogId = jsogObj['@id'];
+					}
+					if (cache.containsKey(jsogId)) {
+						valueaTo_45__cG8lEe2e7ONkcN16xA = cache[jsogId];
+					}
+					else {
+						if (jsogObj != null) {
+							if (jsogObj['dywaRuntimeType'] == "de.ls5.dywa.generated.rest.types.ConcreteUserImpl") {
+								valueaTo_45__cG8lEe2e7ONkcN16xA = new ConcreteUser(cache: cache, jsog: jsogObj);
+							}
+							else {
+								valueaTo_45__cG8lEe2e7ONkcN16xA = new ConcreteUser(cache: cache,jsog: jsogObj);
+							}
+						}
+						else {
+							valueaTo_45__cG8lEe2e7ONkcN16xA = new ConcreteUser(cache: cache,jsog: jsogObj);
+						}
+					}
+					this._dywaSwitchedTo = valueaTo_45__cG8lEe2e7ONkcN16xA;
+				}
+			}
+			
+			
+			_dywaSwitchedToHasBeenSet = false;
+		}
+	}
+	
+	void baseUserHasBeenSetted() { _baseUserHasBeenSet=true; }
+	void dywaSwitchedToHasBeenSetted() { _dywaSwitchedToHasBeenSet=true; }
+	
+	core.bool hasChanged() {
+		return 		_baseUserHasBeenSet || 
+					_dywaSwitchedToHasBeenSet
+			;
+	}
+	
+	
+	core.Map<core.String,core.dynamic> toJSOG(core.Map<core.Object,core.dynamic> objects) {
+		if (objects == null) {
+			objects = new core.Map();
+		}
+		core.int jsogId;
+		core.Map<core.String,core.dynamic> jsonObj = new core.Map();
+		if(objects.containsKey(this)) {
+			jsogId = objects[this]['id'];
+			jsonObj = objects[this]['value'];
+			if(( baseUserHasBeenChanged() && !jsonObj.containsKey('baseUser')) && !objects.containsKey(this._baseUser)) {
+			if(this._baseUser != null) {
+				jsonObj["baseUser"] = this._baseUser.toJSOG(objects);
+			}
+			else {
+				jsonObj["baseUser"] = null;
+			}
+			}
+			if(( dywaSwitchedToHasBeenChanged() && !jsonObj.containsKey('dywaSwitchedTo')) && !objects.containsKey(this._dywaSwitchedTo)) {
+			if(this._dywaSwitchedTo != null) {
+				if (this._dywaSwitchedTo == this) {
+					jsonObj["dywaSwitchedTo"] = { '@ref': jsogId.toString() };
+				} else {
+					jsonObj["dywaSwitchedTo"] = this._dywaSwitchedTo.toJSOG(objects);
+				}
+			}
+			else {
+				jsonObj["dywaSwitchedTo"] = null;
+			}
+			}
+			return { 
+				'@ref': jsogId.toString()
+			};
+		}
+		else {
+			jsogId = objects.length;
+			var pair = {
+				'id': jsogId,
+				'value': jsonObj
+			};
+			objects[this] = pair;
+		}
+		jsonObj['@id'] = jsogId.toString();
+		jsonObj['dywaRuntimeType'] = "de.ls5.dywa.generated.rest.types.ConcreteUserImpl";
+
+		jsonObj['dywaId'] = this.dywa_id;
+		jsonObj['dywaVersion'] = this.dywa_version;
+		if(this.dywa_name != null) {
+			jsonObj['dywaName'] = this.dywa_name;
+		}
+		if(( baseUserHasBeenChanged() && !jsonObj.containsKey('baseUser')) && !objects.containsKey(this._baseUser) || this.dywa_id == 0) {
+		if(this._baseUser != null) {
+			jsonObj["baseUser"] = this._baseUser.toJSOG(objects);
+		}
+		else {
+			jsonObj["baseUser"] = null;
+		}
+		}
+		if(( dywaSwitchedToHasBeenChanged() && !jsonObj.containsKey('dywaSwitchedTo')) && !objects.containsKey(this._dywaSwitchedTo) || this.dywa_id == 0) {
+		if(this._dywaSwitchedTo != null) {
+			if (this._dywaSwitchedTo == this) {
+				jsonObj["dywaSwitchedTo"] = { '@ref': jsogId.toString() };
+			} else {
+				jsonObj["dywaSwitchedTo"] = this._dywaSwitchedTo.toJSOG(objects);
+			}
+		}
+		else {
+			jsonObj["dywaSwitchedTo"] = null;
+		}
+		}
+		return jsonObj;
+	}
+	static fromJSON(core.String json) {
+		return fromJSOG(cache:new core.Map<core.String,core.dynamic>(),jsog:jsonDecode(json));
+	}
+		
+	static ConcreteUser fromJSOG({core.Map<core.String,core.dynamic> cache, jsog}) {
+		if(jsog.containsKey('@ref')) {
+			assert (cache.containsKey(jsog['@ref']));
+			return cache[jsog['@ref']];
+		}
+		if(jsog['dywaRuntimeType'] == 'de.ls5.dywa.generated.rest.types.ConcreteUserImpl') {
+			return new ConcreteUser(cache:cache,jsog:jsog);
+		}
+		return new ConcreteUser(cache:cache,jsog:jsog);
+	}
+	
+	void set baseUser (BaseUser value)
+	{
+		this._baseUserHasBeenSet = true;
+		this._baseUser = value;
+	}
+	
+	BaseUser get baseUser
+	{
+		return this._baseUser;
+	}
+	
+		BaseUser initOnDemandbaseUser()
+		{
+			if(this._baseUser == null) {
+			this.baseUser = new BaseUser();
+			}
+			return this.baseUser;
+		}
+		
+		void setValuebaseUser(BaseUser value)
+		{
+			this.baseUser = value;
+		}
+		
+		void baseUsersetValue(BaseUser value)
+		{
+			this.baseUser = value;
+		}
+		
+	
+	void set dywaSwitchedTo (ConcreteUser value)
+	{
+		this._dywaSwitchedToHasBeenSet = true;
+		this._dywaSwitchedTo = value;
+	}
+	
+	ConcreteUser get dywaSwitchedTo
+	{
+		return this._dywaSwitchedTo;
+	}
+	
+		ConcreteUser initOnDemanddywaSwitchedTo()
+		{
+			if(this._dywaSwitchedTo == null) {
+			this.dywaSwitchedTo = new ConcreteUser();
+			}
+			return this.dywaSwitchedTo;
+		}
+		
+		void setValuedywaSwitchedTo(ConcreteUser value)
+		{
+			this.dywaSwitchedTo = value;
+		}
+		
+		void dywaSwitchedTosetValue(ConcreteUser value)
+		{
+			this.dywaSwitchedTo = value;
+		}
+		
+	
+}
+
+class BaseUser extends BaseModel
+{
+	core.bool _concreteUserHasBeenSet = false;
+	core.bool concreteUserHasBeenChanged() => _concreteUserHasBeenSet;
+	DIMEList<ConcreteUser> _concreteUser;
+	core.bool _firstNameHasBeenSet = false;
+	core.bool firstNameHasBeenChanged() => _firstNameHasBeenSet;
+	core.String _firstName;
+	core.bool _imageHasBeenSet = false;
+	core.bool imageHasBeenChanged() => _imageHasBeenSet;
+	FileReference _image;
+	core.bool _lastNameHasBeenSet = false;
+	core.bool lastNameHasBeenChanged() => _lastNameHasBeenSet;
+	core.String _lastName;
+	core.bool _passwordHasBeenSet = false;
+	core.bool passwordHasBeenChanged() => _passwordHasBeenSet;
+	core.String _password;
+	core.bool _usernameHasBeenSet = false;
+	core.bool usernameHasBeenChanged() => _usernameHasBeenSet;
+	core.String _username;
+	
+	static BaseUser fromId(core.int id) {
+		var m = new BaseUser();
+		m.dywa_id = id;
+		return m;
+	}
+	
+	
+	// reflection methods to read and wirte dart properties by string name
+	
+	core.dynamic $$getProperty(core.String prop) {
+	  var propMap = {
+	  'concreteUser': this.concreteUser, 
+	  'firstName': this.firstName, 
+	  'image': this.image, 
+	  'lastName': this.lastName, 
+	  'password': this.password, 
+	  'username': this.username
+	  };
+	
+	  if (!propMap.containsKey(prop)) throw NoSuchPropertyException(prop);
+	  return propMap[prop];
+	}
+	
+	void $$setProperty(core.String prop, core.dynamic value) {
+	  switch (prop) {
+	  case 'concreteUser': this.concreteUser = value; return;
+	  case 'firstName': this.firstName = value; return;
+	  case 'image': this.image = value; return;
+	  case 'lastName': this.lastName = value; return;
+	  case 'password': this.password = value; return;
+	  case 'username': this.username = value; return;
+	    default: throw NoSuchPropertyException(prop);
+	  }
+	}
+	
+	core.bool $$hasProperty(core.String prop) {
+	  try {
+	    $$getProperty(prop);
+	    return true;
+	  } on NoSuchPropertyException catch (e) {
+	    return false;
+	  }
+	}
+	
+	BaseUser({core.Map<core.String,core.dynamic> cache, jsog}) {
+		if (cache == null) {
+			cache = new core.Map();
+		}
+
+		// default constructor
+		if (jsog == null) {
+			
+			this.dywa_id = -1;
+			this.dywa_version = 0;
+			this.dywa_name = null;
+			
+			// properties
+			this._concreteUser = new DIMEList.monitored(concreteUserHasBeenSetted);
+			this._firstName = null;
+			this._image = null;
+			this._lastName = null;
+			this._password = null;
+			this._username = null;
+		}
+		// from jsog
+		else {
+			core.String jsogId = jsog['@id'];
+			cache[jsogId] = this;
+			
+			this.dywa_id = jsog['dywaId'];
+			this.dywa_version = jsog['dywaVersion'];
+			this.dywa_name = jsog['dywaName'];
+			
+			// properties
+			this._concreteUser = new DIMEList.monitored(concreteUserHasBeenSetted);
+			if (jsog.containsKey("concreteUser")) {
+				for (core.Map<core.String,core.dynamic> iter in jsog["concreteUser"]) {
+					core.Map<core.String,core.dynamic> jsogObj = iter;
+					ConcreteUser valueafOkXgMwNEeWZVvvwxpYu8A;
+					
+					core.String jsogId;
+					
+					if (jsogObj.containsKey('@ref')) {
+						jsogId = jsogObj['@ref'];
+					}
+					else {
+					 	jsogId = jsogObj['@id'];
+					}
+					if (cache.containsKey(jsogId)) {
+						valueafOkXgMwNEeWZVvvwxpYu8A = cache[jsogId];
+					}
+					else {
+						if (jsogObj != null) {
+							if (jsogObj['dywaRuntimeType'] == "de.ls5.dywa.generated.rest.types.ConcreteUserImpl") {
+								valueafOkXgMwNEeWZVvvwxpYu8A = new ConcreteUser(cache: cache, jsog: jsogObj);
+							}
+							else {
+								valueafOkXgMwNEeWZVvvwxpYu8A = new ConcreteUser(cache: cache,jsog: jsogObj);
+							}
+						}
+						else {
+							valueafOkXgMwNEeWZVvvwxpYu8A = new ConcreteUser(cache: cache,jsog: jsogObj);
+						}
+					}
+					this._concreteUser.add(valueafOkXgMwNEeWZVvvwxpYu8A);
+				}
+			}
+			
+			
+			_concreteUserHasBeenSet = false;
+			if (jsog.containsKey("firstName")) {
+				core.String jsogObj = jsog["firstName"];
+				if(jsogObj != null) {
+					core.String valueaVE6ToM5BEeWKGIrSDzlNog;
+					
+					if(jsogObj!=null){
+					valueaVE6ToM5BEeWKGIrSDzlNog = jsogObj.toString();
+					}
+					this._firstName = valueaVE6ToM5BEeWKGIrSDzlNog;
+				}
+				else {
+					this._firstName = null;
+				}
+			}
+			
+			
+			else{
+				this._firstName = null;
+			}
+			_firstNameHasBeenSet = false;
+			if (jsog.containsKey("image")) {
+				core.Map<core.String,core.dynamic> jsogObj = jsog["image"];
+				if(jsogObj != null) {
+					FileReference valuea3QnzMM46EeWKGIrSDzlNog;
+					
+					if(jsogObj!=null){
+					valuea3QnzMM46EeWKGIrSDzlNog = new FileReference(jsog: jsogObj);
+					}
+					this._image = valuea3QnzMM46EeWKGIrSDzlNog;
+				}
+				else {
+					this._image = null;
+				}
+			}
+			
+			
+			else{
+				this._image = null;
+			}
+			_imageHasBeenSet = false;
+			if (jsog.containsKey("lastName")) {
+				core.String jsogObj = jsog["lastName"];
+				if(jsogObj != null) {
+					core.String valueaWYcYEM5BEeWKGIrSDzlNog;
+					
+					if(jsogObj!=null){
+					valueaWYcYEM5BEeWKGIrSDzlNog = jsogObj.toString();
+					}
+					this._lastName = valueaWYcYEM5BEeWKGIrSDzlNog;
+				}
+				else {
+					this._lastName = null;
+				}
+			}
+			
+			
+			else{
+				this._lastName = null;
+			}
+			_lastNameHasBeenSet = false;
+			if (jsog.containsKey("password")) {
+				core.String jsogObj = jsog["password"];
+				if(jsogObj != null) {
+					core.String valueaYIIgUMwNEeWZVvvwxpYu8A;
+					
+					if(jsogObj!=null){
+					valueaYIIgUMwNEeWZVvvwxpYu8A = jsogObj.toString();
+					}
+					this._password = valueaYIIgUMwNEeWZVvvwxpYu8A;
+				}
+				else {
+					this._password = null;
+				}
+			}
+			
+			
+			else{
+				this._password = null;
+			}
+			_passwordHasBeenSet = false;
+			if (jsog.containsKey("username")) {
+				core.String jsogObj = jsog["username"];
+				if(jsogObj != null) {
+					core.String valuea1aiCkG_QEeaqHezD6_45_M0AA;
+					
+					if(jsogObj!=null){
+					valuea1aiCkG_QEeaqHezD6_45_M0AA = jsogObj.toString();
+					}
+					this._username = valuea1aiCkG_QEeaqHezD6_45_M0AA;
+				}
+				else {
+					this._username = null;
+				}
+			}
+			
+			
+			else{
+				this._username = null;
+			}
+			_usernameHasBeenSet = false;
+		}
+	}
+	
+	void concreteUserHasBeenSetted() { _concreteUserHasBeenSet=true; }
+	void firstNameHasBeenSetted() { _firstNameHasBeenSet=true; }
+	void imageHasBeenSetted() { _imageHasBeenSet=true; }
+	void lastNameHasBeenSetted() { _lastNameHasBeenSet=true; }
+	void passwordHasBeenSetted() { _passwordHasBeenSet=true; }
+	void usernameHasBeenSetted() { _usernameHasBeenSet=true; }
+	
+	core.bool hasChanged() {
+		return 		_concreteUserHasBeenSet || 
+					_firstNameHasBeenSet || 
+					_imageHasBeenSet || 
+					_lastNameHasBeenSet || 
+					_passwordHasBeenSet || 
+					_usernameHasBeenSet
+			;
+	}
+	
+	
+	core.Map<core.String,core.dynamic> toJSOG(core.Map<core.Object,core.dynamic> objects) {
+		if (objects == null) {
+			objects = new core.Map();
+		}
+		core.int jsogId;
+		core.Map<core.String,core.dynamic> jsonObj = new core.Map();
+		if(objects.containsKey(this)) {
+			jsogId = objects[this]['id'];
+			jsonObj = objects[this]['value'];
+			if(( concreteUserHasBeenChanged() && !jsonObj.containsKey('concreteUser'))) {
+			if(this._concreteUser.isEmpty){
+				jsonObj["concreteUser"] = [];
+			}
+			else{
+				jsonObj["concreteUser"] = this._concreteUser.where((n) => objects.containsKey(n)).map((n)=>n.toJSOG(objects)).toList();
+			}
+			}
+			if(( passwordHasBeenChanged() && !jsonObj.containsKey('password')) && !objects.containsKey(this._password)) {
+			jsonObj["password"] = this._password;
+			}
+			if(( imageHasBeenChanged() && !jsonObj.containsKey('image')) && !objects.containsKey(this._image)) {
+			if(this._image != null) {
+				jsonObj["image"] = this._image.toJSOG(objects);
+			}
+			else {
+				jsonObj["image"] = null;
+			}
+			}
+			if(( firstNameHasBeenChanged() && !jsonObj.containsKey('firstName')) && !objects.containsKey(this._firstName)) {
+			jsonObj["firstName"] = this._firstName;
+			}
+			if(( lastNameHasBeenChanged() && !jsonObj.containsKey('lastName')) && !objects.containsKey(this._lastName)) {
+			jsonObj["lastName"] = this._lastName;
+			}
+			if(( usernameHasBeenChanged() && !jsonObj.containsKey('username')) && !objects.containsKey(this._username)) {
+			jsonObj["username"] = this._username;
+			}
+			return { 
+				'@ref': jsogId.toString()
+			};
+		}
+		else {
+			jsogId = objects.length;
+			var pair = {
+				'id': jsogId,
+				'value': jsonObj
+			};
+			objects[this] = pair;
+		}
+		jsonObj['@id'] = jsogId.toString();
+		jsonObj['dywaRuntimeType'] = "de.ls5.dywa.generated.rest.types.BaseUser";
+
+		jsonObj['dywaId'] = this.dywa_id;
+		jsonObj['dywaVersion'] = this.dywa_version;
+		if(this.dywa_name != null) {
+			jsonObj['dywaName'] = this.dywa_name;
+		}
+		if(( concreteUserHasBeenChanged() && !jsonObj.containsKey('concreteUser')) || this.dywa_id == 0) {
+		if(this._concreteUser.isEmpty){
+			jsonObj["concreteUser"] = [];
+		}
+		else{
+			jsonObj["concreteUser"] = this._concreteUser.where((n) => objects.containsKey(n)).map((n)=>n.toJSOG(objects)).toList();
+		}
+		}
+		if(( passwordHasBeenChanged() && !jsonObj.containsKey('password')) && !objects.containsKey(this._password) || this.dywa_id == 0) {
+		jsonObj["password"] = this._password;
+		}
+		if(( imageHasBeenChanged() && !jsonObj.containsKey('image')) && !objects.containsKey(this._image) || this.dywa_id == 0) {
+		if(this._image != null) {
+			jsonObj["image"] = this._image.toJSOG(objects);
+		}
+		else {
+			jsonObj["image"] = null;
+		}
+		}
+		if(( firstNameHasBeenChanged() && !jsonObj.containsKey('firstName')) && !objects.containsKey(this._firstName) || this.dywa_id == 0) {
+		jsonObj["firstName"] = this._firstName;
+		}
+		if(( lastNameHasBeenChanged() && !jsonObj.containsKey('lastName')) && !objects.containsKey(this._lastName) || this.dywa_id == 0) {
+		jsonObj["lastName"] = this._lastName;
+		}
+		if(( usernameHasBeenChanged() && !jsonObj.containsKey('username')) && !objects.containsKey(this._username) || this.dywa_id == 0) {
+		jsonObj["username"] = this._username;
+		}
+		return jsonObj;
+	}
+	static fromJSON(core.String json) {
+		return fromJSOG(cache:new core.Map<core.String,core.dynamic>(),jsog:jsonDecode(json));
+	}
+		
+	static BaseUser fromJSOG({core.Map<core.String,core.dynamic> cache, jsog}) {
+		if(jsog.containsKey('@ref')) {
+			assert (cache.containsKey(jsog['@ref']));
+			return cache[jsog['@ref']];
+		}
+		if(jsog['dywaRuntimeType'] == 'de.ls5.dywa.generated.rest.types.BaseUser') {
+			return new BaseUser(cache:cache,jsog:jsog);
+		}
+		return new BaseUser(cache:cache,jsog:jsog);
+	}
+	
+	void set concreteUser (DIMEList<ConcreteUser> value)
+	{
+		this._concreteUserHasBeenSet = true;
+		this._concreteUser = value;
+	}
+	
+	DIMEList<ConcreteUser> get concreteUser
+	{
+		return this._concreteUser;
+	}
+	
+		DIMEList<ConcreteUser> initOnDemandconcreteUser()
+		{
+			if(this._concreteUser == null) {
+			this._concreteUser = new DIMEList();
+			}
+			return this.concreteUser;
+		}
+		
+		void setValueconcreteUser(DIMEList<ConcreteUser> value)
+		{
+			this.concreteUser = value;
+		}
+		
+		void concreteUsersetValue(DIMEList<ConcreteUser> value)
+		{
+			this.concreteUser = value;
+		}
+		
+		void concreteUseradd(ConcreteUser value)
+		{
+			this.concreteUser.add(value);
+			this._concreteUserHasBeenSet = true;
+		}
+
+	
+	void set password (core.String value)
+	{
+		this._passwordHasBeenSet = true;
+		this._password = value;
+	}
+	
+	core.String get password
+	{
+		return this._password;
+	}
+	
+		core.String initOnDemandpassword()
+		{
+			return this.password;
+		}
+		
+		void setValuepassword(core.String value)
+		{
+			this.password = value;
+		}
+		
+		void passwordsetValue(core.String value)
+		{
+			this.password = value;
+		}
+		
+	
+	void set image (FileReference value)
+	{
+		this._imageHasBeenSet = true;
+		this._image = value;
+	}
+	
+	FileReference get image
+	{
+		return this._image;
+	}
+	
+		FileReference initOnDemandimage()
+		{
+			return this.image;
+		}
+		
+		void setValueimage(FileReference value)
+		{
+			this.image = value;
+		}
+		
+		void imagesetValue(FileReference value)
+		{
+			this.image = value;
+		}
+		
+	
+	void set firstName (core.String value)
+	{
+		this._firstNameHasBeenSet = true;
+		this._firstName = value;
+	}
+	
+	core.String get firstName
+	{
+		return this._firstName;
+	}
+	
+		core.String initOnDemandfirstName()
+		{
+			return this.firstName;
+		}
+		
+		void setValuefirstName(core.String value)
+		{
+			this.firstName = value;
+		}
+		
+		void firstNamesetValue(core.String value)
+		{
+			this.firstName = value;
+		}
+		
+	
+	void set lastName (core.String value)
+	{
+		this._lastNameHasBeenSet = true;
+		this._lastName = value;
+	}
+	
+	core.String get lastName
+	{
+		return this._lastName;
+	}
+	
+		core.String initOnDemandlastName()
+		{
+			return this.lastName;
+		}
+		
+		void setValuelastName(core.String value)
+		{
+			this.lastName = value;
+		}
+		
+		void lastNamesetValue(core.String value)
+		{
+			this.lastName = value;
+		}
+		
+	
+	void set username (core.String value)
+	{
+		this._usernameHasBeenSet = true;
+		this._username = value;
+	}
+	
+	core.String get username
+	{
+		return this._username;
+	}
+	
+		core.String initOnDemandusername()
+		{
+			return this.username;
+		}
+		
+		void setValueusername(core.String value)
+		{
+			this.username = value;
+		}
+		
+		void usernamesetValue(core.String value)
+		{
+			this.username = value;
+		}
+		
+	
+}
+
+class Table extends BaseModel
+{
+	core.bool _rowHasBeenSet = false;
+	core.bool rowHasBeenChanged() => _rowHasBeenSet;
+	DIMEList<Row> _row;
+	
+	static Table fromId(core.int id) {
+		var m = new Table();
+		m.dywa_id = id;
+		return m;
+	}
+	
+	
+	// reflection methods to read and wirte dart properties by string name
+	
+	core.dynamic $$getProperty(core.String prop) {
+	  var propMap = {
+	  'row': this.row
+	  };
+	
+	  if (!propMap.containsKey(prop)) throw NoSuchPropertyException(prop);
+	  return propMap[prop];
+	}
+	
+	void $$setProperty(core.String prop, core.dynamic value) {
+	  switch (prop) {
+	  case 'row': this.row = value; return;
+	    default: throw NoSuchPropertyException(prop);
+	  }
+	}
+	
+	core.bool $$hasProperty(core.String prop) {
+	  try {
+	    $$getProperty(prop);
+	    return true;
+	  } on NoSuchPropertyException catch (e) {
+	    return false;
+	  }
+	}
+	
+	Table({core.Map<core.String,core.dynamic> cache, jsog}) {
+		if (cache == null) {
+			cache = new core.Map();
+		}
+
+		// default constructor
+		if (jsog == null) {
+			
+			this.dywa_id = -1;
+			this.dywa_version = 0;
+			this.dywa_name = null;
+			
+			// properties
+			this._row = new DIMEList.monitored(rowHasBeenSetted);
+		}
+		// from jsog
+		else {
+			core.String jsogId = jsog['@id'];
+			cache[jsogId] = this;
+			
+			this.dywa_id = jsog['dywaId'];
+			this.dywa_version = jsog['dywaVersion'];
+			this.dywa_name = jsog['dywaName'];
+			
+			// properties
+			this._row = new DIMEList.monitored(rowHasBeenSetted);
+			if (jsog.containsKey("row")) {
+				for (core.Map<core.String,core.dynamic> iter in jsog["row"]) {
+					core.Map<core.String,core.dynamic> jsogObj = iter;
+					Row valueafEZDYWtiEe25lcL0UO2uNA;
+					
+					core.String jsogId;
+					
+					if (jsogObj.containsKey('@ref')) {
+						jsogId = jsogObj['@ref'];
+					}
+					else {
+					 	jsogId = jsogObj['@id'];
+					}
+					if (cache.containsKey(jsogId)) {
+						valueafEZDYWtiEe25lcL0UO2uNA = cache[jsogId];
+					}
+					else {
+						if (jsogObj != null) {
+							if (jsogObj['dywaRuntimeType'] == "de.ls5.dywa.generated.rest.types.RowImpl") {
+								valueafEZDYWtiEe25lcL0UO2uNA = new Row(cache: cache, jsog: jsogObj);
+							}
+							else {
+								valueafEZDYWtiEe25lcL0UO2uNA = new Row(cache: cache,jsog: jsogObj);
+							}
+						}
+						else {
+							valueafEZDYWtiEe25lcL0UO2uNA = new Row(cache: cache,jsog: jsogObj);
+						}
+					}
+					this._row.add(valueafEZDYWtiEe25lcL0UO2uNA);
+				}
+			}
+			
+			
+			_rowHasBeenSet = false;
+		}
+	}
+	
+	void rowHasBeenSetted() { _rowHasBeenSet=true; }
+	
+	core.bool hasChanged() {
+		return 		_rowHasBeenSet
+			;
+	}
+	
+	
+	core.Map<core.String,core.dynamic> toJSOG(core.Map<core.Object,core.dynamic> objects) {
+		if (objects == null) {
+			objects = new core.Map();
+		}
+		core.int jsogId;
+		core.Map<core.String,core.dynamic> jsonObj = new core.Map();
+		if(objects.containsKey(this)) {
+			jsogId = objects[this]['id'];
+			jsonObj = objects[this]['value'];
+			if(( rowHasBeenChanged() && !jsonObj.containsKey('row'))) {
+			if(this._row.isEmpty){
+				jsonObj["row"] = [];
+			}
+			else{
+				jsonObj["row"] = this._row.where((n) => objects.containsKey(n)).map((n)=>n.toJSOG(objects)).toList();
+			}
+			}
+			return { 
+				'@ref': jsogId.toString()
+			};
+		}
+		else {
+			jsogId = objects.length;
+			var pair = {
+				'id': jsogId,
+				'value': jsonObj
+			};
+			objects[this] = pair;
+		}
+		jsonObj['@id'] = jsogId.toString();
+		jsonObj['dywaRuntimeType'] = "de.ls5.dywa.generated.rest.types.TableImpl";
+
+		jsonObj['dywaId'] = this.dywa_id;
+		jsonObj['dywaVersion'] = this.dywa_version;
+		if(this.dywa_name != null) {
+			jsonObj['dywaName'] = this.dywa_name;
+		}
+		if(( rowHasBeenChanged() && !jsonObj.containsKey('row')) || this.dywa_id == 0) {
+		if(this._row.isEmpty){
+			jsonObj["row"] = [];
+		}
+		else{
+			jsonObj["row"] = this._row.where((n) => objects.containsKey(n)).map((n)=>n.toJSOG(objects)).toList();
+		}
+		}
+		return jsonObj;
+	}
+	static fromJSON(core.String json) {
+		return fromJSOG(cache:new core.Map<core.String,core.dynamic>(),jsog:jsonDecode(json));
+	}
+		
+	static Table fromJSOG({core.Map<core.String,core.dynamic> cache, jsog}) {
+		if(jsog.containsKey('@ref')) {
+			assert (cache.containsKey(jsog['@ref']));
+			return cache[jsog['@ref']];
+		}
+		if(jsog['dywaRuntimeType'] == 'de.ls5.dywa.generated.rest.types.TableImpl') {
+			return new Table(cache:cache,jsog:jsog);
+		}
+		return new Table(cache:cache,jsog:jsog);
+	}
+	
+	void set row (DIMEList<Row> value)
+	{
+		this._rowHasBeenSet = true;
+		this._row = value;
+	}
+	
+	DIMEList<Row> get row
+	{
+		return this._row;
+	}
+	
+		DIMEList<Row> initOnDemandrow()
+		{
+			if(this._row == null) {
+			this._row = new DIMEList();
+			}
+			return this.row;
+		}
+		
+		void setValuerow(DIMEList<Row> value)
+		{
+			this.row = value;
+		}
+		
+		void rowsetValue(DIMEList<Row> value)
+		{
+			this.row = value;
+		}
+		
+		void rowadd(Row value)
+		{
+			this.row.add(value);
+			this._rowHasBeenSet = true;
+		}
+
+	
+}
+
+class Row extends BaseModel
+{
+	core.bool _entryHasBeenSet = false;
+	core.bool entryHasBeenChanged() => _entryHasBeenSet;
+	DIMEList<Entry> _entry;
+	
+	static Row fromId(core.int id) {
+		var m = new Row();
+		m.dywa_id = id;
+		return m;
+	}
+	
+	
+	// reflection methods to read and wirte dart properties by string name
+	
+	core.dynamic $$getProperty(core.String prop) {
+	  var propMap = {
+	  'entry': this.entry
+	  };
+	
+	  if (!propMap.containsKey(prop)) throw NoSuchPropertyException(prop);
+	  return propMap[prop];
+	}
+	
+	void $$setProperty(core.String prop, core.dynamic value) {
+	  switch (prop) {
+	  case 'entry': this.entry = value; return;
+	    default: throw NoSuchPropertyException(prop);
+	  }
+	}
+	
+	core.bool $$hasProperty(core.String prop) {
+	  try {
+	    $$getProperty(prop);
+	    return true;
+	  } on NoSuchPropertyException catch (e) {
+	    return false;
+	  }
+	}
+	
+	Row({core.Map<core.String,core.dynamic> cache, jsog}) {
+		if (cache == null) {
+			cache = new core.Map();
+		}
+
+		// default constructor
+		if (jsog == null) {
+			
+			this.dywa_id = -1;
+			this.dywa_version = 0;
+			this.dywa_name = null;
+			
+			// properties
+			this._entry = new DIMEList.monitored(entryHasBeenSetted);
+		}
+		// from jsog
+		else {
+			core.String jsogId = jsog['@id'];
+			cache[jsogId] = this;
+			
+			this.dywa_id = jsog['dywaId'];
+			this.dywa_version = jsog['dywaVersion'];
+			this.dywa_name = jsog['dywaName'];
+			
+			// properties
+			this._entry = new DIMEList.monitored(entryHasBeenSetted);
+			if (jsog.containsKey("entry")) {
+				for (core.Map<core.String,core.dynamic> iter in jsog["entry"]) {
+					core.Map<core.String,core.dynamic> jsogObj = iter;
+					Entry valueafxnVwWtiEe25lcL0UO2uNA;
+					
+					core.String jsogId;
+					
+					if (jsogObj.containsKey('@ref')) {
+						jsogId = jsogObj['@ref'];
+					}
+					else {
+					 	jsogId = jsogObj['@id'];
+					}
+					if (cache.containsKey(jsogId)) {
+						valueafxnVwWtiEe25lcL0UO2uNA = cache[jsogId];
+					}
+					else {
+						if (jsogObj != null) {
+							if (jsogObj['dywaRuntimeType'] == "de.ls5.dywa.generated.rest.types.EntryImpl") {
+								valueafxnVwWtiEe25lcL0UO2uNA = new Entry(cache: cache, jsog: jsogObj);
+							}
+							else {
+								valueafxnVwWtiEe25lcL0UO2uNA = new Entry(cache: cache,jsog: jsogObj);
+							}
+						}
+						else {
+							valueafxnVwWtiEe25lcL0UO2uNA = new Entry(cache: cache,jsog: jsogObj);
+						}
+					}
+					this._entry.add(valueafxnVwWtiEe25lcL0UO2uNA);
+				}
+			}
+			
+			
+			_entryHasBeenSet = false;
+		}
+	}
+	
+	void entryHasBeenSetted() { _entryHasBeenSet=true; }
+	
+	core.bool hasChanged() {
+		return 		_entryHasBeenSet
+			;
+	}
+	
+	
+	core.Map<core.String,core.dynamic> toJSOG(core.Map<core.Object,core.dynamic> objects) {
+		if (objects == null) {
+			objects = new core.Map();
+		}
+		core.int jsogId;
+		core.Map<core.String,core.dynamic> jsonObj = new core.Map();
+		if(objects.containsKey(this)) {
+			jsogId = objects[this]['id'];
+			jsonObj = objects[this]['value'];
+			if(( entryHasBeenChanged() && !jsonObj.containsKey('entry'))) {
+			if(this._entry.isEmpty){
+				jsonObj["entry"] = [];
+			}
+			else{
+				jsonObj["entry"] = this._entry.where((n) => objects.containsKey(n)).map((n)=>n.toJSOG(objects)).toList();
+			}
+			}
+			return { 
+				'@ref': jsogId.toString()
+			};
+		}
+		else {
+			jsogId = objects.length;
+			var pair = {
+				'id': jsogId,
+				'value': jsonObj
+			};
+			objects[this] = pair;
+		}
+		jsonObj['@id'] = jsogId.toString();
+		jsonObj['dywaRuntimeType'] = "de.ls5.dywa.generated.rest.types.RowImpl";
+
+		jsonObj['dywaId'] = this.dywa_id;
+		jsonObj['dywaVersion'] = this.dywa_version;
+		if(this.dywa_name != null) {
+			jsonObj['dywaName'] = this.dywa_name;
+		}
+		if(( entryHasBeenChanged() && !jsonObj.containsKey('entry')) || this.dywa_id == 0) {
+		if(this._entry.isEmpty){
+			jsonObj["entry"] = [];
+		}
+		else{
+			jsonObj["entry"] = this._entry.where((n) => objects.containsKey(n)).map((n)=>n.toJSOG(objects)).toList();
+		}
+		}
+		return jsonObj;
+	}
+	static fromJSON(core.String json) {
+		return fromJSOG(cache:new core.Map<core.String,core.dynamic>(),jsog:jsonDecode(json));
+	}
+		
+	static Row fromJSOG({core.Map<core.String,core.dynamic> cache, jsog}) {
+		if(jsog.containsKey('@ref')) {
+			assert (cache.containsKey(jsog['@ref']));
+			return cache[jsog['@ref']];
+		}
+		if(jsog['dywaRuntimeType'] == 'de.ls5.dywa.generated.rest.types.RowImpl') {
+			return new Row(cache:cache,jsog:jsog);
+		}
+		return new Row(cache:cache,jsog:jsog);
+	}
+	
+	void set entry (DIMEList<Entry> value)
+	{
+		this._entryHasBeenSet = true;
+		this._entry = value;
+	}
+	
+	DIMEList<Entry> get entry
+	{
+		return this._entry;
+	}
+	
+		DIMEList<Entry> initOnDemandentry()
+		{
+			if(this._entry == null) {
+			this._entry = new DIMEList();
+			}
+			return this.entry;
+		}
+		
+		void setValueentry(DIMEList<Entry> value)
+		{
+			this.entry = value;
+		}
+		
+		void entrysetValue(DIMEList<Entry> value)
+		{
+			this.entry = value;
+		}
+		
+		void entryadd(Entry value)
+		{
+			this.entry.add(value);
+			this._entryHasBeenSet = true;
+		}
+
+	
+}
+
+class Entry extends BaseModel
+{
+	core.bool _conditionHasBeenSet = false;
+	core.bool conditionHasBeenChanged() => _conditionHasBeenSet;
+	core.String _condition;
+	
+	static Entry fromId(core.int id) {
+		var m = new Entry();
+		m.dywa_id = id;
+		return m;
+	}
+	
+	
+	// reflection methods to read and wirte dart properties by string name
+	
+	core.dynamic $$getProperty(core.String prop) {
+	  var propMap = {
+	  'condition': this.condition
+	  };
+	
+	  if (!propMap.containsKey(prop)) throw NoSuchPropertyException(prop);
+	  return propMap[prop];
+	}
+	
+	void $$setProperty(core.String prop, core.dynamic value) {
+	  switch (prop) {
+	  case 'condition': this.condition = value; return;
+	    default: throw NoSuchPropertyException(prop);
+	  }
+	}
+	
+	core.bool $$hasProperty(core.String prop) {
+	  try {
+	    $$getProperty(prop);
+	    return true;
+	  } on NoSuchPropertyException catch (e) {
+	    return false;
+	  }
+	}
+	
+	Entry({core.Map<core.String,core.dynamic> cache, jsog}) {
+		if (cache == null) {
+			cache = new core.Map();
+		}
+
+		// default constructor
+		if (jsog == null) {
+			
+			this.dywa_id = -1;
+			this.dywa_version = 0;
+			this.dywa_name = null;
+			
+			// properties
+			this._condition = null;
+		}
+		// from jsog
+		else {
+			core.String jsogId = jsog['@id'];
+			cache[jsogId] = this;
+			
+			this.dywa_id = jsog['dywaId'];
+			this.dywa_version = jsog['dywaVersion'];
+			this.dywa_name = jsog['dywaName'];
+			
+			// properties
+			if (jsog.containsKey("condition")) {
+				core.String jsogObj = jsog["condition"];
+				if(jsogObj != null) {
+					core.String valueasPSXYWtiEe25lcL0UO2uNA;
+					
+					if(jsogObj!=null){
+					valueasPSXYWtiEe25lcL0UO2uNA = jsogObj.toString();
+					}
+					this._condition = valueasPSXYWtiEe25lcL0UO2uNA;
+				}
+				else {
+					this._condition = null;
+				}
+			}
+			
+			
+			else{
+				this._condition = null;
+			}
+			_conditionHasBeenSet = false;
+		}
+	}
+	
+	void conditionHasBeenSetted() { _conditionHasBeenSet=true; }
+	
+	core.bool hasChanged() {
+		return 		_conditionHasBeenSet
+			;
+	}
+	
+	
+	core.Map<core.String,core.dynamic> toJSOG(core.Map<core.Object,core.dynamic> objects) {
+		if (objects == null) {
+			objects = new core.Map();
+		}
+		core.int jsogId;
+		core.Map<core.String,core.dynamic> jsonObj = new core.Map();
+		if(objects.containsKey(this)) {
+			jsogId = objects[this]['id'];
+			jsonObj = objects[this]['value'];
+			if(( conditionHasBeenChanged() && !jsonObj.containsKey('condition')) && !objects.containsKey(this._condition)) {
+			jsonObj["condition"] = this._condition;
+			}
+			return { 
+				'@ref': jsogId.toString()
+			};
+		}
+		else {
+			jsogId = objects.length;
+			var pair = {
+				'id': jsogId,
+				'value': jsonObj
+			};
+			objects[this] = pair;
+		}
+		jsonObj['@id'] = jsogId.toString();
+		jsonObj['dywaRuntimeType'] = "de.ls5.dywa.generated.rest.types.EntryImpl";
+
+		jsonObj['dywaId'] = this.dywa_id;
+		jsonObj['dywaVersion'] = this.dywa_version;
+		if(this.dywa_name != null) {
+			jsonObj['dywaName'] = this.dywa_name;
+		}
+		if(( conditionHasBeenChanged() && !jsonObj.containsKey('condition')) && !objects.containsKey(this._condition) || this.dywa_id == 0) {
+		jsonObj["condition"] = this._condition;
+		}
+		return jsonObj;
+	}
+	static fromJSON(core.String json) {
+		return fromJSOG(cache:new core.Map<core.String,core.dynamic>(),jsog:jsonDecode(json));
+	}
+		
+	static Entry fromJSOG({core.Map<core.String,core.dynamic> cache, jsog}) {
+		if(jsog.containsKey('@ref')) {
+			assert (cache.containsKey(jsog['@ref']));
+			return cache[jsog['@ref']];
+		}
+		if(jsog['dywaRuntimeType'] == 'de.ls5.dywa.generated.rest.types.EntryImpl') {
+			return new Entry(cache:cache,jsog:jsog);
+		}
+		return new Entry(cache:cache,jsog:jsog);
+	}
+	
+	void set condition (core.String value)
+	{
+		this._conditionHasBeenSet = true;
+		this._condition = value;
+	}
+	
+	core.String get condition
+	{
+		return this._condition;
+	}
+	
+		core.String initOnDemandcondition()
+		{
+			return this.condition;
+		}
+		
+		void setValuecondition(core.String value)
+		{
+			this.condition = value;
+		}
+		
+		void conditionsetValue(core.String value)
+		{
+			this.condition = value;
+		}
+		
+	
+}

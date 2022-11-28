@@ -1,0 +1,200 @@
+GUI _NGHA8F4TEear0NzybbrMtw {
+  fullWidth false
+  disableAutoLayout false
+  additionalJavaScript [  ]
+  additionalStylesheets [  ]
+  title "PrivateHome"
+  Template _NGNuoF4TEear0NzybbrMtw at 270,30 size 390,410 {
+  	blockName "body"
+  	disableAutoLayout false
+  	Jumbotron _mBkmoF7cEeaOsfr6s-K4-Q at 10,30 size 370,350 {
+  		generalStyle GeneralStyling _klieATD2EemwX93gZgy7kw {
+  				tallness Fitting
+  				marginBottom None
+  				attributes [  ]
+  				marginTop None
+  			}
+  		MoveUp _mBnp8F7cEeaOsfr6s-K4-Q at 2,2 size 14,7 {
+  		}
+  		
+  		MoveDown _mBoRAF7cEeaOsfr6s-K4-Q at 2,10 size 14,7 {
+  		}
+  		
+  		Row _6pGgwF7bEeaOsfr6s-K4-Q at 10,30 size 350,290 {
+  			generalStyle GeneralStyling _klieAzD2EemwX93gZgy7kw {
+  					tallness Fitting
+  					marginBottom None
+  					attributes [  ]
+  					marginTop None
+  				}
+  			MoveUp _6pIV8F7bEeaOsfr6s-K4-Q at 2,2 size 14,7 {
+  			}
+  			
+  			MoveDown _6pJkEF7bEeaOsfr6s-K4-Q at 2,10 size 14,7 {
+  			}
+  			
+  			Col _6pPDoF7bEeaOsfr6s-K4-Q at 10,30 size 320,240 {
+  				wideness Full
+  				layout Layout _klieBTD2EemwX93gZgy7kw {
+  						size Default
+  						offset None
+  						alignment Center
+  					}
+  				generalStyle GeneralStyling _kljFETD2EemwX93gZgy7kw {
+  						tallness Fitting
+  						marginBottom None
+  						attributes [  ]
+  						marginTop None
+  					}
+  				MoveLeft _6pSG8F7bEeaOsfr6s-K4-Q at 2,2 size 7,14 {
+  				}
+  				
+  				MoveRight _6pT8IF7bEeaOsfr6s-K4-Q at 10,2 size 7,14 {
+  				}
+  				
+  				Headline _WUg1oF-REeakMeYoloYxpg at 10,90 size 300,50 {
+  					size Small
+  					content [ StaticContent _kljFEzD2EemwX93gZgy7kw {
+  							renderMarkdown false
+  							maxChars 0
+  							html false
+  							rawContent "This is the private area."
+  						} ]
+  					generalStyle GeneralStyling _kljFFTD2EemwX93gZgy7kw {
+  							tallness Fitting
+  							marginBottom None
+  							attributes [  ]
+  							marginTop Single
+  						}
+  					MoveUp _WUp_kF-REeakMeYoloYxpg at 2,2 size 14,7 {
+  					}
+  					
+  					MoveDown _WUtp8F-REeakMeYoloYxpg at 2,10 size 14,7 {
+  					}
+  				}
+  				
+  				Button _2eAhoF-REeakMeYoloYxpg at 10,150 size 200,60 {
+  					displayLabel "Play again"
+  					label "Play again"
+  					styling ButtonStyling _kljFFzD2EemwX93gZgy7kw {
+  							fullWidth false
+  							size Default
+  							disabled false
+  							color Yellow
+  						}
+  					options ButtonOptions _kljFGTD2EemwX93gZgy7kw {
+  							isLink false
+  							submitsForm true
+  							staticURL "logout"
+  						}
+  					disabled false
+  					icon Icon _kljsITD2EemwX93gZgy7kw {
+  							postIcon Repeat
+  							preIcon None
+  						}
+  					generalStyle GeneralStyling _kljsIzD2EemwX93gZgy7kw {
+  							tallness Fitting
+  							marginBottom None
+  							attributes [  ]
+  							marginTop Double
+  						}
+  					MoveUp _2eEzEF-REeakMeYoloYxpg at 2,2 size 14,7 {
+  					}
+  					
+  					MoveDown _2eFaIF-REeakMeYoloYxpg at 2,10 size 14,7 {
+  					}
+  				}
+  				
+  				Headline _QY1V8F4TEear0NzybbrMtw at 10,30 size 300,50 {
+  					size Big
+  					content [ StaticContent _kljsJTD2EemwX93gZgy7kw {
+  							renderMarkdown false
+  							maxChars 0
+  							html false
+  							rawContent "Welcome, {{currentUser.baseUser.firstName}} {{currentUser.baseUser.lastName}}."
+  						} ]
+  					generalStyle GeneralStyling _kljsJzD2EemwX93gZgy7kw {
+  							tallness Fitting
+  							marginBottom None
+  							attributes [  ]
+  							marginTop Triple
+  						}
+  					MoveUp _QY3yMF4TEear0NzybbrMtw at 2,2 size 14,7 {
+  					}
+  					
+  					MoveDown _QY4ZQF4TEear0NzybbrMtw at 2,10 size 14,7 {
+  					}
+  				}
+  			}
+  		}
+  	}
+  }
+  
+  DataContext _NGL5cF4TEear0NzybbrMtw at 10,30 size 200,386 {
+  	dfViewWorkaround true
+  	ComplexVariable _xgNCoF4XEea_oaWbSLmttQ at 20,110 size 140,25 {
+  		expanded true
+  		isLive false
+  		libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
+  		isInput false
+  		name "currentUser"
+  		dfViewWorkaround true
+  		isList false
+  		-ComplexAttributeConnector-> _x83JcF4XEea_oaWbSLmttQ  decorate "Ellipse" at (0,0) {
+  			id _x9CIkF4XEea_oaWbSLmttQ
+  			associationName "baseUser"
+  		}
+  		
+  		-IF-> _QY1V8F4TEear0NzybbrMtw  decorate "Polyline" at (2,0) decorate "Text" at (0,0) {
+  			id _1nXTAF4cEeaWrbpuOrqSKA
+  			negate false
+  		}
+  	}
+  	
+  	ComplexVariable _x83JcF4XEea_oaWbSLmttQ at 20,170 size 140,186 {
+  		expanded true
+  		isLive false
+  		libraryComponentUID "_UdYs4MwNEeWZVvvwxpYu8A"
+  		isInput false
+  		name "baseUser"
+  		dfViewWorkaround true
+  		isList false
+  		ComplexAttribute _g75usGtOEe25lcL0UO2uNA at 10,23 size 120,25 {
+  			libraryComponentUID "_fOkXgMwNEeWZVvvwxpYu8A"
+  			isLive false
+  		}
+  		
+  		PrimitiveAttribute _g8oHcGtOEe25lcL0UO2uNA at 10,131 size 120,25 {
+  			libraryComponentUID "_YIIgUMwNEeWZVvvwxpYu8A"
+  			isLive false
+  		}
+  		
+  		PrimitiveAttribute _g86bUWtOEe25lcL0UO2uNA at 10,77 size 120,25 {
+  			libraryComponentUID "_3QnzMM46EeWKGIrSDzlNog"
+  			isLive false
+  		}
+  		
+  		PrimitiveAttribute _g87CYWtOEe25lcL0UO2uNA at 10,50 size 120,25 {
+  			libraryComponentUID "_VE6ToM5BEeWKGIrSDzlNog"
+  			isLive false
+  		}
+  		
+  		PrimitiveAttribute _g87pcWtOEe25lcL0UO2uNA at 10,104 size 120,25 {
+  			libraryComponentUID "_WYcYEM5BEeWKGIrSDzlNog"
+  			isLive false
+  		}
+  		
+  		PrimitiveAttribute _g88QgWtOEe25lcL0UO2uNA at 10,158 size 120,25 {
+  			libraryComponentUID "_1aiCkG_QEeaqHezD6-M0AA"
+  			isLive false
+  		}
+  		-IF-> _QY1V8F4TEear0NzybbrMtw  decorate "Polyline" at (2,0) decorate "Text" at (0,0) {
+  			id _dO-vsF4YEea_oaWbSLmttQ
+  			negate false
+  		}
+  	}
+  }
+  
+  ExtensionContext _vu7nMG8JEe2hmY3gzoFrzA at 1070,330 size 180,130 {
+  }
+}

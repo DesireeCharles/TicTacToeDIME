@@ -11,6 +11,7 @@ import javax.enterprise.inject.spi.BeanManager;
 import javax.enterprise.inject.spi.CDI;
 
 import de.ls5.dywa.generated.util.DomainFileController;
+import info.scce.dime.util.Constants;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.UsernamePasswordToken;
@@ -209,7 +210,6 @@ public class CommonNativeServiceLibrary {
 	}
 
 	public static void logout() {
-		SecurityUtils.getSubject().logout();
 	}
 
 	public static boolean objectExists(Object object) {
@@ -270,7 +270,7 @@ public class CommonNativeServiceLibrary {
 		}
 
 		final ByteSource salt = new SecureRandomNumberGenerator().nextBytes();
-		final Sha512Hash passwordHash = new Sha512Hash(param, salt, 1337);
+		final Sha512Hash passwordHash = new Sha512Hash(param, salt, Constants.AUTH_HASH_ITERATIONS);
 
 		return passwordHash.toBase64() + ':' + salt.toBase64();
 	}
