@@ -9,10 +9,16 @@ import 'package:app/src/models/FileReference.dart';
 
 class Game_AzVAIWnXEe2xCJpb6ooUzAInput extends UserInteractionResponse {
 	
+	Data.Table table = null;
 	
 	Game_AzVAIWnXEe2xCJpb6ooUzAInput(Map<String,dynamic> map, Map<String,dynamic> cache)
 	{
 		 Map<String,dynamic> inputPorts = map['inputs'];
+		if(inputPorts.containsKey('table')) {
+			if(inputPorts['table']!=null){
+				table = Data.Table.fromJSOG(jsog:inputPorts['table'],cache:cache);
+			}
+		}
 	}
 	
 	@override
@@ -21,6 +27,6 @@ class Game_AzVAIWnXEe2xCJpb6ooUzAInput extends UserInteractionResponse {
 	}
 	
 	bool inpusChanged(Game_AzVAIWnXEe2xCJpb6ooUzAInput input) {
-		return false;
+		return table != input.table;
 	}
 }

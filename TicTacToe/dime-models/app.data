@@ -19,7 +19,7 @@ Data _tH3fEMwMEeWZVvvwxpYu8A {
   		isList true
   	}
   	
-  	PrimitiveAttribute _YIIgUMwNEeWZVvvwxpYu8A at 5,50 size 133,18 {
+  	PrimitiveAttribute _YIIgUMwNEeWZVvvwxpYu8A at 5,104 size 133,18 {
   		dataType Text
   		name "password"
   		isList false
@@ -31,13 +31,13 @@ Data _tH3fEMwMEeWZVvvwxpYu8A {
   		isList false
   	}
   	
-  	PrimitiveAttribute _VE6ToM5BEeWKGIrSDzlNog at 5,86 size 133,18 {
+  	PrimitiveAttribute _VE6ToM5BEeWKGIrSDzlNog at 5,50 size 133,18 {
   		dataType Text
   		name "firstName"
   		isList false
   	}
   	
-  	PrimitiveAttribute _WYcYEM5BEeWKGIrSDzlNog at 5,104 size 133,18 {
+  	PrimitiveAttribute _WYcYEM5BEeWKGIrSDzlNog at 5,86 size 133,18 {
   		dataType Text
   		name "lastName"
   		isList false
@@ -53,6 +53,43 @@ Data _tH3fEMwMEeWZVvvwxpYu8A {
   		targetAttr _fOkXgMwNEeWZVvvwxpYu8A
   		isHidden false
   		sourceAttr _fPY24MwNEeWZVvvwxpYu8A
+  	}
+  }
+  
+  ConcreteType _JgYkUW8QEe2x_c6ogIlfZw at 400,70 size 140,55 {
+  	name "Table"
+  	ComplexAttribute _QyVvAW8QEe2x_c6ogIlfZw at 5,32 size 130,18 {
+  		dataType _J1LIkW8QEe2x_c6ogIlfZw
+  		name "tableRow"
+  		isList true
+  	}
+  	-Association-> _J1LIkW8QEe2x_c6ogIlfZw  decorate "Text" at (0,0) decorate "" at (0,0) {
+  		id _QyMlEG8QEe2x_c6ogIlfZw
+  		isHidden false
+  		sourceAttr _QyVvAW8QEe2x_c6ogIlfZw
+  	}
+  }
+  
+  ConcreteType _J1LIkW8QEe2x_c6ogIlfZw at 400,260 size 140,55 {
+  	name "TableRow"
+  	ComplexAttribute _RMkz8W8QEe2x_c6ogIlfZw at 5,32 size 130,18 {
+  		dataType _KEKm0W8QEe2x_c6ogIlfZw
+  		name "tableEntry"
+  		isList true
+  	}
+  	-Association-> _KEKm0W8QEe2x_c6ogIlfZw  decorate "Text" at (0,0) decorate "" at (0,0) {
+  		id _RMcREW8QEe2x_c6ogIlfZw
+  		isHidden false
+  		sourceAttr _RMkz8W8QEe2x_c6ogIlfZw
+  	}
+  }
+  
+  ConcreteType _KEKm0W8QEe2x_c6ogIlfZw at 400,390 size 140,55 {
+  	name "TableEntry"
+  	PrimitiveAttribute _Rwbu8W8QEe2x_c6ogIlfZw at 5,32 size 130,18 {
+  		dataType Text
+  		name "value"
+  		isList false
   	}
   }
 }

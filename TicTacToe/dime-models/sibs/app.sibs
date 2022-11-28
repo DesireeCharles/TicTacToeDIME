@@ -1,8 +1,10 @@
-package app.demo
+package app.game
 
-sib SayHello : info.scce.dime.app.demo.Native#sayHello
-  name : text
-  -> success
-  
-sib test : info.scce.dime.app.demo.Native#test
-->success
+import "dime-models/app.data" as data
+
+
+sib drawBoard : info.scce.dime.app.game.Native#createGameBoard
+	width:integer
+	height: integer
+	->success
+		Table: data.Table

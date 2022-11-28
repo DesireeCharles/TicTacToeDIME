@@ -89,6 +89,9 @@ class GameaAzVAIWnXEe2xCJpb6ooUzA extends dime.DIMEComponent implements OnInit, 
   	List<modal.Modal> modals;
   	bool hasToSignIn;
 	//DATA CONTEXT
+	//Table table
+		@Input()
+		Data.Table table;
 	
 	bool isDestroyed = true;
   
@@ -102,6 +105,8 @@ class GameaAzVAIWnXEe2xCJpb6ooUzA extends dime.DIMEComponent implements OnInit, 
 		this.hasToSignIn = false;
 		
 		//DATA CONTEXT
+		// Table table
+		this.table = null;
 						
 						
 		
@@ -118,8 +123,10 @@ class GameaAzVAIWnXEe2xCJpb6ooUzA extends dime.DIMEComponent implements OnInit, 
 	}
 	
 	void updateInputs(
-	)
+	{Data.Table ptable
+	})
 	{
+		table = ptable;
 		
 		updateWithoutInputs(updateHidden:false);
 	}
@@ -165,6 +172,25 @@ class GameaAzVAIWnXEe2xCJpb6ooUzA extends dime.DIMEComponent implements OnInit, 
   		
   		
   		
+  		Data.Table
+  		 initOnDemandtable()
+  		{
+  			if(this.table==null){
+  				this.table = new Data.Table
+  				();
+  			}
+  			return this.table;
+  		}
+  		void setValuetable(Data.Table
+  		 value)
+  		{
+  			this.table = value;
+  		}
+  		void tablesetValue(Data.Table
+  		 value)
+  		{
+  			this.setValuetable(value);
+  		}
   		
   	
   		

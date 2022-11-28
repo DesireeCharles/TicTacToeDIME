@@ -9,3 +9,22 @@ TicTacToe
 </h1>
 	</div>
 </div>
+<div *ngFor="let currentRow of initOnDemandtable().initOnDemandtableRow(); let index = index; trackBy: trackSelective"  
+aria-live="polite" aria-atomic="true" 
+
+ class="row">
+<div
+*ngFor="let current of currentRow.initOnDemandtableEntry(); let index1 = index; trackBy: trackSelective"  
+aria-live="polite" aria-atomic="true" 
+
+[ngStyle]="{ 'width':'50px' , 'height50px':null , 'border':'5px solid block' }"
+class="col-md-12 text-left"
+>
+<span 
+ >
+<span aria-live="polite" aria-atomic="true" class="text-left">
+{{current?.value}}
+</span>
+</span>
+</div>
+</div>

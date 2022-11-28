@@ -239,3 +239,188 @@ java.io.FileNotFoundException: /home/cs4421student/Desktop/Development/TicTacToe
 2022-11-23 19:42:45,614 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/main/resources
 2022-11-23 19:42:45,615 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2022-11-23 19:42:45,616 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/test/resources
+2022-11-23 20:23:29,988 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-23 20:23:29,992 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/main/resources
+2022-11-23 20:23:29,994 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-23 20:23:29,996 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/test/resources
+2022-11-23 21:53:47,449 [Worker-65: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-23 21:53:47,454 [Worker-65: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/main/resources
+2022-11-23 21:53:47,466 [Worker-65: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-23 21:53:47,466 [Worker-65: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/test/resources
+2022-11-23 21:54:05,011 [Worker-64: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-23 21:54:05,012 [Worker-64: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/main/resources
+2022-11-23 21:54:05,013 [Worker-64: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-23 21:54:05,013 [Worker-64: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/test/resources
+2022-11-23 21:54:17,208 [Worker-67: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-23 21:54:17,209 [Worker-67: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/main/resources
+2022-11-23 21:54:17,213 [Worker-67: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-23 21:54:17,213 [Worker-67: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/test/resources
+2022-11-24 04:40:34,671 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-24 04:40:34,675 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/main/resources
+2022-11-24 04:40:34,677 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-24 04:40:34,677 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/test/resources
+2022-11-24 04:41:24,387 [Worker-78: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-24 04:41:24,387 [Worker-78: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/main/resources
+2022-11-24 04:41:24,387 [Worker-78: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-24 04:41:24,387 [Worker-78: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/test/resources
+2022-11-24 05:04:12,659 [Worker-82: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-24 05:04:12,661 [Worker-82: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/main/resources
+2022-11-24 05:04:12,663 [Worker-82: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-24 05:04:12,663 [Worker-82: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/test/resources
+2022-11-24 05:11:11,618 [Worker-81: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-24 05:11:11,618 [Worker-81: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/main/resources
+2022-11-24 05:11:11,619 [Worker-81: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-24 05:11:11,620 [Worker-81: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/test/resources
+2022-11-24 05:11:17,593 [Worker-84: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-24 05:11:17,593 [Worker-84: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/main/resources
+2022-11-24 05:11:17,593 [Worker-84: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-24 05:11:17,594 [Worker-84: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/test/resources
+2022-11-24 05:11:27,827 [Worker-84: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-24 05:11:27,827 [Worker-84: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/main/resources
+2022-11-24 05:11:27,828 [Worker-84: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-24 05:11:27,828 [Worker-84: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/test/resources
+2022-11-24 05:23:04,711 [Worker-87: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-24 05:23:04,714 [Worker-87: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/main/resources
+2022-11-24 05:23:04,718 [Worker-87: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-24 05:23:04,718 [Worker-87: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/test/resources
+2022-11-24 05:25:20,682 [Worker-87: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-24 05:25:20,682 [Worker-87: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/main/resources
+2022-11-24 05:25:20,687 [Worker-87: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-24 05:25:20,688 [Worker-87: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/test/resources
+2022-11-24 05:50:22,577 [Worker-89: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-24 05:50:22,586 [Worker-89: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/main/resources
+2022-11-24 05:50:22,589 [Worker-89: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-24 05:50:22,590 [Worker-89: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/test/resources
+2022-11-24 05:51:50,716 [Worker-91: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-24 05:51:50,716 [Worker-91: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/main/resources
+2022-11-24 05:51:50,718 [Worker-91: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-24 05:51:50,718 [Worker-91: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/test/resources
+2022-11-24 05:52:12,470 [Worker-89: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-24 05:52:12,470 [Worker-89: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/main/resources
+2022-11-24 05:52:12,472 [Worker-89: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-24 05:52:12,472 [Worker-89: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/test/resources
+2022-11-24 05:52:32,276 [Worker-87: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-24 05:52:32,277 [Worker-87: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/main/resources
+2022-11-24 05:52:32,278 [Worker-87: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-24 05:52:32,278 [Worker-87: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/test/resources
+2022-11-24 05:53:28,565 [Worker-89: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-24 05:53:28,565 [Worker-89: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/main/resources
+2022-11-24 05:53:28,567 [Worker-89: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-24 05:53:28,567 [Worker-89: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/test/resources
+2022-11-24 05:53:34,596 [Worker-90: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-24 05:53:34,597 [Worker-90: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/main/resources
+2022-11-24 05:53:34,600 [Worker-90: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-24 05:53:34,602 [Worker-90: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/test/resources
+2022-11-24 05:59:05,830 [Worker-94: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-24 05:59:05,852 [Worker-94: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/main/resources
+2022-11-24 05:59:05,855 [Worker-94: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-24 05:59:05,855 [Worker-94: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/test/resources
+2022-11-24 06:02:45,869 [Worker-98: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-24 06:02:45,871 [Worker-98: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/main/resources
+2022-11-24 06:02:45,887 [Worker-98: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-24 06:02:45,888 [Worker-98: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/test/resources
+2022-11-24 06:03:00,160 [Worker-93: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-24 06:03:00,161 [Worker-93: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/main/resources
+2022-11-24 06:03:00,164 [Worker-93: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-24 06:03:00,165 [Worker-93: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/test/resources
+2022-11-24 06:03:10,383 [Worker-98: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-24 06:03:10,383 [Worker-98: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/main/resources
+2022-11-24 06:03:10,384 [Worker-98: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-24 06:03:10,384 [Worker-98: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/test/resources
+2022-11-24 10:59:19,517 [Worker-102: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-24 10:59:19,523 [Worker-102: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/main/resources
+2022-11-24 10:59:19,530 [Worker-102: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-24 10:59:19,530 [Worker-102: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/test/resources
+2022-11-24 10:59:50,801 [Worker-102: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-24 10:59:50,809 [Worker-102: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/main/resources
+2022-11-24 10:59:50,811 [Worker-102: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-24 10:59:50,811 [Worker-102: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/test/resources
+2022-11-24 10:59:58,365 [Worker-106: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-24 10:59:58,366 [Worker-106: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/main/resources
+2022-11-24 10:59:58,368 [Worker-106: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-24 10:59:58,368 [Worker-106: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/test/resources
+2022-11-24 11:02:17,653 [Worker-109: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-24 11:02:17,661 [Worker-109: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/main/resources
+2022-11-24 11:02:17,663 [Worker-109: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-24 11:02:17,665 [Worker-109: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/test/resources
+2022-11-24 11:02:27,945 [Worker-105: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-24 11:02:27,945 [Worker-105: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/main/resources
+2022-11-24 11:02:27,949 [Worker-105: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-24 11:02:27,951 [Worker-105: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/test/resources
+2022-11-24 11:34:36,192 [Worker-116: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-24 11:34:36,194 [Worker-116: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/main/resources
+2022-11-24 11:34:36,195 [Worker-116: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-24 11:34:36,195 [Worker-116: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/test/resources
+2022-11-28 12:17:59,719 [Worker-124: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-28 12:17:59,729 [Worker-124: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/main/resources
+2022-11-28 12:17:59,731 [Worker-124: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-28 12:17:59,738 [Worker-124: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/test/resources
+2022-11-28 12:19:05,909 [Worker-127: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-28 12:19:05,912 [Worker-127: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/main/resources
+2022-11-28 12:19:05,922 [Worker-127: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-28 12:19:05,922 [Worker-127: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/test/resources
+2022-11-28 12:20:02,791 [Worker-125: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-28 12:20:02,791 [Worker-125: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/main/resources
+2022-11-28 12:20:02,792 [Worker-125: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-28 12:20:02,792 [Worker-125: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/test/resources
+2022-11-28 12:20:09,109 [Worker-130: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-28 12:20:09,110 [Worker-130: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/main/resources
+2022-11-28 12:20:09,112 [Worker-130: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-28 12:20:09,112 [Worker-130: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/test/resources
+2022-11-28 12:20:16,738 [Worker-125: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-28 12:20:16,739 [Worker-125: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/main/resources
+2022-11-28 12:20:16,739 [Worker-125: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-28 12:20:16,739 [Worker-125: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/test/resources
+2022-11-28 12:20:23,659 [Worker-125: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-28 12:20:23,659 [Worker-125: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/main/resources
+2022-11-28 12:20:23,660 [Worker-125: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-28 12:20:23,660 [Worker-125: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/test/resources
+2022-11-28 12:28:05,724 [Worker-124: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-28 12:28:05,728 [Worker-124: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/main/resources
+2022-11-28 12:28:05,730 [Worker-124: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-28 12:28:05,730 [Worker-124: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/test/resources
+2022-11-28 12:28:28,703 [Worker-132: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-28 12:28:28,703 [Worker-132: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/main/resources
+2022-11-28 12:28:28,704 [Worker-132: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-28 12:28:28,704 [Worker-132: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/test/resources
+2022-11-28 12:28:49,076 [Worker-124: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-28 12:28:49,076 [Worker-124: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/main/resources
+2022-11-28 12:28:49,077 [Worker-124: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-28 12:28:49,077 [Worker-124: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/test/resources
+2022-11-28 12:29:20,870 [Worker-133: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-28 12:29:20,870 [Worker-133: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/main/resources
+2022-11-28 12:29:20,874 [Worker-133: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-28 12:29:20,874 [Worker-133: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/test/resources
+2022-11-28 12:37:44,846 [Worker-137: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: info.scce.dime.app.game:app-native:1.0-SNAPSHOT @ /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/pom.xml.
+2022-11-28 12:37:45,253 [Worker-137: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/javax/enterprise/cdi-api/2.0.SP1/cdi-api-2.0.SP1.pom
+2022-11-28 12:37:45,335 [Worker-137: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/javax/enterprise/cdi-api/2.0.SP1/cdi-api-2.0.SP1.pom
+2022-11-28 12:37:45,357 [Worker-137: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/jboss/weld/weld-parent/36/weld-parent-36.pom
+2022-11-28 12:37:45,450 [Worker-137: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/jboss/weld/weld-parent/36/weld-parent-36.pom
+2022-11-28 12:37:45,492 [Worker-137: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/javax/interceptor/javax.interceptor-api/1.2/javax.interceptor-api-1.2.pom
+2022-11-28 12:37:45,610 [Worker-137: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/javax/interceptor/javax.interceptor-api/1.2/javax.interceptor-api-1.2.pom
+2022-11-28 12:37:45,628 [Worker-137: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/javax/inject/javax.inject/1/javax.inject-1.pom
+2022-11-28 12:37:45,833 [Worker-137: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/javax/inject/javax.inject/1/javax.inject-1.pom
+2022-11-28 12:37:45,866 [AetherRepositoryConnector-repo.maven.apache.org-0-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/javax/enterprise/cdi-api/2.0.SP1/cdi-api-2.0.SP1.jar
+2022-11-28 12:37:45,869 [AetherRepositoryConnector-repo.maven.apache.org-0-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/javax/interceptor/javax.interceptor-api/1.2/javax.interceptor-api-1.2.jar
+2022-11-28 12:37:45,889 [AetherRepositoryConnector-repo.maven.apache.org-0-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/javax/inject/javax.inject/1/javax.inject-1.jar
+2022-11-28 12:37:46,000 [AetherRepositoryConnector-repo.maven.apache.org-0-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/javax/enterprise/cdi-api/2.0.SP1/cdi-api-2.0.SP1.jar
+2022-11-28 12:37:46,010 [AetherRepositoryConnector-repo.maven.apache.org-0-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/javax/inject/javax.inject/1/javax.inject-1.jar
+2022-11-28 12:37:46,029 [AetherRepositoryConnector-repo.maven.apache.org-0-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/javax/interceptor/javax.interceptor-api/1.2/javax.interceptor-api-1.2.jar
+2022-11-28 12:37:46,604 [Worker-137: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-28 12:37:46,618 [Worker-137: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-11-28 12:37:46,629 [Worker-137: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-28 12:37:46,629 [Worker-137: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/test/resources
+2022-11-28 12:37:47,361 [Worker-138: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-28 12:37:47,365 [Worker-138: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-11-28 12:37:47,367 [Worker-138: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-28 12:37:47,367 [Worker-138: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/test/resources
+2022-11-28 12:38:39,349 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2022-11-28 12:38:44,019 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-28 12:38:44,023 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-11-28 12:38:44,028 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-28 12:38:44,029 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/test/resources
+2022-11-28 12:38:46,560 [Worker-8: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: info.scce.dime.app.game:app-native:1.0-SNAPSHOT @ /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/pom.xml.
+2022-11-28 12:38:47,137 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-28 12:38:47,147 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-11-28 12:38:47,153 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-28 12:38:47,153 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/cs4421student/Desktop/Development/TicTacToeDIME/TicTacToe/dependency/app-native/src/test/resources

@@ -11,39 +11,6 @@ public class CurrentUserController {
 	@javax.inject.Inject
 	private info.scce.dime.rest.ObjectCache objectCache;
 	
-	@javax.ws.rs.GET
-	@javax.ws.rs.Path("ConcreteUser/" +
-		"PrivateHomeConcreteUserSelectivex1_NGHA8F4TEear0NzybbrMtw" +
-		"/private")
-	@javax.ws.rs.Produces(javax.ws.rs.core.MediaType.APPLICATION_JSON)
-	public de.ls5.dywa.generated.rest.types.ConcreteUser getPrivateHomeConcreteUserSelectivex1_NGHA8F4TEear0NzybbrMtw() {
-		final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.BaseUser subject = subjectController.read((Long)org.apache.shiro.SecurityUtils.getSubject().getPrincipal());
-
-		for (final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.ConcreteUser concreteUser: subject.getconcreteUser_ConcreteUser()) {
-			if (de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.ConcreteUser.class.isInstance(concreteUser)) {
-				final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.ConcreteUser origUser = (de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.ConcreteUser) concreteUser;
-				final Object switchedToUser = origUser.getdywaSwitchedTo();
-				de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.ConcreteUser currentUser = origUser;
-				if (de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.ConcreteUser.class.isInstance(switchedToUser)) {
-					currentUser = (de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.ConcreteUser) switchedToUser;
-				} else if (switchedToUser != null) {
-					throw new IllegalStateException("Type of switched user '" + switchedToUser.getClass() + "' does not match expected type of current user '" + de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.ConcreteUser.class + "'");
-				}
-				de.ls5.dywa.generated.rest.types.ConcreteUser result = objectCache.getRestTo(currentUser);
-				
-				if (result == null) {
-					result = de.ls5.dywa.generated.rest.types.ConcreteUser.fromDywaEntity(currentUser, objectCache);
-				}
-				
-				if (!objectCache.containsSelective(result, "PrivateHomeConcreteUserSelectivex1_NGHA8F4TEear0NzybbrMtw")) {
-					de.ls5.dywa.generated.rest.types.PrivateHomeConcreteUserSelectivex1_NGHA8F4TEear0NzybbrMtw.copy(currentUser, result, objectCache);
-				}
-
-				return result;
-			}
-		}
-		throw new IllegalStateException("Did not find concrete user of type '" + de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.ConcreteUser.class + "'");
-	}
 	
 	public <T> T getCurrentUser(final Class<T> userType) {
 		final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.BaseUser subject = subjectController.read((Long)org.apache.shiro.SecurityUtils.getSubject().getPrincipal());

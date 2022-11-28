@@ -34,8 +34,8 @@ Process _sA1GYNviEeWsF7MALrkAZQ {
   		isList false
   		name "newUser"
   	}
-  	-ControlFlow-> _5UqEcWtdEe2x_c6ogIlfZw  decorate "" at (0,0) {
-  		id _7dD7YWtdEe2x_c6ogIlfZw
+  	-ControlFlow-> _sBOvANviEeWsF7MALrkAZQ  decorate "" at (0,0) {
+  		id _HWZcMW8UEe29MJ2ZfnuTaA
   		concurrent true
   	}
   }
@@ -160,60 +160,20 @@ Process _sA1GYNviEeWsF7MALrkAZQ {
   	}
   }
   
-  Branch _PXdncNzNEeWtAOZsxPLKSA at 240,140 size 100,50 {
+  Branch _PXdncNzNEeWtAOZsxPLKSA at 340,750 size 100,50 {
   	name "success"
   	ComplexOutputPort _PXn_gNzNEeWtAOZsxPLKSA at 5,27 size 90,18 {
   		libraryComponentUID "_dh6BYMwNEeWZVvvwxpYu8A"
   		isList true
   		name "retrieved"
   	}
-  	-ControlFlow-> _5UqEcWtdEe2x_c6ogIlfZw  decorate "" at (0,0) {
-  		id __h_JYWtdEe2x_c6ogIlfZw
-  		concurrent true
-  	}
-  }
-  
-  EndSIB _sBOvANviEeWsF7MALrkAZQ at 480,870 size 100,65 {
-  	branchName "success"
-  }
-  
-  AtomicSIB _5UqEcWtdEe2x_c6ogIlfZw at 339,610 size 120,90 {
-  	libraryComponentUID "app.demo.SayHello"
-  	label "SayHello"
-  	ignoredBranch [  ]
-  	TextInputStatic _BTb44WteEe2x_c6ogIlfZw at 5,67 size 110,18 {
-  		value "Dom"
-  		name "name"
-  	}
-  	-BranchConnector-> _5VJMoWtdEe2x_c6ogIlfZw   {
-  		id _5VKawWtdEe2x_c6ogIlfZw
-  		concurrent true
-  	}
-  }
-  
-  Branch _5VJMoWtdEe2x_c6ogIlfZw at 339,710 size 120,25 {
-  	name "success"
-  	-ControlFlow-> _t8v7kWteEe2x_c6ogIlfZw  decorate "" at (0,0) {
-  		id _vW0F0WteEe2x_c6ogIlfZw
-  		concurrent true
-  	}
-  }
-  
-  AtomicSIB _t8v7kWteEe2x_c6ogIlfZw at 513,722 size 120,65 {
-  	libraryComponentUID "app.demo.test"
-  	label "test"
-  	ignoredBranch [  ]
-  	-BranchConnector-> _t88v4WteEe2x_c6ogIlfZw   {
-  		id _t8-lEWteEe2x_c6ogIlfZw
-  		concurrent true
-  	}
-  }
-  
-  Branch _t88v4WteEe2x_c6ogIlfZw at 513,797 size 120,25 {
-  	name "success"
   	-ControlFlow-> _sBOvANviEeWsF7MALrkAZQ  decorate "" at (0,0) {
-  		id _vopcsWteEe2x_c6ogIlfZw
+  		id _IVAZgW8UEe29MJ2ZfnuTaA
   		concurrent true
   	}
+  }
+  
+  EndSIB _sBOvANviEeWsF7MALrkAZQ at 330,912 size 100,65 {
+  	branchName "success"
   }
 }

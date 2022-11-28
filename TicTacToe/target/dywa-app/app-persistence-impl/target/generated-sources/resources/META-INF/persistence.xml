@@ -12,6 +12,9 @@
 		<!-- generated entities -->
         <class>de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.ConcreteUserImpl</class>
         <class>de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.BaseUserImpl</class>
+        <class>de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TableImpl</class>
+        <class>de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TableRowImpl</class>
+        <class>de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TableEntryImpl</class>
 
 		<shared-cache-mode>ALL</shared-cache-mode>
 		<properties>

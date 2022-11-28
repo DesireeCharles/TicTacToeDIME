@@ -67,8 +67,6 @@ public final class Startup_sA1GYNviEeWsF7MALrkAZQ implements DIMEProcess {
 	_iHeOANzGEeW2rv4DARGjjw,
 	_PssUwNzGEeW2rv4DARGjjw,
 	_sBOvANviEeWsF7MALrkAZQ,
-	_5UqEcWtdEe2x_c6ogIlfZw,
-	_t8v7kWteEe2x_c6ogIlfZw,
 		;
 	}
 
@@ -133,14 +131,6 @@ public final class Startup_sA1GYNviEeWsF7MALrkAZQ implements DIMEProcess {
 				}
 				case _sBOvANviEeWsF7MALrkAZQ: {
 					return execute_sBOvANviEeWsF7MALrkAZQ(ctx);
-				}
-				case _5UqEcWtdEe2x_c6ogIlfZw: {
-					curr = execute_5UqEcWtdEe2x_c6ogIlfZw(ctx);
-					break;
-				}
-				case _t8v7kWteEe2x_c6ogIlfZw: {
-					curr = execute_t8v7kWteEe2x_c6ogIlfZw(ctx);
-					break;
 				}
 				default: {
 					throw new IllegalStateException("unhandled SIB container " + curr);
@@ -216,7 +206,7 @@ public final class Startup_sA1GYNviEeWsF7MALrkAZQ implements DIMEProcess {
 		}
 		else {
 			// branch 'success'
-			return SIB_ID._5UqEcWtdEe2x_c6ogIlfZw;
+			return SIB_ID._sBOvANviEeWsF7MALrkAZQ;
 		}
 	}
 	// container for graph abstraction 'CreateUser' and sub process 'CreateUser'.
@@ -228,7 +218,7 @@ public final class Startup_sA1GYNviEeWsF7MALrkAZQ implements DIMEProcess {
 		switch(result.getBranchName()) {
 		case "success": {
 			// branch 'success'
-			return SIB_ID._5UqEcWtdEe2x_c6ogIlfZw;
+			return SIB_ID._sBOvANviEeWsF7MALrkAZQ;
 		}
 			default: throw new IllegalStateException("SIB 'CreateUser' has no successor defined for branch '" + result.getBranchName() + '\'');
 		}
@@ -267,32 +257,6 @@ public final class Startup_sA1GYNviEeWsF7MALrkAZQ implements DIMEProcess {
 	// container for graph i/o 'success'.
 	public Startup_sA1GYNviEeWsF7MALrkAZQResult execute_sBOvANviEeWsF7MALrkAZQ(final Context ctx) {
 		return new Startup_sA1GYNviEeWsF7MALrkAZQResult(new SuccessReturnImpl(ctx));
-	}
-	// container for atomic SIB 'SayHello'.
-	public SIB_ID execute_5UqEcWtdEe2x_c6ogIlfZw(final Context ctx) {
-		try {
-			info.scce.dime.app.demo.Native.sayHello("Dom");
-		}
-		catch (Exception e) {
-			e.printStackTrace();
-			// branch 'failure'
-			throw new IllegalStateException("SIB 'SayHello' has no successor defined for branch 'failure'");
-		}
-		// branch 'success'
-		return SIB_ID._t8v7kWteEe2x_c6ogIlfZw;
-	}
-	// container for atomic SIB 'test'.
-	public SIB_ID execute_t8v7kWteEe2x_c6ogIlfZw(final Context ctx) {
-		try {
-			info.scce.dime.app.demo.Native.test();
-		}
-		catch (Exception e) {
-			e.printStackTrace();
-			// branch 'failure'
-			throw new IllegalStateException("SIB 'test' has no successor defined for branch 'failure'");
-		}
-		// branch 'success'
-		return SIB_ID._sBOvANviEeWsF7MALrkAZQ;
 	}
 	
 }  

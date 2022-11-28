@@ -20,12 +20,13 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>info.scce.dime.app.demo</groupId>
+			<groupId>info.scce.dime.app.game</groupId>
 			<artifactId>app-native</artifactId>
 			<version>1.0-SNAPSHOT</version>
 			<type>jar</type>
 			<scope>compile</scope>
 		</dependency>
 	</dependencies>
+	
 
 </project>

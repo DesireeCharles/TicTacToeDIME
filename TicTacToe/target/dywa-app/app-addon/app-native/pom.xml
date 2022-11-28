@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	
 	<name>${project.artifactId}</name>
-	<groupId>info.scce.dime.app.demo</groupId>
+	<groupId>info.scce.dime.app.game</groupId>
 	<artifactId>app-native</artifactId>
 	
 	<parent>
@@ -25,6 +25,11 @@
 			<groupId>info.scce.dime</groupId>
 			<artifactId>app-persistence-api</artifactId>
 			<version>1.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.enterprise</groupId>
+			<artifactId>cdi-api</artifactId>
+			<version>2.0.SP1</version>
 		</dependency>
 	</dependencies>
 	
