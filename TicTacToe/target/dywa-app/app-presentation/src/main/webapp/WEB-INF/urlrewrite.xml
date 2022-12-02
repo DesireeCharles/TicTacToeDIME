@@ -3,7 +3,6 @@
 		"http://www.tuckey.org/res/dtds/urlrewrite4.0.dtd">
 
 <urlrewrite>
-
 	<rule>
 		<from>/asset/</from>
 		<to last="true">-</to>
@@ -37,7 +36,7 @@
 		<to last="true">-</to>
 	</rule>
 	<rule match-type="wildcard">
-		<!-- prevent infinte loops -->
+		<!-- prevent infinite loops -->
 		<condition type="request-uri" operator="notequal">/app/index.html</condition>
 		<condition type="request-uri" operator="notequal">/app/login.jsp</condition>
 		<condition type="request-uri" operator="notequal">/index.html</condition>
@@ -47,4 +46,3 @@
 	</rule>
 
 </urlrewrite>
-

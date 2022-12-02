@@ -1,8 +1,11 @@
 import 'dart:collection';
 import 'dart:convert';
+import 'dart:html';
+import 'dart:async';
 
 import 'package:angular/angular.dart';
 import 'package:app/src/util/string/DateTimeString.dart';
+import 'package:app/src/services/AuthService.dart';
 
 import 'FileReference.dart';
 
@@ -247,3 +250,36 @@ class SecondsPipe extends PipeTransform {
 
   bool supports(dynamic obj) => obj is DateTime;
 }
+
+@Pipe('authImage')
+class AuthImagePipe extends PipeTransform {
+
+	final AuthService _authService;
+	
+	AuthImagePipe(this._authService);
+
+  	Future<dynamic> transform(String src) {
+  		final completer = Completer();
+  	
+  		final headers = <String,String>{};
+  		final jwt = _authService.jwt;
+  		if (jwt != null) headers['authorization'] = 'Bearer ${jwt}';
+  		
+  		final handleLoadError = () => completer.complete(''); 
+  	  	
+  		HttpRequest.request(src, method: 'GET', requestHeaders: headers, responseType: 'blob')
+  			.then((req) { 	 			
+  				final reader = FileReader();
+  				reader.addEventListener('error', (e) => handleLoadError());
+  				reader.addEventListener('abort', (e) => handleLoadError());
+			    reader.addEventListener('loadend', (e) => completer.complete(reader.result as String));			 			    
+  				reader.readAsDataUrl(req.response);
+  			})
+  			.catchError((e) {
+  				handleLoadError();
+  			});
+  			
+		return completer.future;
+  	}
+}
+

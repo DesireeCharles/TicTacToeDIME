@@ -6,7 +6,7 @@ GUI _AzVAIWnXEe2xCJpb6ooUzA {
   title "Game"
   DataContext _AzdjAWnXEe2xCJpb6ooUzA at 10,90 size 180,521 {
   	dfViewWorkaround true
-  	ComplexVariable _U4lEQW8TEe29MJ2ZfnuTaA at 20,40 size 160,25 {
+  	ComplexVariable _U4lEQW8TEe29MJ2ZfnuTaA at 10,40 size 160,25 {
   		expanded false
   		isLive false
   		libraryComponentUID "_JgYkUW8QEe2x_c6ogIlfZw"
@@ -188,7 +188,7 @@ GUI _AzVAIWnXEe2xCJpb6ooUzA {
   					marginBottom None
   					attributes [  ]
   					marginTop None
-  					rawContent "width:50px;\nheight50px;\nborder:5px solid block;"
+  					rawContent "width:50px;\nheight:50px;\nborder:5px solid block;"
   				}
   			MoveLeft _FtwN8W8VEe29MJ2ZfnuTaA at 2,2 size 7,14 {
   			}

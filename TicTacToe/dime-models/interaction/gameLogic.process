@@ -8,33 +8,7 @@ Process _1O3EgW8SEe29MJ2ZfnuTaA {
   	dfViewWorkaround true
   }
   
-  StartSIB _1PIxUW8SEe29MJ2ZfnuTaA at 330,20 size 100,65 {
-  	-ControlFlow-> _MeYCoW8UEe29MJ2ZfnuTaA  decorate "" at (0,0) {
-  		id _MwKWMW8UEe29MJ2ZfnuTaA
-  		concurrent true
-  	}
-  }
-  
-  AtomicSIB _MeYCoW8UEe29MJ2ZfnuTaA at 320,160 size 120,108 index 3 {
-  	libraryComponentUID "app.game.drawBoard"
-  	label "drawBoard"
-  	ignoredBranch [  ]
-  	IntegerInputStatic _sLxBcG8UEe29MJ2ZfnuTaA at 5,67 size 110,18 {
-  		value 3
-  		name "width"
-  	}
-  	
-  	IntegerInputStatic _uzOL4m8UEe29MJ2ZfnuTaA at 5,85 size 110,18 {
-  		value 3
-  		name "height"
-  	}
-  	-BranchConnector-> _MeiasW8UEe29MJ2ZfnuTaA   {
-  		id _MejBwW8UEe29MJ2ZfnuTaA
-  		concurrent true
-  	}
-  }
-  
-  GUISIB _Tepc4W8TEe29MJ2ZfnuTaA at 320,390 size 120,90 index 2 {
+  GUISIB _Tepc4W8TEe29MJ2ZfnuTaA at 320,390 size 120,90 {
   	cacheGUI false
   	majorPage true
   	libraryComponentUID "_AzVAIWnXEe2xCJpb6ooUzA"
@@ -48,19 +22,45 @@ Process _1O3EgW8SEe29MJ2ZfnuTaA {
   	}
   }
   
-  Branch _MeiasW8UEe29MJ2ZfnuTaA at 320,278 size 120,50 {
+  AtomicSIB _CauWwXFhEe24rt9YW3Qgng at 320,150 size 120,108 {
+  	libraryComponentUID "app.game.drawBoard"
+  	label "drawBoard"
+  	ignoredBranch [  ]
+  	IntegerInputStatic _GyzKQXFhEe24rt9YW3Qgng at 5,67 size 110,18 {
+  		value 3
+  		name "width"
+  	}
+  	
+  	IntegerInputStatic _HCdW4XFhEe24rt9YW3Qgng at 5,85 size 110,18 {
+  		value 3
+  		name "height"
+  	}
+  	-BranchConnector-> _I2YWIXFiEe24rt9YW3Qgng   {
+  		id _I2ayYXFiEe24rt9YW3Qgng
+  		concurrent true
+  	}
+  }
+  
+  StartSIB _Ep0PEXFiEe24rt9YW3Qgng at 340,30 size 100,65 {
+  	-ControlFlow-> _CauWwXFhEe24rt9YW3Qgng  decorate "" at (0,0) {
+  		id _E7EXIHFiEe24rt9YW3Qgng
+  		concurrent true
+  	}
+  }
+  
+  Branch _I2YWIXFiEe24rt9YW3Qgng at 320,300 size 120,50 {
   	name "success"
-  	ComplexOutputPort _MekP4W8UEe29MJ2ZfnuTaA at 5,27 size 110,18 {
+  	ComplexOutputPort _I2dOoXFiEe24rt9YW3Qgng at 5,27 size 110,18 {
   		libraryComponentUID "_JgYkUW8QEe2x_c6ogIlfZw"
   		isList false
   		name "Table"
-  		-ComplexDirectDataFlow-> _XDVroW8TEe29MJ2ZfnuTaA via (290,314) (310,466) decorate "" at (0,0) {
-  			id _NmsVkW8UEe29MJ2ZfnuTaA
+  		-ComplexDirectDataFlow-> _XDVroW8TEe29MJ2ZfnuTaA via (310,336) (300,466) decorate "" at (0,0) {
+  			id _K-EbYXFiEe24rt9YW3Qgng
   			dfViewWorkaround true
   		}
   	}
   	-ControlFlow-> _Tepc4W8TEe29MJ2ZfnuTaA  decorate "" at (0,0) {
-  		id _NKlBUW8UEe29MJ2ZfnuTaA
+  		id _KazWQXFiEe24rt9YW3Qgng
   		concurrent true
   	}
   }

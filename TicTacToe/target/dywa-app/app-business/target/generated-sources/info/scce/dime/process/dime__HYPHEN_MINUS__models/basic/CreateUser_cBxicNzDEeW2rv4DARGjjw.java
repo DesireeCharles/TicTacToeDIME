@@ -94,11 +94,11 @@ public final class CreateUser_cBxicNzDEeW2rv4DARGjjw implements DIMEProcess {
 		ctx.beanManager = this.beanManager;
 
 		// store inputs
-		ctx.startUserName_mEu1INzDEeW2rv4DARGjjw = userName;
 		ctx.startFirstName_pEmfkNzDEeW2rv4DARGjjw = firstName;
 		ctx.startLastName_qNqZYNzDEeW2rv4DARGjjw = lastName;
-		ctx.startPassword_0H7qINzDEeW2rv4DARGjjw = password;
 		ctx.startLastName_qNqZYNzDEeW2rv4DARGjjw = lastName;
+		ctx.startPassword_0H7qINzDEeW2rv4DARGjjw = password;
+		ctx.startUserName_mEu1INzDEeW2rv4DARGjjw = userName;
 		ctx.startUserName_mEu1INzDEeW2rv4DARGjjw = userName;
 		
 		return ctx;
@@ -216,11 +216,11 @@ public final class CreateUser_cBxicNzDEeW2rv4DARGjjw implements DIMEProcess {
 		final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.ConcreteUser createdObj = domController.create(ctx.startLastName_qNqZYNzDEeW2rv4DARGjjw);
 	
 	
+		ctx.Create_ConcreteUserSuccessCreated_djYfINzDEeW2rv4DARGjjw = createdObj;
 		de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.ConcreteUser value0 = createdObj;
 		if (value0 != null) { // prevent null in lists
 		Optional.ofNullable(ctx.baseuser).map(de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.BaseUser::getconcreteUser_ConcreteUser).get().add(value0);
 		}
-		ctx.Create_ConcreteUserSuccessCreated_djYfINzDEeW2rv4DARGjjw = createdObj;
 	
 		// branch 'success'
 		return SIB_ID._cCXYUNzDEeW2rv4DARGjjw;

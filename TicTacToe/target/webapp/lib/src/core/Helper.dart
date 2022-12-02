@@ -3,6 +3,7 @@ import 'dart:html' as html;
 import 'package:angular/core.dart';
 import 'package:angular_router/angular_router.dart';
 import 'package:app/src/core/AbstractRoutes.dart';
+import 'package:app/src/services/AuthService.dart';
 
 @Component(selector: 'not-found', template: '''
       <h1>404 Page not found</h1>
@@ -42,6 +43,27 @@ class Maintenance implements OnInit, OnActivate {
     if (current == null) {
       _router.navigate(routes.getByName('root').toUrl());
     }
+  }
+}
+
+@Component(
+	selector: 'logout', 
+	template: '''
+ 		<h1>You are being logged out</h1>
+	'''
+)
+class Logout implements OnInit {
+
+  final AuthService _authService;
+  final Router _router;
+  final AbstractRoutes routes;
+  
+  Logout(this._authService, this._router, this.routes);
+
+  @override
+  void ngOnInit() {
+    _authService.logout();
+    _router.navigate(routes.getByName('root').toUrl());
   }
 }
 

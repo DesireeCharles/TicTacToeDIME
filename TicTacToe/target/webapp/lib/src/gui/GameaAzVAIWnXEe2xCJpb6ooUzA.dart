@@ -48,7 +48,7 @@ import 'package:app/src/core/AbstractRoutes.dart';
 
 @Component(
   selector: "game-tag",
-  pipes: const [commonPipes,SecondsPipe],
+  pipes: const [commonPipes,SecondsPipe,AuthImagePipe],
   encapsulation: ViewEncapsulation.None,
   exports: const [
   	Data.DataCastUtil

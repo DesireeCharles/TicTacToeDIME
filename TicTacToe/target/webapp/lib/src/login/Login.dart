@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:angular/angular.dart';
 import 'package:angular_forms/angular_forms.dart';
-import 'package:app/src/core/Authentication.dart';
+import 'package:app/src/services/AuthService.dart';
 
 var jQuery;
 
@@ -36,7 +36,9 @@ class Login implements OnInit {
   String username;
   String password;
 
-  Login() {
+  final AuthService authService;
+
+  Login(this.authService) {
     correct = true;
   }
 
@@ -69,7 +71,7 @@ class Login implements OnInit {
   void submitForm(Map formValues) async {
     username = formValues['username'];
     password = formValues['password'];
-    correct = await Authentication.performLogin(username, password);
+    correct = await authService.auth(username, password);
     if (correct) {
       signedin.add(true);
     }

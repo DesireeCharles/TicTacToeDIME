@@ -4,6 +4,7 @@ import 'dart:html';
 
 import 'package:angular_router/angular_router.dart';
 import 'package:app/src/notification/notification_component.dart';
+import 'package:app/src/services/AuthService.dart';
 
 import '../url/ApiPort.dart';
 import '../url/BaseUrl.dart';
@@ -24,6 +25,18 @@ class DIMEProcessService {
 
   String processRuntimeId(String processId) =>
       '${processId}-${activeProcesses.length}';
+      
+  final AuthService authService;
+  
+  DIMEProcessService(this.authService);
+      
+  Map<String, String> getDIMERequestHeaders() {
+  	final headers = {
+  		'Content-Type': 'application/json'
+  	};
+  	headers.addAll(authService.getAuthorizationHeaders());
+  	return headers;
+  }
 
   TerminateProcessResponse checkTerminated(
       String parentRuntimeId, Map<String, dynamic> jsog, String guiId) {
@@ -80,7 +93,7 @@ class DIMEProcessService {
     final sendData = jsonEncode(inputs);
     return HttpRequest.request(url,
             method: 'POST',
-            requestHeaders: DIMERequestHeaders,
+            requestHeaders: getDIMERequestHeaders(),
             sendData: sendData,
             withCredentials: true)
         .then((response) {
@@ -162,7 +175,7 @@ class DIMEProcessService {
     final sendData = jsonEncode(data);
     return HttpRequest.request(url,
             method: 'POST',
-            requestHeaders: DIMERequestHeaders,
+            requestHeaders: getDIMERequestHeaders(),
             sendData: sendData,
             withCredentials: true)
         .then((response) {
@@ -202,7 +215,7 @@ class DIMEProcessService {
     updateAnyProcessActive();
     return HttpRequest.request(url,
             method: 'POST',
-            requestHeaders: DIMERequestHeaders,
+            requestHeaders: getDIMERequestHeaders(),
             sendData: sendData,
             withCredentials: true)
         .then((response) {

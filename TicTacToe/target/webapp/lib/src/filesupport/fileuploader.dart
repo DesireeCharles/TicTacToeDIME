@@ -18,7 +18,6 @@ bool isFileLikeObject(value) {
 
 class FileUploader {
   String url;
-  String authToken;
   bool isUploading = false;
   List<FileItem> queue;
   num progress = 0;
@@ -43,9 +42,6 @@ class FileUploader {
       url = options['url'];
     }
     fileReferences = <FileReference>[];
-    if (options.containsKey('authToken')) {
-      authToken = options['authToken'];
-    }
     queue = [];
     filters = [];
   }
@@ -257,8 +253,9 @@ class FileUploader {
     });
 
     xhr.open(item.method, url, async: true);
-    if (authToken != null) {
-      xhr.setRequestHeader('Authorization', authToken);
+    final jwt = window.localStorage['jwt'];
+    if (jwt != null) {
+      xhr.setRequestHeader('Authorization', 'Bearer ${jwt}');
     }
     xhr.send(form);
   }

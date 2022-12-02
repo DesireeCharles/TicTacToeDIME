@@ -1,5 +1,5 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+		         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
@@ -125,7 +125,31 @@
             <groupId>org.apache.shiro</groupId>
             <artifactId>shiro-web</artifactId>
         </dependency>
-
+        
+		<!-- graphql dependencies -->
+		<dependency>
+		    <groupId>com.graphql-java</groupId>
+		    <artifactId>graphql-java</artifactId>
+		    <version>15.0</version>
+		</dependency>
+		<dependency>
+		    <groupId>com.graphql-java-kickstart</groupId>
+		    <artifactId>graphql-java-servlet</artifactId>
+		    <version>11.1.0</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.nimbusds</groupId>
+			<artifactId>nimbus-jose-jwt</artifactId>
+			<version>9.25.4</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>commons-io</groupId>
+		    <artifactId>commons-io</artifactId>
+		    <version>2.6</version>
+		</dependency>
+		
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-core</artifactId>

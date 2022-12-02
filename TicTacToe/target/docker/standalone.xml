@@ -41,12 +41,15 @@
     </extensions>
     <system-properties>
         <property name="de.ls5.dywa.JBOSS_HOME" value="${jboss.home.dir}"/>
-        <property name="info.scce.dime.app.encrypt" value="${env.DIME_APP_ENCRYPT}"/>
+        <property name="info.scce.dime.app.encrypt.disable" value="${env.DIME_APP_ENCRYPT_DISABLE}"/>
+        <property name="info.scce.dime.app.encrypt.passphrase" value="${env.DIME_APP_ENCRYPT_PASSPHRASE}"/>
         <property name="info.scce.dime.app.mail.port" value="${env.DIME_APP_MAIL_PORT}"/>
         <property name="info.scce.dime.app.mail.server" value="${env.DIME_APP_MAIL_SERVER}"/>
         <property name="info.scce.dime.app.server.tier" value="${env.DIME_APP_SERVER_TIER}"/>
         <property name="info.scce.dime.app.server.url" value="${env.DIME_APP_SERVER_URL}"/>
         <property name="info.scce.dime.app.config" value="${env.DIME_APP_CONFIG}"/>
+        <property name="info.scce.dime.auth.private-key" value="${env.DIME_APP_AUTH_PRIVATE_KEY}"/>
+        <property name="info.scce.dime.auth.public-key" value="${env.DIME_APP_AUTH_PUBLIC_KEY}"/>
     </system-properties>
     <management>
         <audit-log>
@@ -504,20 +507,33 @@
                 <http-listener name="default" socket-binding="http" redirect-socket="https" enable-http2="true"/>
                 <https-listener name="https" socket-binding="https" ssl-context="applicationSSC" enable-http2="true"/>
                 <host name="default-host" alias="localhost">
-                    <!--location name="/" handler="welcome-content"/>
-                    <http-invoker http-authentication-factory="application-http-authentication"/-->
+                	<!-- 
+                		the following filter-ref properties are required to make the graphql and 
+                		the authentication APIs accessible from foreign hosts (cf. env.ALLOWED_ORIGINS)
+                	 -->
+		            <filter-ref name="Access-Control-Allow-Origin"/>
+		            <filter-ref name="Access-Control-Allow-Methods"/>
+		            <filter-ref name="Access-Control-Allow-Headers"/>
+		            <filter-ref name="Access-Control-Allow-Credentials"/>
+		            <filter-ref name="Access-Control-Max-Age"/>
                 </host>
             </server>
             <servlet-container name="default">
                 <jsp-config/>
                 <websockets/>
             </servlet-container>
-            <!--handlers>
-                <file name="welcome-content" path="${jboss.home.dir}/welcome-content"/>
-            </handlers-->
+            
             <application-security-domains>
                 <application-security-domain name="other" security-domain="ApplicationDomain"/>
             </application-security-domains>
+            
+            <filters>
+		        <response-header name="Access-Control-Allow-Origin" header-name="Access-Control-Allow-Origin" header-value="${env.ALLOWED_ORIGINS:http://localhost}"/>
+		        <response-header name="Access-Control-Allow-Methods" header-name="Access-Control-Allow-Methods" header-value="POST"/>
+		        <response-header name="Access-Control-Allow-Headers" header-name="Access-Control-Allow-Headers" header-value="*"/>
+		        <response-header name="Access-Control-Allow-Credentials" header-name="Access-Control-Allow-Credentials" header-value="true"/>
+		        <response-header name="Access-Control-Max-Age" header-name="Access-Control-Max-Age" header-value="7200"/>
+		    </filters>
         </subsystem>
         <subsystem xmlns="urn:jboss:domain:webservices:2.0" statistics-enabled="${wildfly.webservices.statistics-enabled:${wildfly.statistics-enabled:false}}">
             <wsdl-host>${jboss.bind.address:127.0.0.1}</wsdl-host>
