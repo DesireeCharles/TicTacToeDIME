@@ -89,9 +89,9 @@ class GameaAzVAIWnXEe2xCJpb6ooUzA extends dime.DIMEComponent implements OnInit, 
   	
   	
   	
-  	// branch Set X as info.scce.dime.gui.editor.graphiti.api.CButton@eb287240 (id: _0EoAoXPhEe2eGKutfpiSKw) in info.scce.dime.gui.editor.graphiti.api.CGUI@f524d492 (id: _AzVAIWnXEe2xCJpb6ooUzA)
-  	@Output('actionsetxevent') Stream<Map<String,dynamic>> get evt_actionsetxevent => actionsetxevent.stream;
-  	StreamController<Map<String,dynamic>> actionsetxevent = new StreamController();
+  	// branch empty as info.scce.dime.gui.editor.graphiti.api.CButton@4ae2cb7f (id: __1OZgXPkEe2eGKutfpiSKw) in info.scce.dime.gui.editor.graphiti.api.CGUI@84e25de0 (id: _ZlXgoXKOEe2rzNRUfilttw)
+  	@Output('actionemptyevent') Stream<Map<String,dynamic>> get evt_actionemptyevent => actionemptyevent.stream;
+  	StreamController<Map<String,dynamic>> actionemptyevent = new StreamController();
   	
   	@ViewChildren(modal.Modal)
   	List<modal.Modal> modals;
@@ -119,9 +119,9 @@ class GameaAzVAIWnXEe2xCJpb6ooUzA extends dime.DIMEComponent implements OnInit, 
 						
 		
 			  	
-		// branch Set X declaration
-		if(this.actionsetxevent!=null) {
-			  			this.actionsetxevent = new StreamController<Map<String,dynamic>>();  				
+		// branch empty declaration
+		if(this.actionemptyevent!=null) {
+			  			this.actionemptyevent = new StreamController<Map<String,dynamic>>();  				
 		}
 			
 		/// GUI badge
@@ -181,13 +181,6 @@ class GameaAzVAIWnXEe2xCJpb6ooUzA extends dime.DIMEComponent implements OnInit, 
   		
   		
   	
-  		/// callback, if the button Set X is clicked
-  			void actionsetxeventa0EoAoXPhEe2eGKutfpiSKwEventTrigger()
-  		
-  		{
-  			Map<String,dynamic> data = new Map();
-  			this.actionsetxevent.add(data);
-  		}
   		
   		
   		

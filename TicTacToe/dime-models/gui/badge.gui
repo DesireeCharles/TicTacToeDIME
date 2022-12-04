@@ -14,30 +14,30 @@ GUI _ZlXgoXKOEe2rzNRUfilttw {
   		name "entryState"
   		dfViewWorkaround true
   		isList false
-  		-IS-> _a8AjcXKOEe2rzNRUfilttw  decorate "" at (0,0) decorate "Text" at (0,0) {
-  			id _xfNOIHKPEe2rzNRUfilttw
+  		-IS-> __1OZgXPkEe2eGKutfpiSKw  decorate "" at (0,0) decorate "Text" at (0,0) {
+  			id _Bt6ZcXPlEe2eGKutfpiSKw
+  			exactMatch false
+  			negate false
+  			matchingType "_pPgBwXKPEe2rzNRUfilttw"
+  		}
+  		
+  		-IS-> _MY7KoXPlEe2eGKutfpiSKw  decorate "" at (0,0) decorate "Text" at (0,0) {
+  			id _S55kUXPlEe2eGKutfpiSKw
   			exactMatch false
   			negate false
   			matchingType "_oqhFYXKPEe2rzNRUfilttw"
   		}
   		
-  		-IS-> _zMuVUXKOEe2rzNRUfilttw  decorate "" at (0,0) decorate "Text" at (0,0) {
-  			id _x6zlAXKPEe2rzNRUfilttw
+  		-IS-> _O6r8wXPlEe2eGKutfpiSKw  decorate "" at (0,0) decorate "Text" at (0,0) {
+  			id _TQMkcXPlEe2eGKutfpiSKw
   			exactMatch false
   			negate false
   			matchingType "_o_tSQXKPEe2rzNRUfilttw"
   		}
-  		
-  		-IS-> _zgdwsXKOEe2rzNRUfilttw  decorate "" at (0,0) decorate "Text" at (0,0) {
-  			id _1-LT0XKPEe2rzNRUfilttw
-  			exactMatch false
-  			negate false
-  			matchingType "_pPgBwXKPEe2rzNRUfilttw"
-  		}
   	}
   }
   
-  Template _ZlcZI3KOEe2rzNRUfilttw at 240,10 size 220,322 {
+  Template _ZlcZI3KOEe2rzNRUfilttw at 240,10 size 220,308 {
   	blockName ""
   	disableAutoLayout false
   	generalStyle GeneralStyling _ZlhRoHKOEe2rzNRUfilttw {
@@ -46,14 +46,45 @@ GUI _ZlXgoXKOEe2rzNRUfilttw {
   			attributes [  ]
   			marginTop None
   		}
-  	Badge _a8AjcXKOEe2rzNRUfilttw at 10,30 size 200,74 {
+  	Button __1OZgXPkEe2eGKutfpiSKw at 10,198 size 200,60 {
+  		displayLabel " "
+  		label "empty"
+  		styling ButtonStyling __1VHMHPkEe2eGKutfpiSKw {
+  				fullWidth false
+  				size Default
+  				disabled false
+  				color Default
+  			}
+  		options ButtonOptions __1YKgHPkEe2eGKutfpiSKw {
+  				isLink false
+  				submitsForm true
+  			}
+  		disabled false
+  		icon Icon __1PnpXPkEe2eGKutfpiSKw {
+  				postIcon None
+  				preIcon None
+  			}
+  		generalStyle GeneralStyling __1PnpHPkEe2eGKutfpiSKw {
+  				tallness Fitting
+  				marginBottom None
+  				attributes [  ]
+  				marginTop None
+  			}
+  		MoveUp __1PnoXPkEe2eGKutfpiSKw at 2,2 size 14,7 {
+  		}
+  		
+  		MoveDown __1Pno3PkEe2eGKutfpiSKw at 2,10 size 14,7 {
+  		}
+  	}
+  	
+  	Badge _MY7KoXPlEe2eGKutfpiSKw at 10,30 size 200,74 {
   		color Lightblue
-  		content [ StaticContent _a8JtZXKOEe2rzNRUfilttw {
+  		content [ StaticContent _MY-1AXPlEe2eGKutfpiSKw {
   				renderMarkdown false
   				maxChars 0
   				html false
   				rawContent "X\n"
-  				styling TextStyling _a8JtZnKOEe2rzNRUfilttw {
+  				styling TextStyling _MZCfYHPlEe2eGKutfpiSKw {
   						small false
   						highlight false
   						deleted false
@@ -64,27 +95,27 @@ GUI _ZlXgoXKOEe2rzNRUfilttw {
   						color Default
   					}
   			} ]
-  		generalStyle GeneralStyling _a8JtZHKOEe2rzNRUfilttw {
+  		generalStyle GeneralStyling _MY-1AHPlEe2eGKutfpiSKw {
   				tallness Fitting
   				marginBottom None
   				attributes [  ]
   				marginTop None
   			}
-  		MoveUp _a8JtYXKOEe2rzNRUfilttw at 2,2 size 14,7 {
+  		MoveUp _MY-N8XPlEe2eGKutfpiSKw at 2,2 size 14,7 {
   		}
   		
-  		MoveDown _a8JtY3KOEe2rzNRUfilttw at 2,10 size 14,7 {
+  		MoveDown _MY-N83PlEe2eGKutfpiSKw at 2,10 size 14,7 {
   		}
   	}
   	
-  	Badge _zMuVUXKOEe2rzNRUfilttw at 10,114 size 200,74 {
+  	Badge _O6r8wXPlEe2eGKutfpiSKw at 10,114 size 200,74 {
   		color Lightblue
-  		content [ StaticContent _zM4GUXKOEe2rzNRUfilttw {
+  		content [ StaticContent _O6tx8XPlEe2eGKutfpiSKw {
   				renderMarkdown false
   				maxChars 0
   				html false
   				rawContent "O\n"
-  				styling TextStyling _zM4GUnKOEe2rzNRUfilttw {
+  				styling TextStyling _O6tx8nPlEe2eGKutfpiSKw {
   						small false
   						highlight false
   						deleted false
@@ -95,47 +126,16 @@ GUI _ZlXgoXKOEe2rzNRUfilttw {
   						color Default
   					}
   			} ]
-  		generalStyle GeneralStyling _zM4GUHKOEe2rzNRUfilttw {
+  		generalStyle GeneralStyling _O6tx8HPlEe2eGKutfpiSKw {
   				tallness Fitting
   				marginBottom None
   				attributes [  ]
   				marginTop None
   			}
-  		MoveUp _zMzN0XKOEe2rzNRUfilttw at 2,2 size 14,7 {
+  		MoveUp _O6tK4XPlEe2eGKutfpiSKw at 2,2 size 14,7 {
   		}
   		
-  		MoveDown _zMzN03KOEe2rzNRUfilttw at 2,10 size 14,7 {
-  		}
-  	}
-  	
-  	Badge _zgdwsXKOEe2rzNRUfilttw at 10,198 size 200,74 {
-  		color Default
-  		content [ StaticContent _zgipNXKOEe2rzNRUfilttw {
-  				renderMarkdown false
-  				maxChars 0
-  				html false
-  				rawContent " "
-  				styling TextStyling _zgipNnKOEe2rzNRUfilttw {
-  						small false
-  						highlight false
-  						deleted false
-  						underline false
-  						bold false
-  						alignment Left
-  						italic false
-  						color Default
-  					}
-  			} ]
-  		generalStyle GeneralStyling _zgipNHKOEe2rzNRUfilttw {
-  				tallness Fitting
-  				marginBottom None
-  				attributes [  ]
-  				marginTop None
-  			}
-  		MoveUp _zgipMXKOEe2rzNRUfilttw at 2,2 size 14,7 {
-  		}
-  		
-  		MoveDown _zgipM3KOEe2rzNRUfilttw at 2,10 size 14,7 {
+  		MoveDown _O6tK43PlEe2eGKutfpiSKw at 2,10 size 14,7 {
   		}
   	}
   }

@@ -9,6 +9,12 @@ import 'package:app/src/core/dime_process_service.dart';
 class Badge_ZlXgoXKOEe2rzNRUfilttwBranch extends ContinueProcessRequest {
 	
 	
+	Empty branch_empty;
+	
+	Badge_ZlXgoXKOEe2rzNRUfilttwBranch.foremptyBranch(
+	) {
+		branch_empty = new Empty();
+	}
 
 	String toJSON() {
 		return jsonEncode(toJSOG());
@@ -18,7 +24,22 @@ class Badge_ZlXgoXKOEe2rzNRUfilttwBranch extends ContinueProcessRequest {
 	{
 		Map<String,dynamic> jsonObj = new Map();
 		
+		if(branch_empty!=null) {
+			return branch_empty.toJSOG();
+		}
 		throw new Exception("Exhaustive IF Badge_ZlXgoXKOEe2rzNRUfilttwBranch.dart");
 	}
 }
 	
+	class Empty {
+		
+
+		Map<String,dynamic> toJSOG()
+		{
+			
+			Map<String,dynamic> jsonObj = new Map();
+					
+			return jsonObj;
+		}
+		
+	}

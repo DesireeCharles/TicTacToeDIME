@@ -9,11 +9,11 @@ import 'package:app/src/core/dime_process_service.dart';
 class Game_AzVAIWnXEe2xCJpb6ooUzABranch extends ContinueProcessRequest {
 	
 	
-	Set_X branch_Set_X;
+	Empty branch_empty;
 	
-	Game_AzVAIWnXEe2xCJpb6ooUzABranch.forSet_XBranch(
+	Game_AzVAIWnXEe2xCJpb6ooUzABranch.foremptyBranch(
 	) {
-		branch_Set_X = new Set_X();
+		branch_empty = new Empty();
 	}
 
 	String toJSON() {
@@ -24,14 +24,14 @@ class Game_AzVAIWnXEe2xCJpb6ooUzABranch extends ContinueProcessRequest {
 	{
 		Map<String,dynamic> jsonObj = new Map();
 		
-		if(branch_Set_X!=null) {
-			return branch_Set_X.toJSOG();
+		if(branch_empty!=null) {
+			return branch_empty.toJSOG();
 		}
 		throw new Exception("Exhaustive IF Game_AzVAIWnXEe2xCJpb6ooUzABranch.dart");
 	}
 }
 	
-	class Set_X {
+	class Empty {
 		
 
 		Map<String,dynamic> toJSOG()

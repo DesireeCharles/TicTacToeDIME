@@ -1,8 +1,8 @@
 // Generator: info.scce.dime.generator.rest.GUIProgressGenerator#generateGUIResult(GUI gui,Map<String,Map<String,TypeView>> branches)
 
-package info.scce.dime.gui.dime__HYPHEN_MINUS__models.gui.game;
+package info.scce.dime.gui.dime__HYPHEN_MINUS__models.gui.badge;
 
-public class Game_AzVAIWnXEe2xCJpb6ooUzAResult {
+public class Badge_ZlXgoXKOEe2rzNRUfilttwResult {
 	
 	private String branchName;
 	
@@ -11,12 +11,12 @@ public class Game_AzVAIWnXEe2xCJpb6ooUzAResult {
 	}
 	
 	
-	public Game_AzVAIWnXEe2xCJpb6ooUzAResult(String branchName) {
+	public Badge_ZlXgoXKOEe2rzNRUfilttwResult(String branchName) {
 		this.branchName = branchName;
 	}
 	
 	
-	public Game_AzVAIWnXEe2xCJpb6ooUzAResult(String branchName, gui___1OZgXPkEe2eGKutfpiSKwemptyReturn gui___1OZgXPkEe2eGKutfpiSKwemptyReturn) {
+	public Badge_ZlXgoXKOEe2rzNRUfilttwResult(String branchName, gui___1OZgXPkEe2eGKutfpiSKwemptyReturn gui___1OZgXPkEe2eGKutfpiSKwemptyReturn) {
 		this.branchName = branchName;
 		this.gui___1OZgXPkEe2eGKutfpiSKwemptyReturn = gui___1OZgXPkEe2eGKutfpiSKwemptyReturn;
 	}

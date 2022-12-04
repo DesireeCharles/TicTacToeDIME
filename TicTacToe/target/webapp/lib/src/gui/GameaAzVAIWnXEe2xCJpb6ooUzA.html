@@ -29,23 +29,10 @@ class="col-md-12 text-left"
 	  	[runtimeId]="runtimeId"
 	  	[guiId]="guiId"
 	  	[entryState]="current?.entryState"
+	  	
+	  	(actionemptyevent)="actionemptyevent.add($event)"
+	  	
 	  >
 	  </badge-tag>
 </div>
-</div>
-<div class="row">
-	<div class="col-sm-12">
-<!-- beginn button Set X -->
-<button 
-	data-cinco-id="_0EoAoXPhEe2eGKutfpiSKw"
-	tabindex="0" aria-label="Set X"
-	[disabled]="isBusy()"
-type="button"
-(click)="actionsetxeventa0EoAoXPhEe2eGKutfpiSKwEventTrigger()
-"
-class="btn btn-info">
- Set X
-</button>
-<!-- end button Set X -->
-	</div>
 </div>

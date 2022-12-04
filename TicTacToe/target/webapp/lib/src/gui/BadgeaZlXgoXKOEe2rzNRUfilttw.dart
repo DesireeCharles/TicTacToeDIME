@@ -84,6 +84,9 @@ class BadgeaZlXgoXKOEe2rzNRUfilttw extends dime.DIMEComponent implements OnInit,
   	
   	
   	
+  	// branch empty as info.scce.dime.gui.editor.graphiti.api.CButton@4ae2cb7f (id: __1OZgXPkEe2eGKutfpiSKw) in info.scce.dime.gui.editor.graphiti.api.CGUI@84e25de0 (id: _ZlXgoXKOEe2rzNRUfilttw)
+  	@Output('actionemptyevent') Stream<Map<String,dynamic>> get evt_actionemptyevent => actionemptyevent.stream;
+  	StreamController<Map<String,dynamic>> actionemptyevent = new StreamController();
   	
   	@ViewChildren(modal.Modal)
   	List<modal.Modal> modals;
@@ -111,6 +114,10 @@ class BadgeaZlXgoXKOEe2rzNRUfilttw extends dime.DIMEComponent implements OnInit,
 						
 		
 			  	
+		// branch empty declaration
+		if(this.actionemptyevent!=null) {
+			  			this.actionemptyevent = new StreamController<Map<String,dynamic>>();  				
+		}
 			
 		updateImageHash();
 	}
@@ -164,6 +171,13 @@ class BadgeaZlXgoXKOEe2rzNRUfilttw extends dime.DIMEComponent implements OnInit,
   		
   		
   	
+  		/// callback, if the button empty is clicked
+  			void actionemptyeventa_1OZgXPkEe2eGKutfpiSKwEventTrigger()
+  		
+  		{
+  			Map<String,dynamic> data = new Map();
+  			this.actionemptyevent.add(data);
+  		}
   		
   		
   		

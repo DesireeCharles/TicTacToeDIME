@@ -84,6 +84,7 @@ public class Native {
 
 
 		List<TableRow> tableRowList = new ArrayList<TableRow>();
+		int count = 0;
 		for (int x = 0; x < width; x++) {
 			TableRow tableRow = getBean(TableRowController.class).create(null);
 			System.err.println("inside for loop x =" + x);
@@ -94,10 +95,19 @@ public class Native {
 				System.err.println("inside nested for loop y =" + y);
 				TableEntry tableEntry = getBean(TableEntryController.class).create(null);
 //				TableEntry tableEntry = teController.create("Hello");
+				if (count<3) {
 				EntryState entryState = EntryState.empty;
 				tableEntry.setentryState(entryState);
+				} else if (count <6 && count >= 3) {
+					EntryState entryState = EntryState.X;
+					tableEntry.setentryState(entryState);
+				} else {
+					EntryState entryState = EntryState.O;
+					tableEntry.setentryState(entryState);
+				}
 				tableEntry.setvalue("x");
 				tableEntryList.add(tableEntry);
+				count++;
 			}
 
 			tableRow.settableEntry_TableEntry(tableEntryList);

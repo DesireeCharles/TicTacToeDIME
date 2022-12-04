@@ -30,15 +30,19 @@ O
 </div>
 <div class="row">
 	<div class="col-sm-12">
-<!-- beginn badge -->
-<span *ngIf="entryState?.dywa_name=='empty' 
+<!-- beginn button empty -->
+<button *ngIf="entryState?.dywa_name=='empty' 
 " 
 aria-live="polite" aria-atomic="true" 
 
-  class="label label-default">
-<span aria-live="polite" aria-atomic="true" class="text-left">
-</span>
-</span>
-<!-- end badge -->
+	data-cinco-id="__1OZgXPkEe2eGKutfpiSKw"
+	tabindex="0" aria-label="empty"
+	[disabled]="isBusy()"
+type="button"
+(click)="actionemptyeventa_1OZgXPkEe2eGKutfpiSKwEventTrigger()
+"
+class="btn btn-default">
+</button>
+<!-- end button empty -->
 	</div>
 </div>

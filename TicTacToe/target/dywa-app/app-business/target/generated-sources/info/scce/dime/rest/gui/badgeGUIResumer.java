@@ -2,8 +2,8 @@
 package info.scce.dime.rest.gui;
 
 @javax.transaction.Transactional(dontRollbackOn = info.scce.dime.exception.GUIEncounteredSignal.class)
-@javax.ws.rs.Path("/continue/_AzVAIWnXEe2xCJpb6ooUzA")
-public class GameGUIResumer extends info.scce.dime.process.GUIResumer {
+@javax.ws.rs.Path("/continue/_ZlXgoXKOEe2rzNRUfilttw")
+public class badgeGUIResumer extends info.scce.dime.process.GUIResumer {
 	
 	@javax.inject.Inject
 	private info.scce.dime.gui.ProcessResumer processResumer;
@@ -19,12 +19,12 @@ public class GameGUIResumer extends info.scce.dime.process.GUIResumer {
 	@javax.ws.rs.Consumes(javax.ws.rs.core.MediaType.APPLICATION_JSON)
 	public javax.ws.rs.core.Response continueemptyBranch(info.scce.dime.rest.gui.model.__1OZgXPkEe2eGKutfpiSKwBranch output) {
 		
-		checkAuthentication(output.getCallStack(),"_AzVAIWnXEe2xCJpb6ooUzA/empty");
+		checkAuthentication(output.getCallStack(),"_ZlXgoXKOEe2rzNRUfilttw/empty");
 		
 		
-		final info.scce.dime.gui.dime__HYPHEN_MINUS__models.gui.game.Game_AzVAIWnXEe2xCJpb6ooUzAResult guiResult = 
-		new info.scce.dime.gui.dime__HYPHEN_MINUS__models.gui.game.Game_AzVAIWnXEe2xCJpb6ooUzAResult("empty");
-		if(!"_AzVAIWnXEe2xCJpb6ooUzA".equals(output.getCallStack().getCallFrames().get(output.getCallStack().getCallFrames().size()-1).getPointer().split(":")[2])){
+		final info.scce.dime.gui.dime__HYPHEN_MINUS__models.gui.badge.Badge_ZlXgoXKOEe2rzNRUfilttwResult guiResult = 
+		new info.scce.dime.gui.dime__HYPHEN_MINUS__models.gui.badge.Badge_ZlXgoXKOEe2rzNRUfilttwResult("empty");
+		if(!"_ZlXgoXKOEe2rzNRUfilttw".equals(output.getCallStack().getCallFrames().get(output.getCallStack().getCallFrames().size()-1).getPointer().split(":")[2])){
 					output.getCallStack().getCallFrames().get(output.getCallStack().getCallFrames().size()-1).setPointer(output.getCallStack().getCallFrames().get(output.getCallStack().getCallFrames().size()-1).getMajorGUI());
 		}
 		if(!output.getCallStack().getCallFrames().isEmpty()) {

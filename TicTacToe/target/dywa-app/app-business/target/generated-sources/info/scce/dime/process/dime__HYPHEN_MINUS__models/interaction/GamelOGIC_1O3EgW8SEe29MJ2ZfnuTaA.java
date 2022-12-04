@@ -34,6 +34,48 @@ import com.fasterxml.jackson.annotation.JsonAutoDetect;
 
 public final class GamelOGIC_1O3EgW8SEe29MJ2ZfnuTaA implements DIMEProcess {
 
+			// helper context for JSON serialization.
+			@JsonAutoDetect(fieldVisibility = JsonAutoDetect.Visibility.ANY)
+			public static class JSONContext extends info.scce.dime.process.JSONContext {
+
+				// begin context variables
+				// end context variables
+
+				// begin direct dataflow variables
+				private de.ls5.dywa.generated.rest.types.Table drawBoardSuccessTable_I2dOoXFiEe24rt9YW3Qgng;
+				// end direct dataflow variables
+
+				// begin index variables of iterate sibs
+				// endindex variables of iterate sibs
+
+				public static JSONContext toJSON(BeanManager bm, Context ctx) {
+					final JSONContext result = new JSONContext();
+					final info.scce.dime.rest.ObjectCache objectCache = new info.scce.dime.rest.ObjectCache();
+
+					if(ctx.drawBoardSuccessTable_I2dOoXFiEe24rt9YW3Qgng != null) {
+						result.drawBoardSuccessTable_I2dOoXFiEe24rt9YW3Qgng = de.ls5.dywa.generated.rest.types.Table.fromDywaEntity(ctx.drawBoardSuccessTable_I2dOoXFiEe24rt9YW3Qgng, objectCache);
+						de.ls5.dywa.generated.rest.types.TableSelective.copy(ctx.drawBoardSuccessTable_I2dOoXFiEe24rt9YW3Qgng, result.drawBoardSuccessTable_I2dOoXFiEe24rt9YW3Qgng, objectCache);
+					}
+
+					return result;
+				}
+
+				@Override
+		        public Context toContext(BeanManager bm, ProcessCallFrame callStack) {
+					final Context result = new Context();
+		            result.beanManager = bm;
+					result.callStack = callStack;
+
+
+					info.scce.dime.process.ContextTransformer contextTransformer = info.scce.dime.process.ContextTransformer.getInstance(bm);
+
+					if (this.drawBoardSuccessTable_I2dOoXFiEe24rt9YW3Qgng != null) {
+						result.drawBoardSuccessTable_I2dOoXFiEe24rt9YW3Qgng = contextTransformer.transform(this.drawBoardSuccessTable_I2dOoXFiEe24rt9YW3Qgng);
+					}
+
+					return result;
+		        }
+			}
 
 	// attributes shaping the context variables.
 	public static class Context implements DIMEProcessContext {
@@ -57,8 +99,7 @@ public final class GamelOGIC_1O3EgW8SEe29MJ2ZfnuTaA implements DIMEProcess {
 		private de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.Table drawBoardSuccessTable_I2dOoXFiEe24rt9YW3Qgng;
 
 		public info.scce.dime.process.JSONContext toJSON() {
-			// this process has no context variables that need to be preserved
-			return null;
+			return JSONContext.toJSON(beanManager, this);
         }
 	}
 
@@ -101,10 +142,7 @@ public final class GamelOGIC_1O3EgW8SEe29MJ2ZfnuTaA implements DIMEProcess {
 
 	@Override
 	public GamelOGIC_1O3EgW8SEe29MJ2ZfnuTaAResult continueExecution(ProcessCallFrame callStack, info.scce.dime.process.JSONContext context, String sibId, Object slgResult) {
-		assert context == null;
-		final Context ctx = new Context();
-		ctx.beanManager = this.beanManager;
-		ctx.callStack = callStack;
+		final Context ctx = ((JSONContext) context).toContext(this.beanManager, callStack);
 
 		switch (sibId) {
 		case "_Tepc4W8TEe29MJ2ZfnuTaA": return executeInternal(ctx, continue_Tepc4W8TEe29MJ2ZfnuTaA(ctx, slgResult));
@@ -216,8 +254,15 @@ public final class GamelOGIC_1O3EgW8SEe29MJ2ZfnuTaA implements DIMEProcess {
 		
 		ctx.callStack.getCallFrames().remove(ctx.callStack.getCallFrames().size()-1);
 		
-		// unspecified branch, show same GUI again
-		return execute_Tepc4W8TEe29MJ2ZfnuTaA(ctx);
+		final info.scce.dime.gui.dime__HYPHEN_MINUS__models.gui.game.Game_AzVAIWnXEe2xCJpb6ooUzAResult result = (info.scce.dime.gui.dime__HYPHEN_MINUS__models.gui.game.Game_AzVAIWnXEe2xCJpb6ooUzAResult) guiResult;
+		if ("empty".equals(result.getBranchName())) {
+			// branch 'empty'
+			return SIB_ID._Tepc4W8TEe29MJ2ZfnuTaA;
+		}
+		else {
+			// unspecified branch, show same GUI again
+			return execute_Tepc4W8TEe29MJ2ZfnuTaA(ctx);
+		}
 	}
 	// container for atomic SIB 'drawBoard'.
 	public SIB_ID execute_CauWwXFhEe24rt9YW3Qgng(final Context ctx) {
