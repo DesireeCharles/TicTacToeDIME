@@ -5,6 +5,12 @@ package de.ls5.dywa.generated.rest.types;
 @com.fasterxml.jackson.annotation.JsonTypeInfo(use = com.fasterxml.jackson.annotation.JsonTypeInfo.Id.CLASS, property = info.scce.dime.util.Constants.DYWA_RUNTIME_TYPE)
 public interface TableEntry extends info.scce.dime.rest.RESTBaseType  {
 
+	EntryState
+	 getentryState();
+	boolean isentryStateSet();
+
+	void setentryState(final EntryState
+	 entryState);
 	java.lang.String
 	 getvalue();
 	boolean isvalueSet();

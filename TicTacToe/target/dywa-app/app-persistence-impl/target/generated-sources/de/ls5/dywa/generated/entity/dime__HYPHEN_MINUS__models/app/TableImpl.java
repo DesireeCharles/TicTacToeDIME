@@ -26,7 +26,7 @@ public class TableImpl implements Table {
 
 	
 	/* MAIN ATTRIBUTES START */
-	@de.ls5.dywa.annotations.IdRef(id = 13L)
+	@de.ls5.dywa.annotations.IdRef(id = 14L)
 	@org.hibernate.annotations.Cascade(org.hibernate.annotations.CascadeType.PERSIST)
 	@javax.persistence.JoinTable(name="r_Table_TableRow__qyvvaw8qee2x_c6", joinColumns = { @javax.persistence.JoinColumn(name = "r1_Table_id") }, inverseJoinColumns = { @javax.persistence.JoinColumn(name = "r2_TableRow_id") })
 	@org.hibernate.annotations.ManyToAny(metaColumn=@javax.persistence.Column(name="m_TableRow_Type__qyvvaw8qee2x_c6"))

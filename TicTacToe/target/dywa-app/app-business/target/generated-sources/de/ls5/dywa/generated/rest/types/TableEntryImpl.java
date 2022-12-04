@@ -6,6 +6,31 @@ package de.ls5.dywa.generated.rest.types;
 public class TableEntryImpl extends info.scce.dime.rest.RESTBaseImpl implements TableEntry
  {
 
+	private EntryState
+	 entryState;
+	private boolean isentryStateSet;
+	
+	@com.fasterxml.jackson.annotation.JsonProperty("entryState")
+	@info.scce.dime.rest.JsonRenderIndicator("isentryStateSet")
+	@java.lang.Override
+	public EntryState
+	 getentryState() {
+		return this.entryState;
+	}
+	
+	@com.fasterxml.jackson.annotation.JsonIgnore
+	public boolean isentryStateSet() {
+		return this.isentryStateSet;
+	}
+
+	@com.fasterxml.jackson.annotation.JsonProperty("entryState")
+	@java.lang.Override
+	public void setentryState(final EntryState
+	 entryState) {
+		this.entryState = entryState;
+		this.isentryStateSet = true;
+	}
+
 	private java.lang.String
 	 value;
 	private boolean isvalueSet;

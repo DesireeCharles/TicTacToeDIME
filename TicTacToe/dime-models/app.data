@@ -84,11 +84,43 @@ Data _tH3fEMwMEeWZVvvwxpYu8A {
   	}
   }
   
-  ConcreteType _KEKm0W8QEe2x_c6ogIlfZw at 400,390 size 140,55 {
+  ConcreteType _KEKm0W8QEe2x_c6ogIlfZw at 400,390 size 140,73 {
   	name "TableEntry"
-  	PrimitiveAttribute _Rwbu8W8QEe2x_c6ogIlfZw at 5,32 size 130,18 {
+  	PrimitiveAttribute _Rwbu8W8QEe2x_c6ogIlfZw at 5,50 size 130,18 {
   		dataType Text
   		name "value"
+  		isList false
+  	}
+  	
+  	ComplexAttribute _suTD4XKPEe2rzNRUfilttw at 5,32 size 130,18 {
+  		dataType _m_TgwHKPEe2rzNRUfilttw
+  		name "entryState"
+  		isList false
+  	}
+  	-Association-> _m_TgwHKPEe2rzNRUfilttw  decorate "Text" at (-73,8) decorate "" at (0,0) {
+  		id _suEaYXKPEe2rzNRUfilttw
+  		isHidden false
+  		sourceAttr _suTD4XKPEe2rzNRUfilttw
+  	}
+  }
+  
+  EnumType _m_TgwHKPEe2rzNRUfilttw at 680,381 size 140,91 {
+  	name "EntryState"
+  	EnumLiteral _oqhFYXKPEe2rzNRUfilttw at 5,50 size 130,18 {
+  		displayName ""
+  		name "X"
+  		isList false
+  	}
+  	
+  	EnumLiteral _o_tSQXKPEe2rzNRUfilttw at 5,32 size 130,18 {
+  		displayName ""
+  		name "O"
+  		isList false
+  	}
+  	
+  	EnumLiteral _pPgBwXKPEe2rzNRUfilttw at 5,68 size 130,18 {
+  		displayName ""
+  		name "empty"
   		isList false
   	}
   }

@@ -5,25 +5,25 @@ package de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app;
 @de.ls5.dywa.annotations.ShortDescription(description = "")
 @de.ls5.dywa.annotations.LongDescription(description = "")
 public interface ConcreteUser extends de.ls5.dywa.generated.util.Identifiable {
-	@de.ls5.dywa.annotations.IdRef(id = 5L)
+	@de.ls5.dywa.annotations.IdRef(id = 6L)
 	@de.ls5.dywa.annotations.OriginalName(name = "baseUser")
 	@de.ls5.dywa.annotations.ShortDescription(description = "")
 	@de.ls5.dywa.annotations.LongDescription(description = "")
 	de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.BaseUser getbaseUser();
 	
-	@de.ls5.dywa.annotations.IdRef(id = 5L)
+	@de.ls5.dywa.annotations.IdRef(id = 6L)
 	@de.ls5.dywa.annotations.OriginalName(name = "baseUser")
 	@de.ls5.dywa.annotations.ShortDescription(description = "")
 	@de.ls5.dywa.annotations.LongDescription(description = "")
 	void setbaseUser(de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.BaseUser object);
 	
-	@de.ls5.dywa.annotations.IdRef(id = 6L)
+	@de.ls5.dywa.annotations.IdRef(id = 7L)
 	@de.ls5.dywa.annotations.OriginalName(name = "dywaSwitchedTo")
 	@de.ls5.dywa.annotations.ShortDescription(description = "")
 	@de.ls5.dywa.annotations.LongDescription(description = "")
 	de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.ConcreteUser getdywaSwitchedTo();
 	
-	@de.ls5.dywa.annotations.IdRef(id = 6L)
+	@de.ls5.dywa.annotations.IdRef(id = 7L)
 	@de.ls5.dywa.annotations.OriginalName(name = "dywaSwitchedTo")
 	@de.ls5.dywa.annotations.ShortDescription(description = "")
 	@de.ls5.dywa.annotations.LongDescription(description = "")

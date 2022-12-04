@@ -6,15 +6,9 @@ import 'package:app/src/data/Data.dart' as Data;
 import 'package:app/src/models/FileReference.dart';
 import 'package:app/src/core/dime_process_service.dart';
 
-class Game_AzVAIWnXEe2xCJpb6ooUzABranch extends ContinueProcessRequest {
+class Badge_ZlXgoXKOEe2rzNRUfilttwBranch extends ContinueProcessRequest {
 	
 	
-	Set_X branch_Set_X;
-	
-	Game_AzVAIWnXEe2xCJpb6ooUzABranch.forSet_XBranch(
-	) {
-		branch_Set_X = new Set_X();
-	}
 
 	String toJSON() {
 		return jsonEncode(toJSOG());
@@ -24,22 +18,7 @@ class Game_AzVAIWnXEe2xCJpb6ooUzABranch extends ContinueProcessRequest {
 	{
 		Map<String,dynamic> jsonObj = new Map();
 		
-		if(branch_Set_X!=null) {
-			return branch_Set_X.toJSOG();
-		}
-		throw new Exception("Exhaustive IF Game_AzVAIWnXEe2xCJpb6ooUzABranch.dart");
+		throw new Exception("Exhaustive IF Badge_ZlXgoXKOEe2rzNRUfilttwBranch.dart");
 	}
 }
 	
-	class Set_X {
-		
-
-		Map<String,dynamic> toJSOG()
-		{
-			
-			Map<String,dynamic> jsonObj = new Map();
-					
-			return jsonObj;
-		}
-		
-	}

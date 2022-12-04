@@ -54,7 +54,7 @@ public final class GamelOGIC_1O3EgW8SEe29MJ2ZfnuTaA implements DIMEProcess {
 		private ProcessCallFrame callStack = new ProcessCallFrame();
 
 		// direct dataflow variables.
-		private de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.Table drawBoardSuccessTable_MekP4W8UEe29MJ2ZfnuTaA;
+		private de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.Table drawBoardSuccessTable_I2dOoXFiEe24rt9YW3Qgng;
 
 		public info.scce.dime.process.JSONContext toJSON() {
 			// this process has no context variables that need to be preserved
@@ -64,7 +64,7 @@ public final class GamelOGIC_1O3EgW8SEe29MJ2ZfnuTaA implements DIMEProcess {
 
 	private enum SIB_ID {
 	_Tepc4W8TEe29MJ2ZfnuTaA,
-	_MeYCoW8UEe29MJ2ZfnuTaA,
+	_CauWwXFhEe24rt9YW3Qgng,
 		;
 	}
 
@@ -88,7 +88,7 @@ public final class GamelOGIC_1O3EgW8SEe29MJ2ZfnuTaA implements DIMEProcess {
 		final Context ctx = createContext();
 		ctx.callStack.setAuthenticationRequired(isAuthenticationRequired);
 
-		return executeInternal(ctx, SIB_ID._MeYCoW8UEe29MJ2ZfnuTaA);
+		return executeInternal(ctx, SIB_ID._CauWwXFhEe24rt9YW3Qgng);
 	}
 	
 	
@@ -96,7 +96,7 @@ public final class GamelOGIC_1O3EgW8SEe29MJ2ZfnuTaA implements DIMEProcess {
 		final Context ctx = createContext();
 		ctx.callStack = callStack;
 
-		return executeInternal(ctx, SIB_ID._MeYCoW8UEe29MJ2ZfnuTaA);
+		return executeInternal(ctx, SIB_ID._CauWwXFhEe24rt9YW3Qgng);
 	}
 
 	@Override
@@ -120,8 +120,8 @@ public final class GamelOGIC_1O3EgW8SEe29MJ2ZfnuTaA implements DIMEProcess {
 					curr = execute_Tepc4W8TEe29MJ2ZfnuTaA(ctx);
 					break;
 				}
-				case _MeYCoW8UEe29MJ2ZfnuTaA: {
-					curr = execute_MeYCoW8UEe29MJ2ZfnuTaA(ctx);
+				case _CauWwXFhEe24rt9YW3Qgng: {
+					curr = execute_CauWwXFhEe24rt9YW3Qgng(ctx);
 					break;
 				}
 				default: {
@@ -173,7 +173,7 @@ public final class GamelOGIC_1O3EgW8SEe29MJ2ZfnuTaA implements DIMEProcess {
 		{
 			de.ls5.dywa.generated.rest.types.Table
 			 result = null;
-			de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.Table obj = ctx.drawBoardSuccessTable_MekP4W8UEe29MJ2ZfnuTaA;
+			de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.Table obj = ctx.drawBoardSuccessTable_I2dOoXFiEe24rt9YW3Qgng;
 			
 			de.ls5.dywa.generated.rest.types.Table restTO;
 			
@@ -220,10 +220,10 @@ public final class GamelOGIC_1O3EgW8SEe29MJ2ZfnuTaA implements DIMEProcess {
 		return execute_Tepc4W8TEe29MJ2ZfnuTaA(ctx);
 	}
 	// container for atomic SIB 'drawBoard'.
-	public SIB_ID execute_MeYCoW8UEe29MJ2ZfnuTaA(final Context ctx) {
+	public SIB_ID execute_CauWwXFhEe24rt9YW3Qgng(final Context ctx) {
 		try {
 			final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.Table result = info.scce.dime.app.game.Native.createGameBoard(3l, 3l);
-			ctx.drawBoardSuccessTable_MekP4W8UEe29MJ2ZfnuTaA = result;
+			ctx.drawBoardSuccessTable_I2dOoXFiEe24rt9YW3Qgng = result;
 		}
 		catch (Exception e) {
 			e.printStackTrace();

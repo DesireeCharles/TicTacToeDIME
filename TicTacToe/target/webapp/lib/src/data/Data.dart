@@ -26,6 +26,10 @@ class DataCastUtil {
 	static TableEntry castToTableEntry(core.Object o) => o as TableEntry;
 	static DIMEList<TableEntry> castToListTableEntry(DIMEList<core.Object> os) => new DIMEList.from(os.cast<TableEntry>());
 	static DIMEList<TableEntry> newListTableEntry() => new DIMEList<TableEntry>();
+	
+	static EntryState castToEntryState(core.Object o) => o as EntryState;
+	static DIMEList<EntryState> castToListEntryState(DIMEList<core.Object> os) => new DIMEList.from(os.cast<EntryState>());
+	static DIMEList<EntryState> newListEntryState() => new DIMEList<EntryState>();
 }
 class ConcreteUser extends BaseModel
 {
@@ -134,7 +138,7 @@ class ConcreteUser extends BaseModel
 			if (jsog.containsKey("dywaSwitchedTo")) {
 				core.Map<core.String,core.dynamic> jsogObj = jsog["dywaSwitchedTo"];
 				if(jsogObj != null) {
-					ConcreteUser valueaVmqmgXAJEe2c9Lz2G8j7_w;
+					ConcreteUser valuea4lGXoXPgEe2eGKutfpiSKw;
 					
 					core.String jsogId;
 					
@@ -145,22 +149,22 @@ class ConcreteUser extends BaseModel
 					 	jsogId = jsogObj['@id'];
 					}
 					if (cache.containsKey(jsogId)) {
-						valueaVmqmgXAJEe2c9Lz2G8j7_w = cache[jsogId];
+						valuea4lGXoXPgEe2eGKutfpiSKw = cache[jsogId];
 					}
 					else {
 						if (jsogObj != null) {
 							if (jsogObj['dywaRuntimeType'] == "de.ls5.dywa.generated.rest.types.ConcreteUserImpl") {
-								valueaVmqmgXAJEe2c9Lz2G8j7_w = new ConcreteUser(cache: cache, jsog: jsogObj);
+								valuea4lGXoXPgEe2eGKutfpiSKw = new ConcreteUser(cache: cache, jsog: jsogObj);
 							}
 							else {
-								valueaVmqmgXAJEe2c9Lz2G8j7_w = new ConcreteUser(cache: cache,jsog: jsogObj);
+								valuea4lGXoXPgEe2eGKutfpiSKw = new ConcreteUser(cache: cache,jsog: jsogObj);
 							}
 						}
 						else {
-							valueaVmqmgXAJEe2c9Lz2G8j7_w = new ConcreteUser(cache: cache,jsog: jsogObj);
+							valuea4lGXoXPgEe2eGKutfpiSKw = new ConcreteUser(cache: cache,jsog: jsogObj);
 						}
 					}
-					this._dywaSwitchedTo = valueaVmqmgXAJEe2c9Lz2G8j7_w;
+					this._dywaSwitchedTo = valuea4lGXoXPgEe2eGKutfpiSKw;
 				}
 			}
 			
@@ -1280,6 +1284,9 @@ class TableRow extends BaseModel
 
 class TableEntry extends BaseModel
 {
+	core.bool _entryStateHasBeenSet = false;
+	core.bool entryStateHasBeenChanged() => _entryStateHasBeenSet||(_entryState==null?false:_entryState.hasChanged()) ;
+	EntryState _entryState;
 	core.bool _valueHasBeenSet = false;
 	core.bool valueHasBeenChanged() => _valueHasBeenSet;
 	core.String _value;
@@ -1295,6 +1302,7 @@ class TableEntry extends BaseModel
 	
 	core.dynamic $$getProperty(core.String prop) {
 	  var propMap = {
+	  'entryState': this.entryState, 
 	  'value': this.value
 	  };
 	
@@ -1304,6 +1312,7 @@ class TableEntry extends BaseModel
 	
 	void $$setProperty(core.String prop, core.dynamic value) {
 	  switch (prop) {
+	  case 'entryState': this.entryState = value; return;
 	  case 'value': this.value = value; return;
 	    default: throw NoSuchPropertyException(prop);
 	  }
@@ -1343,6 +1352,41 @@ class TableEntry extends BaseModel
 			this.dywa_name = jsog['dywaName'];
 			
 			// properties
+			if (jsog.containsKey("entryState")) {
+				core.Map<core.String,core.dynamic> jsogObj = jsog["entryState"];
+				if(jsogObj != null) {
+					EntryState valueasuTD4XKPEe2rzNRUfilttw;
+					
+					core.String jsogId;
+					
+					if (jsogObj.containsKey('@ref')) {
+						jsogId = jsogObj['@ref'];
+					}
+					else {
+					 	jsogId = jsogObj['@id'];
+					}
+					if (cache.containsKey(jsogId)) {
+						valueasuTD4XKPEe2rzNRUfilttw = cache[jsogId];
+					}
+					else {
+						if (jsogObj != null) {
+							if (jsogObj['dywaRuntimeType'] == "de.ls5.dywa.generated.rest.types.EntryState") {
+								valueasuTD4XKPEe2rzNRUfilttw = new EntryState(cache: cache, jsog: jsogObj);
+							}
+							else {
+								valueasuTD4XKPEe2rzNRUfilttw = new EntryState(cache: cache,jsog: jsogObj);
+							}
+						}
+						else {
+							valueasuTD4XKPEe2rzNRUfilttw = new EntryState(cache: cache,jsog: jsogObj);
+						}
+					}
+					this._entryState = valueasuTD4XKPEe2rzNRUfilttw;
+				}
+			}
+			
+			
+			_entryStateHasBeenSet = false;
 			if (jsog.containsKey("value")) {
 				core.String jsogObj = jsog["value"];
 				if(jsogObj != null) {
@@ -1366,10 +1410,12 @@ class TableEntry extends BaseModel
 		}
 	}
 	
+	void entryStateHasBeenSetted() { _entryStateHasBeenSet=true; }
 	void valueHasBeenSetted() { _valueHasBeenSet=true; }
 	
 	core.bool hasChanged() {
-		return 		_valueHasBeenSet
+		return 		_entryStateHasBeenSet || 
+					_valueHasBeenSet
 			;
 	}
 	
@@ -1383,6 +1429,14 @@ class TableEntry extends BaseModel
 		if(objects.containsKey(this)) {
 			jsogId = objects[this]['id'];
 			jsonObj = objects[this]['value'];
+			if(( entryStateHasBeenChanged() && !jsonObj.containsKey('entryState')) && !objects.containsKey(this._entryState)) {
+			if(this._entryState != null) {
+				jsonObj["entryState"] = this._entryState.toJSOG(objects);
+			}
+			else {
+				jsonObj["entryState"] = null;
+			}
+			}
 			if(( valueHasBeenChanged() && !jsonObj.containsKey('value')) && !objects.containsKey(this._value)) {
 			jsonObj["value"] = this._value;
 			}
@@ -1406,6 +1460,14 @@ class TableEntry extends BaseModel
 		if(this.dywa_name != null) {
 			jsonObj['dywaName'] = this.dywa_name;
 		}
+		if(( entryStateHasBeenChanged() && !jsonObj.containsKey('entryState')) && !objects.containsKey(this._entryState) || this.dywa_id == 0) {
+		if(this._entryState != null) {
+			jsonObj["entryState"] = this._entryState.toJSOG(objects);
+		}
+		else {
+			jsonObj["entryState"] = null;
+		}
+		}
 		if(( valueHasBeenChanged() && !jsonObj.containsKey('value')) && !objects.containsKey(this._value) || this.dywa_id == 0) {
 		jsonObj["value"] = this._value;
 		}
@@ -1425,6 +1487,36 @@ class TableEntry extends BaseModel
 		}
 		return new TableEntry(cache:cache,jsog:jsog);
 	}
+	
+	void set entryState (EntryState value)
+	{
+		this._entryStateHasBeenSet = true;
+		this._entryState = value;
+	}
+	
+	EntryState get entryState
+	{
+		return this._entryState;
+	}
+	
+		EntryState initOnDemandentryState()
+		{
+			if(this._entryState == null) {
+			this.entryState = new EntryState();
+			}
+			return this.entryState;
+		}
+		
+		void setValueentryState(EntryState value)
+		{
+			this.entryState = value;
+		}
+		
+		void entryStatesetValue(EntryState value)
+		{
+			this.entryState = value;
+		}
+		
 	
 	void set value (core.String value)
 	{
@@ -1450,6 +1542,194 @@ class TableEntry extends BaseModel
 		void valuesetValue(core.String value)
 		{
 			this.value = value;
+		}
+		
+	
+}
+
+class EntryState extends BaseModel
+{
+	core.bool _dywaDisplayNameHasBeenSet = false;
+	core.bool dywaDisplayNameHasBeenChanged() => _dywaDisplayNameHasBeenSet;
+	core.String _dywaDisplayName;
+	
+	static EntryState fromId(core.int id) {
+		var m = new EntryState();
+		m.dywa_id = id;
+		return m;
+	}
+	
+	
+	// reflection methods to read and wirte dart properties by string name
+	
+	core.dynamic $$getProperty(core.String prop) {
+	  var propMap = {
+	  'dywaDisplayName': this.dywaDisplayName
+	  };
+	
+	  if (!propMap.containsKey(prop)) throw NoSuchPropertyException(prop);
+	  return propMap[prop];
+	}
+	
+	void $$setProperty(core.String prop, core.dynamic value) {
+	  switch (prop) {
+	  case 'dywaDisplayName': this.dywaDisplayName = value; return;
+	    default: throw NoSuchPropertyException(prop);
+	  }
+	}
+	
+	core.bool $$hasProperty(core.String prop) {
+	  try {
+	    $$getProperty(prop);
+	    return true;
+	  } on NoSuchPropertyException catch (e) {
+	    return false;
+	  }
+	}
+	
+	EntryState({core.Map<core.String,core.dynamic> cache, jsog}) {
+		if (cache == null) {
+			cache = new core.Map();
+		}
+
+		// default constructor
+		if (jsog == null) {
+			
+			this.dywa_id = -1;
+			this.dywa_version = 0;
+			this.dywa_name = null;
+			
+			// properties
+			this._dywaDisplayName = null;
+		}
+		// from jsog
+		else {
+			core.String jsogId = jsog['@id'];
+			cache[jsogId] = this;
+			
+			this.dywa_id = jsog['dywaId'];
+			this.dywa_version = jsog['dywaVersion'];
+			this.dywa_name = jsog['dywaName'];
+			
+			// properties
+			if (jsog.containsKey("dywaDisplayName")) {
+				core.String jsogObj = jsog["dywaDisplayName"];
+				if(jsogObj != null) {
+					core.String valuea4lOTcXPgEe2eGKutfpiSKw;
+					
+					if(jsogObj!=null){
+					valuea4lOTcXPgEe2eGKutfpiSKw = jsogObj.toString();
+					}
+					this._dywaDisplayName = valuea4lOTcXPgEe2eGKutfpiSKw;
+				}
+				else {
+					this._dywaDisplayName = null;
+				}
+			}
+			
+			
+			else{
+				this._dywaDisplayName = null;
+			}
+			_dywaDisplayNameHasBeenSet = false;
+		}
+	}
+	
+	void dywaDisplayNameHasBeenSetted() { _dywaDisplayNameHasBeenSet=true; }
+	
+	core.bool hasChanged() {
+		return 		_dywaDisplayNameHasBeenSet
+			;
+	}
+	
+	core.String toString() {
+		switch(this.dywa_name) {
+			case 'X':
+				return "X";
+			case 'O':
+				return "O";
+			case 'empty':
+				return "empty";
+		}
+	    	return this.dywa_name;
+	  	}
+	
+	core.Map<core.String,core.dynamic> toJSOG(core.Map<core.Object,core.dynamic> objects) {
+		if (objects == null) {
+			objects = new core.Map();
+		}
+		core.int jsogId;
+		core.Map<core.String,core.dynamic> jsonObj = new core.Map();
+		if(objects.containsKey(this)) {
+			jsogId = objects[this]['id'];
+			jsonObj = objects[this]['value'];
+			if(( dywaDisplayNameHasBeenChanged() && !jsonObj.containsKey('dywaDisplayName')) && !objects.containsKey(this._dywaDisplayName)) {
+			jsonObj["dywaDisplayName"] = this._dywaDisplayName;
+			}
+			return { 
+				'@ref': jsogId.toString()
+			};
+		}
+		else {
+			jsogId = objects.length;
+			var pair = {
+				'id': jsogId,
+				'value': jsonObj
+			};
+			objects[this] = pair;
+		}
+		jsonObj['@id'] = jsogId.toString();
+		jsonObj['dywaRuntimeType'] = "de.ls5.dywa.generated.rest.types.EntryState";
+
+		jsonObj['dywaId'] = this.dywa_id;
+		jsonObj['dywaVersion'] = this.dywa_version;
+		if(this.dywa_name != null) {
+			jsonObj['dywaName'] = this.dywa_name;
+		}
+		if(( dywaDisplayNameHasBeenChanged() && !jsonObj.containsKey('dywaDisplayName')) && !objects.containsKey(this._dywaDisplayName) || this.dywa_id == 0) {
+		jsonObj["dywaDisplayName"] = this._dywaDisplayName;
+		}
+		return jsonObj;
+	}
+	static fromJSON(core.String json) {
+		return fromJSOG(cache:new core.Map<core.String,core.dynamic>(),jsog:jsonDecode(json));
+	}
+		
+	static EntryState fromJSOG({core.Map<core.String,core.dynamic> cache, jsog}) {
+		if(jsog.containsKey('@ref')) {
+			assert (cache.containsKey(jsog['@ref']));
+			return cache[jsog['@ref']];
+		}
+		if(jsog['dywaRuntimeType'] == 'de.ls5.dywa.generated.rest.types.EntryState') {
+			return new EntryState(cache:cache,jsog:jsog);
+		}
+		return new EntryState(cache:cache,jsog:jsog);
+	}
+	
+	void set dywaDisplayName (core.String value)
+	{
+		this._dywaDisplayNameHasBeenSet = true;
+		this._dywaDisplayName = value;
+	}
+	
+	core.String get dywaDisplayName
+	{
+		return this._dywaDisplayName;
+	}
+	
+		core.String initOnDemanddywaDisplayName()
+		{
+			return this.dywaDisplayName;
+		}
+		
+		void setValuedywaDisplayName(core.String value)
+		{
+			this.dywaDisplayName = value;
+		}
+		
+		void dywaDisplayNamesetValue(core.String value)
+		{
+			this.dywaDisplayName = value;
 		}
 		
 	

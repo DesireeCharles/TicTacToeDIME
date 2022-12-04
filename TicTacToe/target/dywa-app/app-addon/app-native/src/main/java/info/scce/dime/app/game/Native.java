@@ -8,10 +8,12 @@ import javax.enterprise.inject.spi.CDI;
 import de.ls5.dywa.generated.controller.dime__HYPHEN_MINUS__models.app.TableController;
 import de.ls5.dywa.generated.controller.dime__HYPHEN_MINUS__models.app.TableRowController;
 import de.ls5.dywa.generated.controller.dime__HYPHEN_MINUS__models.app.TableEntryController;
+import de.ls5.dywa.generated.controller.dime__HYPHEN_MINUS__models.app.EntryStateController;
 
 import de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.Table;
 import de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TableRow;
 import de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TableEntry;
+import de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryState;
 
 import javax.inject.Inject;
 import javax.enterprise.context.ApplicationScoped;
@@ -33,6 +35,8 @@ public class Native {
 	protected TableRowController trController;
 	@Inject
 	protected TableEntryController teController;
+	@Inject
+	protected EntryStateController stateController;
 
 
 	public static Table createGameBoard(long width, long height) {
@@ -90,6 +94,8 @@ public class Native {
 				System.err.println("inside nested for loop y =" + y);
 				TableEntry tableEntry = getBean(TableEntryController.class).create(null);
 //				TableEntry tableEntry = teController.create("Hello");
+				EntryState entryState = EntryState.empty;
+				tableEntry.setentryState(entryState);
 				tableEntry.setvalue("x");
 				tableEntryList.add(tableEntry);
 			}
@@ -113,6 +119,6 @@ public class Native {
 
 		return (T) beanManager.getReference(bean, bean.getBeanClass(), cctx);
 	}
-
+	
 
 }

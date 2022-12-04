@@ -22,6 +22,8 @@ public class AALControllerImpl implements AALController {
 	private de.ls5.dywa.generated.controller.dime__HYPHEN_MINUS__models.app.TableRowController TableRowController;
 	@Inject
 	private de.ls5.dywa.generated.controller.dime__HYPHEN_MINUS__models.app.TableEntryController TableEntryController;
+	@Inject
+	private de.ls5.dywa.generated.controller.dime__HYPHEN_MINUS__models.app.EntryStateController EntryStateController;
 
 	@Override
 	public void reset() {
@@ -44,6 +46,17 @@ public class AALControllerImpl implements AALController {
 	}
 	for (final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TableEntry o : TableEntryController.fetch()) {
 	TableEntryController.deleteWithIncomingReferences(o);
+	}
+	for (final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryState o : EntryStateController.fetch()) {
+	o.setDywaName(o.toString());
+	o.setX
+	(null);
+	o.setO
+	(null);
+	o.setempty
+	(null);
+	o.setdywaDisplayName
+	(null);
 	}
 
 		this.entityManager.setFlushMode(oldFlushMode);

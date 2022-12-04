@@ -98,7 +98,7 @@ public class TableEntrySearch implements TableEntry {
 
 	@java.lang.Override
 	public java.lang.String getvalue() {
-		return (java.lang.String) this.attributeMap.get(dywaIdToJpqlAttr.get(15L));
+		return (java.lang.String) this.attributeMap.get(dywaIdToJpqlAttr.get(16L));
 	}
 	public void setvalue
 	(java.lang.String object) {
@@ -106,7 +106,19 @@ public class TableEntrySearch implements TableEntry {
 				if (! (object instanceof java.lang.String)) {
 							throw new java.lang.RuntimeException("Wrong type");
 				}
-			this.attributeMap.put(dywaIdToJpqlAttr.get(15L), object);
+			this.attributeMap.put(dywaIdToJpqlAttr.get(16L), object);
+	}
+	@java.lang.Override
+	public de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryState getentryState() {
+		return de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryState.forId(((de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryStateEntity) this.attributeMap.get(dywaIdToJpqlAttr.get(17L))).getDywaId());
+	}
+	public void setentryState
+	(de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryState object) {
+			
+				if (! (object instanceof de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryState)) {
+							throw new java.lang.RuntimeException("Wrong type");
+				}
+			this.attributeMap.put(dywaIdToJpqlAttr.get(17L), object != null ? object.getEntityAs(EntryStateEntity.class)/*1*/ : null);
 	}
 
 	// EXTENSION ATTRIBUTES

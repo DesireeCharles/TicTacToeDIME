@@ -29,6 +29,26 @@ public class TableEntrySelective {
 		{
 			final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TableEntry effectiveFrom = from;
 			final de.ls5.dywa.generated.rest.types.TableEntry effectiveTo = to;
+		final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryState
+		 source = effectiveFrom.getentryState();
+		if (source != null) {
+			// original selective: EntryStateSelective
+			de.ls5.dywa.generated.rest.types.EntryState cached = objectCache.getRestTo(source);
+			
+			if (cached == null) {
+				cached = de.ls5.dywa.generated.rest.types.EntryState.fromDywaEntity(source, objectCache);
+			}
+			
+			if (!objectCache.containsSelective(cached, "EntryStateSelective")) {
+				de.ls5.dywa.generated.rest.types.EntryStateSelective.copy(source, cached, objectCache);
+			}
+		
+			effectiveTo.setentryState(cached);
+		}
+		}
+		{
+			final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TableEntry effectiveFrom = from;
+			final de.ls5.dywa.generated.rest.types.TableEntry effectiveTo = to;
 		effectiveTo.setvalue(effectiveFrom.getvalue());
 		}
 	}

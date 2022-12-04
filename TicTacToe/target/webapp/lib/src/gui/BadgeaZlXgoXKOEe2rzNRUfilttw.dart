@@ -41,14 +41,13 @@ import 'package:app/src/panel/Panel.dart' as panel;
 //form component imports
 //GUI plug in component imports
 //GUI SIB imports
-import 'package:app/src/gui/BadgeaZlXgoXKOEe2rzNRUfilttw.dart';
 //Embedded process SIB imports
 
 import 'dart:js' as js;
 import 'package:app/src/core/AbstractRoutes.dart';
 
 @Component(
-  selector: "game-tag",
+  selector: "badge-tag",
   pipes: const [commonPipes,SecondsPipe,AuthImagePipe],
   encapsulation: ViewEncapsulation.None,
   exports: const [
@@ -56,12 +55,11 @@ import 'package:app/src/core/AbstractRoutes.dart';
   ],
   directives: const [
   coreDirectives,panel.Panel,modal.Modal,DimeCustomeAttributes,formDirectives,FileSelect,routerDirectives,MaxLength,login.Login,SafeInnerHtmlDirective,
-  BadgeaZlXgoXKOEe2rzNRUfilttw,
   ],
-  templateUrl: 'GameaAzVAIWnXEe2xCJpb6ooUzA.html'
+  templateUrl: 'BadgeaZlXgoXKOEe2rzNRUfilttw.html'
 )
 
-class GameaAzVAIWnXEe2xCJpb6ooUzA extends dime.DIMEComponent implements OnInit, OnDestroy, AfterViewInit {
+class BadgeaZlXgoXKOEe2rzNRUfilttw extends dime.DIMEComponent implements OnInit, OnDestroy, AfterViewInit {
   
   	// common declarations
   	bool refresh;
@@ -81,29 +79,23 @@ class GameaAzVAIWnXEe2xCJpb6ooUzA extends dime.DIMEComponent implements OnInit, 
   	final DomSanitizationService domSanitizationService; 
   	// component Default Declaration
   	// table refresh flags
-  	/// GUI badge
-  	@ViewChildren(BadgeaZlXgoXKOEe2rzNRUfilttw)
-  	List<BadgeaZlXgoXKOEe2rzNRUfilttw> componentSIBa7WD_45_gXKPEe2rzNRUfilttw;
   	
   	
   	
   	
   	
-  	// branch Set X as info.scce.dime.gui.editor.graphiti.api.CButton@eb287240 (id: _0EoAoXPhEe2eGKutfpiSKw) in info.scce.dime.gui.editor.graphiti.api.CGUI@f524d492 (id: _AzVAIWnXEe2xCJpb6ooUzA)
-  	@Output('actionsetxevent') Stream<Map<String,dynamic>> get evt_actionsetxevent => actionsetxevent.stream;
-  	StreamController<Map<String,dynamic>> actionsetxevent = new StreamController();
   	
   	@ViewChildren(modal.Modal)
   	List<modal.Modal> modals;
   	bool hasToSignIn;
 	//DATA CONTEXT
-	//Table table
+	//EntryState entryState
 		@Input()
-		Data.Table table;
+		Data.EntryState entryState;
 	
 	bool isDestroyed = true;
   
-	GameaAzVAIWnXEe2xCJpb6ooUzA(DIMEProcessService this.processService, Router this.router,DomSanitizationService this.domSanitizationService,AbstractRoutes routes) : super(domSanitizationService,processService,routes)
+	BadgeaZlXgoXKOEe2rzNRUfilttw(DIMEProcessService this.processService, Router this.router,DomSanitizationService this.domSanitizationService,AbstractRoutes routes) : super(domSanitizationService,processService,routes)
 	{
 		restartComponent();
 	}
@@ -113,21 +105,13 @@ class GameaAzVAIWnXEe2xCJpb6ooUzA extends dime.DIMEComponent implements OnInit, 
 		this.hasToSignIn = false;
 		
 		//DATA CONTEXT
-		// Table table
-		this.table = null;
+		// EntryState entryState
+		this.entryState = null;
 						
 						
 		
 			  	
-		// branch Set X declaration
-		if(this.actionsetxevent!=null) {
-			  			this.actionsetxevent = new StreamController<Map<String,dynamic>>();  				
-		}
 			
-		/// GUI badge
-		if(componentSIBa7WD_45_gXKPEe2rzNRUfilttw!=null) {
-			componentSIBa7WD_45_gXKPEe2rzNRUfilttw.forEach((n)=>n.restartComponent());
-		}
 		updateImageHash();
 	}
 	
@@ -135,15 +119,14 @@ class GameaAzVAIWnXEe2xCJpb6ooUzA extends dime.DIMEComponent implements OnInit, 
 		modals.forEach((m)=>m.close());
 		if(updateHidden) {
 		}
-		componentSIBa7WD_45_gXKPEe2rzNRUfilttw.forEach((n)=>n.updateWithoutInputs());
 		updateImageHash();
 	}
 	
 	void updateInputs(
-	{Data.Table ptable
+	{Data.EntryState pentryState
 	})
 	{
-		table = ptable;
+		entryState = pentryState;
 		
 		updateWithoutInputs(updateHidden:false);
 	}
@@ -181,13 +164,6 @@ class GameaAzVAIWnXEe2xCJpb6ooUzA extends dime.DIMEComponent implements OnInit, 
   		
   		
   	
-  		/// callback, if the button Set X is clicked
-  			void actionsetxeventa0EoAoXPhEe2eGKutfpiSKwEventTrigger()
-  		
-  		{
-  			Map<String,dynamic> data = new Map();
-  			this.actionsetxevent.add(data);
-  		}
   		
   		
   		
@@ -196,55 +172,54 @@ class GameaAzVAIWnXEe2xCJpb6ooUzA extends dime.DIMEComponent implements OnInit, 
   		
   		
   		
-  		Data.Table
-  		 initOnDemandtable()
+  		Data.EntryState
+  		 initOnDemandentryState()
   		{
-  			if(this.table==null){
-  				this.table = new Data.Table
+  			if(this.entryState==null){
+  				this.entryState = new Data.EntryState
   				();
   			}
-  			return this.table;
+  			return this.entryState;
   		}
-  		void setValuetable(Data.Table
+  		void setValueentryState(Data.EntryState
   		 value)
   		{
-  			this.table = value;
+  			this.entryState = value;
   		}
-  		void tablesetValue(Data.Table
+  		void entryStatesetValue(Data.EntryState
   		 value)
   		{
-  			this.setValuetable(value);
+  			this.setValueentryState(value);
   		}
   		
   	
   		
   		
-  		//GUI SIB badge
   		
   
 	/// returns the surrounding container class for major GUI models
-	String getContainer_AzVAIWnXEe2xCJpb6ooUzARootClass()
+	String getContainer_ZlXgoXKOEe2rzNRUfilttwRootClass()
 	{
 		if(this.ismajorpage)return "";
 		return "";
 	}
 	
 	/// returns the surrounding wrapper class for major GUI models
-	String getContainer_AzVAIWnXEe2xCJpb6ooUzAId()
+	String getContainer_ZlXgoXKOEe2rzNRUfilttwId()
 	{
 		if(this.ismajorpage)return "wrapper";
-		return "_AzVAIWnXEe2xCJpb6ooUzA";
+		return "_ZlXgoXKOEe2rzNRUfilttw";
 	}
 	
 	/// returns the surrounding container class for major GUI models
-	String getContainer_AzVAIWnXEe2xCJpb6ooUzAClass()
+	String getContainer_ZlXgoXKOEe2rzNRUfilttwClass()
 	{
 		if(this.ismajorpage)return "container-display";
 		return "";
 	}
 	
 	/// callback, to go back to the root interaction
-	void redirect_AzVAIWnXEe2xCJpb6ooUzAToHome(dynamic e)
+	void redirect_ZlXgoXKOEe2rzNRUfilttwToHome(dynamic e)
 	{
 		e.preventDefault();
 		this.router.navigate(Routes.root.toUrl());

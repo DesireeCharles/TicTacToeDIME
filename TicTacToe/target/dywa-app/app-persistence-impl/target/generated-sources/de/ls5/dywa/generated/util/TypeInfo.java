@@ -13,42 +13,54 @@ public class TypeInfo {
 		idToClassMap.put(0L, de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.ConcreteUserImpl.class);
 		allTypes.add(0L);
 		java.util.Map<Long, String> map0 = new java.util.HashMap<Long, String>();
-		map0.put(5L, "baseUser");
-		map0.put(6L, "dywaSwitchedTo");
+		map0.put(6L, "baseUser");
+		map0.put(7L, "dywaSwitchedTo");
 		typeFieldNamesMap.put(0L, map0);
 		/* DBType _udys4mwneewzvvv */
 		typeNamesMap.put(1L, "BaseUser");
 		idToClassMap.put(1L, de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.BaseUserImpl.class);
 		allTypes.add(1L);
 		java.util.Map<Long, String> map1 = new java.util.HashMap<Long, String>();
-		map1.put(7L, "concreteUser");
-		map1.put(8L, "password");
-		map1.put(9L, "image");
-		map1.put(10L, "firstName");
-		map1.put(11L, "lastName");
-		map1.put(12L, "username");
+		map1.put(8L, "concreteUser");
+		map1.put(9L, "password");
+		map1.put(10L, "image");
+		map1.put(11L, "firstName");
+		map1.put(12L, "lastName");
+		map1.put(13L, "username");
 		typeFieldNamesMap.put(1L, map1);
 		/* DBType _jgykuw8qee2x_c6 */
 		typeNamesMap.put(2L, "Table");
 		idToClassMap.put(2L, de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TableImpl.class);
 		allTypes.add(2L);
 		java.util.Map<Long, String> map2 = new java.util.HashMap<Long, String>();
-		map2.put(13L, "tableRow");
+		map2.put(14L, "tableRow");
 		typeFieldNamesMap.put(2L, map2);
 		/* DBType _j1likw8qee2x_c6 */
 		typeNamesMap.put(3L, "TableRow");
 		idToClassMap.put(3L, de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TableRowImpl.class);
 		allTypes.add(3L);
 		java.util.Map<Long, String> map3 = new java.util.HashMap<Long, String>();
-		map3.put(14L, "tableEntry");
+		map3.put(15L, "tableEntry");
 		typeFieldNamesMap.put(3L, map3);
 		/* DBType _kekm0w8qee2x_c6 */
 		typeNamesMap.put(4L, "TableEntry");
 		idToClassMap.put(4L, de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TableEntryImpl.class);
 		allTypes.add(4L);
 		java.util.Map<Long, String> map4 = new java.util.HashMap<Long, String>();
-		map4.put(15L, "value");
+		map4.put(16L, "value");
+		map4.put(17L, "entryState");
 		typeFieldNamesMap.put(4L, map4);
+		/* DBType _m_tgwhkpee2rznr */
+		typeNamesMap.put(5L, "EntryState");
+		idToClassMap.put(5L, de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryStateEntity.class);
+		enumTypes.add(5L);
+		allTypes.add(5L);
+		java.util.Map<Long, String> map5 = new java.util.HashMap<Long, String>();
+		map5.put(18L, "X");
+		map5.put(19L, "O");
+		map5.put(20L, "empty");
+		map5.put(21L, "dywaDisplayName");
+		typeFieldNamesMap.put(5L, map5);
 	}
 	
 	public static String getGeneratedClassName(Long typeId) {

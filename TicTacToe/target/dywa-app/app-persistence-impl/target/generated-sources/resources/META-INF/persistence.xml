@@ -15,6 +15,7 @@
         <class>de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TableImpl</class>
         <class>de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TableRowImpl</class>
         <class>de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TableEntryImpl</class>
+        <class>de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryStateEntity</class>
 
 		<shared-cache-mode>ALL</shared-cache-mode>
 		<properties>

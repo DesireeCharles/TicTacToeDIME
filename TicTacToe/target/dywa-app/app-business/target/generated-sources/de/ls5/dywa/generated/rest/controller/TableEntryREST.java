@@ -15,6 +15,10 @@ public class TableEntryREST {
 	private de.ls5.dywa.generated.rest.controller.TableEntryREST TableEntryREST;
 	@javax.inject.Inject
 	private de.ls5.dywa.generated.controller.dime__HYPHEN_MINUS__models.app.TableEntryController TableEntryController;
+	@javax.inject.Inject
+	private de.ls5.dywa.generated.rest.controller.EntryStateREST EntryStateREST;
+	@javax.inject.Inject
+	private de.ls5.dywa.generated.controller.dime__HYPHEN_MINUS__models.app.EntryStateController EntryStateController;
 
 	public long create(final java.lang.String name) {
 		final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TableEntry obj = this.TableEntryController.create(name);
@@ -56,6 +60,29 @@ public class TableEntryREST {
 		}
 
 		// Update references to persistent objects
+			{
+				{
+					final de.ls5.dywa.generated.rest.types.TableEntry effectiveObj = obj;
+					final de.ls5.dywa.generated.rest.types.TableEntry effectiveResult = result;
+					if (effectiveObj.isentryStateSet()) {
+						final de.ls5.dywa.generated.rest.types.EntryState
+						 existing = effectiveObj.getentryState();
+						de.ls5.dywa.generated.rest.types.EntryState
+						 newValue;
+
+						if (existing.getDywaId() > 0) {
+							// read_GameEntryStateSelectivex1x1x1x1x1x2x2_AzVAIWnXEe2xCJpb6ooUzA
+							newValue = this.EntryStateREST.read_BadgeEntryStateSelectivex1_ZlXgoXKOEe2rzNRUfilttw(existing.getDywaId());
+						}
+						else {
+							// readTransient_GameEntryStateSelectivex1x1x1x1x1x2x2_AzVAIWnXEe2xCJpb6ooUzA
+							newValue = this.EntryStateREST.readTransient_BadgeEntryStateSelectivex1_ZlXgoXKOEe2rzNRUfilttw(existing);
+						}
+
+						effectiveResult.setentryState(newValue);
+						}
+					}
+			}
 
 		return result;
 	}
@@ -113,9 +140,25 @@ public class TableEntryREST {
 			final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TableEntry effectiveObj = obj;
 
 		// If values were not specified, ignore them
-		if (effectiveValue.isvalueSet()) {
+		if (effectiveValue.isentryStateSet()) {
 			checkVersion(value, obj);
-			effectiveObj.setvalue(effectiveValue.getvalue());
+			if (effectiveValue.getentryState() == null) {
+				effectiveObj.setentryState(null);
+			}
+			else {
+				final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryState
+				 entity;
+				final de.ls5.dywa.generated.rest.types.EntryState
+				 item = effectiveValue.getentryState();
+			
+				//update_GameEntryStateSelectivex1x1x1x1x1x2x2_AzVAIWnXEe2xCJpb6ooUzA
+				this.EntryStateREST.update_BadgeEntryStateSelectivex1_ZlXgoXKOEe2rzNRUfilttw(item);
+				
+				entity = this.EntryStateController.read(item.getDywaId());
+			
+				effectiveObj.setentryState(entity);
+			
+			}
 		}
 	}
 	}
@@ -142,6 +185,32 @@ public class TableEntryREST {
 			obj.setDywaName(value.getDywaName());
 		}
 
+		{
+			final de.ls5.dywa.generated.rest.types.TableEntry effectiveValue = value;
+			final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TableEntry effectiveObj = obj;
+
+		// If values were not specified, ignore them
+		if (effectiveValue.isentryStateSet()) {
+			checkVersion(value, obj);
+			if (effectiveValue.getentryState() == null) {
+				effectiveObj.setentryState(null);
+			}
+			else {
+				final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryState
+				 entity;
+				final de.ls5.dywa.generated.rest.types.EntryState
+				 item = effectiveValue.getentryState();
+			
+				//update_EntryStateSelective
+				this.EntryStateREST.update_EntryStateSelective(item);
+				
+				entity = this.EntryStateController.read(item.getDywaId());
+			
+				effectiveObj.setentryState(entity);
+			
+			}
+		}
+	}
 		{
 			final de.ls5.dywa.generated.rest.types.TableEntry effectiveValue = value;
 			final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TableEntry effectiveObj = obj;
@@ -176,6 +245,32 @@ public class TableEntryREST {
 			obj.setDywaName(value.getDywaName());
 		}
 
+			{
+				final de.ls5.dywa.generated.rest.types.TableEntry effectiveValue = value;
+				final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TableEntry effectiveObj = obj;
+
+			// If values were not specified, ignore them
+			if (effectiveValue.isentryStateSet()) {
+				checkVersion(value, obj);
+				if (effectiveValue.getentryState() == null) {
+					effectiveObj.setentryState(null);
+				}
+				else {
+					final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryState
+					 entity;
+					final de.ls5.dywa.generated.rest.types.EntryState
+					 item = effectiveValue.getentryState();
+				
+					//update_EntryStateSelective
+					this.EntryStateREST.update_EntryStateSelective(item);
+					
+					entity = this.EntryStateController.read(item.getDywaId());
+				
+					effectiveObj.setentryState(entity);
+				
+				}
+			}
+		}
 			{
 				final de.ls5.dywa.generated.rest.types.TableEntry effectiveValue = value;
 				final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TableEntry effectiveObj = obj;

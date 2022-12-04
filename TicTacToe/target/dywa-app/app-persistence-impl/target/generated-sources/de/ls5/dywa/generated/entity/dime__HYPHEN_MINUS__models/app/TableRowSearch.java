@@ -98,7 +98,7 @@ public class TableRowSearch implements TableRow {
 
 	@java.lang.Override
 	public java.util.List<de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TableEntry> gettableEntry_TableEntry() {
-		return (java.util.List<de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TableEntry>) this.listAttributeMap.get(dywaIdToJpqlAttr.get(14L));
+		return (java.util.List<de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TableEntry>) this.listAttributeMap.get(dywaIdToJpqlAttr.get(15L));
 	}
 	public void settableEntry_TableEntry
 	(java.util.List<de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TableEntry> object) {
@@ -108,7 +108,7 @@ public class TableRowSearch implements TableRow {
 							throw new java.lang.RuntimeException("Wrong type");
 				}
 				}
-			this.listAttributeMap.put(dywaIdToJpqlAttr.get(14L), object);
+			this.listAttributeMap.put(dywaIdToJpqlAttr.get(15L), object);
 	}
 
 	// EXTENSION ATTRIBUTES

@@ -26,7 +26,7 @@ public class TableRowImpl implements TableRow {
 
 	
 	/* MAIN ATTRIBUTES START */
-	@de.ls5.dywa.annotations.IdRef(id = 14L)
+	@de.ls5.dywa.annotations.IdRef(id = 15L)
 	@org.hibernate.annotations.Cascade(org.hibernate.annotations.CascadeType.PERSIST)
 	@javax.persistence.JoinTable(name="r_TableRow_TableEntry__rmkz8w8qee2x_c6", joinColumns = { @javax.persistence.JoinColumn(name = "r1_TableRow_id") }, inverseJoinColumns = { @javax.persistence.JoinColumn(name = "r2_TableEntry_id") })
 	@org.hibernate.annotations.ManyToAny(metaColumn=@javax.persistence.Column(name="m_TableEntry_Type__rmkz8w8qee2x_c6"))
