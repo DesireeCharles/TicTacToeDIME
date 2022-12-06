@@ -37,5 +37,30 @@ public class TableImpl extends info.scce.dime.rest.RESTBaseImpl implements Table
 		this.istableRowSet = true;
 	}
 
+	private TurnState
+	 turnState;
+	private boolean isturnStateSet;
+	
+	@com.fasterxml.jackson.annotation.JsonProperty("turnState")
+	@info.scce.dime.rest.JsonRenderIndicator("isturnStateSet")
+	@java.lang.Override
+	public TurnState
+	 getturnState() {
+		return this.turnState;
+	}
+	
+	@com.fasterxml.jackson.annotation.JsonIgnore
+	public boolean isturnStateSet() {
+		return this.isturnStateSet;
+	}
+
+	@com.fasterxml.jackson.annotation.JsonProperty("turnState")
+	@java.lang.Override
+	public void setturnState(final TurnState
+	 turnState) {
+		this.turnState = turnState;
+		this.isturnStateSet = true;
+	}
+
 	
 }

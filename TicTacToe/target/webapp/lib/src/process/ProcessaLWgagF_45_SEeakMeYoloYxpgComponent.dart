@@ -40,6 +40,7 @@ import 'package:app/src/gui/GameaAzVAIWnXEe2xCJpb6ooUzA.dart';
 			[currentbranch]="currentBranch"
 			[modalDialog]="false"
 			[ismajorpage]="true"
+			(actionemptyevent) = "eventaXvmvAXPlEe2eGKutfpiSKwemptyTrigger(\$event)"
 		>
 		</game-tag>
 	</template>
@@ -158,4 +159,22 @@ class ProcessaLWgagF_45_SEeakMeYoloYxpgComponent extends GUIProcess implements O
 		
 	}
 	// Branches for GUISIB Game of Process gamelOGIC
+	// Branch empty
+	void eventaXvmvAXPlEe2eGKutfpiSKwemptyTrigger(Map<String,dynamic> map)
+	{
+		var result = new Game_AzVAIWnXEe2xCJpb6ooUzABranch.foremptyBranch(
+			tableEntry:map['tableEntry'] as Data.TableEntry
+		);
+		_processService.continueProcess(
+			deserializer,
+			getActiveProcesses()[runtimeId].runtime,
+			getRuntimeId(),
+			'_AzVAIWnXEe2xCJpb6ooUzA',
+			'empty/branch/public',
+			result.toJSOG(),
+			parentRuntimeId:getParentRuntimeId()
+		)
+		.then((cpr)=>processResponse(_processService,cpr))
+		.catchError((e)=>processError(e));
+	}
 }

@@ -19,6 +19,10 @@ public class TableREST {
 	private de.ls5.dywa.generated.rest.controller.TableRowREST TableRowREST;
 	@javax.inject.Inject
 	private de.ls5.dywa.generated.controller.dime__HYPHEN_MINUS__models.app.TableRowController TableRowController;
+	@javax.inject.Inject
+	private de.ls5.dywa.generated.rest.controller.TurnStateREST TurnStateREST;
+	@javax.inject.Inject
+	private de.ls5.dywa.generated.controller.dime__HYPHEN_MINUS__models.app.TurnStateController TurnStateController;
 
 	public long create(final java.lang.String name) {
 		final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.Table obj = this.TableController.create(name);
@@ -284,6 +288,32 @@ public class TableREST {
 			}
 		}
 	}
+		{
+			final de.ls5.dywa.generated.rest.types.Table effectiveValue = value;
+			final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.Table effectiveObj = obj;
+
+		// If values were not specified, ignore them
+		if (effectiveValue.isturnStateSet()) {
+			checkVersion(value, obj);
+			if (effectiveValue.getturnState() == null) {
+				effectiveObj.setturnState(null);
+			}
+			else {
+				final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TurnState
+				 entity;
+				final de.ls5.dywa.generated.rest.types.TurnState
+				 item = effectiveValue.getturnState();
+			
+				//update_TurnStateSelective
+				this.TurnStateREST.update_TurnStateSelective(item);
+				
+				entity = this.TurnStateController.read(item.getDywaId());
+			
+				effectiveObj.setturnState(entity);
+			
+			}
+		}
+	}
 	}
 
 	public de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.Table copyToTransient(final de.ls5.dywa.generated.rest.types.Table value) {
@@ -363,6 +393,32 @@ public class TableREST {
 					if (entity != null) {
 						source.add(entity);
 					}
+				}
+			}
+		}
+			{
+				final de.ls5.dywa.generated.rest.types.Table effectiveValue = value;
+				final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.Table effectiveObj = obj;
+
+			// If values were not specified, ignore them
+			if (effectiveValue.isturnStateSet()) {
+				checkVersion(value, obj);
+				if (effectiveValue.getturnState() == null) {
+					effectiveObj.setturnState(null);
+				}
+				else {
+					final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TurnState
+					 entity;
+					final de.ls5.dywa.generated.rest.types.TurnState
+					 item = effectiveValue.getturnState();
+				
+					//update_TurnStateSelective
+					this.TurnStateREST.update_TurnStateSelective(item);
+					
+					entity = this.TurnStateController.read(item.getDywaId());
+				
+					effectiveObj.setturnState(entity);
+				
 				}
 			}
 		}

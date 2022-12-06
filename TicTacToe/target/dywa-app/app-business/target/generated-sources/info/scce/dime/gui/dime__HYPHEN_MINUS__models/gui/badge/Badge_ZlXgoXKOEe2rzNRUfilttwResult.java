@@ -28,5 +28,16 @@ public class Badge_ZlXgoXKOEe2rzNRUfilttwResult {
 	}
 	
 	public static class gui___1OZgXPkEe2eGKutfpiSKwemptyReturn {
+		private de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TableEntry TableEntry;
+		
+		@com.fasterxml.jackson.annotation.JsonProperty("TableEntry")
+		public de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TableEntry getTableEntry() {
+			return TableEntry;
+		}
+		
+		@com.fasterxml.jackson.annotation.JsonProperty("TableEntry")
+		public void setTableEntry(de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TableEntry TableEntry) {
+			this.TableEntry = TableEntry;
+		}
 	}
 }

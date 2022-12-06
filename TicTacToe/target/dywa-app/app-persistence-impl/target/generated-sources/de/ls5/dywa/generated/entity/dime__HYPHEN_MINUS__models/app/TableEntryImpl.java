@@ -26,11 +26,11 @@ public class TableEntryImpl implements TableEntry {
 
 	
 	/* MAIN ATTRIBUTES START */
-	@de.ls5.dywa.annotations.IdRef(id = 16L)
+	@de.ls5.dywa.annotations.IdRef(id = 18L)
 	@javax.persistence.Column(name = "a_Value__rwbu8w8qee2x_c6", columnDefinition="varchar")
 	private java.lang.String value;
 	
-	@de.ls5.dywa.annotations.IdRef(id = 17L)
+	@de.ls5.dywa.annotations.IdRef(id = 19L)
 	@org.hibernate.annotations.Cascade(org.hibernate.annotations.CascadeType.PERSIST)
 	@javax.persistence.JoinColumn(name = "a_EntryState__sutd4xkpee2rznr")
 	@javax.persistence.ManyToOne

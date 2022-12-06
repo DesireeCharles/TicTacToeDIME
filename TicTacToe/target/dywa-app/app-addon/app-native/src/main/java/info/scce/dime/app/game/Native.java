@@ -9,11 +9,13 @@ import de.ls5.dywa.generated.controller.dime__HYPHEN_MINUS__models.app.TableCont
 import de.ls5.dywa.generated.controller.dime__HYPHEN_MINUS__models.app.TableRowController;
 import de.ls5.dywa.generated.controller.dime__HYPHEN_MINUS__models.app.TableEntryController;
 import de.ls5.dywa.generated.controller.dime__HYPHEN_MINUS__models.app.EntryStateController;
+import de.ls5.dywa.generated.controller.dime__HYPHEN_MINUS__models.app.TurnStateController;
 
 import de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.Table;
 import de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TableRow;
 import de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TableEntry;
 import de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryState;
+import de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TurnState;
 
 import javax.inject.Inject;
 import javax.enterprise.context.ApplicationScoped;
@@ -37,8 +39,11 @@ public class Native {
 	protected TableEntryController teController;
 	@Inject
 	protected EntryStateController stateController;
+	@Inject
+	protected TurnStateController turnController;
 
 
+	
 	public static Table createGameBoard(long width, long height) {
 		Native one = new Native();
 		return one.init(width, height);
@@ -84,7 +89,6 @@ public class Native {
 
 
 		List<TableRow> tableRowList = new ArrayList<TableRow>();
-		int count = 0;
 		for (int x = 0; x < width; x++) {
 			TableRow tableRow = getBean(TableRowController.class).create(null);
 			System.err.println("inside for loop x =" + x);
@@ -95,19 +99,10 @@ public class Native {
 				System.err.println("inside nested for loop y =" + y);
 				TableEntry tableEntry = getBean(TableEntryController.class).create(null);
 //				TableEntry tableEntry = teController.create("Hello");
-				if (count<3) {
 				EntryState entryState = EntryState.empty;
 				tableEntry.setentryState(entryState);
-				} else if (count <6 && count >= 3) {
-					EntryState entryState = EntryState.X;
-					tableEntry.setentryState(entryState);
-				} else {
-					EntryState entryState = EntryState.O;
-					tableEntry.setentryState(entryState);
-				}
 				tableEntry.setvalue("x");
 				tableEntryList.add(tableEntry);
-				count++;
 			}
 
 			tableRow.settableEntry_TableEntry(tableEntryList);

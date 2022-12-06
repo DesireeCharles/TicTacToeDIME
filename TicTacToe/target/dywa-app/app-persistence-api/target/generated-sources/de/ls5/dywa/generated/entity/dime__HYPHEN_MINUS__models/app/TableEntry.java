@@ -5,25 +5,25 @@ package de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app;
 @de.ls5.dywa.annotations.ShortDescription(description = "")
 @de.ls5.dywa.annotations.LongDescription(description = "")
 public interface TableEntry extends de.ls5.dywa.generated.util.Identifiable {
-	@de.ls5.dywa.annotations.IdRef(id = 16L)
+	@de.ls5.dywa.annotations.IdRef(id = 18L)
 	@de.ls5.dywa.annotations.OriginalName(name = "value")
 	@de.ls5.dywa.annotations.ShortDescription(description = "")
 	@de.ls5.dywa.annotations.LongDescription(description = "")
 	java.lang.String getvalue();
 	
-	@de.ls5.dywa.annotations.IdRef(id = 16L)
+	@de.ls5.dywa.annotations.IdRef(id = 18L)
 	@de.ls5.dywa.annotations.OriginalName(name = "value")
 	@de.ls5.dywa.annotations.ShortDescription(description = "")
 	@de.ls5.dywa.annotations.LongDescription(description = "")
 	void setvalue(java.lang.String object);
 	
-	@de.ls5.dywa.annotations.IdRef(id = 17L)
+	@de.ls5.dywa.annotations.IdRef(id = 19L)
 	@de.ls5.dywa.annotations.OriginalName(name = "entryState")
 	@de.ls5.dywa.annotations.ShortDescription(description = "")
 	@de.ls5.dywa.annotations.LongDescription(description = "")
 	de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryState getentryState();
 	
-	@de.ls5.dywa.annotations.IdRef(id = 17L)
+	@de.ls5.dywa.annotations.IdRef(id = 19L)
 	@de.ls5.dywa.annotations.OriginalName(name = "entryState")
 	@de.ls5.dywa.annotations.ShortDescription(description = "")
 	@de.ls5.dywa.annotations.LongDescription(description = "")

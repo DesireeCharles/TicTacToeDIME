@@ -102,7 +102,7 @@ GUI _AzVAIWnXEe2xCJpb6ooUzA {
   			attributeName current
   		}
   		
-  		-FOR-> _FtqHUW8VEe29MJ2ZfnuTaA  decorate "" at (0,0) decorate "Text" at (0,0) {
+  		-FOR-> _FtqHUW8VEe29MJ2ZfnuTaA via (100,510) (345,510) decorate "" at (0,0) decorate "Text" at (0,0) {
   			id _Z5w0QW8VEe29MJ2ZfnuTaA
   			index "index1"
   		}
@@ -124,14 +124,14 @@ GUI _AzVAIWnXEe2xCJpb6ooUzA {
   		ComplexAttribute _6cG64XKTEe2rzNRUfilttw at 10,50 size 140,25 {
   			libraryComponentUID "_suTD4XKPEe2rzNRUfilttw"
   			isLive false
-  			-ComplexRead-> _7WrCgHKPEe2rzNRUfilttw via (319,592) decorate "" at (0,0) decorate "Text" at (0,0) {
-  				id _GWSGgHKXEe2vRqJUE83Nfg
-  			}
+  		}
+  		-ComplexRead-> _BcbaEXSkEe2vmrlDP84GiQ via (380,569) (380,236) decorate "" at (0,0) decorate "Text" at (0,0) {
+  			id _HDSU4HSkEe2vmrlDP84GiQ
   		}
   	}
   }
   
-  Template _AzhNYWnXEe2xCJpb6ooUzA at 240,10 size 320,320 {
+  Template _AzhNYWnXEe2xCJpb6ooUzA at 240,10 size 320,388 {
   	blockName ""
   	disableAutoLayout false
   	generalStyle GeneralStyling _AzoiIGnXEe2xCJpb6ooUzA {
@@ -171,7 +171,7 @@ GUI _AzVAIWnXEe2xCJpb6ooUzA {
   		}
   	}
   	
-  	Row _FtVXMW8VEe29MJ2ZfnuTaA at 10,90 size 200,200 {
+  	Row _FtVXMW8VEe29MJ2ZfnuTaA at 10,90 size 200,268 {
   		generalStyle GeneralStyling _Ft4w0G8VEe29MJ2ZfnuTaA {
   				tallness Fitting
   				marginBottom None
@@ -184,7 +184,7 @@ GUI _AzVAIWnXEe2xCJpb6ooUzA {
   		MoveDown _FtknwW8VEe29MJ2ZfnuTaA at 2,10 size 14,7 {
   		}
   		
-  		Col _FtqHUW8VEe29MJ2ZfnuTaA at 10,30 size 170,150 {
+  		Col _FtqHUW8VEe29MJ2ZfnuTaA at 10,30 size 170,218 {
   			wideness Full
   			layout Layout _Ft27oG8VEe29MJ2ZfnuTaA {
   					size Default
@@ -204,7 +204,7 @@ GUI _AzVAIWnXEe2xCJpb6ooUzA {
   			MoveRight _Ftw1AW8VEe29MJ2ZfnuTaA at 10,2 size 7,14 {
   			}
   			
-  			GUISIB _7WD-gXKPEe2rzNRUfilttw at 10,30 size 150,90 {
+  			GUISIB _Bb4ngXSkEe2vmrlDP84GiQ at 10,30 size 150,158 {
   				libraryComponentUID "_ZlXgoXKOEe2rzNRUfilttw"
   				label "badge"
   				generalStyle GeneralStyling _eK46RHKOEe2rzNRUfilttw {
@@ -213,16 +213,25 @@ GUI _AzVAIWnXEe2xCJpb6ooUzA {
   						attributes [  ]
   						marginTop None
   					}
-  				ComplexInputPort _7WrCgHKPEe2rzNRUfilttw at 5,67 size 90,18 {
-  					libraryComponentUID "_m_TgwHKPEe2rzNRUfilttw"
+  				ComplexInputPort _BcbaEXSkEe2vmrlDP84GiQ at 5,67 size 90,18 {
+  					libraryComponentUID "_KEKm0W8QEe2x_c6ogIlfZw"
   					isList false
-  					name "entryState"
+  					name "tableEntry"
   				}
   				
-  				MoveUp _7XF5QXKPEe2rzNRUfilttw at 2,2 size 14,7 {
+  				Branch _Bcx_YHSkEe2vmrlDP84GiQ at 5,90 size 100,50 {
+  					name "empty"
+  					ComplexOutputPort _BdDFIHSkEe2vmrlDP84GiQ at 5,27 size 90,18 {
+  						libraryComponentUID "_KEKm0W8QEe2x_c6ogIlfZw"
+  						name "tableEntry"
+  						isList false
+  					}
   				}
   				
-  				MoveDown _7XF5Q3KPEe2rzNRUfilttw at 2,10 size 14,7 {
+  				MoveUp _BdTj0XSkEe2vmrlDP84GiQ at 2,2 size 14,7 {
+  				}
+  				
+  				MoveDown _BdUK4XSkEe2vmrlDP84GiQ at 2,10 size 14,7 {
   				}
   			}
   		}

@@ -52,5 +52,25 @@ public class TableSelective {
 		
 		effectiveTo.settableRow_TableRow(target);
 		}
+		{
+			final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.Table effectiveFrom = from;
+			final de.ls5.dywa.generated.rest.types.Table effectiveTo = to;
+		final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TurnState
+		 source = effectiveFrom.getturnState();
+		if (source != null) {
+			// original selective: TurnStateSelective
+			de.ls5.dywa.generated.rest.types.TurnState cached = objectCache.getRestTo(source);
+			
+			if (cached == null) {
+				cached = de.ls5.dywa.generated.rest.types.TurnState.fromDywaEntity(source, objectCache);
+			}
+			
+			if (!objectCache.containsSelective(cached, "TurnStateSelective")) {
+				de.ls5.dywa.generated.rest.types.TurnStateSelective.copy(source, cached, objectCache);
+			}
+		
+			effectiveTo.setturnState(cached);
+		}
+		}
 	}
 }

@@ -18,6 +18,9 @@ public class TurnStateControllerImpl implements TurnStateController {
 	private de.ls5.dywa.generated.util.DomainFileController domainFileController;
 
 @javax.inject.Inject //referenceMap
+private de.ls5.dywa.generated.controller.dime__HYPHEN_MINUS__models.app.TableController tableController;
+
+@javax.inject.Inject //referenceMap
 private de.ls5.dywa.generated.controller.dime__HYPHEN_MINUS__models.app.TurnStateController turnStateController;
 
     

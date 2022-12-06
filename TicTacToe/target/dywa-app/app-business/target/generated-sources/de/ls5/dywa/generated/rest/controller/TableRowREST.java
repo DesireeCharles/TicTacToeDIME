@@ -76,11 +76,11 @@ public class TableRowREST {
 						
 							if (e.getDywaId() > 0) {
 								// read_GameTableEntrySelectivex1x1x1x1x1_AzVAIWnXEe2xCJpb6ooUzA
-								fetchedValue = this.TableEntryREST.read_GameTableEntrySelectivex1x1x1x1x1_AzVAIWnXEe2xCJpb6ooUzA(e.getDywaId());
+								fetchedValue = this.TableEntryREST.read_BadgeTableEntrySelectivex1_ZlXgoXKOEe2rzNRUfilttw(e.getDywaId());
 							}
 							else {
 								// readTransient_GameTableEntrySelectivex1x1x1x1x1_AzVAIWnXEe2xCJpb6ooUzA
-								fetchedValue = this.TableEntryREST.readTransient_GameTableEntrySelectivex1x1x1x1x1_AzVAIWnXEe2xCJpb6ooUzA(e);
+								fetchedValue = this.TableEntryREST.readTransient_BadgeTableEntrySelectivex1_ZlXgoXKOEe2rzNRUfilttw(e);
 							}
 						
 							newValue.add(fetchedValue);
@@ -177,7 +177,7 @@ public class TableRowREST {
 					item.setDywaId(id);
 				
 					//update_GameTableEntrySelectivex1x1x1x1x1_AzVAIWnXEe2xCJpb6ooUzA
-					this.TableEntryREST.update_GameTableEntrySelectivex1x1x1x1x1_AzVAIWnXEe2xCJpb6ooUzA(item);
+					this.TableEntryREST.update_BadgeTableEntrySelectivex1_ZlXgoXKOEe2rzNRUfilttw(item);
 					entity = this.TableEntryController.read(item.getDywaId());
 				}
 				// create transient
@@ -191,7 +191,7 @@ public class TableRowREST {
 				// lookup regular object
 				else {
 					//update_GameTableEntrySelectivex1x1x1x1x1_AzVAIWnXEe2xCJpb6ooUzA
-					this.TableEntryREST.update_GameTableEntrySelectivex1x1x1x1x1_AzVAIWnXEe2xCJpb6ooUzA(item);
+					this.TableEntryREST.update_BadgeTableEntrySelectivex1_ZlXgoXKOEe2rzNRUfilttw(item);
 					entity = this.TableEntryController.read(item.getDywaId());
 				}
 

@@ -1,7 +1,7 @@
 <div class="row">
 	<div class="col-sm-12">
 <!-- beginn badge -->
-<span *ngIf="entryState?.dywa_name=='X' 
+<span *ngIf="tableEntry?.entryState?.dywa_name=='X' 
 " 
 aria-live="polite" aria-atomic="true" 
 
@@ -16,7 +16,7 @@ X
 <div class="row">
 	<div class="col-sm-12">
 <!-- beginn badge -->
-<span *ngIf="entryState?.dywa_name=='O' 
+<span *ngIf="tableEntry?.entryState?.dywa_name=='O' 
 " 
 aria-live="polite" aria-atomic="true" 
 
@@ -31,7 +31,7 @@ O
 <div class="row">
 	<div class="col-sm-12">
 <!-- beginn button empty -->
-<button *ngIf="entryState?.dywa_name=='empty' 
+<button *ngIf="tableEntry?.entryState?.dywa_name=='empty' 
 " 
 aria-live="polite" aria-atomic="true" 
 

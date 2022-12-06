@@ -8,10 +8,10 @@ GUI _LmrS0Ej8EeaK4_MRcoLfnw {
   	dfViewWorkaround true
   }
   
-  Template _Lm3gEEj8EeaK4_MRcoLfnw at 270,30 size 390,510 {
+  Template _Lm3gEEj8EeaK4_MRcoLfnw at 270,30 size 390,410 {
   	blockName "body"
   	disableAutoLayout false
-  	Jumbotron _6CcloEmAEeaUSpYQeYyxnQ at 10,30 size 370,450 {
+  	Jumbotron _6CcloEmAEeaUSpYQeYyxnQ at 10,30 size 370,350 {
   		generalStyle GeneralStyling _hH5ScTD2EemwX93gZgy7kw {
   				tallness Fitting
   				marginBottom None
@@ -128,27 +128,6 @@ GUI _LmrS0Ej8EeaK4_MRcoLfnw {
   					MoveDown _rg96YF-TEea6DvTF5PmsmA at 2,10 size 14,7 {
   					}
   				}
-  			}
-  		}
-  		
-  		Image _EoWNEGnbEe2xCJpb6ooUzA at 10,330 size 100,90 {
-  			dimensionX -1
-  			path "TicTac.png"
-  			dimensionY -1
-  			styling ImageStyling _EofXAGnbEe2xCJpb6ooUzA {
-  					border Default
-  					responsive true
-  				}
-  			generalStyle GeneralStyling _EoeI4GnbEe2xCJpb6ooUzA {
-  					tallness Fitting
-  					marginBottom None
-  					attributes [  ]
-  					marginTop None
-  				}
-  			MoveUp _EoW0IWnbEe2xCJpb6ooUzA at 2,2 size 14,7 {
-  			}
-  			
-  			MoveDown _EoYCQWnbEe2xCJpb6ooUzA at 2,10 size 14,7 {
   			}
   		}
   	}

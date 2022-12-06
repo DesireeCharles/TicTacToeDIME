@@ -56,17 +56,29 @@ Data _tH3fEMwMEeWZVvvwxpYu8A {
   	}
   }
   
-  ConcreteType _JgYkUW8QEe2x_c6ogIlfZw at 400,70 size 140,55 {
+  ConcreteType _JgYkUW8QEe2x_c6ogIlfZw at 400,70 size 140,73 {
   	name "Table"
-  	ComplexAttribute _QyVvAW8QEe2x_c6ogIlfZw at 5,32 size 130,18 {
+  	ComplexAttribute _QyVvAW8QEe2x_c6ogIlfZw at 5,50 size 130,18 {
   		dataType _J1LIkW8QEe2x_c6ogIlfZw
   		name "tableRow"
   		isList true
+  	}
+  	
+  	ComplexAttribute _09OegXSPEe2vmrlDP84GiQ at 5,32 size 130,18 {
+  		dataType _X66fwXPoEe2eGKutfpiSKw
+  		name "turnState"
+  		isList false
   	}
   	-Association-> _J1LIkW8QEe2x_c6ogIlfZw  decorate "Text" at (0,0) decorate "" at (0,0) {
   		id _QyMlEG8QEe2x_c6ogIlfZw
   		isHidden false
   		sourceAttr _QyVvAW8QEe2x_c6ogIlfZw
+  	}
+  	
+  	-Association-> _X66fwXPoEe2eGKutfpiSKw  decorate "Text" at (0,0) decorate "" at (0,0) {
+  		id _08vWUXSPEe2vmrlDP84GiQ
+  		isHidden false
+  		sourceAttr _09OegXSPEe2vmrlDP84GiQ
   	}
   }
   
@@ -97,7 +109,7 @@ Data _tH3fEMwMEeWZVvvwxpYu8A {
   		name "entryState"
   		isList false
   	}
-  	-Association-> _m_TgwHKPEe2rzNRUfilttw  decorate "Text" at (-73,8) decorate "" at (0,0) {
+  	-Association-> _m_TgwHKPEe2rzNRUfilttw  decorate "Text" at (-18,12) decorate "" at (0,0) {
   		id _suEaYXKPEe2rzNRUfilttw
   		isHidden false
   		sourceAttr _suTD4XKPEe2rzNRUfilttw
@@ -121,6 +133,21 @@ Data _tH3fEMwMEeWZVvvwxpYu8A {
   	EnumLiteral _pPgBwXKPEe2rzNRUfilttw at 5,68 size 130,18 {
   		displayName ""
   		name "empty"
+  		isList false
+  	}
+  }
+  
+  EnumType _X66fwXPoEe2eGKutfpiSKw at 680,70 size 140,73 {
+  	name "TurnState"
+  	EnumLiteral _ZnsxsXPoEe2eGKutfpiSKw at 5,50 size 130,18 {
+  		displayName ""
+  		name "X"
+  		isList false
+  	}
+  	
+  	EnumLiteral _Z97gYXPoEe2eGKutfpiSKw at 5,32 size 130,18 {
+  		displayName ""
+  		name "O"
   		isList false
   	}
   }

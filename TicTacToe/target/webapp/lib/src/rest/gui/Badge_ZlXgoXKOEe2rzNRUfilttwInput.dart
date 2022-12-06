@@ -9,14 +9,14 @@ import 'package:app/src/models/FileReference.dart';
 
 class Badge_ZlXgoXKOEe2rzNRUfilttwInput extends UserInteractionResponse {
 	
-	Data.EntryState entryState = null;
+	Data.TableEntry tableEntry = null;
 	
 	Badge_ZlXgoXKOEe2rzNRUfilttwInput(Map<String,dynamic> map, Map<String,dynamic> cache)
 	{
 		 Map<String,dynamic> inputPorts = map['inputs'];
-		if(inputPorts.containsKey('entryState')) {
-			if(inputPorts['entryState']!=null){
-				entryState = Data.EntryState.fromJSOG(jsog:inputPorts['entryState'],cache:cache);
+		if(inputPorts.containsKey('tableEntry')) {
+			if(inputPorts['tableEntry']!=null){
+				tableEntry = Data.TableEntry.fromJSOG(jsog:inputPorts['tableEntry'],cache:cache);
 			}
 		}
 	}
@@ -27,6 +27,6 @@ class Badge_ZlXgoXKOEe2rzNRUfilttwInput extends UserInteractionResponse {
 	}
 	
 	bool inpusChanged(Badge_ZlXgoXKOEe2rzNRUfilttwInput input) {
-		return entryState != input.entryState;
+		return tableEntry != input.tableEntry;
 	}
 }

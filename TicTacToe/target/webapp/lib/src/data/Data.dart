@@ -30,6 +30,10 @@ class DataCastUtil {
 	static EntryState castToEntryState(core.Object o) => o as EntryState;
 	static DIMEList<EntryState> castToListEntryState(DIMEList<core.Object> os) => new DIMEList.from(os.cast<EntryState>());
 	static DIMEList<EntryState> newListEntryState() => new DIMEList<EntryState>();
+	
+	static TurnState castToTurnState(core.Object o) => o as TurnState;
+	static DIMEList<TurnState> castToListTurnState(DIMEList<core.Object> os) => new DIMEList.from(os.cast<TurnState>());
+	static DIMEList<TurnState> newListTurnState() => new DIMEList<TurnState>();
 }
 class ConcreteUser extends BaseModel
 {
@@ -138,7 +142,7 @@ class ConcreteUser extends BaseModel
 			if (jsog.containsKey("dywaSwitchedTo")) {
 				core.Map<core.String,core.dynamic> jsogObj = jsog["dywaSwitchedTo"];
 				if(jsogObj != null) {
-					ConcreteUser valuea4lGXoXPgEe2eGKutfpiSKw;
+					ConcreteUser valueawTOrkXTyEe29EM7zgtpvCg;
 					
 					core.String jsogId;
 					
@@ -149,22 +153,22 @@ class ConcreteUser extends BaseModel
 					 	jsogId = jsogObj['@id'];
 					}
 					if (cache.containsKey(jsogId)) {
-						valuea4lGXoXPgEe2eGKutfpiSKw = cache[jsogId];
+						valueawTOrkXTyEe29EM7zgtpvCg = cache[jsogId];
 					}
 					else {
 						if (jsogObj != null) {
 							if (jsogObj['dywaRuntimeType'] == "de.ls5.dywa.generated.rest.types.ConcreteUserImpl") {
-								valuea4lGXoXPgEe2eGKutfpiSKw = new ConcreteUser(cache: cache, jsog: jsogObj);
+								valueawTOrkXTyEe29EM7zgtpvCg = new ConcreteUser(cache: cache, jsog: jsogObj);
 							}
 							else {
-								valuea4lGXoXPgEe2eGKutfpiSKw = new ConcreteUser(cache: cache,jsog: jsogObj);
+								valueawTOrkXTyEe29EM7zgtpvCg = new ConcreteUser(cache: cache,jsog: jsogObj);
 							}
 						}
 						else {
-							valuea4lGXoXPgEe2eGKutfpiSKw = new ConcreteUser(cache: cache,jsog: jsogObj);
+							valueawTOrkXTyEe29EM7zgtpvCg = new ConcreteUser(cache: cache,jsog: jsogObj);
 						}
 					}
-					this._dywaSwitchedTo = valuea4lGXoXPgEe2eGKutfpiSKw;
+					this._dywaSwitchedTo = valueawTOrkXTyEe29EM7zgtpvCg;
 				}
 			}
 			
@@ -863,6 +867,9 @@ class Table extends BaseModel
 	core.bool _tableRowHasBeenSet = false;
 	core.bool tableRowHasBeenChanged() => _tableRowHasBeenSet;
 	DIMEList<TableRow> _tableRow;
+	core.bool _turnStateHasBeenSet = false;
+	core.bool turnStateHasBeenChanged() => _turnStateHasBeenSet||(_turnState==null?false:_turnState.hasChanged()) ;
+	TurnState _turnState;
 	
 	static Table fromId(core.int id) {
 		var m = new Table();
@@ -875,7 +882,8 @@ class Table extends BaseModel
 	
 	core.dynamic $$getProperty(core.String prop) {
 	  var propMap = {
-	  'tableRow': this.tableRow
+	  'tableRow': this.tableRow, 
+	  'turnState': this.turnState
 	  };
 	
 	  if (!propMap.containsKey(prop)) throw NoSuchPropertyException(prop);
@@ -885,6 +893,7 @@ class Table extends BaseModel
 	void $$setProperty(core.String prop, core.dynamic value) {
 	  switch (prop) {
 	  case 'tableRow': this.tableRow = value; return;
+	  case 'turnState': this.turnState = value; return;
 	    default: throw NoSuchPropertyException(prop);
 	  }
 	}
@@ -959,13 +968,50 @@ class Table extends BaseModel
 			
 			
 			_tableRowHasBeenSet = false;
+			if (jsog.containsKey("turnState")) {
+				core.Map<core.String,core.dynamic> jsogObj = jsog["turnState"];
+				if(jsogObj != null) {
+					TurnState valuea09OegXSPEe2vmrlDP84GiQ;
+					
+					core.String jsogId;
+					
+					if (jsogObj.containsKey('@ref')) {
+						jsogId = jsogObj['@ref'];
+					}
+					else {
+					 	jsogId = jsogObj['@id'];
+					}
+					if (cache.containsKey(jsogId)) {
+						valuea09OegXSPEe2vmrlDP84GiQ = cache[jsogId];
+					}
+					else {
+						if (jsogObj != null) {
+							if (jsogObj['dywaRuntimeType'] == "de.ls5.dywa.generated.rest.types.TurnState") {
+								valuea09OegXSPEe2vmrlDP84GiQ = new TurnState(cache: cache, jsog: jsogObj);
+							}
+							else {
+								valuea09OegXSPEe2vmrlDP84GiQ = new TurnState(cache: cache,jsog: jsogObj);
+							}
+						}
+						else {
+							valuea09OegXSPEe2vmrlDP84GiQ = new TurnState(cache: cache,jsog: jsogObj);
+						}
+					}
+					this._turnState = valuea09OegXSPEe2vmrlDP84GiQ;
+				}
+			}
+			
+			
+			_turnStateHasBeenSet = false;
 		}
 	}
 	
 	void tableRowHasBeenSetted() { _tableRowHasBeenSet=true; }
+	void turnStateHasBeenSetted() { _turnStateHasBeenSet=true; }
 	
 	core.bool hasChanged() {
-		return 		_tableRowHasBeenSet
+		return 		_tableRowHasBeenSet || 
+					_turnStateHasBeenSet
 			;
 	}
 	
@@ -985,6 +1031,14 @@ class Table extends BaseModel
 			}
 			else{
 				jsonObj["tableRow"] = this._tableRow.where((n) => objects.containsKey(n)).map((n)=>n.toJSOG(objects)).toList();
+			}
+			}
+			if(( turnStateHasBeenChanged() && !jsonObj.containsKey('turnState')) && !objects.containsKey(this._turnState)) {
+			if(this._turnState != null) {
+				jsonObj["turnState"] = this._turnState.toJSOG(objects);
+			}
+			else {
+				jsonObj["turnState"] = null;
 			}
 			}
 			return { 
@@ -1013,6 +1067,14 @@ class Table extends BaseModel
 		}
 		else{
 			jsonObj["tableRow"] = this._tableRow.where((n) => objects.containsKey(n)).map((n)=>n.toJSOG(objects)).toList();
+		}
+		}
+		if(( turnStateHasBeenChanged() && !jsonObj.containsKey('turnState')) && !objects.containsKey(this._turnState) || this.dywa_id == 0) {
+		if(this._turnState != null) {
+			jsonObj["turnState"] = this._turnState.toJSOG(objects);
+		}
+		else {
+			jsonObj["turnState"] = null;
 		}
 		}
 		return jsonObj;
@@ -1067,6 +1129,36 @@ class Table extends BaseModel
 			this._tableRowHasBeenSet = true;
 		}
 
+	
+	void set turnState (TurnState value)
+	{
+		this._turnStateHasBeenSet = true;
+		this._turnState = value;
+	}
+	
+	TurnState get turnState
+	{
+		return this._turnState;
+	}
+	
+		TurnState initOnDemandturnState()
+		{
+			if(this._turnState == null) {
+			this.turnState = new TurnState();
+			}
+			return this.turnState;
+		}
+		
+		void setValueturnState(TurnState value)
+		{
+			this.turnState = value;
+		}
+		
+		void turnStatesetValue(TurnState value)
+		{
+			this.turnState = value;
+		}
+		
 	
 }
 
@@ -1615,12 +1707,12 @@ class EntryState extends BaseModel
 			if (jsog.containsKey("dywaDisplayName")) {
 				core.String jsogObj = jsog["dywaDisplayName"];
 				if(jsogObj != null) {
-					core.String valuea4lOTcXPgEe2eGKutfpiSKw;
+					core.String valueawTdVEXTyEe29EM7zgtpvCg;
 					
 					if(jsogObj!=null){
-					valuea4lOTcXPgEe2eGKutfpiSKw = jsogObj.toString();
+					valueawTdVEXTyEe29EM7zgtpvCg = jsogObj.toString();
 					}
-					this._dywaDisplayName = valuea4lOTcXPgEe2eGKutfpiSKw;
+					this._dywaDisplayName = valueawTdVEXTyEe29EM7zgtpvCg;
 				}
 				else {
 					this._dywaDisplayName = null;
@@ -1704,6 +1796,192 @@ class EntryState extends BaseModel
 			return new EntryState(cache:cache,jsog:jsog);
 		}
 		return new EntryState(cache:cache,jsog:jsog);
+	}
+	
+	void set dywaDisplayName (core.String value)
+	{
+		this._dywaDisplayNameHasBeenSet = true;
+		this._dywaDisplayName = value;
+	}
+	
+	core.String get dywaDisplayName
+	{
+		return this._dywaDisplayName;
+	}
+	
+		core.String initOnDemanddywaDisplayName()
+		{
+			return this.dywaDisplayName;
+		}
+		
+		void setValuedywaDisplayName(core.String value)
+		{
+			this.dywaDisplayName = value;
+		}
+		
+		void dywaDisplayNamesetValue(core.String value)
+		{
+			this.dywaDisplayName = value;
+		}
+		
+	
+}
+
+class TurnState extends BaseModel
+{
+	core.bool _dywaDisplayNameHasBeenSet = false;
+	core.bool dywaDisplayNameHasBeenChanged() => _dywaDisplayNameHasBeenSet;
+	core.String _dywaDisplayName;
+	
+	static TurnState fromId(core.int id) {
+		var m = new TurnState();
+		m.dywa_id = id;
+		return m;
+	}
+	
+	
+	// reflection methods to read and wirte dart properties by string name
+	
+	core.dynamic $$getProperty(core.String prop) {
+	  var propMap = {
+	  'dywaDisplayName': this.dywaDisplayName
+	  };
+	
+	  if (!propMap.containsKey(prop)) throw NoSuchPropertyException(prop);
+	  return propMap[prop];
+	}
+	
+	void $$setProperty(core.String prop, core.dynamic value) {
+	  switch (prop) {
+	  case 'dywaDisplayName': this.dywaDisplayName = value; return;
+	    default: throw NoSuchPropertyException(prop);
+	  }
+	}
+	
+	core.bool $$hasProperty(core.String prop) {
+	  try {
+	    $$getProperty(prop);
+	    return true;
+	  } on NoSuchPropertyException catch (e) {
+	    return false;
+	  }
+	}
+	
+	TurnState({core.Map<core.String,core.dynamic> cache, jsog}) {
+		if (cache == null) {
+			cache = new core.Map();
+		}
+
+		// default constructor
+		if (jsog == null) {
+			
+			this.dywa_id = -1;
+			this.dywa_version = 0;
+			this.dywa_name = null;
+			
+			// properties
+			this._dywaDisplayName = null;
+		}
+		// from jsog
+		else {
+			core.String jsogId = jsog['@id'];
+			cache[jsogId] = this;
+			
+			this.dywa_id = jsog['dywaId'];
+			this.dywa_version = jsog['dywaVersion'];
+			this.dywa_name = jsog['dywaName'];
+			
+			// properties
+			if (jsog.containsKey("dywaDisplayName")) {
+				core.String jsogObj = jsog["dywaDisplayName"];
+				if(jsogObj != null) {
+					core.String valueawTnGEXTyEe29EM7zgtpvCg;
+					
+					if(jsogObj!=null){
+					valueawTnGEXTyEe29EM7zgtpvCg = jsogObj.toString();
+					}
+					this._dywaDisplayName = valueawTnGEXTyEe29EM7zgtpvCg;
+				}
+				else {
+					this._dywaDisplayName = null;
+				}
+			}
+			
+			
+			else{
+				this._dywaDisplayName = null;
+			}
+			_dywaDisplayNameHasBeenSet = false;
+		}
+	}
+	
+	void dywaDisplayNameHasBeenSetted() { _dywaDisplayNameHasBeenSet=true; }
+	
+	core.bool hasChanged() {
+		return 		_dywaDisplayNameHasBeenSet
+			;
+	}
+	
+	core.String toString() {
+		switch(this.dywa_name) {
+			case 'X':
+				return "X";
+			case 'O':
+				return "O";
+		}
+	    	return this.dywa_name;
+	  	}
+	
+	core.Map<core.String,core.dynamic> toJSOG(core.Map<core.Object,core.dynamic> objects) {
+		if (objects == null) {
+			objects = new core.Map();
+		}
+		core.int jsogId;
+		core.Map<core.String,core.dynamic> jsonObj = new core.Map();
+		if(objects.containsKey(this)) {
+			jsogId = objects[this]['id'];
+			jsonObj = objects[this]['value'];
+			if(( dywaDisplayNameHasBeenChanged() && !jsonObj.containsKey('dywaDisplayName')) && !objects.containsKey(this._dywaDisplayName)) {
+			jsonObj["dywaDisplayName"] = this._dywaDisplayName;
+			}
+			return { 
+				'@ref': jsogId.toString()
+			};
+		}
+		else {
+			jsogId = objects.length;
+			var pair = {
+				'id': jsogId,
+				'value': jsonObj
+			};
+			objects[this] = pair;
+		}
+		jsonObj['@id'] = jsogId.toString();
+		jsonObj['dywaRuntimeType'] = "de.ls5.dywa.generated.rest.types.TurnState";
+
+		jsonObj['dywaId'] = this.dywa_id;
+		jsonObj['dywaVersion'] = this.dywa_version;
+		if(this.dywa_name != null) {
+			jsonObj['dywaName'] = this.dywa_name;
+		}
+		if(( dywaDisplayNameHasBeenChanged() && !jsonObj.containsKey('dywaDisplayName')) && !objects.containsKey(this._dywaDisplayName) || this.dywa_id == 0) {
+		jsonObj["dywaDisplayName"] = this._dywaDisplayName;
+		}
+		return jsonObj;
+	}
+	static fromJSON(core.String json) {
+		return fromJSOG(cache:new core.Map<core.String,core.dynamic>(),jsog:jsonDecode(json));
+	}
+		
+	static TurnState fromJSOG({core.Map<core.String,core.dynamic> cache, jsog}) {
+		if(jsog.containsKey('@ref')) {
+			assert (cache.containsKey(jsog['@ref']));
+			return cache[jsog['@ref']];
+		}
+		if(jsog['dywaRuntimeType'] == 'de.ls5.dywa.generated.rest.types.TurnState') {
+			return new TurnState(cache:cache,jsog:jsog);
+		}
+		return new TurnState(cache:cache,jsog:jsog);
 	}
 	
 	void set dywaDisplayName (core.String value)

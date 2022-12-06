@@ -21,4 +21,18 @@
 			public void setCallStack(info.scce.dime.process.ProcessCallFrame callStack) {
 				this.callStack = callStack;
 			}
+			private de.ls5.dywa.generated.rest.types.TableEntry
+			 tableEntry;
+			
+			@com.fasterxml.jackson.annotation.JsonProperty("tableEntry")
+			public de.ls5.dywa.generated.rest.types.TableEntry
+			 getTableEntry() {
+				return tableEntry;
+			}
+			
+			@com.fasterxml.jackson.annotation.JsonProperty("tableEntry")
+			public void setTableEntry(de.ls5.dywa.generated.rest.types.TableEntry
+			 tableEntry) {
+				this.tableEntry = tableEntry;
+			}
 		}

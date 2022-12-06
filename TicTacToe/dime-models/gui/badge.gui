@@ -4,35 +4,47 @@ GUI _ZlXgoXKOEe2rzNRUfilttw {
   additionalJavaScript [  ]
   additionalStylesheets [  ]
   title "badge"
-  DataContext _ZlcZIXKOEe2rzNRUfilttw at 10,10 size 180,125 {
+  DataContext _ZlcZIXKOEe2rzNRUfilttw at 10,10 size 180,158 {
   	dfViewWorkaround true
-  	ComplexVariable _wcgbAXKPEe2rzNRUfilttw at 10,70 size 160,25 {
-  		expanded false
+  	ComplexVariable _17JIMXSjEe2vmrlDP84GiQ at 10,50 size 160,78 {
+  		expanded true
   		isLive false
-  		libraryComponentUID "_m_TgwHKPEe2rzNRUfilttw"
+  		libraryComponentUID "_KEKm0W8QEe2x_c6ogIlfZw"
   		isInput true
-  		name "entryState"
+  		name "tableEntry"
   		dfViewWorkaround true
   		isList false
-  		-IS-> __1OZgXPkEe2eGKutfpiSKw  decorate "" at (0,0) decorate "Text" at (0,0) {
-  			id _Bt6ZcXPlEe2eGKutfpiSKw
-  			exactMatch false
-  			negate false
-  			matchingType "_pPgBwXKPEe2rzNRUfilttw"
+  		PrimitiveAttribute _2OOcQXSjEe2vmrlDP84GiQ at 10,23 size 140,25 {
+  			libraryComponentUID "_Rwbu8W8QEe2x_c6ogIlfZw"
+  			isLive false
   		}
   		
-  		-IS-> _MY7KoXPlEe2eGKutfpiSKw  decorate "" at (0,0) decorate "Text" at (0,0) {
-  			id _S55kUXPlEe2eGKutfpiSKw
-  			exactMatch false
-  			negate false
-  			matchingType "_oqhFYXKPEe2rzNRUfilttw"
+  		ComplexAttribute _DCdjwXSkEe2vmrlDP84GiQ at 10,50 size 140,25 {
+  			libraryComponentUID "_suTD4XKPEe2rzNRUfilttw"
+  			isLive false
+  			-IS-> _MY7KoXPlEe2eGKutfpiSKw  decorate "" at (0,0) decorate "Text" at (0,0) {
+  				id _DcJPEXSkEe2vmrlDP84GiQ
+  				exactMatch false
+  				negate false
+  				matchingType "_oqhFYXKPEe2rzNRUfilttw"
+  			}
+  			
+  			-IS-> _O6r8wXPlEe2eGKutfpiSKw  decorate "" at (0,0) decorate "Text" at (0,0) {
+  				id _DtXh8XSkEe2vmrlDP84GiQ
+  				exactMatch false
+  				negate false
+  				matchingType "_o_tSQXKPEe2rzNRUfilttw"
+  			}
+  			
+  			-IS-> __1OZgXPkEe2eGKutfpiSKw  decorate "" at (0,0) decorate "Text" at (0,0) {
+  				id _ECMicXSkEe2vmrlDP84GiQ
+  				exactMatch false
+  				negate false
+  				matchingType "_pPgBwXKPEe2rzNRUfilttw"
+  			}
   		}
-  		
-  		-IS-> _O6r8wXPlEe2eGKutfpiSKw  decorate "" at (0,0) decorate "Text" at (0,0) {
-  			id _TQMkcXPlEe2eGKutfpiSKw
-  			exactMatch false
-  			negate false
-  			matchingType "_o_tSQXKPEe2rzNRUfilttw"
+  		-AddComplexToSubmission-> __1OZgXPkEe2eGKutfpiSKw via (10,99) (10,238) decorate "" at (0,0) decorate "Text" at (0,0) {
+  			id _7xDysXSjEe2vmrlDP84GiQ
   		}
   	}
   }

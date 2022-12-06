@@ -6,7 +6,7 @@ package de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app;
 @de.ls5.dywa.annotations.ShortDescription(description = "")
 @de.ls5.dywa.annotations.LongDescription(description = "")
 public enum EntryState implements de.ls5.dywa.generated.util.Identifiable, de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryStateInterface {
-	X(24L), O(25L), empty(26L);
+	X(29L), O(30L), empty(31L);
 	
 	private final long id;
 	private EntryStateInterface internalDelegate;
@@ -125,13 +125,13 @@ public enum EntryState implements de.ls5.dywa.generated.util.Identifiable, de.ls
 	}
 	
 	public static EntryState forId(long id) {
-		if (id == 24) {
+		if (id == 29) {
 			return EntryState.X;
 		} else 
-		if (id == 25) {
+		if (id == 30) {
 			return EntryState.O;
 		} else 
-		if (id == 26) {
+		if (id == 31) {
 			return EntryState.empty;
 		}
 		return null;

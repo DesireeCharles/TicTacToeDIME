@@ -83,7 +83,7 @@ class GameaAzVAIWnXEe2xCJpb6ooUzA extends dime.DIMEComponent implements OnInit, 
   	// table refresh flags
   	/// GUI badge
   	@ViewChildren(BadgeaZlXgoXKOEe2rzNRUfilttw)
-  	List<BadgeaZlXgoXKOEe2rzNRUfilttw> componentSIBa7WD_45_gXKPEe2rzNRUfilttw;
+  	List<BadgeaZlXgoXKOEe2rzNRUfilttw> componentSIBaBb4ngXSkEe2vmrlDP84GiQ;
   	
   	
   	
@@ -125,8 +125,8 @@ class GameaAzVAIWnXEe2xCJpb6ooUzA extends dime.DIMEComponent implements OnInit, 
 		}
 			
 		/// GUI badge
-		if(componentSIBa7WD_45_gXKPEe2rzNRUfilttw!=null) {
-			componentSIBa7WD_45_gXKPEe2rzNRUfilttw.forEach((n)=>n.restartComponent());
+		if(componentSIBaBb4ngXSkEe2vmrlDP84GiQ!=null) {
+			componentSIBaBb4ngXSkEe2vmrlDP84GiQ.forEach((n)=>n.restartComponent());
 		}
 		updateImageHash();
 	}
@@ -135,7 +135,7 @@ class GameaAzVAIWnXEe2xCJpb6ooUzA extends dime.DIMEComponent implements OnInit, 
 		modals.forEach((m)=>m.close());
 		if(updateHidden) {
 		}
-		componentSIBa7WD_45_gXKPEe2rzNRUfilttw.forEach((n)=>n.updateWithoutInputs());
+		componentSIBaBb4ngXSkEe2vmrlDP84GiQ.forEach((n)=>n.updateWithoutInputs());
 		updateImageHash();
 	}
 	

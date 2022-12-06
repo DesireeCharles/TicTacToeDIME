@@ -92,9 +92,9 @@ class BadgeaZlXgoXKOEe2rzNRUfilttw extends dime.DIMEComponent implements OnInit,
   	List<modal.Modal> modals;
   	bool hasToSignIn;
 	//DATA CONTEXT
-	//EntryState entryState
+	//TableEntry tableEntry
 		@Input()
-		Data.EntryState entryState;
+		Data.TableEntry tableEntry;
 	
 	bool isDestroyed = true;
   
@@ -108,8 +108,8 @@ class BadgeaZlXgoXKOEe2rzNRUfilttw extends dime.DIMEComponent implements OnInit,
 		this.hasToSignIn = false;
 		
 		//DATA CONTEXT
-		// EntryState entryState
-		this.entryState = null;
+		// TableEntry tableEntry
+		this.tableEntry = null;
 						
 						
 		
@@ -130,10 +130,10 @@ class BadgeaZlXgoXKOEe2rzNRUfilttw extends dime.DIMEComponent implements OnInit,
 	}
 	
 	void updateInputs(
-	{Data.EntryState pentryState
+	{Data.TableEntry ptableEntry
 	})
 	{
-		entryState = pentryState;
+		tableEntry = ptableEntry;
 		
 		updateWithoutInputs(updateHidden:false);
 	}
@@ -176,6 +176,7 @@ class BadgeaZlXgoXKOEe2rzNRUfilttw extends dime.DIMEComponent implements OnInit,
   		
   		{
   			Map<String,dynamic> data = new Map();
+  			data['tableEntry'] = this.tableEntry;
   			this.actionemptyevent.add(data);
   		}
   		
@@ -186,24 +187,24 @@ class BadgeaZlXgoXKOEe2rzNRUfilttw extends dime.DIMEComponent implements OnInit,
   		
   		
   		
-  		Data.EntryState
-  		 initOnDemandentryState()
+  		Data.TableEntry
+  		 initOnDemandtableEntry()
   		{
-  			if(this.entryState==null){
-  				this.entryState = new Data.EntryState
+  			if(this.tableEntry==null){
+  				this.tableEntry = new Data.TableEntry
   				();
   			}
-  			return this.entryState;
+  			return this.tableEntry;
   		}
-  		void setValueentryState(Data.EntryState
+  		void setValuetableEntry(Data.TableEntry
   		 value)
   		{
-  			this.entryState = value;
+  			this.tableEntry = value;
   		}
-  		void entryStatesetValue(Data.EntryState
+  		void tableEntrysetValue(Data.TableEntry
   		 value)
   		{
-  			this.setValueentryState(value);
+  			this.setValuetableEntry(value);
   		}
   		
   	

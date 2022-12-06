@@ -12,8 +12,10 @@ class Badge_ZlXgoXKOEe2rzNRUfilttwBranch extends ContinueProcessRequest {
 	Empty branch_empty;
 	
 	Badge_ZlXgoXKOEe2rzNRUfilttwBranch.foremptyBranch(
-	) {
+{		Data.TableEntry tableEntry:null
+}	) {
 		branch_empty = new Empty();
+		branch_empty.port_tableEntry = tableEntry;
 	}
 
 	String toJSON() {
@@ -33,11 +35,18 @@ class Badge_ZlXgoXKOEe2rzNRUfilttwBranch extends ContinueProcessRequest {
 	
 	class Empty {
 		
+		Data.TableEntry port_tableEntry = null;
 
 		Map<String,dynamic> toJSOG()
 		{
 			
 			Map<String,dynamic> jsonObj = new Map();
+Map<Object,dynamic> cache = new Map();			if(this.port_tableEntry != null){
+				jsonObj["tableEntry"] = this.port_tableEntry.toJSOG(cache);
+			}
+			else{
+				jsonObj["tableEntry"] = null;
+			}
 					
 			return jsonObj;
 		}

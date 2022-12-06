@@ -5,17 +5,29 @@ package de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app;
 @de.ls5.dywa.annotations.ShortDescription(description = "")
 @de.ls5.dywa.annotations.LongDescription(description = "")
 public interface Table extends de.ls5.dywa.generated.util.Identifiable {
-	@de.ls5.dywa.annotations.IdRef(id = 14L)
+	@de.ls5.dywa.annotations.IdRef(id = 15L)
 	@de.ls5.dywa.annotations.OriginalName(name = "tableRow")
 	@de.ls5.dywa.annotations.ShortDescription(description = "")
 	@de.ls5.dywa.annotations.LongDescription(description = "")
 	java.util.List<de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TableRow> gettableRow_TableRow();
 	
-	@de.ls5.dywa.annotations.IdRef(id = 14L)
+	@de.ls5.dywa.annotations.IdRef(id = 15L)
 	@de.ls5.dywa.annotations.OriginalName(name = "tableRow")
 	@de.ls5.dywa.annotations.ShortDescription(description = "")
 	@de.ls5.dywa.annotations.LongDescription(description = "")
 	void settableRow_TableRow(java.util.List<de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TableRow> object);
+	
+	@de.ls5.dywa.annotations.IdRef(id = 16L)
+	@de.ls5.dywa.annotations.OriginalName(name = "turnState")
+	@de.ls5.dywa.annotations.ShortDescription(description = "")
+	@de.ls5.dywa.annotations.LongDescription(description = "")
+	de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TurnState getturnState();
+	
+	@de.ls5.dywa.annotations.IdRef(id = 16L)
+	@de.ls5.dywa.annotations.OriginalName(name = "turnState")
+	@de.ls5.dywa.annotations.ShortDescription(description = "")
+	@de.ls5.dywa.annotations.LongDescription(description = "")
+	void setturnState(de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TurnState object);
 	
 
 	// EXTENSION ATTRIBUTES

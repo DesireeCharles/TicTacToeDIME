@@ -15,6 +15,12 @@ public interface Table extends info.scce.dime.rest.RESTBaseType  {
 	TableRow
 	>
 	 tableRow);
+	TurnState
+	 getturnState();
+	boolean isturnStateSet();
+
+	void setturnState(final TurnState
+	 turnState);
 
 	public static Table fromDywaEntity(final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.Table entity, info.scce.dime.rest.ObjectCache objectCache) {
 	

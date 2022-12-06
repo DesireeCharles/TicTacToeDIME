@@ -26,7 +26,7 @@ public class TableImpl implements Table {
 
 	
 	/* MAIN ATTRIBUTES START */
-	@de.ls5.dywa.annotations.IdRef(id = 14L)
+	@de.ls5.dywa.annotations.IdRef(id = 15L)
 	@org.hibernate.annotations.Cascade(org.hibernate.annotations.CascadeType.PERSIST)
 	@javax.persistence.JoinTable(name="r_Table_TableRow__qyvvaw8qee2x_c6", joinColumns = { @javax.persistence.JoinColumn(name = "r1_Table_id") }, inverseJoinColumns = { @javax.persistence.JoinColumn(name = "r2_TableRow_id") })
 	@org.hibernate.annotations.ManyToAny(metaColumn=@javax.persistence.Column(name="m_TableRow_Type__qyvvaw8qee2x_c6"))
@@ -37,6 +37,12 @@ public class TableImpl implements Table {
 		}
 	)
 	private java.util.List<de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TableRow> tableRow  = new java.util.ArrayList<>();
+	
+	@de.ls5.dywa.annotations.IdRef(id = 16L)
+	@org.hibernate.annotations.Cascade(org.hibernate.annotations.CascadeType.PERSIST)
+	@javax.persistence.JoinColumn(name = "a_TurnState__09oegxspee2vmrl")
+	@javax.persistence.ManyToOne
+	private de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TurnStateEntity turnState;
 	
 	/* MAIN ATTRIBUTES END */
 	
@@ -102,6 +108,28 @@ public class TableImpl implements Table {
 	@java.lang.Override
 	public void settableRow_TableRow(java.util.List<de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TableRow> object) {
 		this.tableRow = object;
+	}
+	
+	
+	@java.lang.Override
+	public de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TurnState getturnState() {
+		if (this.turnState != null) {
+			return de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TurnState.valueOf(this.turnState.getDywaName());
+		}
+		return null;
+	}
+	
+	@java.lang.Override
+	public void setturnState(de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TurnState object) {
+		this.turnState = object != null ? object.getEntityAs(TurnStateEntity.class) : null;
+	}
+	
+	protected void setturnState_(de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TurnStateEntity object) {
+		this.turnState = object;
+	}
+	
+	protected de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TurnStateEntity getturnState_() {
+		return this.turnState;
 	}
 	
 	

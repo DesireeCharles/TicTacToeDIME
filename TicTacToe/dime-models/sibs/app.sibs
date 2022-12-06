@@ -8,4 +8,3 @@ sib drawBoard : info.scce.dime.app.game.Native#createGameBoard
 	height: integer
 	->success
 		Table: data.Table
-		

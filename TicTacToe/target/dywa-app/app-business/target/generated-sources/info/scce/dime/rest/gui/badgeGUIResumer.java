@@ -12,6 +12,10 @@ public class badgeGUIResumer extends info.scce.dime.process.GUIResumer {
 	@javax.inject.Inject
 	private de.ls5.dywa.generated.util.DomainFileController domainFileController;
 	
+	@javax.inject.Inject
+	private de.ls5.dywa.generated.rest.controller.TableEntryREST TableEntryREST;
+	@javax.inject.Inject
+	private de.ls5.dywa.generated.controller.dime__HYPHEN_MINUS__models.app.TableEntryController TableEntryController;
 
 	@javax.ws.rs.POST
 	@javax.ws.rs.Path("empty/branch/public")
@@ -21,9 +25,67 @@ public class badgeGUIResumer extends info.scce.dime.process.GUIResumer {
 		
 		checkAuthentication(output.getCallStack(),"_ZlXgoXKOEe2rzNRUfilttw/empty");
 		
+			final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TableEntry
+			 tableEntry;
+			if (output.getTableEntry() != null) {
+			// create new object
+			if (output.getTableEntry().getDywaId() == info.scce.dime.util.Constants.DYWA_ID_CREATE_NEW) {
+				if(output.getTableEntry() instanceof de.ls5.dywa.generated.rest.types.TableEntry) {
+					final java.lang.String dywaName;
+					if (output.getTableEntry().getDywaName() == null || output.getTableEntry().getDywaName().isEmpty()) {
+						dywaName = "tableEntry";
+					} else {
+						dywaName = output.getTableEntry().getDywaName();
+					}
+					final long id;
+					id = TableEntryREST.create(dywaName);
+					output.getTableEntry().setDywaId(id);
+					//update_BadgeTableEntrySelectivex1_ZlXgoXKOEe2rzNRUfilttw
+					TableEntryREST.update_BadgeTableEntrySelectivex1_ZlXgoXKOEe2rzNRUfilttw((de.ls5.dywa.generated.rest.types.TableEntry)output.getTableEntry());
+					tableEntry = (de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TableEntry
+					) TableEntryController.read(output.getTableEntry().getDywaId());
+				}
+		 else { throw new java.lang.IllegalArgumentException("Unexpected type " + output.getTableEntry().getClass()); }	}
+			// transient object
+			else if (output.getTableEntry().getDywaId() == info.scce.dime.util.Constants.DYWA_ID_TRANSIENT) {
+				if(output.getTableEntry() instanceof de.ls5.dywa.generated.rest.types.TableEntry) {
+					final java.lang.String dywaName;
+					if (output.getTableEntry().getDywaName() == null || output.getTableEntry().getDywaName().isEmpty()) {
+						dywaName = "tableEntry";
+					} else {
+						dywaName = output.getTableEntry().getDywaName();
+					}
+					final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TableEntry transientObject;
+					if (output.getTableEntry() instanceof de.ls5.dywa.generated.rest.types.TableEntry) {
+						transientObject = TableEntryController.createTransient(dywaName);
+					}
+					 else { throw new java.lang.IllegalArgumentException("Unexpected type " + output.getTableEntry().getClass()); }
+		
+					//update_BadgeTableEntrySelectivex1_ZlXgoXKOEe2rzNRUfilttw
+					TableEntryREST.update_BadgeTableEntrySelectivex1_ZlXgoXKOEe2rzNRUfilttw((de.ls5.dywa.generated.rest.types.TableEntry)output.getTableEntry(), transientObject);
+					tableEntry = (de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TableEntry
+					) transientObject;
+				}
+		 else { throw new java.lang.IllegalArgumentException("Unexpected type " + output.getTableEntry().getClass()); }	}
+			// regular object
+				else {
+					if(output.getTableEntry() instanceof de.ls5.dywa.generated.rest.types.TableEntry) {
+						//update_BadgeTableEntrySelectivex1_ZlXgoXKOEe2rzNRUfilttw
+						TableEntryREST.update_BadgeTableEntrySelectivex1_ZlXgoXKOEe2rzNRUfilttw((de.ls5.dywa.generated.rest.types.TableEntry)output.getTableEntry());
+						tableEntry = (de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TableEntry
+						) TableEntryController.read(output.getTableEntry().getDywaId());
+					}
+		 else { throw new java.lang.IllegalArgumentException("Unexpected type " + output.getTableEntry().getClass()); }		}
+			
+			}
+			else {
+				tableEntry = null;
+			}
+		final info.scce.dime.gui.dime__HYPHEN_MINUS__models.gui.badge.Badge_ZlXgoXKOEe2rzNRUfilttwResult.gui___1OZgXPkEe2eGKutfpiSKwemptyReturn guiReturn = new info.scce.dime.gui.dime__HYPHEN_MINUS__models.gui.badge.Badge_ZlXgoXKOEe2rzNRUfilttwResult.gui___1OZgXPkEe2eGKutfpiSKwemptyReturn();
+		guiReturn.setTableEntry(tableEntry);
 		
 		final info.scce.dime.gui.dime__HYPHEN_MINUS__models.gui.badge.Badge_ZlXgoXKOEe2rzNRUfilttwResult guiResult = 
-		new info.scce.dime.gui.dime__HYPHEN_MINUS__models.gui.badge.Badge_ZlXgoXKOEe2rzNRUfilttwResult("empty");
+		new info.scce.dime.gui.dime__HYPHEN_MINUS__models.gui.badge.Badge_ZlXgoXKOEe2rzNRUfilttwResult("empty", guiReturn);
 		if(!"_ZlXgoXKOEe2rzNRUfilttw".equals(output.getCallStack().getCallFrames().get(output.getCallStack().getCallFrames().size()-1).getPointer().split(":")[2])){
 					output.getCallStack().getCallFrames().get(output.getCallStack().getCallFrames().size()-1).setPointer(output.getCallStack().getCallFrames().get(output.getCallStack().getCallFrames().size()-1).getMajorGUI());
 		}

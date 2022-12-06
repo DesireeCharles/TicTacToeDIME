@@ -38,8 +38,8 @@ public class GameTableRowSelectivex1x1x1_AzVAIWnXEe2xCJpb6ooUzA {
 				cached = de.ls5.dywa.generated.rest.types.TableEntry.fromDywaEntity(s, objectCache);
 			}
 			
-			if (!objectCache.containsSelective(cached, "GameTableEntrySelectivex1x1x1x1x1_AzVAIWnXEe2xCJpb6ooUzA")) {
-				de.ls5.dywa.generated.rest.types.GameTableEntrySelectivex1x1x1x1x1_AzVAIWnXEe2xCJpb6ooUzA.copy(s, cached, objectCache);
+			if (!objectCache.containsSelective(cached, "BadgeTableEntrySelectivex1_ZlXgoXKOEe2rzNRUfilttw")) {
+				de.ls5.dywa.generated.rest.types.BadgeTableEntrySelectivex1_ZlXgoXKOEe2rzNRUfilttw.copy(s, cached, objectCache);
 			}
 		
 			target.add(cached);

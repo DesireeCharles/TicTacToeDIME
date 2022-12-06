@@ -18,7 +18,7 @@ public class EntryStateREST {
 
 
 	
-	public de.ls5.dywa.generated.rest.types.EntryState read_BadgeEntryStateSelectivex1_ZlXgoXKOEe2rzNRUfilttw(final long id) {
+	public de.ls5.dywa.generated.rest.types.EntryState read_BadgeEntryStateSelectivex1x2x2_ZlXgoXKOEe2rzNRUfilttw(final long id) {
 		
 		final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryState obj = this.EntryStateController.read(id);
 		
@@ -32,23 +32,23 @@ public class EntryStateREST {
 			result = de.ls5.dywa.generated.rest.types.EntryState.fromDywaEntity(obj, objectCache);
 		}
 		
-		if (!objectCache.containsSelective(result, "BadgeEntryStateSelectivex1_ZlXgoXKOEe2rzNRUfilttw")) {
-			de.ls5.dywa.generated.rest.types.BadgeEntryStateSelectivex1_ZlXgoXKOEe2rzNRUfilttw.copy(obj, result, objectCache);
+		if (!objectCache.containsSelective(result, "BadgeEntryStateSelectivex1x2x2_ZlXgoXKOEe2rzNRUfilttw")) {
+			de.ls5.dywa.generated.rest.types.BadgeEntryStateSelectivex1x2x2_ZlXgoXKOEe2rzNRUfilttw.copy(obj, result, objectCache);
 		}
 
 		return result;
 	}
 
-	public de.ls5.dywa.generated.rest.types.EntryState readTransient_BadgeEntryStateSelectivex1_ZlXgoXKOEe2rzNRUfilttw(final de.ls5.dywa.generated.rest.types.EntryState obj) {
+	public de.ls5.dywa.generated.rest.types.EntryState readTransient_BadgeEntryStateSelectivex1x2x2_ZlXgoXKOEe2rzNRUfilttw(final de.ls5.dywa.generated.rest.types.EntryState obj) {
 
 		final de.ls5.dywa.generated.rest.types.EntryState result;
 		
-		if (this.objectCache.containsSelective(obj, "BadgeEntryStateSelectivex1_ZlXgoXKOEe2rzNRUfilttw")) {
+		if (this.objectCache.containsSelective(obj, "BadgeEntryStateSelectivex1x2x2_ZlXgoXKOEe2rzNRUfilttw")) {
 			return obj;
 		}
 		else {
 			result = obj;
-			this.objectCache.putSelective(obj, "BadgeEntryStateSelectivex1_ZlXgoXKOEe2rzNRUfilttw");
+			this.objectCache.putSelective(obj, "BadgeEntryStateSelectivex1x2x2_ZlXgoXKOEe2rzNRUfilttw");
 		}
 
 		// Update references to persistent objects
@@ -56,7 +56,7 @@ public class EntryStateREST {
 		return result;
 	}
 
-		public java.util.Set<de.ls5.dywa.generated.rest.types.EntryState> readAll_BadgeEntryStateSelectivex1_ZlXgoXKOEe2rzNRUfilttw() {
+		public java.util.Set<de.ls5.dywa.generated.rest.types.EntryState> readAll_BadgeEntryStateSelectivex1x2x2_ZlXgoXKOEe2rzNRUfilttw() {
 			
 			final java.util.Set<de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryState> objs =
 			new java.util.HashSet<>(java.util.Arrays.asList(de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryState.values()));
@@ -70,8 +70,8 @@ public class EntryStateREST {
 					cached = de.ls5.dywa.generated.rest.types.EntryState.fromDywaEntity(s, objectCache);
 				}
 				
-				if (!objectCache.containsSelective(cached, "BadgeEntryStateSelectivex1_ZlXgoXKOEe2rzNRUfilttw")) {
-					de.ls5.dywa.generated.rest.types.BadgeEntryStateSelectivex1_ZlXgoXKOEe2rzNRUfilttw.copy(s, cached, objectCache);
+				if (!objectCache.containsSelective(cached, "BadgeEntryStateSelectivex1x2x2_ZlXgoXKOEe2rzNRUfilttw")) {
+					de.ls5.dywa.generated.rest.types.BadgeEntryStateSelectivex1x2x2_ZlXgoXKOEe2rzNRUfilttw.copy(s, cached, objectCache);
 				}
 
 				result.add(cached);
@@ -81,23 +81,23 @@ public class EntryStateREST {
 		}
 
 
-	public void update_BadgeEntryStateSelectivex1_ZlXgoXKOEe2rzNRUfilttw(final de.ls5.dywa.generated.rest.types.EntryState value) {
+	public void update_BadgeEntryStateSelectivex1x2x2_ZlXgoXKOEe2rzNRUfilttw(final de.ls5.dywa.generated.rest.types.EntryState value) {
 
 		final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryState obj = this.EntryStateController.read(value.getDywaId());
 		
-		this.update_BadgeEntryStateSelectivex1_ZlXgoXKOEe2rzNRUfilttw(value, obj);
+		this.update_BadgeEntryStateSelectivex1x2x2_ZlXgoXKOEe2rzNRUfilttw(value, obj);
 	}
 
-	public void update_BadgeEntryStateSelectivex1_ZlXgoXKOEe2rzNRUfilttw(final de.ls5.dywa.generated.rest.types.EntryState value, final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryState obj) {
+	public void update_BadgeEntryStateSelectivex1x2x2_ZlXgoXKOEe2rzNRUfilttw(final de.ls5.dywa.generated.rest.types.EntryState value, final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryState obj) {
 
 		// for updates, consider a special selective so we don't clash with read-operations
-		if (this.objectCache.containsSelective(obj, "BadgeEntryStateSelectivex1_ZlXgoXKOEe2rzNRUfilttw")) {
+		if (this.objectCache.containsSelective(obj, "BadgeEntryStateSelectivex1x2x2_ZlXgoXKOEe2rzNRUfilttw")) {
 			// We are already getting updated by someone else
 			return;
 		}
 		else {
 			// we don't care for the actual value. key alone is sufficient enough for detection of cycles
-			this.objectCache.putSelective(obj, "BadgeEntryStateSelectivex1_ZlXgoXKOEe2rzNRUfilttw");
+			this.objectCache.putSelective(obj, "BadgeEntryStateSelectivex1x2x2_ZlXgoXKOEe2rzNRUfilttw");
 		}
 
 		if (value.isDywaNameSet()) {
