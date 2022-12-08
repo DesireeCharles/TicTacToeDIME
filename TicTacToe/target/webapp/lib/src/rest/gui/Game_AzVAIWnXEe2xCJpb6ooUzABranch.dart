@@ -17,6 +17,18 @@ class Game_AzVAIWnXEe2xCJpb6ooUzABranch extends ContinueProcessRequest {
 		branch_empty = new Empty();
 		branch_empty.port_tableEntry = tableEntry;
 	}
+	Back branch_Back;
+	
+	Game_AzVAIWnXEe2xCJpb6ooUzABranch.forBackBranch(
+	) {
+		branch_Back = new Back();
+	}
+	Restart branch_Restart;
+	
+	Game_AzVAIWnXEe2xCJpb6ooUzABranch.forRestartBranch(
+	) {
+		branch_Restart = new Restart();
+	}
 
 	String toJSON() {
 		return jsonEncode(toJSOG());
@@ -28,6 +40,12 @@ class Game_AzVAIWnXEe2xCJpb6ooUzABranch extends ContinueProcessRequest {
 		
 		if(branch_empty!=null) {
 			return branch_empty.toJSOG();
+		}
+		if(branch_Back!=null) {
+			return branch_Back.toJSOG();
+		}
+		if(branch_Restart!=null) {
+			return branch_Restart.toJSOG();
 		}
 		throw new Exception("Exhaustive IF Game_AzVAIWnXEe2xCJpb6ooUzABranch.dart");
 	}
@@ -47,6 +65,30 @@ Map<Object,dynamic> cache = new Map();			if(this.port_tableEntry != null){
 			else{
 				jsonObj["tableEntry"] = null;
 			}
+					
+			return jsonObj;
+		}
+		
+	}
+	class Back {
+		
+
+		Map<String,dynamic> toJSOG()
+		{
+			
+			Map<String,dynamic> jsonObj = new Map();
+					
+			return jsonObj;
+		}
+		
+	}
+	class Restart {
+		
+
+		Map<String,dynamic> toJSOG()
+		{
+			
+			Map<String,dynamic> jsonObj = new Map();
 					
 			return jsonObj;
 		}

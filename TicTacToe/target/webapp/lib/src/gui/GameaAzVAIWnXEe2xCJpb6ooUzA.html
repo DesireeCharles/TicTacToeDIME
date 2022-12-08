@@ -3,8 +3,12 @@
 <h1
 
 > 
-<span aria-live="polite" aria-atomic="true" class="text-left">
+<span aria-live="polite" aria-atomic="true" class="text-center">
+<strong>
+<u>
 TicTacToe
+</u>
+</strong>
 </span>
 </h1>
 	</div>
@@ -17,8 +21,8 @@ aria-live="polite" aria-atomic="true"
 *ngFor="let current of currentRow.initOnDemandtableEntry(); let index1 = index; trackBy: trackSelective"  
 aria-live="polite" aria-atomic="true" 
 
-[ngStyle]="{ 'width':'50px' , 'height':'50px' , 'border':'5px solid block' }"
-class="col-md-12 text-left"
+[ngStyle]="{ 'width':'75px' , 'height':'75px' , 'border':'10px solid block' }"
+class="col-lg-12 text-center"
 >
 	
 	<badge-tag
@@ -34,5 +38,44 @@ class="col-md-12 text-left"
 	  	
 	  >
 	  </badge-tag>
+</div>
+</div>
+<div 
+ class="row">
+<div
+
+class="col-md-3 text-left"
+>
+<!-- beginn button Back -->
+<button 
+	data-cinco-id="_i3H0kXbbEe2qntwH9Ijd8A"
+	tabindex="0" aria-label="Back"
+	[disabled]="isBusy()"
+type="button"
+(click)="actionbackeventai3H0kXbbEe2qntwH9Ijd8AEventTrigger()
+"
+class="btn btn-default btn-md">
+ Back
+ <span aria-hidden="true" aria-label="icon arrow-left" class="glyphicon glyphicon-arrow-left" style="left:2px"></span>
+</button>
+<!-- end button Back -->
+</div>
+<div
+
+class="col-md-3 text-left"
+>
+<!-- beginn button Restart -->
+<button 
+	data-cinco-id="_mFQkgXbbEe2qntwH9Ijd8A"
+	tabindex="0" aria-label="Restart"
+	[disabled]="isBusy()"
+type="button"
+(click)="actionrestarteventamFQkgXbbEe2qntwH9Ijd8AEventTrigger()
+"
+class="btn btn-info btn-md">
+ Restart
+ <span aria-hidden="true" aria-label="icon repeat" class="glyphicon glyphicon-repeat" style="left:2px"></span>
+</button>
+<!-- end button Restart -->
 </div>
 </div>

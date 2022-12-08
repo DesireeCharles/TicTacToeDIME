@@ -53,7 +53,7 @@ GUI _ZlXgoXKOEe2rzNRUfilttw {
   	blockName ""
   	disableAutoLayout false
   	generalStyle GeneralStyling _ZlhRoHKOEe2rzNRUfilttw {
-  			tallness Fitting
+  			tallness Full
   			marginBottom None
   			attributes [  ]
   			marginTop None
@@ -63,7 +63,7 @@ GUI _ZlXgoXKOEe2rzNRUfilttw {
   		label "empty"
   		styling ButtonStyling __1VHMHPkEe2eGKutfpiSKw {
   				fullWidth false
-  				size Default
+  				size Medium
   				disabled false
   				color Default
   			}
@@ -90,7 +90,7 @@ GUI _ZlXgoXKOEe2rzNRUfilttw {
   	}
   	
   	Badge _MY7KoXPlEe2eGKutfpiSKw at 10,30 size 200,74 {
-  		color Lightblue
+  		color Blue
   		content [ StaticContent _MY-1AXPlEe2eGKutfpiSKw {
   				renderMarkdown false
   				maxChars 0
@@ -121,7 +121,7 @@ GUI _ZlXgoXKOEe2rzNRUfilttw {
   	}
   	
   	Badge _O6r8wXPlEe2eGKutfpiSKw at 10,114 size 200,74 {
-  		color Lightblue
+  		color Red
   		content [ StaticContent _O6tx8XPlEe2eGKutfpiSKw {
   				renderMarkdown false
   				maxChars 0

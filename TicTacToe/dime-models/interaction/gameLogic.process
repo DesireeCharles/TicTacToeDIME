@@ -4,24 +4,6 @@ Process _1O3EgW8SEe29MJ2ZfnuTaA {
   dataFlowView true
   processType Basic
   isStateful false
-  GUISIB _Tepc4W8TEe29MJ2ZfnuTaA at 320,520 size 120,90 {
-  	cacheGUI false
-  	majorPage true
-  	libraryComponentUID "_AzVAIWnXEe2xCJpb6ooUzA"
-  	name "Game"
-  	label "Game"
-  	ignoredBranch [  ]
-  	ComplexInputPort _XDVroW8TEe29MJ2ZfnuTaA at 5,67 size 110,18 {
-  		libraryComponentUID "_JgYkUW8QEe2x_c6ogIlfZw"
-  		isList false
-  		name "table"
-  	}
-  	-BranchConnector-> _XvmvAXPlEe2eGKutfpiSKw   {
-  		id _Xvn9IXPlEe2eGKutfpiSKw
-  		concurrent true
-  	}
-  }
-  
   AtomicSIB _CauWwXFhEe24rt9YW3Qgng at 320,150 size 120,108 {
   	libraryComponentUID "app.game.drawBoard"
   	label "drawBoard"
@@ -42,8 +24,8 @@ Process _1O3EgW8SEe29MJ2ZfnuTaA {
   }
   
   StartSIB _Ep0PEXFiEe24rt9YW3Qgng at 330,40 size 100,65 {
-  	-ControlFlow-> _CauWwXFhEe24rt9YW3Qgng  decorate "" at (0,0) {
-  		id _E7EXIHFiEe24rt9YW3Qgng
+  	-ControlFlow-> _DQiDgXbqEe2qntwH9Ijd8A  decorate "" at (0,0) {
+  		id _Di1UcXbqEe2qntwH9Ijd8A
   		concurrent true
   	}
   }
@@ -54,12 +36,7 @@ Process _1O3EgW8SEe29MJ2ZfnuTaA {
   		libraryComponentUID "_JgYkUW8QEe2x_c6ogIlfZw"
   		isList false
   		name "Table"
-  		-ComplexDirectDataFlow-> _XDVroW8TEe29MJ2ZfnuTaA via (310,336) (310,595) decorate "" at (0,0) {
-  			id _K-EbYXFiEe24rt9YW3Qgng
-  			dfViewWorkaround true
-  		}
-  		
-  		-ComplexDirectDataFlow-> _Aq7IMXTyEe29EM7zgtpvCg via (310,336) (310,796) decorate "" at (0,0) {
+  		-ComplexDirectDataFlow-> _Aq7IMXTyEe29EM7zgtpvCg via (270,336) (270,796) decorate "" at (0,0) {
   			id _FGiX4XTyEe29EM7zgtpvCg
   			dfViewWorkaround true
   		}
@@ -68,26 +45,14 @@ Process _1O3EgW8SEe29MJ2ZfnuTaA {
   			id _PpeyMXTyEe29EM7zgtpvCg
   			dfViewWorkaround true
   		}
-  	}
-  	-ControlFlow-> _jMekQXSQEe2vmrlDP84GiQ  decorate "" at (0,0) {
-  		id _jc_sgXSQEe2vmrlDP84GiQ
-  		concurrent true
-  	}
-  }
-  
-  Branch _XvmvAXPlEe2eGKutfpiSKw at 320,650 size 120,50 {
-  	name "empty"
-  	ComplexOutputPort __dF_kXSjEe2vmrlDP84GiQ at 5,27 size 110,18 {
-  		libraryComponentUID "_KEKm0W8QEe2x_c6ogIlfZw"
-  		isList false
-  		name "tableEntry"
-  		-ComplexDirectDataFlow-> _ArX0IXTyEe29EM7zgtpvCg via (310,686) (310,814) decorate "" at (0,0) {
-  			id _CO_jAXTyEe29EM7zgtpvCg
+  		
+  		-ComplexDirectDataFlow-> _XiQ3UXbqEe2qntwH9Ijd8A via (310,336) (310,594) decorate "" at (0,0) {
+  			id _gf12UXbqEe2qntwH9Ijd8A
   			dfViewWorkaround true
   		}
   	}
-  	-ControlFlow-> _AqwwIXTyEe29EM7zgtpvCg  decorate "" at (0,0) {
-  		id _BjWlAXTyEe29EM7zgtpvCg
+  	-ControlFlow-> _jMekQXSQEe2vmrlDP84GiQ  decorate "" at (0,0) {
+  		id _jc_sgXSQEe2vmrlDP84GiQ
   		concurrent true
   	}
   }
@@ -113,8 +78,8 @@ Process _1O3EgW8SEe29MJ2ZfnuTaA {
   			dfViewWorkaround true
   		}
   	}
-  	-ControlFlow-> _Tepc4W8TEe29MJ2ZfnuTaA  decorate "" at (0,0) {
-  		id _d6CGsXTyEe29EM7zgtpvCg
+  	-ControlFlow-> _XiL-0XbqEe2qntwH9Ijd8A  decorate "" at (0,0) {
+  		id _ZpBvgXbqEe2qntwH9Ijd8A
   		concurrent true
   	}
   }
@@ -140,7 +105,7 @@ Process _1O3EgW8SEe29MJ2ZfnuTaA {
   	}
   }
   
-  DataContext _M1FX8XTyEe29EM7zgtpvCg at -20,330 size 180,201 index 9 {
+  DataContext _M1FX8XTyEe29EM7zgtpvCg at -20,330 size 180,201 index 7 {
   	dfViewWorkaround true
   	ComplexVariable _N9aR8XTyEe29EM7zgtpvCg at 10,120 size 160,51 {
   		expanded false
@@ -155,10 +120,92 @@ Process _1O3EgW8SEe29MJ2ZfnuTaA {
   	}
   }
   
-  Branch _ArhlIXTyEe29EM7zgtpvCg at 320,868 size 120,25 index 8 {
+  Branch _ArhlIXTyEe29EM7zgtpvCg at 320,860 size 120,25 index 6 {
   	name "success"
-  	-ControlFlow-> _Tepc4W8TEe29MJ2ZfnuTaA via (508,882) (508,565) decorate "" at (0,0) {
-  		id _Csbs8XTyEe29EM7zgtpvCg
+  	-ControlFlow-> _XiL-0XbqEe2qntwH9Ijd8A via (480,872) (480,563) decorate "" at (0,0) {
+  		id _cyT0oXbqEe2qntwH9Ijd8A
+  		concurrent true
+  	}
+  }
+  
+  GUISIB _DQiDgXbqEe2qntwH9Ijd8A at 579,185 size 120,65 {
+  	cacheGUI false
+  	majorPage true
+  	libraryComponentUID "_LmrS0Ej8EeaK4_MRcoLfnw_INTERNAL"
+  	name "PublicHome"
+  	label "PublicHome"
+  	ignoredBranch [  ]
+  	-BranchConnector-> _DQr0gXbqEe2qntwH9Ijd8A   {
+  		id _DQr0g3bqEe2qntwH9Ijd8A
+  		concurrent true
+  	}
+  }
+  
+  GUISIB _XiL-0XbqEe2qntwH9Ijd8A at 320,518 size 120,90 index 10 {
+  	cacheGUI false
+  	majorPage true
+  	libraryComponentUID "_AzVAIWnXEe2xCJpb6ooUzA"
+  	name "Game"
+  	label "Game"
+  	ignoredBranch [  ]
+  	ComplexInputPort _XiQ3UXbqEe2qntwH9Ijd8A at 5,67 size 110,18 {
+  		libraryComponentUID "_JgYkUW8QEe2x_c6ogIlfZw"
+  		isList false
+  		name "table"
+  	}
+  	-BranchConnector-> _XiXlAXbqEe2qntwH9Ijd8A   {
+  		id _XiYzIXbqEe2qntwH9Ijd8A
+  		concurrent true
+  	}
+  	
+  	-BranchConnector-> _XikZUXbqEe2qntwH9Ijd8A   {
+  		id _XikZU3bqEe2qntwH9Ijd8A
+  		concurrent true
+  	}
+  	
+  	-BranchConnector-> _XiruEXbqEe2qntwH9Ijd8A   {
+  		id _XitjQXbqEe2qntwH9Ijd8A
+  		concurrent true
+  	}
+  }
+  
+  Branch _XiXlAXbqEe2qntwH9Ijd8A at 320,649 size 120,50 index 11 {
+  	name "empty"
+  	ComplexOutputPort _XiZaMXbqEe2qntwH9Ijd8A at 5,27 size 110,18 {
+  		libraryComponentUID "_KEKm0W8QEe2x_c6ogIlfZw"
+  		isList false
+  		name "tableEntry"
+  		-ComplexDirectDataFlow-> _ArX0IXTyEe29EM7zgtpvCg via (310,685) (310,814) decorate "" at (0,0) {
+  			id _heLG0XbqEe2qntwH9Ijd8A
+  			dfViewWorkaround true
+  		}
+  	}
+  	-ControlFlow-> _AqwwIXTyEe29EM7zgtpvCg  decorate "" at (0,0) {
+  		id _bWIxkXbqEe2qntwH9Ijd8A
+  		concurrent true
+  	}
+  }
+  
+  Branch _DQr0gXbqEe2qntwH9Ijd8A at 579,260 size 120,25 index 9 {
+  	name "Play"
+  	-ControlFlow-> _CauWwXFhEe24rt9YW3Qgng  decorate "" at (0,0) {
+  		id _Dy_QUXbqEe2qntwH9Ijd8A
+  		concurrent true
+  	}
+  }
+  
+  Branch _XikZUXbqEe2qntwH9Ijd8A at 800,560 size 120,25 {
+  	name "Back"
+  	-ControlFlow-> _DQiDgXbqEe2qntwH9Ijd8A  decorate "" at (0,0) {
+  		id _jkn18XbqEe2qntwH9Ijd8A
+  		concurrent true
+  	}
+  }
+  
+  Branch _XiruEXbqEe2qntwH9Ijd8A at 579,520 size 120,25 {
+  	name "Restart"
+  	-ControlFlow-> _CauWwXFhEe24rt9YW3Qgng  decorate "" at (0,0) {
+  		id _jSC4MXbqEe2qntwH9Ijd8A
   		concurrent true
   	}
   }

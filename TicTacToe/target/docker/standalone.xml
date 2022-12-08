@@ -41,8 +41,7 @@
     </extensions>
     <system-properties>
         <property name="de.ls5.dywa.JBOSS_HOME" value="${jboss.home.dir}"/>
-        <property name="info.scce.dime.app.encrypt.disable" value="${env.DIME_APP_ENCRYPT_DISABLE}"/>
-        <property name="info.scce.dime.app.encrypt.passphrase" value="${env.DIME_APP_ENCRYPT_PASSPHRASE}"/>
+        <property name="info.scce.dime.app.encrypt" value="${env.DIME_APP_ENCRYPT}"/>
         <property name="info.scce.dime.app.mail.port" value="${env.DIME_APP_MAIL_PORT}"/>
         <property name="info.scce.dime.app.mail.server" value="${env.DIME_APP_MAIL_SERVER}"/>
         <property name="info.scce.dime.app.server.tier" value="${env.DIME_APP_SERVER_TIER}"/>

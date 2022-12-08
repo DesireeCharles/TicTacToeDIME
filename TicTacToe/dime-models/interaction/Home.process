@@ -4,16 +4,37 @@ Process _LWgagF-SEeakMeYoloYxpg {
   dataFlowView true
   processType Basic
   isStateful false
-  StartSIB _LYO40F-SEeakMeYoloYxpg at 50,50 size 100,65 {
-  	-ControlFlow-> _e1c9EW8TEe29MJ2ZfnuTaA  decorate "" at (0,0) {
-  		id _fM4loW8TEe29MJ2ZfnuTaA
+  StartSIB _LYO40F-SEeakMeYoloYxpg at 304,30 size 100,65 {
+  	-ControlFlow-> _JVFm8XbqEe2qntwH9Ijd8A  decorate "" at (0,0) {
+  		id _Jt1eIXbqEe2qntwH9Ijd8A
   		concurrent true
   	}
   }
   
-  ProcessSIB _e1c9EW8TEe29MJ2ZfnuTaA at 40,170 size 120,65 {
+  ProcessSIB _e1c9EW8TEe29MJ2ZfnuTaA at 294,300 size 120,65 {
   	libraryComponentUID "_1O3EgW8SEe29MJ2ZfnuTaA"
   	label "gamelOGIC"
   	ignoredBranch [  ]
+  }
+  
+  GUISIB _JVFm8XbqEe2qntwH9Ijd8A at 294,140 size 120,65 {
+  	cacheGUI false
+  	majorPage true
+  	libraryComponentUID "_LmrS0Ej8EeaK4_MRcoLfnw_INTERNAL"
+  	name "PublicHome"
+  	label "PublicHome"
+  	ignoredBranch [  ]
+  	-BranchConnector-> _JVG1EXbqEe2qntwH9Ijd8A   {
+  		id _JVG1E3bqEe2qntwH9Ijd8A
+  		concurrent true
+  	}
+  }
+  
+  Branch _JVG1EXbqEe2qntwH9Ijd8A at 284,250 size 120,25 {
+  	name "Play"
+  	-ControlFlow-> _e1c9EW8TEe29MJ2ZfnuTaA  decorate "" at (0,0) {
+  		id _J4SaoXbqEe2qntwH9Ijd8A
+  		concurrent true
+  	}
   }
 }

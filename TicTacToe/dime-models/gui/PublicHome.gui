@@ -1,44 +1,44 @@
-GUI _LmrS0Ej8EeaK4_MRcoLfnw {
+GUI _LmrS0Ej8EeaK4_MRcoLfnw_INTERNAL {
   fullWidth false
   disableAutoLayout false
   additionalJavaScript [  ]
   additionalStylesheets [  ]
   title "PublicHome"
-  DataContext _Lmz1sEj8EeaK4_MRcoLfnw at 10,30 size 200,410 {
+  DataContext _Lmz1sEj8EeaK4_MRcoLfnw_INTERNAL at 10,30 size 200,410 {
   	dfViewWorkaround true
   }
   
-  Template _Lm3gEEj8EeaK4_MRcoLfnw at 270,30 size 390,410 {
+  Template _Lm3gEEj8EeaK4_MRcoLfnw_INTERNAL at 270,30 size 650,930 {
   	blockName "body"
   	disableAutoLayout false
-  	Jumbotron _6CcloEmAEeaUSpYQeYyxnQ at 10,30 size 370,350 {
+  	Jumbotron _6CcloEmAEeaUSpYQeYyxnQ_INTERNAL at 10,30 size 630,870 {
   		generalStyle GeneralStyling _hH5ScTD2EemwX93gZgy7kw {
   				tallness Fitting
   				marginBottom None
   				attributes [  ]
   				marginTop None
   			}
-  		MoveUp _6Cj6YEmAEeaUSpYQeYyxnQ at 2,2 size 14,7 {
+  		MoveUp _6Cj6YEmAEeaUSpYQeYyxnQ_INTERNAL at 2,2 size 14,7 {
   		}
   		
-  		MoveDown _6ClvkEmAEeaUSpYQeYyxnQ at 2,10 size 14,7 {
+  		MoveDown _6ClvkEmAEeaUSpYQeYyxnQ_INTERNAL at 2,10 size 14,7 {
   		}
   		
-  		Row _pqsksE_OEeauEZ95mLTQ7g at 10,30 size 350,290 {
+  		Row _pqsksE_OEeauEZ95mLTQ7g_INTERNAL at 10,30 size 610,200 {
   			generalStyle GeneralStyling _hH5SczD2EemwX93gZgy7kw {
   					tallness Fitting
   					marginBottom None
   					attributes [  ]
   					marginTop None
   				}
-  			MoveUp _pq6nIE_OEeauEZ95mLTQ7g at 2,2 size 14,7 {
+  			MoveUp _pq6nIE_OEeauEZ95mLTQ7g_INTERNAL at 2,2 size 14,7 {
   			}
   			
-  			MoveDown _pq7OME_OEeauEZ95mLTQ7g at 2,10 size 14,7 {
+  			MoveDown _pq7OME_OEeauEZ95mLTQ7g_INTERNAL at 2,10 size 14,7 {
   			}
   			
-  			Col _prJ3sE_OEeauEZ95mLTQ7g at 10,30 size 320,240 {
-  				wideness Full
+  			Col _prJ3sE_OEeauEZ95mLTQ7g_INTERNAL at 140,30 size 320,110 {
+  				wideness Third
   				layout Layout _hH55gTD2EemwX93gZgy7kw {
   						size Default
   						offset None
@@ -50,82 +50,354 @@ GUI _LmrS0Ej8EeaK4_MRcoLfnw {
   						attributes [  ]
   						marginTop None
   					}
-  				MoveLeft _prX6IE_OEeauEZ95mLTQ7g at 2,2 size 7,14 {
+  				MoveLeft _prX6IE_OEeauEZ95mLTQ7g_INTERNAL at 2,2 size 7,14 {
   				}
   				
-  				MoveRight _prYhME_OEeauEZ95mLTQ7g at 10,2 size 7,14 {
+  				MoveRight _prYhME_OEeauEZ95mLTQ7g_INTERNAL at 10,2 size 7,14 {
   				}
   				
-  				Headline _uAT6EE_OEeauEZ95mLTQ7g at 10,30 size 300,50 {
+  				Headline _QC95YXbYEe2qntwH9Ijd8A_INTERNAL at 10,30 size 300,50 {
   					size Big
-  					content [ StaticContent _hH6gkzD2EemwX93gZgy7kw {
+  					content [ StaticContent _QC-gdXbYEe2qntwH9Ijd8A {
   							renderMarkdown false
   							maxChars 0
   							html false
-  							rawContent "Welcome."
+  							rawContent "Tic Tac Toe"
+  							styling TextStyling _QC-gdnbYEe2qntwH9Ijd8A {
+  									small false
+  									highlight false
+  									deleted false
+  									underline true
+  									bold false
+  									alignment Center
+  									italic false
+  									color Default
+  								}
   						} ]
-  					generalStyle GeneralStyling _hH6glTD2EemwX93gZgy7kw {
+  					generalStyle GeneralStyling _QC-gdHbYEe2qntwH9Ijd8A {
+  							tallness Third
+  							marginBottom Double
+  							attributes [  ]
+  							marginTop None
+  						}
+  					MoveUp _QC-gcXbYEe2qntwH9Ijd8A_INTERNAL at 2,2 size 14,7 {
+  					}
+  					
+  					MoveDown _QC-gc3bYEe2qntwH9Ijd8A_INTERNAL at 2,10 size 14,7 {
+  					}
+  				}
+  			}
+  			
+  			Col _DI8tcXbtEe2qntwH9Ijd8A at 10,30 size 120,150 {
+  				wideness Third
+  				layout Layout _DI8td3btEe2qntwH9Ijd8A {
+  						size Default
+  						offset None
+  						alignment Left
+  					}
+  				generalStyle GeneralStyling _DI8tdnbtEe2qntwH9Ijd8A {
+  						tallness Fitting
+  						marginBottom None
+  						attributes [  ]
+  						marginTop None
+  					}
+  				MoveLeft _DI8tc3btEe2qntwH9Ijd8A at 2,2 size 7,14 {
+  				}
+  				
+  				MoveRight _DI8tdXbtEe2qntwH9Ijd8A at 10,2 size 7,14 {
+  				}
+  				
+  				Image _BMUBoHbtEe2qntwH9Ijd8A at 10,30 size 100,90 {
+  					dimensionX 300
+  					path "initFiles/home1.png"
+  					dimensionY 300
+  					styling ImageStyling _BMhdAXbtEe2qntwH9Ijd8A {
+  							border Default
+  							responsive true
+  						}
+  					generalStyle GeneralStyling _BMhdAHbtEe2qntwH9Ijd8A {
   							tallness Fitting
   							marginBottom None
   							attributes [  ]
-  							marginTop Triple
+  							marginTop None
   						}
-  					MoveUp _uAjxsE_OEeauEZ95mLTQ7g at 2,2 size 14,7 {
+  					MoveUp _BMbWYXbtEe2qntwH9Ijd8A at 2,2 size 14,7 {
   					}
   					
-  					MoveDown _uAk_0E_OEeauEZ95mLTQ7g at 2,10 size 14,7 {
+  					MoveDown _BMbWY3btEe2qntwH9Ijd8A at 2,10 size 14,7 {
   					}
   				}
+  			}
+  			
+  			Col _ecJG8HbvEe2qntwH9Ijd8A at 470,30 size 120,150 {
+  				wideness Third
+  				layout Layout _ecQbsHbvEe2qntwH9Ijd8A {
+  						size Default
+  						offset None
+  						alignment Left
+  					}
+  				generalStyle GeneralStyling _ecP0oHbvEe2qntwH9Ijd8A {
+  						tallness Fitting
+  						marginBottom None
+  						attributes [  ]
+  						marginTop None
+  					}
+  				MoveLeft _ecK8IXbvEe2qntwH9Ijd8A at 2,2 size 7,14 {
+  				}
   				
-  				Button _MF6_kE_LEeauEZ95mLTQ7g at 10,150 size 200,60 {
-  					displayLabel "Login"
-  					label "Login"
-  					styling ButtonStyling _hH7HoTD2EemwX93gZgy7kw {
+  				MoveRight _ecMxUXbvEe2qntwH9Ijd8A at 10,2 size 7,14 {
+  				}
+  				
+  				Image _fe8nwXbvEe2qntwH9Ijd8A at 10,30 size 100,90 {
+  					dimensionX 300
+  					path "initFiles/home.png"
+  					dimensionY 300
+  					styling ImageStyling _fe_rEXbvEe2qntwH9Ijd8A {
+  							border Default
+  							responsive true
+  						}
+  					generalStyle GeneralStyling _fe_rEHbvEe2qntwH9Ijd8A {
+  							tallness Fitting
+  							marginBottom None
+  							attributes [  ]
+  							marginTop None
+  						}
+  					MoveUp _fe-c8XbvEe2qntwH9Ijd8A at 2,2 size 14,7 {
+  					}
+  					
+  					MoveDown _fe_EAXbvEe2qntwH9Ijd8A at 2,10 size 14,7 {
+  					}
+  				}
+  			}
+  		}
+  		
+  		Row _LlaTgHbZEe2qntwH9Ijd8A_INTERNAL at 10,240 size 350,600 {
+  			generalStyle GeneralStyling _LlmgwHbZEe2qntwH9Ijd8A {
+  					tallness Fitting
+  					marginBottom None
+  					attributes [  ]
+  					marginTop None
+  				}
+  			MoveUp _LlcvwXbZEe2qntwH9Ijd8A_INTERNAL at 2,2 size 14,7 {
+  			}
+  			
+  			MoveDown _Llcvw3bZEe2qntwH9Ijd8A_INTERNAL at 2,10 size 14,7 {
+  			}
+  			
+  			Col _LlcvxXbZEe2qntwH9Ijd8A_INTERNAL at 10,30 size 320,550 {
+  				wideness Full
+  				layout Layout _LlkrkHbZEe2qntwH9Ijd8A {
+  						size Default
+  						offset None
+  						alignment Center
+  					}
+  				generalStyle GeneralStyling _LlhBMnbZEe2qntwH9Ijd8A {
+  						tallness Fitting
+  						marginBottom None
+  						attributes [  ]
+  						marginTop None
+  					}
+  				MoveLeft _LlfzEXbZEe2qntwH9Ijd8A_INTERNAL at 2,2 size 7,14 {
+  				}
+  				
+  				MoveRight _LlhBMXbZEe2qntwH9Ijd8A_INTERNAL at 10,2 size 7,14 {
+  				}
+  				
+  				Button _XDpG0XbYEe2qntwH9Ijd8A_INTERNAL at 10,460 size 200,60 {
+  					displayLabel "Play"
+  					label "Play"
+  					styling ButtonStyling _XDwbkHbYEe2qntwH9Ijd8A {
   							fullWidth false
   							size Default
   							disabled false
-  							color Green
+  							color Red
   						}
-  					options ButtonOptions _hH7HozD2EemwX93gZgy7kw {
+  					options ButtonOptions _XDy30HbYEe2qntwH9Ijd8A {
   							isLink false
   							submitsForm true
   						}
   					disabled false
-  					icon Icon _hH7HpTD2EemwX93gZgy7kw {
-  							postIcon LogIn
+  					icon Icon _XDsKIXbYEe2qntwH9Ijd8A {
+  							postIcon Heart
   							preIcon None
   						}
-  					generalStyle GeneralStyling _hH7HpzD2EemwX93gZgy7kw {
+  					generalStyle GeneralStyling _XDsKIHbYEe2qntwH9Ijd8A {
   							tallness Fitting
   							marginBottom None
   							attributes [  ]
-  							marginTop Double
+  							marginTop None
   						}
-  					MoveUp _MGIa8E_LEeauEZ95mLTQ7g at 2,2 size 14,7 {
+  					MoveUp _XDq8AXbYEe2qntwH9Ijd8A_INTERNAL at 2,2 size 14,7 {
   					}
   					
-  					MoveDown _MGJCAE_LEeauEZ95mLTQ7g at 2,10 size 14,7 {
+  					MoveDown _XDq8A3bYEe2qntwH9Ijd8A_INTERNAL at 2,10 size 14,7 {
   					}
   				}
   				
-  				Headline _rgv38F-TEea6DvTF5PmsmA at 10,90 size 300,50 {
-  					size Small
-  					content [ StaticContent _hH7HqTD2EemwX93gZgy7kw {
+  				Box _RGmrMHbZEe2qntwH9Ijd8A_INTERNAL at 10,90 size 220,360 {
+  					invisible false
+  					generalStyle GeneralStyling _RGqVkHbZEe2qntwH9Ijd8A {
+  							tallness Quarter
+  							marginBottom Double
+  							attributes [  ]
+  							marginTop None
+  							rawContent ""
+  						}
+  					MoveUp _RGogYXbZEe2qntwH9Ijd8A_INTERNAL at 2,2 size 14,7 {
+  					}
+  					
+  					MoveDown _RGpHcXbZEe2qntwH9Ijd8A_INTERNAL at 2,10 size 14,7 {
+  					}
+  					
+  					Text _BKv5MHbeEe2qntwH9Ijd8A_INTERNAL at 10,60 size 200,60 {
+  						content [ StaticContent _BK1YwXbeEe2qntwH9Ijd8A {
+  								renderMarkdown false
+  								maxChars 0
+  								html false
+  								rawContent "The game is played on a grid that's 3 squares by 3 squares."
+  								styling TextStyling _BK1YwnbeEe2qntwH9Ijd8A {
+  										small false
+  										highlight false
+  										deleted false
+  										underline false
+  										bold false
+  										alignment Center
+  										italic false
+  										color Default
+  									}
+  							} ]
+  						generalStyle GeneralStyling _BK1YwHbeEe2qntwH9Ijd8A {
+  								tallness Full
+  								marginBottom Single
+  								attributes [  ]
+  								marginTop None
+  							}
+  						MoveUp _BKzjkXbeEe2qntwH9Ijd8A_INTERNAL at 2,2 size 14,7 {
+  						}
+  						
+  						MoveDown _BKzjk3beEe2qntwH9Ijd8A_INTERNAL at 2,10 size 14,7 {
+  						}
+  					}
+  					
+  					Text _tyatYXbvEe2qntwH9Ijd8A at 10,130 size 200,60 {
+  						content [ StaticContent _tyg0AXbvEe2qntwH9Ijd8A {
+  								renderMarkdown false
+  								maxChars 0
+  								html false
+  								rawContent "First player is X, second player is O. Players take turns putting their marks in empty squares."
+  								styling TextStyling _tyipMHbvEe2qntwH9Ijd8A {
+  										small false
+  										highlight false
+  										deleted false
+  										underline false
+  										bold false
+  										alignment Center
+  										italic false
+  										color Default
+  									}
+  							} ]
+  						generalStyle GeneralStyling _tyg0AHbvEe2qntwH9Ijd8A {
+  								tallness Full
+  								marginBottom Single
+  								attributes [  ]
+  								marginTop None
+  							}
+  						MoveUp _tyfl4XbvEe2qntwH9Ijd8A at 2,2 size 14,7 {
+  						}
+  						
+  						MoveDown _tygM8XbvEe2qntwH9Ijd8A at 2,10 size 14,7 {
+  						}
+  					}
+  					
+  					Text _0P8xgXbvEe2qntwH9Ijd8A at 10,200 size 200,60 {
+  						content [ StaticContent _0P9YlXbvEe2qntwH9Ijd8A {
+  								renderMarkdown false
+  								maxChars 0
+  								html false
+  								rawContent "The first player to get 3 of her marks in a row (up, down, across, or diagonally) is the winner."
+  								styling TextStyling _0P9YlnbvEe2qntwH9Ijd8A {
+  										small false
+  										highlight false
+  										deleted false
+  										underline false
+  										bold false
+  										alignment Center
+  										italic false
+  										color Default
+  									}
+  							} ]
+  						generalStyle GeneralStyling _0P9YlHbvEe2qntwH9Ijd8A {
+  								tallness Full
+  								marginBottom Single
+  								attributes [  ]
+  								marginTop None
+  							}
+  						MoveUp _0P9YkXbvEe2qntwH9Ijd8A at 2,2 size 14,7 {
+  						}
+  						
+  						MoveDown _0P9Yk3bvEe2qntwH9Ijd8A at 2,10 size 14,7 {
+  						}
+  					}
+  					
+  					Text _33xMwXbvEe2qntwH9Ijd8A at 10,270 size 200,60 {
+  						content [ StaticContent _337k03bvEe2qntwH9Ijd8A {
+  								renderMarkdown false
+  								maxChars 0
+  								html false
+  								rawContent "When all 9 squares are full, the game is over. If no player has 3 marks in a row, the game ends in a tie."
+  								styling TextStyling _337k1HbvEe2qntwH9Ijd8A {
+  										small false
+  										highlight false
+  										deleted false
+  										underline false
+  										bold false
+  										alignment Center
+  										italic false
+  										color Default
+  									}
+  							} ]
+  						generalStyle GeneralStyling _337k0nbvEe2qntwH9Ijd8A {
+  								tallness Full
+  								marginBottom None
+  								attributes [  ]
+  								marginTop None
+  							}
+  						MoveUp _3369wXbvEe2qntwH9Ijd8A at 2,2 size 14,7 {
+  						}
+  						
+  						MoveDown _337k0XbvEe2qntwH9Ijd8A at 2,10 size 14,7 {
+  						}
+  					}
+  				}
+  				
+  				Headline _Y-1ywXbZEe2qntwH9Ijd8A_INTERNAL at 10,30 size 300,50 {
+  					size Normal
+  					content [ StaticContent _Y-1yx3bZEe2qntwH9Ijd8A {
   							renderMarkdown false
   							maxChars 0
   							html false
-  							rawContent "Test\n"
+  							rawContent "How to play:"
+  							styling TextStyling _Y-1yyHbZEe2qntwH9Ijd8A {
+  									small false
+  									highlight false
+  									deleted false
+  									underline true
+  									bold true
+  									alignment Center
+  									italic false
+  									color Blue
+  								}
   						} ]
-  					generalStyle GeneralStyling _hH7usTD2EemwX93gZgy7kw {
+  					generalStyle GeneralStyling _Y-1yxnbZEe2qntwH9Ijd8A {
   							tallness Fitting
   							marginBottom None
   							attributes [  ]
-  							marginTop Single
+  							marginTop None
   						}
-  					MoveUp _rg5o8F-TEea6DvTF5PmsmA at 2,2 size 14,7 {
+  					MoveUp _Y-1yw3bZEe2qntwH9Ijd8A_INTERNAL at 2,2 size 14,7 {
   					}
   					
-  					MoveDown _rg96YF-TEea6DvTF5PmsmA at 2,10 size 14,7 {
+  					MoveDown _Y-1yxXbZEe2qntwH9Ijd8A_INTERNAL at 2,10 size 14,7 {
   					}
   				}
   			}

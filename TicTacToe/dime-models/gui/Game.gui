@@ -131,7 +131,7 @@ GUI _AzVAIWnXEe2xCJpb6ooUzA {
   	}
   }
   
-  Template _AzhNYWnXEe2xCJpb6ooUzA at 240,10 size 320,388 {
+  Template _AzhNYWnXEe2xCJpb6ooUzA at 240,10 size 500,568 {
   	blockName ""
   	disableAutoLayout false
   	generalStyle GeneralStyling _AzoiIGnXEe2xCJpb6ooUzA {
@@ -151,9 +151,9 @@ GUI _AzVAIWnXEe2xCJpb6ooUzA {
   						small false
   						highlight false
   						deleted false
-  						underline false
-  						bold false
-  						alignment Left
+  						underline true
+  						bold true
+  						alignment Center
   						italic false
   						color Default
   					}
@@ -187,16 +187,16 @@ GUI _AzVAIWnXEe2xCJpb6ooUzA {
   		Col _FtqHUW8VEe29MJ2ZfnuTaA at 10,30 size 170,218 {
   			wideness Full
   			layout Layout _Ft27oG8VEe29MJ2ZfnuTaA {
-  					size Default
+  					size Large
   					offset None
-  					alignment Left
+  					alignment Center
   				}
   			generalStyle GeneralStyling _Ft1tgG8VEe29MJ2ZfnuTaA {
   					tallness Fitting
   					marginBottom None
   					attributes [  ]
   					marginTop None
-  					rawContent "width:50px;\nheight:50px;\nborder:5px solid block;"
+  					rawContent "width:75px;\nheight:75px;\nborder:10px solid block;"
   				}
   			MoveLeft _FtwN8W8VEe29MJ2ZfnuTaA at 2,2 size 7,14 {
   			}
@@ -232,6 +232,122 @@ GUI _AzVAIWnXEe2xCJpb6ooUzA {
   				}
   				
   				MoveDown _BdUK4XSkEe2vmrlDP84GiQ at 2,10 size 14,7 {
+  				}
+  			}
+  		}
+  	}
+  	
+  	Row __mftoXbcEe2qntwH9Ijd8A at 10,368 size 480,170 {
+  		generalStyle GeneralStyling __mpeoHbcEe2qntwH9Ijd8A {
+  				tallness Fitting
+  				marginBottom None
+  				attributes [  ]
+  				marginTop None
+  			}
+  		MoveUp __mfto3bcEe2qntwH9Ijd8A at 2,2 size 14,7 {
+  		}
+  		
+  		MoveDown __mftpXbcEe2qntwH9Ijd8A at 2,10 size 14,7 {
+  		}
+  		
+  		Col __mftp3bcEe2qntwH9Ijd8A at 10,30 size 220,120 {
+  			wideness Quarter
+  			layout Layout __ml0QXbcEe2qntwH9Ijd8A {
+  					size Default
+  					offset None
+  					alignment Left
+  				}
+  			generalStyle GeneralStyling __ml0QHbcEe2qntwH9Ijd8A {
+  					tallness Fitting
+  					marginBottom None
+  					attributes [  ]
+  					marginTop None
+  				}
+  			MoveLeft __mftqXbcEe2qntwH9Ijd8A at 2,2 size 7,14 {
+  			}
+  			
+  			MoveRight __mftq3bcEe2qntwH9Ijd8A at 10,2 size 7,14 {
+  			}
+  			
+  			Button _i3H0kXbbEe2qntwH9Ijd8A at 10,30 size 200,60 {
+  				displayLabel "Back"
+  				label "Back"
+  				styling ButtonStyling _i3cksHbbEe2qntwH9Ijd8A {
+  						fullWidth false
+  						size Medium
+  						disabled false
+  						color Default
+  					}
+  				options ButtonOptions _i3fA8HbbEe2qntwH9Ijd8A {
+  						isLink false
+  						submitsForm true
+  					}
+  				disabled false
+  				icon Icon _i3WeEHbbEe2qntwH9Ijd8A {
+  						postIcon ArrowLeft
+  						preIcon None
+  					}
+  				generalStyle GeneralStyling _i3TawHbbEe2qntwH9Ijd8A {
+  						tallness Fitting
+  						marginBottom None
+  						attributes [  ]
+  						marginTop None
+  					}
+  				MoveUp _i3SzsXbbEe2qntwH9Ijd8A at 2,2 size 14,7 {
+  				}
+  				
+  				MoveDown _i3Szs3bbEe2qntwH9Ijd8A at 2,10 size 14,7 {
+  				}
+  			}
+  		}
+  		
+  		Col _lbcLcXbbEe2qntwH9Ijd8A at 240,30 size 220,120 {
+  			wideness Quarter
+  			layout Layout _lbiSEHbbEe2qntwH9Ijd8A {
+  					size Default
+  					offset None
+  					alignment Left
+  				}
+  			generalStyle GeneralStyling _lbcLdnbbEe2qntwH9Ijd8A {
+  					tallness Fitting
+  					marginBottom None
+  					attributes [  ]
+  					marginTop None
+  				}
+  			MoveLeft _lbcLc3bbEe2qntwH9Ijd8A at 2,2 size 7,14 {
+  			}
+  			
+  			MoveRight _lbcLdXbbEe2qntwH9Ijd8A at 10,2 size 7,14 {
+  			}
+  			
+  			Button _mFQkgXbbEe2qntwH9Ijd8A at 10,30 size 200,60 {
+  				displayLabel "Restart"
+  				label "Restart"
+  				styling ButtonStyling _mFiRUHbbEe2qntwH9Ijd8A {
+  						fullWidth false
+  						size Medium
+  						disabled false
+  						color Lightblue
+  					}
+  				options ButtonOptions _mFl7sHbbEe2qntwH9Ijd8A {
+  						isLink false
+  						submitsForm true
+  					}
+  				disabled false
+  				icon Icon _mFZHYHbbEe2qntwH9Ijd8A {
+  						postIcon Repeat
+  						preIcon None
+  					}
+  				generalStyle GeneralStyling _mFTAxHbbEe2qntwH9Ijd8A {
+  						tallness Fitting
+  						marginBottom None
+  						attributes [  ]
+  						marginTop None
+  					}
+  				MoveUp _mFTAwXbbEe2qntwH9Ijd8A at 2,2 size 14,7 {
+  				}
+  				
+  				MoveDown _mFTAw3bbEe2qntwH9Ijd8A at 2,10 size 14,7 {
   				}
   			}
   		}

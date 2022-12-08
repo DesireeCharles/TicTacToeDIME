@@ -45,7 +45,7 @@ public class EntryStateEntity implements EntryStateInterface {
 	private de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryStateEntity empty;
 	
 	@de.ls5.dywa.annotations.IdRef(id = 23L)
-	@javax.persistence.Column(name = "a_DywaDisplayName__2eg2uxt4ee29em7", columnDefinition="varchar")
+	@javax.persistence.Column(name = "a_DywaDisplayName__yfq8axbzee2qntw", columnDefinition="varchar")
 	private java.lang.String dywaDisplayName;
 	
 	/* MAIN ATTRIBUTES END */

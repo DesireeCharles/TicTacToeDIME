@@ -39,7 +39,7 @@ public class TurnStateEntity implements TurnStateInterface {
 	private de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TurnStateEntity O;
 	
 	@de.ls5.dywa.annotations.IdRef(id = 26L)
-	@javax.persistence.Column(name = "a_DywaDisplayName__2evf0xt4ee29em7", columnDefinition="varchar")
+	@javax.persistence.Column(name = "a_DywaDisplayName__yfq8a3bzee2qntw", columnDefinition="varchar")
 	private java.lang.String dywaDisplayName;
 	
 	/* MAIN ATTRIBUTES END */

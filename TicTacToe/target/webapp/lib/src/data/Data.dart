@@ -142,7 +142,7 @@ class ConcreteUser extends BaseModel
 			if (jsog.containsKey("dywaSwitchedTo")) {
 				core.Map<core.String,core.dynamic> jsogObj = jsog["dywaSwitchedTo"];
 				if(jsogObj != null) {
-					ConcreteUser valueawTOrkXTyEe29EM7zgtpvCg;
+					ConcreteUser valueaLALKYXbXEe2qntwH9Ijd8A;
 					
 					core.String jsogId;
 					
@@ -153,22 +153,22 @@ class ConcreteUser extends BaseModel
 					 	jsogId = jsogObj['@id'];
 					}
 					if (cache.containsKey(jsogId)) {
-						valueawTOrkXTyEe29EM7zgtpvCg = cache[jsogId];
+						valueaLALKYXbXEe2qntwH9Ijd8A = cache[jsogId];
 					}
 					else {
 						if (jsogObj != null) {
 							if (jsogObj['dywaRuntimeType'] == "de.ls5.dywa.generated.rest.types.ConcreteUserImpl") {
-								valueawTOrkXTyEe29EM7zgtpvCg = new ConcreteUser(cache: cache, jsog: jsogObj);
+								valueaLALKYXbXEe2qntwH9Ijd8A = new ConcreteUser(cache: cache, jsog: jsogObj);
 							}
 							else {
-								valueawTOrkXTyEe29EM7zgtpvCg = new ConcreteUser(cache: cache,jsog: jsogObj);
+								valueaLALKYXbXEe2qntwH9Ijd8A = new ConcreteUser(cache: cache,jsog: jsogObj);
 							}
 						}
 						else {
-							valueawTOrkXTyEe29EM7zgtpvCg = new ConcreteUser(cache: cache,jsog: jsogObj);
+							valueaLALKYXbXEe2qntwH9Ijd8A = new ConcreteUser(cache: cache,jsog: jsogObj);
 						}
 					}
-					this._dywaSwitchedTo = valueawTOrkXTyEe29EM7zgtpvCg;
+					this._dywaSwitchedTo = valueaLALKYXbXEe2qntwH9Ijd8A;
 				}
 			}
 			
@@ -1707,12 +1707,12 @@ class EntryState extends BaseModel
 			if (jsog.containsKey("dywaDisplayName")) {
 				core.String jsogObj = jsog["dywaDisplayName"];
 				if(jsogObj != null) {
-					core.String valueawTdVEXTyEe29EM7zgtpvCg;
+					core.String valueaLASfIXbXEe2qntwH9Ijd8A;
 					
 					if(jsogObj!=null){
-					valueawTdVEXTyEe29EM7zgtpvCg = jsogObj.toString();
+					valueaLASfIXbXEe2qntwH9Ijd8A = jsogObj.toString();
 					}
-					this._dywaDisplayName = valueawTdVEXTyEe29EM7zgtpvCg;
+					this._dywaDisplayName = valueaLASfIXbXEe2qntwH9Ijd8A;
 				}
 				else {
 					this._dywaDisplayName = null;
@@ -1895,12 +1895,12 @@ class TurnState extends BaseModel
 			if (jsog.containsKey("dywaDisplayName")) {
 				core.String jsogObj = jsog["dywaDisplayName"];
 				if(jsogObj != null) {
-					core.String valueawTnGEXTyEe29EM7zgtpvCg;
+					core.String valueaLAZM0XbXEe2qntwH9Ijd8A;
 					
 					if(jsogObj!=null){
-					valueawTnGEXTyEe29EM7zgtpvCg = jsogObj.toString();
+					valueaLAZM0XbXEe2qntwH9Ijd8A = jsogObj.toString();
 					}
-					this._dywaDisplayName = valueawTnGEXTyEe29EM7zgtpvCg;
+					this._dywaDisplayName = valueaLAZM0XbXEe2qntwH9Ijd8A;
 				}
 				else {
 					this._dywaDisplayName = null;

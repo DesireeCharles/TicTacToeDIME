@@ -18,10 +18,6 @@ public class Constants {
 
 	public static final String PUBLIC_KEY_PROPERTY  = "info.scce.dime.auth.public-key";
 
-	public static final String ENCRYPT_PASSPHRASE_PROPERTY  = "info.scce.dime.app.encrypt.passphrase";
-
-	public static final String ENCRYPT_DISABLE_PROPERTY  = "info.scce.dime.app.encrypt.disable";
-
 	public final static String AUTH_HASH_ALGORITHM = "SHA-512";
 	
 	public final static int AUTH_HASH_ITERATIONS = 1337;
