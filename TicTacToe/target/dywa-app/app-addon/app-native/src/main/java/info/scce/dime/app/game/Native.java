@@ -101,7 +101,8 @@ public class Native {
 //				TableEntry tableEntry = teController.create("Hello");
 				EntryState entryState = EntryState.empty;
 				tableEntry.setentryState(entryState);
-				tableEntry.setvalue("x");
+				//System.err.println(tableEntry.getentryState);
+				//tableEntry.setvalue("x");
 				tableEntryList.add(tableEntry);
 			}
 

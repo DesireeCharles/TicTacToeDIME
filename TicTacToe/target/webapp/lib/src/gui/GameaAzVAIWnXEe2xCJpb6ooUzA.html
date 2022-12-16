@@ -13,6 +13,12 @@ TicTacToe
 </h1>
 	</div>
 </div>
+<div 
+ class="row">
+<div
+
+class="col-md-12 text-left"
+>
 <div *ngFor="let currentRow of initOnDemandtable().initOnDemandtableRow(); let index = index; trackBy: trackSelective"  
 aria-live="polite" aria-atomic="true" 
 
@@ -26,6 +32,7 @@ class="col-lg-12 text-center"
 >
 	
 	<badge-tag
+		[ngStyle]="{ 'overflow':'auto' , 'height':'50vh' }"
 		
 		[modalDialog]="false"
 	  	[currentbranch]="currentbranch"
@@ -33,11 +40,45 @@ class="col-lg-12 text-center"
 	  	[runtimeId]="runtimeId"
 	  	[guiId]="guiId"
 	  	[tableEntry]="current"
+	  	[table]="table"
 	  	
 	  	(actionemptyevent)="actionemptyevent.add($event)"
 	  	
 	  >
 	  </badge-tag>
+</div>
+</div>
+</div>
+<div
+
+class="col-md-12 text-left"
+>
+	
+	<gamestate-tag
+		[ngStyle]="{ 'overflow':'auto' , 'height':'50vh' }"
+		
+		[modalDialog]="false"
+	  	[currentbranch]="currentbranch"
+	  	[ismajorpage]="false"
+	  	[runtimeId]="runtimeId"
+	  	[guiId]="guiId"
+	  	[gameState]="table?.gameState"
+	  >
+	  </gamestate-tag>
+</div>
+</div>
+<div 
+ class="row">
+<div
+
+class="col-md-12 text-left"
+>
+<span 
+ >
+<span aria-live="polite" aria-atomic="true" class="text-left">
+{{table?.moveCounter}}
+</span>
+</span>
 </div>
 </div>
 <div 

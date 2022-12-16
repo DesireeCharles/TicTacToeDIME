@@ -21,6 +21,24 @@ public interface Table extends info.scce.dime.rest.RESTBaseType  {
 
 	void setturnState(final TurnState
 	 turnState);
+	GameState
+	 getgameState();
+	boolean isgameStateSet();
+
+	void setgameState(final GameState
+	 gameState);
+	java.lang.Long
+	 getmoveCounter();
+	boolean ismoveCounterSet();
+
+	void setmoveCounter(final java.lang.Long
+	 moveCounter);
+	java.lang.Boolean
+	 getisWin();
+	boolean isisWinSet();
+
+	void setisWin(final java.lang.Boolean
+	 isWin);
 
 	public static Table fromDywaEntity(final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.Table entity, info.scce.dime.rest.ObjectCache objectCache) {
 	

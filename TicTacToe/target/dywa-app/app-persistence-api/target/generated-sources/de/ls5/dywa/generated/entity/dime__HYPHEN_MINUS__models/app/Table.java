@@ -5,29 +5,65 @@ package de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app;
 @de.ls5.dywa.annotations.ShortDescription(description = "")
 @de.ls5.dywa.annotations.LongDescription(description = "")
 public interface Table extends de.ls5.dywa.generated.util.Identifiable {
-	@de.ls5.dywa.annotations.IdRef(id = 15L)
+	@de.ls5.dywa.annotations.IdRef(id = 16L)
 	@de.ls5.dywa.annotations.OriginalName(name = "tableRow")
 	@de.ls5.dywa.annotations.ShortDescription(description = "")
 	@de.ls5.dywa.annotations.LongDescription(description = "")
 	java.util.List<de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TableRow> gettableRow_TableRow();
 	
-	@de.ls5.dywa.annotations.IdRef(id = 15L)
+	@de.ls5.dywa.annotations.IdRef(id = 16L)
 	@de.ls5.dywa.annotations.OriginalName(name = "tableRow")
 	@de.ls5.dywa.annotations.ShortDescription(description = "")
 	@de.ls5.dywa.annotations.LongDescription(description = "")
 	void settableRow_TableRow(java.util.List<de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TableRow> object);
 	
-	@de.ls5.dywa.annotations.IdRef(id = 16L)
+	@de.ls5.dywa.annotations.IdRef(id = 17L)
 	@de.ls5.dywa.annotations.OriginalName(name = "turnState")
 	@de.ls5.dywa.annotations.ShortDescription(description = "")
 	@de.ls5.dywa.annotations.LongDescription(description = "")
 	de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TurnState getturnState();
 	
-	@de.ls5.dywa.annotations.IdRef(id = 16L)
+	@de.ls5.dywa.annotations.IdRef(id = 17L)
 	@de.ls5.dywa.annotations.OriginalName(name = "turnState")
 	@de.ls5.dywa.annotations.ShortDescription(description = "")
 	@de.ls5.dywa.annotations.LongDescription(description = "")
 	void setturnState(de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TurnState object);
+	
+	@de.ls5.dywa.annotations.IdRef(id = 18L)
+	@de.ls5.dywa.annotations.OriginalName(name = "gameState")
+	@de.ls5.dywa.annotations.ShortDescription(description = "")
+	@de.ls5.dywa.annotations.LongDescription(description = "")
+	de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.GameState getgameState();
+	
+	@de.ls5.dywa.annotations.IdRef(id = 18L)
+	@de.ls5.dywa.annotations.OriginalName(name = "gameState")
+	@de.ls5.dywa.annotations.ShortDescription(description = "")
+	@de.ls5.dywa.annotations.LongDescription(description = "")
+	void setgameState(de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.GameState object);
+	
+	@de.ls5.dywa.annotations.IdRef(id = 19L)
+	@de.ls5.dywa.annotations.OriginalName(name = "moveCounter")
+	@de.ls5.dywa.annotations.ShortDescription(description = "")
+	@de.ls5.dywa.annotations.LongDescription(description = "")
+	java.lang.Long getmoveCounter();
+	
+	@de.ls5.dywa.annotations.IdRef(id = 19L)
+	@de.ls5.dywa.annotations.OriginalName(name = "moveCounter")
+	@de.ls5.dywa.annotations.ShortDescription(description = "")
+	@de.ls5.dywa.annotations.LongDescription(description = "")
+	void setmoveCounter(java.lang.Long object);
+	
+	@de.ls5.dywa.annotations.IdRef(id = 20L)
+	@de.ls5.dywa.annotations.OriginalName(name = "isWin")
+	@de.ls5.dywa.annotations.ShortDescription(description = "")
+	@de.ls5.dywa.annotations.LongDescription(description = "")
+	java.lang.Boolean getisWin();
+	
+	@de.ls5.dywa.annotations.IdRef(id = 20L)
+	@de.ls5.dywa.annotations.OriginalName(name = "isWin")
+	@de.ls5.dywa.annotations.ShortDescription(description = "")
+	@de.ls5.dywa.annotations.LongDescription(description = "")
+	void setisWin(java.lang.Boolean object);
 	
 
 	// EXTENSION ATTRIBUTES

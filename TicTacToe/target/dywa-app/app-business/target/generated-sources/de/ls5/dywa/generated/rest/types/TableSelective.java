@@ -72,5 +72,35 @@ public class TableSelective {
 			effectiveTo.setturnState(cached);
 		}
 		}
+		{
+			final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.Table effectiveFrom = from;
+			final de.ls5.dywa.generated.rest.types.Table effectiveTo = to;
+		final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.GameState
+		 source = effectiveFrom.getgameState();
+		if (source != null) {
+			// original selective: GameStateSelective
+			de.ls5.dywa.generated.rest.types.GameState cached = objectCache.getRestTo(source);
+			
+			if (cached == null) {
+				cached = de.ls5.dywa.generated.rest.types.GameState.fromDywaEntity(source, objectCache);
+			}
+			
+			if (!objectCache.containsSelective(cached, "GameStateSelective")) {
+				de.ls5.dywa.generated.rest.types.GameStateSelective.copy(source, cached, objectCache);
+			}
+		
+			effectiveTo.setgameState(cached);
+		}
+		}
+		{
+			final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.Table effectiveFrom = from;
+			final de.ls5.dywa.generated.rest.types.Table effectiveTo = to;
+		effectiveTo.setmoveCounter(effectiveFrom.getmoveCounter());
+		}
+		{
+			final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.Table effectiveFrom = from;
+			final de.ls5.dywa.generated.rest.types.Table effectiveTo = to;
+		effectiveTo.setisWin(effectiveFrom.getisWin());
+		}
 	}
 }

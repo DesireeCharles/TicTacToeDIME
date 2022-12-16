@@ -4,22 +4,17 @@ GUI _ZlXgoXKOEe2rzNRUfilttw {
   additionalJavaScript [  ]
   additionalStylesheets [  ]
   title "badge"
-  DataContext _ZlcZIXKOEe2rzNRUfilttw at 10,10 size 180,158 {
+  DataContext _ZlcZIXKOEe2rzNRUfilttw at 10,10 size 180,131 {
   	dfViewWorkaround true
-  	ComplexVariable _17JIMXSjEe2vmrlDP84GiQ at 10,50 size 160,78 {
-  		expanded true
+  	ComplexVariable _17JIMXSjEe2vmrlDP84GiQ at 10,50 size 160,51 {
+  		expanded false
   		isLive false
   		libraryComponentUID "_KEKm0W8QEe2x_c6ogIlfZw"
   		isInput true
   		name "tableEntry"
   		dfViewWorkaround true
   		isList false
-  		PrimitiveAttribute _2OOcQXSjEe2vmrlDP84GiQ at 10,23 size 140,25 {
-  			libraryComponentUID "_Rwbu8W8QEe2x_c6ogIlfZw"
-  			isLive false
-  		}
-  		
-  		ComplexAttribute _DCdjwXSkEe2vmrlDP84GiQ at 10,50 size 140,25 {
+  		ComplexAttribute _DCdjwXSkEe2vmrlDP84GiQ at 10,23 size 140,25 {
   			libraryComponentUID "_suTD4XKPEe2rzNRUfilttw"
   			isLive false
   			-IS-> _MY7KoXPlEe2eGKutfpiSKw  decorate "" at (0,0) decorate "Text" at (0,0) {
@@ -36,8 +31,15 @@ GUI _ZlXgoXKOEe2rzNRUfilttw {
   				matchingType "_o_tSQXKPEe2rzNRUfilttw"
   			}
   			
-  			-IS-> __1OZgXPkEe2eGKutfpiSKw  decorate "" at (0,0) decorate "Text" at (0,0) {
-  				id _ECMicXSkEe2vmrlDP84GiQ
+  			-IS-> __1OZgXPkEe2eGKutfpiSKw via (181,215) decorate "" at (0,0) decorate "Text" at (0,0) {
+  				id _NlzGsX1XEe2BL67A2MFPXw
+  				exactMatch false
+  				negate false
+  				matchingType "_pPgBwXKPEe2rzNRUfilttw"
+  			}
+  			
+  			-IS-> _z97YoX0qEe2-urIT6LmdwA via (116,307) decorate "" at (0,0) decorate "Text" at (0,0) {
+  				id _qMrVoX1ZEe2BL67A2MFPXw
   				exactMatch false
   				negate false
   				matchingType "_pPgBwXKPEe2rzNRUfilttw"
@@ -49,7 +51,7 @@ GUI _ZlXgoXKOEe2rzNRUfilttw {
   	}
   }
   
-  Template _ZlcZI3KOEe2rzNRUfilttw at 240,10 size 220,308 {
+  Template _ZlcZI3KOEe2rzNRUfilttw at 240,10 size 220,358 {
   	blockName ""
   	disableAutoLayout false
   	generalStyle GeneralStyling _ZlhRoHKOEe2rzNRUfilttw {
@@ -148,6 +150,62 @@ GUI _ZlXgoXKOEe2rzNRUfilttw {
   		}
   		
   		MoveDown _O6tK43PlEe2eGKutfpiSKw at 2,10 size 14,7 {
+  		}
+  	}
+  	
+  	Button _z97YoX0qEe2-urIT6LmdwA at 10,268 size 200,60 {
+  		label ""
+  		styling ButtonStyling _z-I0AH0qEe2-urIT6LmdwA {
+  				fullWidth false
+  				size Default
+  				disabled false
+  				color Default
+  			}
+  		options ButtonOptions _z-I0AX0qEe2-urIT6LmdwA {
+  				isLink false
+  				submitsForm true
+  			}
+  		disabled true
+  		icon Icon _z-FJpX0qEe2-urIT6LmdwA {
+  				postIcon None
+  				preIcon None
+  			}
+  		generalStyle GeneralStyling _z-FJpH0qEe2-urIT6LmdwA {
+  				tallness Fitting
+  				marginBottom None
+  				attributes [  ]
+  				marginTop None
+  			}
+  		MoveUp _z-FJoX0qEe2-urIT6LmdwA at 2,2 size 14,7 {
+  		}
+  		
+  		MoveDown _z-FJo30qEe2-urIT6LmdwA at 2,10 size 14,7 {
+  		}
+  	}
+  }
+  
+  DataContext _YeHCIX1ZEe2BL67A2MFPXw at 570,180 size 180,131 {
+  	dfViewWorkaround true
+  	ComplexVariable _ZtbU8X1ZEe2BL67A2MFPXw at 10,50 size 160,51 {
+  		expanded false
+  		isLive false
+  		libraryComponentUID "_JgYkUW8QEe2x_c6ogIlfZw"
+  		isInput true
+  		name "table"
+  		dfViewWorkaround true
+  		isList false
+  		PrimitiveAttribute _Z_A0OX1ZEe2BL67A2MFPXw at 10,23 size 140,25 {
+  			libraryComponentUID "_DZYEEX1ZEe2BL67A2MFPXw"
+  			isLive false
+  			-IF-> _z97YoX0qEe2-urIT6LmdwA  decorate "" at (0,0) decorate "Text" at (0,0) {
+  				id _bzBvgX1ZEe2BL67A2MFPXw
+  				negate false
+  			}
+  			
+  			-IF-> __1OZgXPkEe2eGKutfpiSKw  decorate "" at (0,0) decorate "Text" at (0,0) {
+  				id _cSq44X1ZEe2BL67A2MFPXw
+  				negate true
+  			}
   		}
   	}
   }

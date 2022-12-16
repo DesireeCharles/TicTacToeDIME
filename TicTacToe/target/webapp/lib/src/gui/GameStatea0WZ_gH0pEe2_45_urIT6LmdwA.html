@@ -1,0 +1,38 @@
+<div class="row">
+	<div class="col-sm-12">
+<span *ngIf="gameState?.dywa_name=='win' 
+" 
+aria-live="polite" aria-atomic="true" 
+
+ >
+<span aria-live="polite" aria-atomic="true" class="text-left">
+Win!!
+</span>
+</span>
+	</div>
+</div>
+<div class="row">
+	<div class="col-sm-12">
+<span *ngIf="gameState?.dywa_name=='tie' 
+" 
+aria-live="polite" aria-atomic="true" 
+
+ >
+<span aria-live="polite" aria-atomic="true" class="text-left">
+Tie!!
+</span>
+</span>
+	</div>
+</div>
+<div class="row">
+	<div class="col-sm-12">
+<span *ngIf="gameState?.dywa_name=='progress' 
+" 
+aria-live="polite" aria-atomic="true" 
+
+ >
+<span aria-live="polite" aria-atomic="true" class="text-left">
+</span>
+</span>
+	</div>
+</div>

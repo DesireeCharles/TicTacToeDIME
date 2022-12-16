@@ -47,7 +47,7 @@ import 'dart:js' as js;
 import 'package:app/src/core/AbstractRoutes.dart';
 
 @Component(
-  selector: "publichome-tag",
+  selector: "gamestate-tag",
   pipes: const [commonPipes,SecondsPipe,AuthImagePipe],
   encapsulation: ViewEncapsulation.None,
   exports: const [
@@ -56,10 +56,10 @@ import 'package:app/src/core/AbstractRoutes.dart';
   directives: const [
   coreDirectives,panel.Panel,modal.Modal,DimeCustomeAttributes,formDirectives,FileSelect,routerDirectives,MaxLength,login.Login,SafeInnerHtmlDirective,
   ],
-  templateUrl: 'PublicHomeaLmrS0Ej8EeaK4_MRcoLfnw.html'
+  templateUrl: 'GameStatea0WZ_gH0pEe2_45_urIT6LmdwA.html'
 )
 
-class PublicHomeaLmrS0Ej8EeaK4_MRcoLfnw extends dime.DIMEComponent implements OnInit, OnDestroy, AfterViewInit {
+class GameStatea0WZ_gH0pEe2_45_urIT6LmdwA extends dime.DIMEComponent implements OnInit, OnDestroy, AfterViewInit {
   
   	// common declarations
   	bool refresh;
@@ -84,18 +84,18 @@ class PublicHomeaLmrS0Ej8EeaK4_MRcoLfnw extends dime.DIMEComponent implements On
   	
   	
   	
-  	// branch Play as info.scce.dime.gui.editor.graphiti.api.CButton@38118dd3 (id: _XDpG0XbYEe2qntwH9Ijd8A) in info.scce.dime.gui.editor.graphiti.api.CGUI@e567f1e5 (id: _LmrS0Ej8EeaK4_MRcoLfnw)
-  	@Output('actionplayevent') Stream<Map<String,dynamic>> get evt_actionplayevent => actionplayevent.stream;
-  	StreamController<Map<String,dynamic>> actionplayevent = new StreamController();
   	
   	@ViewChildren(modal.Modal)
   	List<modal.Modal> modals;
   	bool hasToSignIn;
 	//DATA CONTEXT
+	//GameState gameState
+		@Input()
+		Data.GameState gameState;
 	
 	bool isDestroyed = true;
   
-	PublicHomeaLmrS0Ej8EeaK4_MRcoLfnw(DIMEProcessService this.processService, Router this.router,DomSanitizationService this.domSanitizationService,AbstractRoutes routes) : super(domSanitizationService,processService,routes)
+	GameStatea0WZ_gH0pEe2_45_urIT6LmdwA(DIMEProcessService this.processService, Router this.router,DomSanitizationService this.domSanitizationService,AbstractRoutes routes) : super(domSanitizationService,processService,routes)
 	{
 		restartComponent();
 	}
@@ -105,14 +105,12 @@ class PublicHomeaLmrS0Ej8EeaK4_MRcoLfnw extends dime.DIMEComponent implements On
 		this.hasToSignIn = false;
 		
 		//DATA CONTEXT
+		// GameState gameState
+		this.gameState = null;
 						
 						
 		
 			  	
-		// branch Play declaration
-		if(this.actionplayevent!=null) {
-			  			this.actionplayevent = new StreamController<Map<String,dynamic>>();  				
-		}
 			
 		updateImageHash();
 	}
@@ -125,8 +123,10 @@ class PublicHomeaLmrS0Ej8EeaK4_MRcoLfnw extends dime.DIMEComponent implements On
 	}
 	
 	void updateInputs(
-	)
+	{Data.GameState pgameState
+	})
 	{
+		gameState = pgameState;
 		
 		updateWithoutInputs(updateHidden:false);
 	}
@@ -164,13 +164,6 @@ class PublicHomeaLmrS0Ej8EeaK4_MRcoLfnw extends dime.DIMEComponent implements On
   		
   		
   	
-  		/// callback, if the button Play is clicked
-  			void actionplayeventaXDpG0XbYEe2qntwH9Ijd8AEventTrigger()
-  		
-  		{
-  			Map<String,dynamic> data = new Map();
-  			this.actionplayevent.add(data);
-  		}
   		
   		
   		
@@ -179,6 +172,25 @@ class PublicHomeaLmrS0Ej8EeaK4_MRcoLfnw extends dime.DIMEComponent implements On
   		
   		
   		
+  		Data.GameState
+  		 initOnDemandgameState()
+  		{
+  			if(this.gameState==null){
+  				this.gameState = new Data.GameState
+  				();
+  			}
+  			return this.gameState;
+  		}
+  		void setValuegameState(Data.GameState
+  		 value)
+  		{
+  			this.gameState = value;
+  		}
+  		void gameStatesetValue(Data.GameState
+  		 value)
+  		{
+  			this.setValuegameState(value);
+  		}
   		
   	
   		
@@ -186,28 +198,28 @@ class PublicHomeaLmrS0Ej8EeaK4_MRcoLfnw extends dime.DIMEComponent implements On
   		
   
 	/// returns the surrounding container class for major GUI models
-	String getContainer_LmrS0Ej8EeaK4_MRcoLfnwRootClass()
+	String getContainer_0WZ_gH0pEe2urIT6LmdwARootClass()
 	{
 		if(this.ismajorpage)return "";
 		return "";
 	}
 	
 	/// returns the surrounding wrapper class for major GUI models
-	String getContainer_LmrS0Ej8EeaK4_MRcoLfnwId()
+	String getContainer_0WZ_gH0pEe2urIT6LmdwAId()
 	{
 		if(this.ismajorpage)return "wrapper";
-		return "_LmrS0Ej8EeaK4_MRcoLfnw";
+		return "_0WZ_gH0pEe2urIT6LmdwA";
 	}
 	
 	/// returns the surrounding container class for major GUI models
-	String getContainer_LmrS0Ej8EeaK4_MRcoLfnwClass()
+	String getContainer_0WZ_gH0pEe2urIT6LmdwAClass()
 	{
 		if(this.ismajorpage)return "container-display";
 		return "";
 	}
 	
 	/// callback, to go back to the root interaction
-	void redirect_LmrS0Ej8EeaK4_MRcoLfnwToHome(dynamic e)
+	void redirect_0WZ_gH0pEe2urIT6LmdwAToHome(dynamic e)
 	{
 		e.preventDefault();
 		this.router.navigate(Routes.root.toUrl());

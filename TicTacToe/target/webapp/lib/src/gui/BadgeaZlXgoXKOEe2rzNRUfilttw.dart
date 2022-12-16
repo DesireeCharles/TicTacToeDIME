@@ -95,6 +95,9 @@ class BadgeaZlXgoXKOEe2rzNRUfilttw extends dime.DIMEComponent implements OnInit,
 	//TableEntry tableEntry
 		@Input()
 		Data.TableEntry tableEntry;
+	//Table table
+		@Input()
+		Data.Table table;
 	
 	bool isDestroyed = true;
   
@@ -110,6 +113,8 @@ class BadgeaZlXgoXKOEe2rzNRUfilttw extends dime.DIMEComponent implements OnInit,
 		//DATA CONTEXT
 		// TableEntry tableEntry
 		this.tableEntry = null;
+		// Table table
+		this.table = null;
 						
 						
 		
@@ -130,10 +135,12 @@ class BadgeaZlXgoXKOEe2rzNRUfilttw extends dime.DIMEComponent implements OnInit,
 	}
 	
 	void updateInputs(
-	{Data.TableEntry ptableEntry
+	{Data.TableEntry ptableEntry,
+	Data.Table ptable
 	})
 	{
 		tableEntry = ptableEntry;
+		table = ptable;
 		
 		updateWithoutInputs(updateHidden:false);
 	}
@@ -205,6 +212,25 @@ class BadgeaZlXgoXKOEe2rzNRUfilttw extends dime.DIMEComponent implements OnInit,
   		 value)
   		{
   			this.setValuetableEntry(value);
+  		}
+  		Data.Table
+  		 initOnDemandtable()
+  		{
+  			if(this.table==null){
+  				this.table = new Data.Table
+  				();
+  			}
+  			return this.table;
+  		}
+  		void setValuetable(Data.Table
+  		 value)
+  		{
+  			this.table = value;
+  		}
+  		void tablesetValue(Data.Table
+  		 value)
+  		{
+  			this.setValuetable(value);
   		}
   		
   	

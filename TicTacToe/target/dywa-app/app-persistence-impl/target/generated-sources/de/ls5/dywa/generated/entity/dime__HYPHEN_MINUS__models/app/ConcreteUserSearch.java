@@ -98,7 +98,7 @@ public class ConcreteUserSearch implements ConcreteUser {
 
 	@java.lang.Override
 	public de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.BaseUser getbaseUser() {
-		return (de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.BaseUser) this.attributeMap.get(dywaIdToJpqlAttr.get(7L));
+		return (de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.BaseUser) this.attributeMap.get(dywaIdToJpqlAttr.get(8L));
 	}
 	public void setbaseUser
 	(de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.BaseUser object) {
@@ -106,11 +106,11 @@ public class ConcreteUserSearch implements ConcreteUser {
 				if (! (object instanceof de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.BaseUser)) {
 							throw new java.lang.RuntimeException("Wrong type");
 				}
-			this.attributeMap.put(dywaIdToJpqlAttr.get(7L), object);
+			this.attributeMap.put(dywaIdToJpqlAttr.get(8L), object);
 	}
 	@java.lang.Override
 	public de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.ConcreteUser getdywaSwitchedTo() {
-		return (de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.ConcreteUser) this.attributeMap.get(dywaIdToJpqlAttr.get(8L));
+		return (de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.ConcreteUser) this.attributeMap.get(dywaIdToJpqlAttr.get(9L));
 	}
 	public void setdywaSwitchedTo
 	(de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.ConcreteUser object) {
@@ -118,7 +118,7 @@ public class ConcreteUserSearch implements ConcreteUser {
 				if (! (object instanceof de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.ConcreteUser)) {
 							throw new java.lang.RuntimeException("Wrong type");
 				}
-			this.attributeMap.put(dywaIdToJpqlAttr.get(8L), object);
+			this.attributeMap.put(dywaIdToJpqlAttr.get(9L), object);
 	}
 
 	// EXTENSION ATTRIBUTES

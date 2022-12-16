@@ -26,6 +26,8 @@ public class AALControllerImpl implements AALController {
 	private de.ls5.dywa.generated.controller.dime__HYPHEN_MINUS__models.app.EntryStateController EntryStateController;
 	@Inject
 	private de.ls5.dywa.generated.controller.dime__HYPHEN_MINUS__models.app.TurnStateController TurnStateController;
+	@Inject
+	private de.ls5.dywa.generated.controller.dime__HYPHEN_MINUS__models.app.GameStateController GameStateController;
 
 	@Override
 	public void reset() {
@@ -57,6 +59,8 @@ public class AALControllerImpl implements AALController {
 	(null);
 	o.setempty
 	(null);
+	o.setempty_dis
+	(null);
 	o.setdywaDisplayName
 	(null);
 	}
@@ -65,6 +69,17 @@ public class AALControllerImpl implements AALController {
 	o.setX
 	(null);
 	o.setO
+	(null);
+	o.setdywaDisplayName
+	(null);
+	}
+	for (final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.GameState o : GameStateController.fetch()) {
+	o.setDywaName(o.toString());
+	o.setwin
+	(null);
+	o.settie
+	(null);
+	o.setprogress
 	(null);
 	o.setdywaDisplayName
 	(null);

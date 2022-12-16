@@ -62,5 +62,80 @@ public class TableImpl extends info.scce.dime.rest.RESTBaseImpl implements Table
 		this.isturnStateSet = true;
 	}
 
+	private GameState
+	 gameState;
+	private boolean isgameStateSet;
+	
+	@com.fasterxml.jackson.annotation.JsonProperty("gameState")
+	@info.scce.dime.rest.JsonRenderIndicator("isgameStateSet")
+	@java.lang.Override
+	public GameState
+	 getgameState() {
+		return this.gameState;
+	}
+	
+	@com.fasterxml.jackson.annotation.JsonIgnore
+	public boolean isgameStateSet() {
+		return this.isgameStateSet;
+	}
+
+	@com.fasterxml.jackson.annotation.JsonProperty("gameState")
+	@java.lang.Override
+	public void setgameState(final GameState
+	 gameState) {
+		this.gameState = gameState;
+		this.isgameStateSet = true;
+	}
+
+	private java.lang.Long
+	 moveCounter;
+	private boolean ismoveCounterSet;
+	
+	@com.fasterxml.jackson.annotation.JsonProperty("moveCounter")
+	@info.scce.dime.rest.JsonRenderIndicator("ismoveCounterSet")
+	@java.lang.Override
+	public java.lang.Long
+	 getmoveCounter() {
+		return this.moveCounter;
+	}
+	
+	@com.fasterxml.jackson.annotation.JsonIgnore
+	public boolean ismoveCounterSet() {
+		return this.ismoveCounterSet;
+	}
+
+	@com.fasterxml.jackson.annotation.JsonProperty("moveCounter")
+	@java.lang.Override
+	public void setmoveCounter(final java.lang.Long
+	 moveCounter) {
+		this.moveCounter = moveCounter;
+		this.ismoveCounterSet = true;
+	}
+
+	private java.lang.Boolean
+	 isWin;
+	private boolean isisWinSet;
+	
+	@com.fasterxml.jackson.annotation.JsonProperty("isWin")
+	@info.scce.dime.rest.JsonRenderIndicator("isisWinSet")
+	@java.lang.Override
+	public java.lang.Boolean
+	 getisWin() {
+		return this.isWin;
+	}
+	
+	@com.fasterxml.jackson.annotation.JsonIgnore
+	public boolean isisWinSet() {
+		return this.isisWinSet;
+	}
+
+	@com.fasterxml.jackson.annotation.JsonProperty("isWin")
+	@java.lang.Override
+	public void setisWin(final java.lang.Boolean
+	 isWin) {
+		this.isWin = isWin;
+		this.isisWinSet = true;
+	}
+
 	
 }

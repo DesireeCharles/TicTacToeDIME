@@ -43,7 +43,7 @@ public final class GamelOGIC_1O3EgW8SEe29MJ2ZfnuTaA implements DIMEProcess {
 				// end context variables
 
 				// begin direct dataflow variables
-				private de.ls5.dywa.generated.rest.types.Table drawBoardSuccessTable_I2dOoXFiEe24rt9YW3Qgng;
+				private de.ls5.dywa.generated.rest.types.Table drawBoardSuccessTable_Dds2IX0nEe2__HYPHEN_MINUS__urIT6LmdwA;
 				private de.ls5.dywa.generated.rest.types.TableEntry GameEmptyTableEntry_XiZaMXbqEe2qntwH9Ijd8A;
 				// end direct dataflow variables
 
@@ -58,9 +58,9 @@ public final class GamelOGIC_1O3EgW8SEe29MJ2ZfnuTaA implements DIMEProcess {
 						result.table = de.ls5.dywa.generated.rest.types.Table.fromDywaEntity(ctx.table, objectCache);
 						de.ls5.dywa.generated.rest.types.TableSelective.copy(ctx.table, result.table, objectCache);
 					}
-					if(ctx.drawBoardSuccessTable_I2dOoXFiEe24rt9YW3Qgng != null) {
-						result.drawBoardSuccessTable_I2dOoXFiEe24rt9YW3Qgng = de.ls5.dywa.generated.rest.types.Table.fromDywaEntity(ctx.drawBoardSuccessTable_I2dOoXFiEe24rt9YW3Qgng, objectCache);
-						de.ls5.dywa.generated.rest.types.TableSelective.copy(ctx.drawBoardSuccessTable_I2dOoXFiEe24rt9YW3Qgng, result.drawBoardSuccessTable_I2dOoXFiEe24rt9YW3Qgng, objectCache);
+					if(ctx.drawBoardSuccessTable_Dds2IX0nEe2__HYPHEN_MINUS__urIT6LmdwA != null) {
+						result.drawBoardSuccessTable_Dds2IX0nEe2__HYPHEN_MINUS__urIT6LmdwA = de.ls5.dywa.generated.rest.types.Table.fromDywaEntity(ctx.drawBoardSuccessTable_Dds2IX0nEe2__HYPHEN_MINUS__urIT6LmdwA, objectCache);
+						de.ls5.dywa.generated.rest.types.TableSelective.copy(ctx.drawBoardSuccessTable_Dds2IX0nEe2__HYPHEN_MINUS__urIT6LmdwA, result.drawBoardSuccessTable_Dds2IX0nEe2__HYPHEN_MINUS__urIT6LmdwA, objectCache);
 					}
 					if(ctx.GameEmptyTableEntry_XiZaMXbqEe2qntwH9Ijd8A != null) {
 						result.GameEmptyTableEntry_XiZaMXbqEe2qntwH9Ijd8A = de.ls5.dywa.generated.rest.types.TableEntry.fromDywaEntity(ctx.GameEmptyTableEntry_XiZaMXbqEe2qntwH9Ijd8A, objectCache);
@@ -82,8 +82,8 @@ public final class GamelOGIC_1O3EgW8SEe29MJ2ZfnuTaA implements DIMEProcess {
 					if (this.table != null) {
 						result.table = contextTransformer.transform(this.table);
 					}
-					if (this.drawBoardSuccessTable_I2dOoXFiEe24rt9YW3Qgng != null) {
-						result.drawBoardSuccessTable_I2dOoXFiEe24rt9YW3Qgng = contextTransformer.transform(this.drawBoardSuccessTable_I2dOoXFiEe24rt9YW3Qgng);
+					if (this.drawBoardSuccessTable_Dds2IX0nEe2__HYPHEN_MINUS__urIT6LmdwA != null) {
+						result.drawBoardSuccessTable_Dds2IX0nEe2__HYPHEN_MINUS__urIT6LmdwA = contextTransformer.transform(this.drawBoardSuccessTable_Dds2IX0nEe2__HYPHEN_MINUS__urIT6LmdwA);
 					}
 					if (this.GameEmptyTableEntry_XiZaMXbqEe2qntwH9Ijd8A != null) {
 						result.GameEmptyTableEntry_XiZaMXbqEe2qntwH9Ijd8A = contextTransformer.transform(this.GameEmptyTableEntry_XiZaMXbqEe2qntwH9Ijd8A);
@@ -114,7 +114,7 @@ public final class GamelOGIC_1O3EgW8SEe29MJ2ZfnuTaA implements DIMEProcess {
 		// context variables.
 		private de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.Table table;
 		// direct dataflow variables.
-		private de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.Table drawBoardSuccessTable_I2dOoXFiEe24rt9YW3Qgng;
+		private de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.Table drawBoardSuccessTable_Dds2IX0nEe2__HYPHEN_MINUS__urIT6LmdwA;
 		private de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TableEntry GameEmptyTableEntry_XiZaMXbqEe2qntwH9Ijd8A;
 
 		public info.scce.dime.process.JSONContext toJSON() {
@@ -123,11 +123,13 @@ public final class GamelOGIC_1O3EgW8SEe29MJ2ZfnuTaA implements DIMEProcess {
 	}
 
 	private enum SIB_ID {
-	_CauWwXFhEe24rt9YW3Qgng,
 	_jMekQXSQEe2vmrlDP84GiQ,
 	_AqwwIXTyEe29EM7zgtpvCg,
 	_DQiDgXbqEe2qntwH9Ijd8A,
 	_XiL__HYPHEN_MINUS__0XbqEe2qntwH9Ijd8A,
+	_Da1IUX0nEe2__HYPHEN_MINUS__urIT6LmdwA,
+	_Tnh5EX0qEe2__HYPHEN_MINUS__urIT6LmdwA,
+	_AV2zQX1aEe2BL67A2MFPXw,
 		;
 	}
 
@@ -177,10 +179,6 @@ public final class GamelOGIC_1O3EgW8SEe29MJ2ZfnuTaA implements DIMEProcess {
 		SIB_ID curr = id;
 		while (true) {
 			switch (curr) {
-				case _CauWwXFhEe24rt9YW3Qgng: {
-					curr = execute_CauWwXFhEe24rt9YW3Qgng(ctx);
-					break;
-				}
 				case _jMekQXSQEe2vmrlDP84GiQ: {
 					curr = execute_jMekQXSQEe2vmrlDP84GiQ(ctx);
 					break;
@@ -195,6 +193,18 @@ public final class GamelOGIC_1O3EgW8SEe29MJ2ZfnuTaA implements DIMEProcess {
 				}
 				case _XiL__HYPHEN_MINUS__0XbqEe2qntwH9Ijd8A: {
 					curr = execute_XiL__HYPHEN_MINUS__0XbqEe2qntwH9Ijd8A(ctx);
+					break;
+				}
+				case _Da1IUX0nEe2__HYPHEN_MINUS__urIT6LmdwA: {
+					curr = execute_Da1IUX0nEe2__HYPHEN_MINUS__urIT6LmdwA(ctx);
+					break;
+				}
+				case _Tnh5EX0qEe2__HYPHEN_MINUS__urIT6LmdwA: {
+					curr = execute_Tnh5EX0qEe2__HYPHEN_MINUS__urIT6LmdwA(ctx);
+					break;
+				}
+				case _AV2zQX1aEe2BL67A2MFPXw: {
+					curr = execute_AV2zQX1aEe2BL67A2MFPXw(ctx);
 					break;
 				}
 				default: {
@@ -227,33 +237,17 @@ public final class GamelOGIC_1O3EgW8SEe29MJ2ZfnuTaA implements DIMEProcess {
 
 
 	// sibs
-	// container for atomic SIB 'drawBoard'.
-	public SIB_ID execute_CauWwXFhEe24rt9YW3Qgng(final Context ctx) {
-		try {
-			final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.Table result = info.scce.dime.app.game.Native.createGameBoard(3l, 3l);
-			ctx.drawBoardSuccessTable_I2dOoXFiEe24rt9YW3Qgng = result;
-			ctx.table = result;
-			ctx.drawBoardSuccessTable_I2dOoXFiEe24rt9YW3Qgng = result;
-		}
-		catch (Exception e) {
-			e.printStackTrace();
-			// branch 'failure'
-			throw new IllegalStateException("SIB 'drawBoard' has no successor defined for branch 'failure'");
-		}
-		// branch 'success'
-		return SIB_ID._jMekQXSQEe2vmrlDP84GiQ;
-	}
 	// container for retrieve enum literal SIB 'Get TurnState'.
 	public SIB_ID execute_jMekQXSQEe2vmrlDP84GiQ(final Context ctx) {
 		Optional.ofNullable(ctx.table).get().setturnState(de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TurnState.X);
 		// branch 'X'
-		return SIB_ID._XiL__HYPHEN_MINUS__0XbqEe2qntwH9Ijd8A;
+		return SIB_ID._Tnh5EX0qEe2__HYPHEN_MINUS__urIT6LmdwA;
 	}
 	// container for graph abstraction 'showButtonPress' and sub process 'showButtonPress'.
 	public SIB_ID execute_AqwwIXTyEe29EM7zgtpvCg(final Context ctx) {
 		final info.scce.dime.process.dime__HYPHEN_MINUS__models.interaction.ShowButtonPress_LhjwAXTxEe29EM7zgtpvCg instance = new info.scce.dime.process.dime__HYPHEN_MINUS__models.interaction.ShowButtonPress_LhjwAXTxEe29EM7zgtpvCg(ctx.beanManager);
 	
-		final info.scce.dime.process.dime__HYPHEN_MINUS__models.interaction.ShowButtonPress_LhjwAXTxEe29EM7zgtpvCg.ShowButtonPress_LhjwAXTxEe29EM7zgtpvCgResult result = instance.execute(false, ctx.GameEmptyTableEntry_XiZaMXbqEe2qntwH9Ijd8A, ctx.drawBoardSuccessTable_I2dOoXFiEe24rt9YW3Qgng);
+		final info.scce.dime.process.dime__HYPHEN_MINUS__models.interaction.ShowButtonPress_LhjwAXTxEe29EM7zgtpvCg.ShowButtonPress_LhjwAXTxEe29EM7zgtpvCgResult result = instance.execute(false, ctx.GameEmptyTableEntry_XiZaMXbqEe2qntwH9Ijd8A, ctx.drawBoardSuccessTable_Dds2IX0nEe2__HYPHEN_MINUS__urIT6LmdwA);
 	
 		switch(result.getBranchName()) {
 		case "success": {
@@ -301,7 +295,7 @@ public final class GamelOGIC_1O3EgW8SEe29MJ2ZfnuTaA implements DIMEProcess {
 		final info.scce.dime.gui.dime__HYPHEN_MINUS__models.gui.publichome.PublicHome_LmrS0Ej8EeaK4_MRcoLfnw_INTERNALResult result = (info.scce.dime.gui.dime__HYPHEN_MINUS__models.gui.publichome.PublicHome_LmrS0Ej8EeaK4_MRcoLfnw_INTERNALResult) guiResult;
 		if ("Play".equals(result.getBranchName())) {
 			// branch 'Play'
-			return SIB_ID._CauWwXFhEe24rt9YW3Qgng;
+			return SIB_ID._Da1IUX0nEe2__HYPHEN_MINUS__urIT6LmdwA;
 		}
 		else {
 			// unspecified branch, show same GUI again
@@ -327,7 +321,7 @@ public final class GamelOGIC_1O3EgW8SEe29MJ2ZfnuTaA implements DIMEProcess {
 		{
 			de.ls5.dywa.generated.rest.types.Table
 			 result = null;
-			de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.Table obj = ctx.drawBoardSuccessTable_I2dOoXFiEe24rt9YW3Qgng;
+			de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.Table obj = ctx.drawBoardSuccessTable_Dds2IX0nEe2__HYPHEN_MINUS__urIT6LmdwA;
 			
 			de.ls5.dywa.generated.rest.types.Table restTO;
 			
@@ -384,12 +378,41 @@ public final class GamelOGIC_1O3EgW8SEe29MJ2ZfnuTaA implements DIMEProcess {
 		} else 
 		if ("Restart".equals(result.getBranchName())) {
 			// branch 'Restart'
-			return SIB_ID._CauWwXFhEe24rt9YW3Qgng;
+			return SIB_ID._Da1IUX0nEe2__HYPHEN_MINUS__urIT6LmdwA;
 		}
 		else {
 			// unspecified branch, show same GUI again
 			return execute_XiL__HYPHEN_MINUS__0XbqEe2qntwH9Ijd8A(ctx);
 		}
+	}
+	// container for atomic SIB 'drawBoard'.
+	public SIB_ID execute_Da1IUX0nEe2__HYPHEN_MINUS__urIT6LmdwA(final Context ctx) {
+		try {
+			final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.Table result = info.scce.dime.app.game.Native.createGameBoard(3l, 3l);
+			ctx.drawBoardSuccessTable_Dds2IX0nEe2__HYPHEN_MINUS__urIT6LmdwA = result;
+			ctx.table = result;
+			ctx.drawBoardSuccessTable_Dds2IX0nEe2__HYPHEN_MINUS__urIT6LmdwA = result;
+			ctx.drawBoardSuccessTable_Dds2IX0nEe2__HYPHEN_MINUS__urIT6LmdwA = result;
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+			// branch 'failure'
+			throw new IllegalStateException("SIB 'drawBoard' has no successor defined for branch 'failure'");
+		}
+		// branch 'success'
+		return SIB_ID._jMekQXSQEe2vmrlDP84GiQ;
+	}
+	// container for retrieve enum literal SIB 'Get GameState'.
+	public SIB_ID execute_Tnh5EX0qEe2__HYPHEN_MINUS__urIT6LmdwA(final Context ctx) {
+		Optional.ofNullable(ctx.table).get().setgameState(de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.GameState.progress);
+		// branch 'progress'
+		return SIB_ID._AV2zQX1aEe2BL67A2MFPXw;
+	}
+	// container for SIB 'Set isWin' setting a new attribute value.
+	public SIB_ID execute_AV2zQX1aEe2BL67A2MFPXw(final Context ctx) {
+		ctx.drawBoardSuccessTable_Dds2IX0nEe2__HYPHEN_MINUS__urIT6LmdwA.setisWin(false);
+		// branch 'success'
+		return SIB_ID._XiL__HYPHEN_MINUS__0XbqEe2qntwH9Ijd8A;
 	}
 	
 }  

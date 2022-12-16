@@ -8,7 +8,8 @@ services:
       - mailcatcher
       - postgres
     environment:
-      DIME_APP_ENCRYPT: 'false'
+      DIME_APP_ENCRYPT_DISABLE: 'false'
+      DIME_APP_ENCRYPT_PASSPHRASE: kiiMeiPa4heidoh1
       DIME_APP_MAIL_PORT: 1025
       DIME_APP_MAIL_SERVER: mailcatcher
       DIME_APP_SERVER_TIER: local

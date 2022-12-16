@@ -79,6 +79,7 @@ public final class ShowButtonPress_LhjwAXTxEe29EM7zgtpvCg implements DIMEProcess
 	_7qmPuXT2Ee29EM7zgtpvCg,
 	_mNc8IXT3Ee29EM7zgtpvCg,
 	_mmIh4XT3Ee29EM7zgtpvCg,
+	_YqfJ4X1cEe2BL67A2MFPXw,
 		;
 	}
 
@@ -162,6 +163,10 @@ public final class ShowButtonPress_LhjwAXTxEe29EM7zgtpvCg implements DIMEProcess
 				}
 				case _mmIh4XT3Ee29EM7zgtpvCg: {
 					curr = execute_mmIh4XT3Ee29EM7zgtpvCg(ctx);
+					break;
+				}
+				case _YqfJ4X1cEe2BL67A2MFPXw: {
+					curr = execute_YqfJ4X1cEe2BL67A2MFPXw(ctx);
 					break;
 				}
 				default: {
@@ -285,13 +290,29 @@ public final class ShowButtonPress_LhjwAXTxEe29EM7zgtpvCg implements DIMEProcess
 	public SIB_ID execute_mNc8IXT3Ee29EM7zgtpvCg(final Context ctx) {
 		ctx.table.setturnState(ctx.Get_TurnStateOLiteral_c9n__HYPHEN_MINUS__QXTxEe29EM7zgtpvCg);
 		// branch 'success'
-		return SIB_ID._LhthA3TxEe29EM7zgtpvCg;
+		return SIB_ID._YqfJ4X1cEe2BL67A2MFPXw;
 	}
 	// container for SIB 'Set turnState' setting a new attribute value.
 	public SIB_ID execute_mmIh4XT3Ee29EM7zgtpvCg(final Context ctx) {
 		ctx.table.setturnState(ctx.Get_TurnStateXLiteral_dn31IXTxEe29EM7zgtpvCg);
 		// branch 'success'
-		return SIB_ID._LhthA3TxEe29EM7zgtpvCg;
+		return SIB_ID._YqfJ4X1cEe2BL67A2MFPXw;
 	}
+	// container for graph abstraction 'checkDraw' and sub process 'checkDraw'.
+	public SIB_ID execute_YqfJ4X1cEe2BL67A2MFPXw(final Context ctx) {
+		final info.scce.dime.process.dime__HYPHEN_MINUS__models.interaction.CheckDraw_9XpDwX1bEe2BL67A2MFPXw instance = new info.scce.dime.process.dime__HYPHEN_MINUS__models.interaction.CheckDraw_9XpDwX1bEe2BL67A2MFPXw(ctx.beanManager);
+	
+		final info.scce.dime.process.dime__HYPHEN_MINUS__models.interaction.CheckDraw_9XpDwX1bEe2BL67A2MFPXw.CheckDraw_9XpDwX1bEe2BL67A2MFPXwResult result = instance.execute(false, ctx.table);
+	
+		switch(result.getBranchName()) {
+		case "success": {
+			Optional.ofNullable(ctx.table).get().setgameState(result.getSuccessReturn().getState());
+			// branch 'success'
+			return SIB_ID._LhthA3TxEe29EM7zgtpvCg;
+		}
+			default: throw new IllegalStateException("SIB 'checkDraw' has no successor defined for branch '" + result.getBranchName() + '\'');
+		}
+	}
+	
 	
 }  

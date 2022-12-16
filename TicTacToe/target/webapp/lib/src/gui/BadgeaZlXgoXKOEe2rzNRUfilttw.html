@@ -32,6 +32,8 @@ O
 	<div class="col-sm-12">
 <!-- beginn button empty -->
 <button *ngIf="tableEntry?.entryState?.dywa_name=='empty' 
+				&&
+				!(table?.isWin==true)
 " 
 aria-live="polite" aria-atomic="true" 
 
@@ -44,5 +46,23 @@ type="button"
 class="btn btn-default btn-md">
 </button>
 <!-- end button empty -->
+	</div>
+</div>
+<div class="row">
+	<div class="col-sm-12">
+<!-- beginn button  -->
+<button *ngIf="tableEntry?.entryState?.dywa_name=='empty' 
+				&&
+				table?.isWin==true
+" 
+aria-live="polite" aria-atomic="true" 
+
+	data-cinco-id="_z97YoX0qEe2-urIT6LmdwA"
+	tabindex="0" aria-label=""
+ disabled="disabled"
+type="button"
+class="btn btn-default">
+</button>
+<!-- end button  -->
 	</div>
 </div>

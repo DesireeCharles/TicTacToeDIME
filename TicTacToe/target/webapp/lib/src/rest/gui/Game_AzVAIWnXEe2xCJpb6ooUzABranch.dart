@@ -9,14 +9,6 @@ import 'package:app/src/core/dime_process_service.dart';
 class Game_AzVAIWnXEe2xCJpb6ooUzABranch extends ContinueProcessRequest {
 	
 	
-	Empty branch_empty;
-	
-	Game_AzVAIWnXEe2xCJpb6ooUzABranch.foremptyBranch(
-{		Data.TableEntry tableEntry:null
-}	) {
-		branch_empty = new Empty();
-		branch_empty.port_tableEntry = tableEntry;
-	}
 	Back branch_Back;
 	
 	Game_AzVAIWnXEe2xCJpb6ooUzABranch.forBackBranch(
@@ -29,6 +21,14 @@ class Game_AzVAIWnXEe2xCJpb6ooUzABranch extends ContinueProcessRequest {
 	) {
 		branch_Restart = new Restart();
 	}
+	Empty branch_empty;
+	
+	Game_AzVAIWnXEe2xCJpb6ooUzABranch.foremptyBranch(
+{		Data.TableEntry tableEntry:null
+}	) {
+		branch_empty = new Empty();
+		branch_empty.port_tableEntry = tableEntry;
+	}
 
 	String toJSON() {
 		return jsonEncode(toJSOG());
@@ -38,38 +38,19 @@ class Game_AzVAIWnXEe2xCJpb6ooUzABranch extends ContinueProcessRequest {
 	{
 		Map<String,dynamic> jsonObj = new Map();
 		
-		if(branch_empty!=null) {
-			return branch_empty.toJSOG();
-		}
 		if(branch_Back!=null) {
 			return branch_Back.toJSOG();
 		}
 		if(branch_Restart!=null) {
 			return branch_Restart.toJSOG();
 		}
+		if(branch_empty!=null) {
+			return branch_empty.toJSOG();
+		}
 		throw new Exception("Exhaustive IF Game_AzVAIWnXEe2xCJpb6ooUzABranch.dart");
 	}
 }
 	
-	class Empty {
-		
-		Data.TableEntry port_tableEntry = null;
-
-		Map<String,dynamic> toJSOG()
-		{
-			
-			Map<String,dynamic> jsonObj = new Map();
-Map<Object,dynamic> cache = new Map();			if(this.port_tableEntry != null){
-				jsonObj["tableEntry"] = this.port_tableEntry.toJSOG(cache);
-			}
-			else{
-				jsonObj["tableEntry"] = null;
-			}
-					
-			return jsonObj;
-		}
-		
-	}
 	class Back {
 		
 
@@ -89,6 +70,25 @@ Map<Object,dynamic> cache = new Map();			if(this.port_tableEntry != null){
 		{
 			
 			Map<String,dynamic> jsonObj = new Map();
+					
+			return jsonObj;
+		}
+		
+	}
+	class Empty {
+		
+		Data.TableEntry port_tableEntry = null;
+
+		Map<String,dynamic> toJSOG()
+		{
+			
+			Map<String,dynamic> jsonObj = new Map();
+Map<Object,dynamic> cache = new Map();			if(this.port_tableEntry != null){
+				jsonObj["tableEntry"] = this.port_tableEntry.toJSOG(cache);
+			}
+			else{
+				jsonObj["tableEntry"] = null;
+			}
 					
 			return jsonObj;
 		}

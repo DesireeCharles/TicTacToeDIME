@@ -35,6 +35,8 @@ public static ContextTransformer getInstance(javax.enterprise.inject.spi.BeanMan
 @Inject de.ls5.dywa.generated.rest.controller.EntryStateREST EntryStateREST;
 @Inject de.ls5.dywa.generated.controller.dime__HYPHEN_MINUS__models.app.TurnStateController TurnStateController;
 @Inject de.ls5.dywa.generated.rest.controller.TurnStateREST TurnStateREST;
+@Inject de.ls5.dywa.generated.controller.dime__HYPHEN_MINUS__models.app.GameStateController GameStateController;
+@Inject de.ls5.dywa.generated.rest.controller.GameStateREST GameStateREST;
 
 @Inject de.ls5.dywa.generated.util.DomainFileController domainFileController;
 
@@ -111,6 +113,16 @@ public de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TurnState tra
 	final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TurnState obj;
 	if (o.getDywaId() > 0) {
 		obj = TurnStateController.read(o.getDywaId());
+	}
+	else {
+		throw new java.lang.IllegalArgumentException("Transient enum types are not allowed");
+	}
+	return obj;
+}
+public de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.GameState transform(de.ls5.dywa.generated.rest.types.GameState o) {
+	final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.GameState obj;
+	if (o.getDywaId() > 0) {
+		obj = GameStateController.read(o.getDywaId());
 	}
 	else {
 		throw new java.lang.IllegalArgumentException("Transient enum types are not allowed");

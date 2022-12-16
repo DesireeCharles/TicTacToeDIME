@@ -34,6 +34,10 @@ class DataCastUtil {
 	static TurnState castToTurnState(core.Object o) => o as TurnState;
 	static DIMEList<TurnState> castToListTurnState(DIMEList<core.Object> os) => new DIMEList.from(os.cast<TurnState>());
 	static DIMEList<TurnState> newListTurnState() => new DIMEList<TurnState>();
+	
+	static GameState castToGameState(core.Object o) => o as GameState;
+	static DIMEList<GameState> castToListGameState(DIMEList<core.Object> os) => new DIMEList.from(os.cast<GameState>());
+	static DIMEList<GameState> newListGameState() => new DIMEList<GameState>();
 }
 class ConcreteUser extends BaseModel
 {
@@ -142,7 +146,7 @@ class ConcreteUser extends BaseModel
 			if (jsog.containsKey("dywaSwitchedTo")) {
 				core.Map<core.String,core.dynamic> jsogObj = jsog["dywaSwitchedTo"];
 				if(jsogObj != null) {
-					ConcreteUser valueaLALKYXbXEe2qntwH9Ijd8A;
+					ConcreteUser valuea0gYaEX1ZEe2BL67A2MFPXw;
 					
 					core.String jsogId;
 					
@@ -153,22 +157,22 @@ class ConcreteUser extends BaseModel
 					 	jsogId = jsogObj['@id'];
 					}
 					if (cache.containsKey(jsogId)) {
-						valueaLALKYXbXEe2qntwH9Ijd8A = cache[jsogId];
+						valuea0gYaEX1ZEe2BL67A2MFPXw = cache[jsogId];
 					}
 					else {
 						if (jsogObj != null) {
 							if (jsogObj['dywaRuntimeType'] == "de.ls5.dywa.generated.rest.types.ConcreteUserImpl") {
-								valueaLALKYXbXEe2qntwH9Ijd8A = new ConcreteUser(cache: cache, jsog: jsogObj);
+								valuea0gYaEX1ZEe2BL67A2MFPXw = new ConcreteUser(cache: cache, jsog: jsogObj);
 							}
 							else {
-								valueaLALKYXbXEe2qntwH9Ijd8A = new ConcreteUser(cache: cache,jsog: jsogObj);
+								valuea0gYaEX1ZEe2BL67A2MFPXw = new ConcreteUser(cache: cache,jsog: jsogObj);
 							}
 						}
 						else {
-							valueaLALKYXbXEe2qntwH9Ijd8A = new ConcreteUser(cache: cache,jsog: jsogObj);
+							valuea0gYaEX1ZEe2BL67A2MFPXw = new ConcreteUser(cache: cache,jsog: jsogObj);
 						}
 					}
-					this._dywaSwitchedTo = valueaLALKYXbXEe2qntwH9Ijd8A;
+					this._dywaSwitchedTo = valuea0gYaEX1ZEe2BL67A2MFPXw;
 				}
 			}
 			
@@ -864,6 +868,15 @@ class BaseUser extends BaseModel
 
 class Table extends BaseModel
 {
+	core.bool _gameStateHasBeenSet = false;
+	core.bool gameStateHasBeenChanged() => _gameStateHasBeenSet||(_gameState==null?false:_gameState.hasChanged()) ;
+	GameState _gameState;
+	core.bool _isWinHasBeenSet = false;
+	core.bool isWinHasBeenChanged() => _isWinHasBeenSet;
+	core.bool _isWin;
+	core.bool _moveCounterHasBeenSet = false;
+	core.bool moveCounterHasBeenChanged() => _moveCounterHasBeenSet;
+	core.int _moveCounter;
 	core.bool _tableRowHasBeenSet = false;
 	core.bool tableRowHasBeenChanged() => _tableRowHasBeenSet;
 	DIMEList<TableRow> _tableRow;
@@ -882,6 +895,9 @@ class Table extends BaseModel
 	
 	core.dynamic $$getProperty(core.String prop) {
 	  var propMap = {
+	  'gameState': this.gameState, 
+	  'isWin': this.isWin, 
+	  'moveCounter': this.moveCounter, 
 	  'tableRow': this.tableRow, 
 	  'turnState': this.turnState
 	  };
@@ -892,6 +908,9 @@ class Table extends BaseModel
 	
 	void $$setProperty(core.String prop, core.dynamic value) {
 	  switch (prop) {
+	  case 'gameState': this.gameState = value; return;
+	  case 'isWin': this.isWin = value; return;
+	  case 'moveCounter': this.moveCounter = value; return;
 	  case 'tableRow': this.tableRow = value; return;
 	  case 'turnState': this.turnState = value; return;
 	    default: throw NoSuchPropertyException(prop);
@@ -920,6 +939,8 @@ class Table extends BaseModel
 			this.dywa_name = null;
 			
 			// properties
+			this._isWin = false;
+			this._moveCounter = 0;
 			this._tableRow = new DIMEList.monitored(tableRowHasBeenSetted);
 		}
 		// from jsog
@@ -932,6 +953,81 @@ class Table extends BaseModel
 			this.dywa_name = jsog['dywaName'];
 			
 			// properties
+			if (jsog.containsKey("gameState")) {
+				core.Map<core.String,core.dynamic> jsogObj = jsog["gameState"];
+				if(jsogObj != null) {
+					GameState valueaxyoQoX0oEe2_45_urIT6LmdwA;
+					
+					core.String jsogId;
+					
+					if (jsogObj.containsKey('@ref')) {
+						jsogId = jsogObj['@ref'];
+					}
+					else {
+					 	jsogId = jsogObj['@id'];
+					}
+					if (cache.containsKey(jsogId)) {
+						valueaxyoQoX0oEe2_45_urIT6LmdwA = cache[jsogId];
+					}
+					else {
+						if (jsogObj != null) {
+							if (jsogObj['dywaRuntimeType'] == "de.ls5.dywa.generated.rest.types.GameState") {
+								valueaxyoQoX0oEe2_45_urIT6LmdwA = new GameState(cache: cache, jsog: jsogObj);
+							}
+							else {
+								valueaxyoQoX0oEe2_45_urIT6LmdwA = new GameState(cache: cache,jsog: jsogObj);
+							}
+						}
+						else {
+							valueaxyoQoX0oEe2_45_urIT6LmdwA = new GameState(cache: cache,jsog: jsogObj);
+						}
+					}
+					this._gameState = valueaxyoQoX0oEe2_45_urIT6LmdwA;
+				}
+			}
+			
+			
+			_gameStateHasBeenSet = false;
+			if (jsog.containsKey("isWin")) {
+				core.bool jsogObj = jsog["isWin"];
+				if(jsogObj != null) {
+					core.bool valueaDZYEEX1ZEe2BL67A2MFPXw;
+					
+					if(jsogObj!=null){
+					valueaDZYEEX1ZEe2BL67A2MFPXw = jsogObj.toString().toLowerCase()=='true'?true:false;
+					}
+					this._isWin = valueaDZYEEX1ZEe2BL67A2MFPXw;
+				}
+				else {
+					this._isWin = false;
+				}
+			}
+			
+			
+			else{
+				this._isWin = false;
+			}
+			_isWinHasBeenSet = false;
+			if (jsog.containsKey("moveCounter")) {
+				core.int jsogObj = jsog["moveCounter"];
+				if(jsogObj != null) {
+					core.int valueaypp_QX0oEe2_45_urIT6LmdwA;
+					
+					if(jsogObj!=null){
+					valueaypp_QX0oEe2_45_urIT6LmdwA = core.int.parse(jsogObj.toString());
+					}
+					this._moveCounter = valueaypp_QX0oEe2_45_urIT6LmdwA;
+				}
+				else {
+					this._moveCounter = 0;
+				}
+			}
+			
+			
+			else{
+				this._moveCounter = 0;
+			}
+			_moveCounterHasBeenSet = false;
 			this._tableRow = new DIMEList.monitored(tableRowHasBeenSetted);
 			if (jsog.containsKey("tableRow")) {
 				for (core.Map<core.String,core.dynamic> iter in jsog["tableRow"]) {
@@ -1006,11 +1102,17 @@ class Table extends BaseModel
 		}
 	}
 	
+	void gameStateHasBeenSetted() { _gameStateHasBeenSet=true; }
+	void isWinHasBeenSetted() { _isWinHasBeenSet=true; }
+	void moveCounterHasBeenSetted() { _moveCounterHasBeenSet=true; }
 	void tableRowHasBeenSetted() { _tableRowHasBeenSet=true; }
 	void turnStateHasBeenSetted() { _turnStateHasBeenSet=true; }
 	
 	core.bool hasChanged() {
-		return 		_tableRowHasBeenSet || 
+		return 		_gameStateHasBeenSet || 
+					_isWinHasBeenSet || 
+					_moveCounterHasBeenSet || 
+					_tableRowHasBeenSet || 
 					_turnStateHasBeenSet
 			;
 	}
@@ -1040,6 +1142,20 @@ class Table extends BaseModel
 			else {
 				jsonObj["turnState"] = null;
 			}
+			}
+			if(( gameStateHasBeenChanged() && !jsonObj.containsKey('gameState')) && !objects.containsKey(this._gameState)) {
+			if(this._gameState != null) {
+				jsonObj["gameState"] = this._gameState.toJSOG(objects);
+			}
+			else {
+				jsonObj["gameState"] = null;
+			}
+			}
+			if(( moveCounterHasBeenChanged() && !jsonObj.containsKey('moveCounter')) && !objects.containsKey(this._moveCounter)) {
+			jsonObj["moveCounter"] = this._moveCounter;
+			}
+			if(( isWinHasBeenChanged() && !jsonObj.containsKey('isWin')) && !objects.containsKey(this._isWin)) {
+			jsonObj["isWin"] = this._isWin;
 			}
 			return { 
 				'@ref': jsogId.toString()
@@ -1076,6 +1192,20 @@ class Table extends BaseModel
 		else {
 			jsonObj["turnState"] = null;
 		}
+		}
+		if(( gameStateHasBeenChanged() && !jsonObj.containsKey('gameState')) && !objects.containsKey(this._gameState) || this.dywa_id == 0) {
+		if(this._gameState != null) {
+			jsonObj["gameState"] = this._gameState.toJSOG(objects);
+		}
+		else {
+			jsonObj["gameState"] = null;
+		}
+		}
+		if(( moveCounterHasBeenChanged() && !jsonObj.containsKey('moveCounter')) && !objects.containsKey(this._moveCounter) || this.dywa_id == 0) {
+		jsonObj["moveCounter"] = this._moveCounter;
+		}
+		if(( isWinHasBeenChanged() && !jsonObj.containsKey('isWin')) && !objects.containsKey(this._isWin) || this.dywa_id == 0) {
+		jsonObj["isWin"] = this._isWin;
 		}
 		return jsonObj;
 	}
@@ -1157,6 +1287,90 @@ class Table extends BaseModel
 		void turnStatesetValue(TurnState value)
 		{
 			this.turnState = value;
+		}
+		
+	
+	void set gameState (GameState value)
+	{
+		this._gameStateHasBeenSet = true;
+		this._gameState = value;
+	}
+	
+	GameState get gameState
+	{
+		return this._gameState;
+	}
+	
+		GameState initOnDemandgameState()
+		{
+			if(this._gameState == null) {
+			this.gameState = new GameState();
+			}
+			return this.gameState;
+		}
+		
+		void setValuegameState(GameState value)
+		{
+			this.gameState = value;
+		}
+		
+		void gameStatesetValue(GameState value)
+		{
+			this.gameState = value;
+		}
+		
+	
+	void set moveCounter (core.int value)
+	{
+		this._moveCounterHasBeenSet = true;
+		this._moveCounter = value;
+	}
+	
+	core.int get moveCounter
+	{
+		return this._moveCounter;
+	}
+	
+		core.int initOnDemandmoveCounter()
+		{
+			return this.moveCounter;
+		}
+		
+		void setValuemoveCounter(core.int value)
+		{
+			this.moveCounter = value;
+		}
+		
+		void moveCountersetValue(core.int value)
+		{
+			this.moveCounter = value;
+		}
+		
+	
+	void set isWin (core.bool value)
+	{
+		this._isWinHasBeenSet = true;
+		this._isWin = value;
+	}
+	
+	core.bool get isWin
+	{
+		return this._isWin;
+	}
+	
+		core.bool initOnDemandisWin()
+		{
+			return this.isWin;
+		}
+		
+		void setValueisWin(core.bool value)
+		{
+			this.isWin = value;
+		}
+		
+		void isWinsetValue(core.bool value)
+		{
+			this.isWin = value;
 		}
 		
 	
@@ -1707,12 +1921,12 @@ class EntryState extends BaseModel
 			if (jsog.containsKey("dywaDisplayName")) {
 				core.String jsogObj = jsog["dywaDisplayName"];
 				if(jsogObj != null) {
-					core.String valueaLASfIXbXEe2qntwH9Ijd8A;
+					core.String valuea0gtxQX1ZEe2BL67A2MFPXw;
 					
 					if(jsogObj!=null){
-					valueaLASfIXbXEe2qntwH9Ijd8A = jsogObj.toString();
+					valuea0gtxQX1ZEe2BL67A2MFPXw = jsogObj.toString();
 					}
-					this._dywaDisplayName = valueaLASfIXbXEe2qntwH9Ijd8A;
+					this._dywaDisplayName = valuea0gtxQX1ZEe2BL67A2MFPXw;
 				}
 				else {
 					this._dywaDisplayName = null;
@@ -1742,6 +1956,8 @@ class EntryState extends BaseModel
 				return "O";
 			case 'empty':
 				return "empty";
+			case 'empty_dis':
+				return "empty_dis";
 		}
 	    	return this.dywa_name;
 	  	}
@@ -1895,12 +2111,12 @@ class TurnState extends BaseModel
 			if (jsog.containsKey("dywaDisplayName")) {
 				core.String jsogObj = jsog["dywaDisplayName"];
 				if(jsogObj != null) {
-					core.String valueaLAZM0XbXEe2qntwH9Ijd8A;
+					core.String valuea0g_eEX1ZEe2BL67A2MFPXw;
 					
 					if(jsogObj!=null){
-					valueaLAZM0XbXEe2qntwH9Ijd8A = jsogObj.toString();
+					valuea0g_eEX1ZEe2BL67A2MFPXw = jsogObj.toString();
 					}
-					this._dywaDisplayName = valueaLAZM0XbXEe2qntwH9Ijd8A;
+					this._dywaDisplayName = valuea0g_eEX1ZEe2BL67A2MFPXw;
 				}
 				else {
 					this._dywaDisplayName = null;
@@ -1982,6 +2198,194 @@ class TurnState extends BaseModel
 			return new TurnState(cache:cache,jsog:jsog);
 		}
 		return new TurnState(cache:cache,jsog:jsog);
+	}
+	
+	void set dywaDisplayName (core.String value)
+	{
+		this._dywaDisplayNameHasBeenSet = true;
+		this._dywaDisplayName = value;
+	}
+	
+	core.String get dywaDisplayName
+	{
+		return this._dywaDisplayName;
+	}
+	
+		core.String initOnDemanddywaDisplayName()
+		{
+			return this.dywaDisplayName;
+		}
+		
+		void setValuedywaDisplayName(core.String value)
+		{
+			this.dywaDisplayName = value;
+		}
+		
+		void dywaDisplayNamesetValue(core.String value)
+		{
+			this.dywaDisplayName = value;
+		}
+		
+	
+}
+
+class GameState extends BaseModel
+{
+	core.bool _dywaDisplayNameHasBeenSet = false;
+	core.bool dywaDisplayNameHasBeenChanged() => _dywaDisplayNameHasBeenSet;
+	core.String _dywaDisplayName;
+	
+	static GameState fromId(core.int id) {
+		var m = new GameState();
+		m.dywa_id = id;
+		return m;
+	}
+	
+	
+	// reflection methods to read and wirte dart properties by string name
+	
+	core.dynamic $$getProperty(core.String prop) {
+	  var propMap = {
+	  'dywaDisplayName': this.dywaDisplayName
+	  };
+	
+	  if (!propMap.containsKey(prop)) throw NoSuchPropertyException(prop);
+	  return propMap[prop];
+	}
+	
+	void $$setProperty(core.String prop, core.dynamic value) {
+	  switch (prop) {
+	  case 'dywaDisplayName': this.dywaDisplayName = value; return;
+	    default: throw NoSuchPropertyException(prop);
+	  }
+	}
+	
+	core.bool $$hasProperty(core.String prop) {
+	  try {
+	    $$getProperty(prop);
+	    return true;
+	  } on NoSuchPropertyException catch (e) {
+	    return false;
+	  }
+	}
+	
+	GameState({core.Map<core.String,core.dynamic> cache, jsog}) {
+		if (cache == null) {
+			cache = new core.Map();
+		}
+
+		// default constructor
+		if (jsog == null) {
+			
+			this.dywa_id = -1;
+			this.dywa_version = 0;
+			this.dywa_name = null;
+			
+			// properties
+			this._dywaDisplayName = null;
+		}
+		// from jsog
+		else {
+			core.String jsogId = jsog['@id'];
+			cache[jsogId] = this;
+			
+			this.dywa_id = jsog['dywaId'];
+			this.dywa_version = jsog['dywaVersion'];
+			this.dywa_name = jsog['dywaName'];
+			
+			// properties
+			if (jsog.containsKey("dywaDisplayName")) {
+				core.String jsogObj = jsog["dywaDisplayName"];
+				if(jsogObj != null) {
+					core.String valuea0hVcUX1ZEe2BL67A2MFPXw;
+					
+					if(jsogObj!=null){
+					valuea0hVcUX1ZEe2BL67A2MFPXw = jsogObj.toString();
+					}
+					this._dywaDisplayName = valuea0hVcUX1ZEe2BL67A2MFPXw;
+				}
+				else {
+					this._dywaDisplayName = null;
+				}
+			}
+			
+			
+			else{
+				this._dywaDisplayName = null;
+			}
+			_dywaDisplayNameHasBeenSet = false;
+		}
+	}
+	
+	void dywaDisplayNameHasBeenSetted() { _dywaDisplayNameHasBeenSet=true; }
+	
+	core.bool hasChanged() {
+		return 		_dywaDisplayNameHasBeenSet
+			;
+	}
+	
+	core.String toString() {
+		switch(this.dywa_name) {
+			case 'win':
+				return "win";
+			case 'tie':
+				return "tie";
+			case 'progress':
+				return "progress";
+		}
+	    	return this.dywa_name;
+	  	}
+	
+	core.Map<core.String,core.dynamic> toJSOG(core.Map<core.Object,core.dynamic> objects) {
+		if (objects == null) {
+			objects = new core.Map();
+		}
+		core.int jsogId;
+		core.Map<core.String,core.dynamic> jsonObj = new core.Map();
+		if(objects.containsKey(this)) {
+			jsogId = objects[this]['id'];
+			jsonObj = objects[this]['value'];
+			if(( dywaDisplayNameHasBeenChanged() && !jsonObj.containsKey('dywaDisplayName')) && !objects.containsKey(this._dywaDisplayName)) {
+			jsonObj["dywaDisplayName"] = this._dywaDisplayName;
+			}
+			return { 
+				'@ref': jsogId.toString()
+			};
+		}
+		else {
+			jsogId = objects.length;
+			var pair = {
+				'id': jsogId,
+				'value': jsonObj
+			};
+			objects[this] = pair;
+		}
+		jsonObj['@id'] = jsogId.toString();
+		jsonObj['dywaRuntimeType'] = "de.ls5.dywa.generated.rest.types.GameState";
+
+		jsonObj['dywaId'] = this.dywa_id;
+		jsonObj['dywaVersion'] = this.dywa_version;
+		if(this.dywa_name != null) {
+			jsonObj['dywaName'] = this.dywa_name;
+		}
+		if(( dywaDisplayNameHasBeenChanged() && !jsonObj.containsKey('dywaDisplayName')) && !objects.containsKey(this._dywaDisplayName) || this.dywa_id == 0) {
+		jsonObj["dywaDisplayName"] = this._dywaDisplayName;
+		}
+		return jsonObj;
+	}
+	static fromJSON(core.String json) {
+		return fromJSOG(cache:new core.Map<core.String,core.dynamic>(),jsog:jsonDecode(json));
+	}
+		
+	static GameState fromJSOG({core.Map<core.String,core.dynamic> cache, jsog}) {
+		if(jsog.containsKey('@ref')) {
+			assert (cache.containsKey(jsog['@ref']));
+			return cache[jsog['@ref']];
+		}
+		if(jsog['dywaRuntimeType'] == 'de.ls5.dywa.generated.rest.types.GameState') {
+			return new GameState(cache:cache,jsog:jsog);
+		}
+		return new GameState(cache:cache,jsog:jsog);
 	}
 	
 	void set dywaDisplayName (core.String value)

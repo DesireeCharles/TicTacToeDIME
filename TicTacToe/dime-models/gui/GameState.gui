@@ -1,0 +1,139 @@
+GUI _0WZ_gH0pEe2-urIT6LmdwA {
+  fullWidth false
+  disableAutoLayout false
+  additionalJavaScript [  ]
+  additionalStylesheets [  ]
+  title "GameState"
+  DataContext _0WcbwX0pEe2-urIT6LmdwA at 10,10 size 180,115 {
+  	dfViewWorkaround true
+  	ComplexVariable _1WOdwX0pEe2-urIT6LmdwA at 10,60 size 160,25 {
+  		expanded false
+  		isLive false
+  		libraryComponentUID "_rGQfQX0oEe2-urIT6LmdwA"
+  		isInput true
+  		name "gameState"
+  		dfViewWorkaround true
+  		isList false
+  		-IS-> _3TMgwX0pEe2-urIT6LmdwA  decorate "" at (0,0) decorate "Text" at (0,0) {
+  			id _9L71wX0pEe2-urIT6LmdwA
+  			exactMatch false
+  			negate false
+  			matchingType "_tPcZUX0oEe2-urIT6LmdwA"
+  		}
+  		
+  		-IS-> _3hT1QX0pEe2-urIT6LmdwA  decorate "" at (0,0) decorate "Text" at (0,0) {
+  			id _9dEpEX0pEe2-urIT6LmdwA
+  			exactMatch false
+  			negate false
+  			matchingType "_tjL0sX0oEe2-urIT6LmdwA"
+  		}
+  		
+  		-IS-> _3zKaQX0pEe2-urIT6LmdwA  decorate "" at (0,0) decorate "Text" at (0,0) {
+  			id _9tQaIX0pEe2-urIT6LmdwA
+  			exactMatch false
+  			negate false
+  			matchingType "_tzBAcX0oEe2-urIT6LmdwA"
+  		}
+  	}
+  }
+  
+  Template _0Wdp4X0pEe2-urIT6LmdwA at 240,10 size 220,260 {
+  	blockName ""
+  	disableAutoLayout false
+  	generalStyle GeneralStyling _0We4AH0pEe2-urIT6LmdwA {
+  			tallness Fitting
+  			marginBottom None
+  			attributes [  ]
+  			marginTop None
+  		}
+  	Text _3TMgwX0pEe2-urIT6LmdwA at 10,30 size 200,60 {
+  		content [ StaticContent _3TWRxX0pEe2-urIT6LmdwA {
+  				renderMarkdown false
+  				maxChars 0
+  				html false
+  				rawContent "Win!!\n"
+  				styling TextStyling _3TWRxn0pEe2-urIT6LmdwA {
+  						small false
+  						highlight false
+  						deleted false
+  						underline false
+  						bold false
+  						alignment Left
+  						italic false
+  						color Default
+  					}
+  			} ]
+  		generalStyle GeneralStyling _3TWRxH0pEe2-urIT6LmdwA {
+  				tallness Fitting
+  				marginBottom None
+  				attributes [  ]
+  				marginTop None
+  			}
+  		MoveUp _3TWRwX0pEe2-urIT6LmdwA at 2,2 size 14,7 {
+  		}
+  		
+  		MoveDown _3TWRw30pEe2-urIT6LmdwA at 2,10 size 14,7 {
+  		}
+  	}
+  	
+  	Text _3hT1QX0pEe2-urIT6LmdwA at 10,100 size 200,60 {
+  		content [ StaticContent _3hT1R30pEe2-urIT6LmdwA {
+  				renderMarkdown false
+  				maxChars 0
+  				html false
+  				rawContent "Tie!!\n"
+  				styling TextStyling _3hT1SH0pEe2-urIT6LmdwA {
+  						small false
+  						highlight false
+  						deleted false
+  						underline false
+  						bold false
+  						alignment Left
+  						italic false
+  						color Default
+  					}
+  			} ]
+  		generalStyle GeneralStyling _3hT1Rn0pEe2-urIT6LmdwA {
+  				tallness Fitting
+  				marginBottom None
+  				attributes [  ]
+  				marginTop None
+  			}
+  		MoveUp _3hT1Q30pEe2-urIT6LmdwA at 2,2 size 14,7 {
+  		}
+  		
+  		MoveDown _3hT1RX0pEe2-urIT6LmdwA at 2,10 size 14,7 {
+  		}
+  	}
+  	
+  	Text _3zKaQX0pEe2-urIT6LmdwA at 10,170 size 200,60 {
+  		content [ StaticContent _3zKaR30pEe2-urIT6LmdwA {
+  				renderMarkdown false
+  				maxChars 0
+  				html false
+  				rawContent ""
+  				styling TextStyling _3zKaSH0pEe2-urIT6LmdwA {
+  						small false
+  						highlight false
+  						deleted false
+  						underline false
+  						bold false
+  						alignment Left
+  						italic false
+  						color Default
+  					}
+  			} ]
+  		generalStyle GeneralStyling _3zKaRn0pEe2-urIT6LmdwA {
+  				tallness Fitting
+  				marginBottom None
+  				attributes [  ]
+  				marginTop None
+  			}
+  		MoveUp _3zKaQ30pEe2-urIT6LmdwA at 2,2 size 14,7 {
+  		}
+  		
+  		MoveDown _3zKaRX0pEe2-urIT6LmdwA at 2,10 size 14,7 {
+  		}
+  	}
+  }
+}

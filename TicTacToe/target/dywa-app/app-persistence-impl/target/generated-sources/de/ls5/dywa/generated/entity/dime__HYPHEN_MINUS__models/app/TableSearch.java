@@ -98,7 +98,7 @@ public class TableSearch implements Table {
 
 	@java.lang.Override
 	public java.util.List<de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TableRow> gettableRow_TableRow() {
-		return (java.util.List<de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TableRow>) this.listAttributeMap.get(dywaIdToJpqlAttr.get(15L));
+		return (java.util.List<de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TableRow>) this.listAttributeMap.get(dywaIdToJpqlAttr.get(16L));
 	}
 	public void settableRow_TableRow
 	(java.util.List<de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TableRow> object) {
@@ -108,11 +108,11 @@ public class TableSearch implements Table {
 							throw new java.lang.RuntimeException("Wrong type");
 				}
 				}
-			this.listAttributeMap.put(dywaIdToJpqlAttr.get(15L), object);
+			this.listAttributeMap.put(dywaIdToJpqlAttr.get(16L), object);
 	}
 	@java.lang.Override
 	public de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TurnState getturnState() {
-		return de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TurnState.forId(((de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TurnStateEntity) this.attributeMap.get(dywaIdToJpqlAttr.get(16L))).getDywaId());
+		return de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TurnState.forId(((de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TurnStateEntity) this.attributeMap.get(dywaIdToJpqlAttr.get(17L))).getDywaId());
 	}
 	public void setturnState
 	(de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TurnState object) {
@@ -120,7 +120,43 @@ public class TableSearch implements Table {
 				if (! (object instanceof de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TurnState)) {
 							throw new java.lang.RuntimeException("Wrong type");
 				}
-			this.attributeMap.put(dywaIdToJpqlAttr.get(16L), object != null ? object.getEntityAs(TurnStateEntity.class)/*1*/ : null);
+			this.attributeMap.put(dywaIdToJpqlAttr.get(17L), object != null ? object.getEntityAs(TurnStateEntity.class)/*1*/ : null);
+	}
+	@java.lang.Override
+	public de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.GameState getgameState() {
+		return de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.GameState.forId(((de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.GameStateEntity) this.attributeMap.get(dywaIdToJpqlAttr.get(18L))).getDywaId());
+	}
+	public void setgameState
+	(de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.GameState object) {
+			
+				if (! (object instanceof de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.GameState)) {
+							throw new java.lang.RuntimeException("Wrong type");
+				}
+			this.attributeMap.put(dywaIdToJpqlAttr.get(18L), object != null ? object.getEntityAs(GameStateEntity.class)/*1*/ : null);
+	}
+	@java.lang.Override
+	public java.lang.Long getmoveCounter() {
+		return (java.lang.Long) this.attributeMap.get(dywaIdToJpqlAttr.get(19L));
+	}
+	public void setmoveCounter
+	(java.lang.Long object) {
+			
+				if (! (object instanceof java.lang.Long)) {
+							throw new java.lang.RuntimeException("Wrong type");
+				}
+			this.attributeMap.put(dywaIdToJpqlAttr.get(19L), object);
+	}
+	@java.lang.Override
+	public java.lang.Boolean getisWin() {
+		return (java.lang.Boolean) this.attributeMap.get(dywaIdToJpqlAttr.get(20L));
+	}
+	public void setisWin
+	(java.lang.Boolean object) {
+			
+				if (! (object instanceof java.lang.Boolean)) {
+							throw new java.lang.RuntimeException("Wrong type");
+				}
+			this.attributeMap.put(dywaIdToJpqlAttr.get(20L), object);
 	}
 
 	// EXTENSION ATTRIBUTES

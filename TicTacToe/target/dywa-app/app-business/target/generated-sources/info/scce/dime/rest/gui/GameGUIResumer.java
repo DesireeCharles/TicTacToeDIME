@@ -18,6 +18,29 @@ public class GameGUIResumer extends info.scce.dime.process.GUIResumer {
 	private de.ls5.dywa.generated.controller.dime__HYPHEN_MINUS__models.app.TableEntryController TableEntryController;
 
 	@javax.ws.rs.POST
+	@javax.ws.rs.Path("Back/branch/public")
+	@javax.ws.rs.Produces(javax.ws.rs.core.MediaType.APPLICATION_JSON)
+	@javax.ws.rs.Consumes(javax.ws.rs.core.MediaType.APPLICATION_JSON)
+	public javax.ws.rs.core.Response continueBackBranch(info.scce.dime.rest.gui.model._XDpG0XbYEe2qntwH9Ijd8A_INTERNALBranch output) {
+		
+		checkAuthentication(output.getCallStack(),"_AzVAIWnXEe2xCJpb6ooUzA/Back");
+		
+		
+		final info.scce.dime.gui.dime__HYPHEN_MINUS__models.gui.game.Game_AzVAIWnXEe2xCJpb6ooUzAResult guiResult = 
+		new info.scce.dime.gui.dime__HYPHEN_MINUS__models.gui.game.Game_AzVAIWnXEe2xCJpb6ooUzAResult("Back");
+		if(!"_AzVAIWnXEe2xCJpb6ooUzA".equals(output.getCallStack().getCallFrames().get(output.getCallStack().getCallFrames().size()-1).getPointer().split(":")[2])){
+					output.getCallStack().getCallFrames().get(output.getCallStack().getCallFrames().size()-1).setPointer(output.getCallStack().getCallFrames().get(output.getCallStack().getCallFrames().size()-1).getMajorGUI());
+		}
+		if(!output.getCallStack().getCallFrames().isEmpty()) {
+		
+			if(output.getCallStack().getCallFrames().get(output.getCallStack().getCallFrames().size() - 1).getPointer() == null) {
+				return javax.ws.rs.core.Response.status(422).build();
+			}
+		}
+		final Object result = this.processResumer.resumeFromGUI(output.getCallStack(), guiResult);
+		return javax.ws.rs.core.Response.ok(result).build();
+	}
+	@javax.ws.rs.POST
 	@javax.ws.rs.Path("Restart/branch/public")
 	@javax.ws.rs.Produces(javax.ws.rs.core.MediaType.APPLICATION_JSON)
 	@javax.ws.rs.Consumes(javax.ws.rs.core.MediaType.APPLICATION_JSON)
@@ -63,7 +86,7 @@ public class GameGUIResumer extends info.scce.dime.process.GUIResumer {
 					final long id;
 					id = TableEntryREST.create(dywaName);
 					output.getTableEntry().setDywaId(id);
-					//update_GameTableEntrySelectivex1x1x1x1x1_AzVAIWnXEe2xCJpb6ooUzA
+					//update_GameTableEntrySelectivex1x2x2x2x2_AzVAIWnXEe2xCJpb6ooUzA
 					TableEntryREST.update_BadgeTableEntrySelectivex1_ZlXgoXKOEe2rzNRUfilttw((de.ls5.dywa.generated.rest.types.TableEntry)output.getTableEntry());
 					tableEntry = (de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TableEntry
 					) TableEntryController.read(output.getTableEntry().getDywaId());
@@ -84,7 +107,7 @@ public class GameGUIResumer extends info.scce.dime.process.GUIResumer {
 					}
 					 else { throw new java.lang.IllegalArgumentException("Unexpected type " + output.getTableEntry().getClass()); }
 		
-					//update_GameTableEntrySelectivex1x1x1x1x1_AzVAIWnXEe2xCJpb6ooUzA
+					//update_GameTableEntrySelectivex1x2x2x2x2_AzVAIWnXEe2xCJpb6ooUzA
 					TableEntryREST.update_BadgeTableEntrySelectivex1_ZlXgoXKOEe2rzNRUfilttw((de.ls5.dywa.generated.rest.types.TableEntry)output.getTableEntry(), transientObject);
 					tableEntry = (de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TableEntry
 					) transientObject;
@@ -93,7 +116,7 @@ public class GameGUIResumer extends info.scce.dime.process.GUIResumer {
 			// regular object
 				else {
 					if(output.getTableEntry() instanceof de.ls5.dywa.generated.rest.types.TableEntry) {
-						//update_GameTableEntrySelectivex1x1x1x1x1_AzVAIWnXEe2xCJpb6ooUzA
+						//update_GameTableEntrySelectivex1x2x2x2x2_AzVAIWnXEe2xCJpb6ooUzA
 						TableEntryREST.update_BadgeTableEntrySelectivex1_ZlXgoXKOEe2rzNRUfilttw((de.ls5.dywa.generated.rest.types.TableEntry)output.getTableEntry());
 						tableEntry = (de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TableEntry
 						) TableEntryController.read(output.getTableEntry().getDywaId());
@@ -109,29 +132,6 @@ public class GameGUIResumer extends info.scce.dime.process.GUIResumer {
 		
 		final info.scce.dime.gui.dime__HYPHEN_MINUS__models.gui.game.Game_AzVAIWnXEe2xCJpb6ooUzAResult guiResult = 
 		new info.scce.dime.gui.dime__HYPHEN_MINUS__models.gui.game.Game_AzVAIWnXEe2xCJpb6ooUzAResult("empty", guiReturn);
-		if(!"_AzVAIWnXEe2xCJpb6ooUzA".equals(output.getCallStack().getCallFrames().get(output.getCallStack().getCallFrames().size()-1).getPointer().split(":")[2])){
-					output.getCallStack().getCallFrames().get(output.getCallStack().getCallFrames().size()-1).setPointer(output.getCallStack().getCallFrames().get(output.getCallStack().getCallFrames().size()-1).getMajorGUI());
-		}
-		if(!output.getCallStack().getCallFrames().isEmpty()) {
-		
-			if(output.getCallStack().getCallFrames().get(output.getCallStack().getCallFrames().size() - 1).getPointer() == null) {
-				return javax.ws.rs.core.Response.status(422).build();
-			}
-		}
-		final Object result = this.processResumer.resumeFromGUI(output.getCallStack(), guiResult);
-		return javax.ws.rs.core.Response.ok(result).build();
-	}
-	@javax.ws.rs.POST
-	@javax.ws.rs.Path("Back/branch/public")
-	@javax.ws.rs.Produces(javax.ws.rs.core.MediaType.APPLICATION_JSON)
-	@javax.ws.rs.Consumes(javax.ws.rs.core.MediaType.APPLICATION_JSON)
-	public javax.ws.rs.core.Response continueBackBranch(info.scce.dime.rest.gui.model._XDpG0XbYEe2qntwH9Ijd8A_INTERNALBranch output) {
-		
-		checkAuthentication(output.getCallStack(),"_AzVAIWnXEe2xCJpb6ooUzA/Back");
-		
-		
-		final info.scce.dime.gui.dime__HYPHEN_MINUS__models.gui.game.Game_AzVAIWnXEe2xCJpb6ooUzAResult guiResult = 
-		new info.scce.dime.gui.dime__HYPHEN_MINUS__models.gui.game.Game_AzVAIWnXEe2xCJpb6ooUzAResult("Back");
 		if(!"_AzVAIWnXEe2xCJpb6ooUzA".equals(output.getCallStack().getCallFrames().get(output.getCallStack().getCallFrames().size()-1).getPointer().split(":")[2])){
 					output.getCallStack().getCallFrames().get(output.getCallStack().getCallFrames().size()-1).setPointer(output.getCallStack().getCallFrames().get(output.getCallStack().getCallFrames().size()-1).getMajorGUI());
 		}

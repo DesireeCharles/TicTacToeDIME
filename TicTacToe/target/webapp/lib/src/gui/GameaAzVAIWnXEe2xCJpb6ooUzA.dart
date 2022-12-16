@@ -42,6 +42,7 @@ import 'package:app/src/panel/Panel.dart' as panel;
 //GUI plug in component imports
 //GUI SIB imports
 import 'package:app/src/gui/BadgeaZlXgoXKOEe2rzNRUfilttw.dart';
+import 'package:app/src/gui/GameStatea0WZ_gH0pEe2_45_urIT6LmdwA.dart';
 //Embedded process SIB imports
 
 import 'dart:js' as js;
@@ -57,6 +58,7 @@ import 'package:app/src/core/AbstractRoutes.dart';
   directives: const [
   coreDirectives,panel.Panel,modal.Modal,DimeCustomeAttributes,formDirectives,FileSelect,routerDirectives,MaxLength,login.Login,SafeInnerHtmlDirective,
   BadgeaZlXgoXKOEe2rzNRUfilttw,
+  GameStatea0WZ_gH0pEe2_45_urIT6LmdwA,
   ],
   templateUrl: 'GameaAzVAIWnXEe2xCJpb6ooUzA.html'
 )
@@ -83,21 +85,24 @@ class GameaAzVAIWnXEe2xCJpb6ooUzA extends dime.DIMEComponent implements OnInit, 
   	// table refresh flags
   	/// GUI badge
   	@ViewChildren(BadgeaZlXgoXKOEe2rzNRUfilttw)
-  	List<BadgeaZlXgoXKOEe2rzNRUfilttw> componentSIBaBb4ngXSkEe2vmrlDP84GiQ;
+  	List<BadgeaZlXgoXKOEe2rzNRUfilttw> componentSIBayKmZAX1aEe2BL67A2MFPXw;
+  	/// GUI GameState
+  	@ViewChildren(GameStatea0WZ_gH0pEe2_45_urIT6LmdwA)
+  	List<GameStatea0WZ_gH0pEe2_45_urIT6LmdwA> componentSIBajbVksX1ZEe2BL67A2MFPXw;
   	
   	
   	
   	
   	
-  	// branch empty as info.scce.dime.gui.editor.graphiti.api.CButton@4ae2cb7f (id: __1OZgXPkEe2eGKutfpiSKw) in info.scce.dime.gui.editor.graphiti.api.CGUI@84e25de0 (id: _ZlXgoXKOEe2rzNRUfilttw)
-  	@Output('actionemptyevent') Stream<Map<String,dynamic>> get evt_actionemptyevent => actionemptyevent.stream;
-  	StreamController<Map<String,dynamic>> actionemptyevent = new StreamController();
   	// branch Back as info.scce.dime.gui.editor.graphiti.api.CButton@c3700c36 (id: _i3H0kXbbEe2qntwH9Ijd8A) in info.scce.dime.gui.editor.graphiti.api.CGUI@f524d492 (id: _AzVAIWnXEe2xCJpb6ooUzA)
   	@Output('actionbackevent') Stream<Map<String,dynamic>> get evt_actionbackevent => actionbackevent.stream;
   	StreamController<Map<String,dynamic>> actionbackevent = new StreamController();
   	// branch Restart as info.scce.dime.gui.editor.graphiti.api.CButton@8526cd71 (id: _mFQkgXbbEe2qntwH9Ijd8A) in info.scce.dime.gui.editor.graphiti.api.CGUI@f524d492 (id: _AzVAIWnXEe2xCJpb6ooUzA)
   	@Output('actionrestartevent') Stream<Map<String,dynamic>> get evt_actionrestartevent => actionrestartevent.stream;
   	StreamController<Map<String,dynamic>> actionrestartevent = new StreamController();
+  	// branch empty as info.scce.dime.gui.editor.graphiti.api.CButton@4ae2cb7f (id: __1OZgXPkEe2eGKutfpiSKw) in info.scce.dime.gui.editor.graphiti.api.CGUI@84e25de0 (id: _ZlXgoXKOEe2rzNRUfilttw)
+  	@Output('actionemptyevent') Stream<Map<String,dynamic>> get evt_actionemptyevent => actionemptyevent.stream;
+  	StreamController<Map<String,dynamic>> actionemptyevent = new StreamController();
   	
   	@ViewChildren(modal.Modal)
   	List<modal.Modal> modals;
@@ -125,10 +130,6 @@ class GameaAzVAIWnXEe2xCJpb6ooUzA extends dime.DIMEComponent implements OnInit, 
 						
 		
 			  	
-		// branch empty declaration
-		if(this.actionemptyevent!=null) {
-			  			this.actionemptyevent = new StreamController<Map<String,dynamic>>();  				
-		}
 		// branch Back declaration
 		if(this.actionbackevent!=null) {
 			  			this.actionbackevent = new StreamController<Map<String,dynamic>>();  				
@@ -137,10 +138,18 @@ class GameaAzVAIWnXEe2xCJpb6ooUzA extends dime.DIMEComponent implements OnInit, 
 		if(this.actionrestartevent!=null) {
 			  			this.actionrestartevent = new StreamController<Map<String,dynamic>>();  				
 		}
+		// branch empty declaration
+		if(this.actionemptyevent!=null) {
+			  			this.actionemptyevent = new StreamController<Map<String,dynamic>>();  				
+		}
 			
 		/// GUI badge
-		if(componentSIBaBb4ngXSkEe2vmrlDP84GiQ!=null) {
-			componentSIBaBb4ngXSkEe2vmrlDP84GiQ.forEach((n)=>n.restartComponent());
+		if(componentSIBayKmZAX1aEe2BL67A2MFPXw!=null) {
+			componentSIBayKmZAX1aEe2BL67A2MFPXw.forEach((n)=>n.restartComponent());
+		}
+		/// GUI GameState
+		if(componentSIBajbVksX1ZEe2BL67A2MFPXw!=null) {
+			componentSIBajbVksX1ZEe2BL67A2MFPXw.forEach((n)=>n.restartComponent());
 		}
 		updateImageHash();
 	}
@@ -149,7 +158,8 @@ class GameaAzVAIWnXEe2xCJpb6ooUzA extends dime.DIMEComponent implements OnInit, 
 		modals.forEach((m)=>m.close());
 		if(updateHidden) {
 		}
-		componentSIBaBb4ngXSkEe2vmrlDP84GiQ.forEach((n)=>n.updateWithoutInputs());
+		componentSIBayKmZAX1aEe2BL67A2MFPXw.forEach((n)=>n.updateWithoutInputs());
+		componentSIBajbVksX1ZEe2BL67A2MFPXw.forEach((n)=>n.updateWithoutInputs());
 		updateImageHash();
 	}
 	
@@ -241,6 +251,7 @@ class GameaAzVAIWnXEe2xCJpb6ooUzA extends dime.DIMEComponent implements OnInit, 
   		
   		
   		//GUI SIB badge
+  		//GUI SIB GameState
   		
   
 	/// returns the surrounding container class for major GUI models

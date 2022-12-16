@@ -26,26 +26,32 @@ public class EntryStateEntity implements EntryStateInterface {
 	/* DYWA METADATA END */
 	
 	/* MAIN ATTRIBUTES START */
-	@de.ls5.dywa.annotations.IdRef(id = 20L)
+	@de.ls5.dywa.annotations.IdRef(id = 24L)
 	@org.hibernate.annotations.Cascade(org.hibernate.annotations.CascadeType.PERSIST)
 	@javax.persistence.JoinColumn(name = "a_X__oqhfyxkpee2rznr")
 	@javax.persistence.ManyToOne
 	private de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryStateEntity X;
 	
-	@de.ls5.dywa.annotations.IdRef(id = 21L)
+	@de.ls5.dywa.annotations.IdRef(id = 25L)
 	@org.hibernate.annotations.Cascade(org.hibernate.annotations.CascadeType.PERSIST)
 	@javax.persistence.JoinColumn(name = "a_O__o_tsqxkpee2rznr")
 	@javax.persistence.ManyToOne
 	private de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryStateEntity O;
 	
-	@de.ls5.dywa.annotations.IdRef(id = 22L)
+	@de.ls5.dywa.annotations.IdRef(id = 26L)
 	@org.hibernate.annotations.Cascade(org.hibernate.annotations.CascadeType.PERSIST)
 	@javax.persistence.JoinColumn(name = "a_Empty__ppgbwxkpee2rznr")
 	@javax.persistence.ManyToOne
 	private de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryStateEntity empty;
 	
-	@de.ls5.dywa.annotations.IdRef(id = 23L)
-	@javax.persistence.Column(name = "a_DywaDisplayName__yfq8axbzee2qntw", columnDefinition="varchar")
+	@de.ls5.dywa.annotations.IdRef(id = 27L)
+	@org.hibernate.annotations.Cascade(org.hibernate.annotations.CascadeType.PERSIST)
+	@javax.persistence.JoinColumn(name = "a_Empty_Dis__wskcgx1xee2bl67")
+	@javax.persistence.ManyToOne
+	private de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryStateEntity empty_dis;
+	
+	@de.ls5.dywa.annotations.IdRef(id = 28L)
+	@javax.persistence.Column(name = "a_DywaDisplayName__25pacx1cee2bl67", columnDefinition="varchar")
 	private java.lang.String dywaDisplayName;
 	
 	/* MAIN ATTRIBUTES END */
@@ -163,6 +169,28 @@ public class EntryStateEntity implements EntryStateInterface {
 	
 	protected de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryStateEntity getempty_() {
 		return this.empty;
+	}
+	
+	
+	@java.lang.Override
+	public de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryState getempty_dis() {
+		if (this.empty_dis != null) {
+			return de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryState.valueOf(this.empty_dis.getDywaName());
+		}
+		return null;
+	}
+	
+	@java.lang.Override
+	public void setempty_dis(de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryState object) {
+		this.empty_dis = object != null ? object.getEntityAs(EntryStateEntity.class) : null;
+	}
+	
+	protected void setempty_dis_(de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryStateEntity object) {
+		this.empty_dis = object;
+	}
+	
+	protected de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryStateEntity getempty_dis_() {
+		return this.empty_dis;
 	}
 	
 	

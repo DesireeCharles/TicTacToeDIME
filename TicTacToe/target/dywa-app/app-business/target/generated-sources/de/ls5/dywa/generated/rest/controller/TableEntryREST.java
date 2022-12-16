@@ -71,12 +71,12 @@ public class TableEntryREST {
 						 newValue;
 
 						if (existing.getDywaId() > 0) {
-							// read_BadgeEntryStateSelectivex1x2x2_ZlXgoXKOEe2rzNRUfilttw
-							newValue = this.EntryStateREST.read_BadgeEntryStateSelectivex1x2x2_ZlXgoXKOEe2rzNRUfilttw(existing.getDywaId());
+							// read_BadgeEntryStateSelectivex1x1x1_ZlXgoXKOEe2rzNRUfilttw
+							newValue = this.EntryStateREST.read_BadgeEntryStateSelectivex1x1x1_ZlXgoXKOEe2rzNRUfilttw(existing.getDywaId());
 						}
 						else {
-							// readTransient_BadgeEntryStateSelectivex1x2x2_ZlXgoXKOEe2rzNRUfilttw
-							newValue = this.EntryStateREST.readTransient_BadgeEntryStateSelectivex1x2x2_ZlXgoXKOEe2rzNRUfilttw(existing);
+							// readTransient_BadgeEntryStateSelectivex1x1x1_ZlXgoXKOEe2rzNRUfilttw
+							newValue = this.EntryStateREST.readTransient_BadgeEntryStateSelectivex1x1x1_ZlXgoXKOEe2rzNRUfilttw(existing);
 						}
 
 						effectiveResult.setentryState(newValue);
@@ -151,8 +151,8 @@ public class TableEntryREST {
 				final de.ls5.dywa.generated.rest.types.EntryState
 				 item = effectiveValue.getentryState();
 			
-				//update_BadgeEntryStateSelectivex1x2x2_ZlXgoXKOEe2rzNRUfilttw
-				this.EntryStateREST.update_BadgeEntryStateSelectivex1x2x2_ZlXgoXKOEe2rzNRUfilttw(item);
+				//update_BadgeEntryStateSelectivex1x1x1_ZlXgoXKOEe2rzNRUfilttw
+				this.EntryStateREST.update_BadgeEntryStateSelectivex1x1x1_ZlXgoXKOEe2rzNRUfilttw(item);
 				
 				entity = this.EntryStateController.read(item.getDywaId());
 			

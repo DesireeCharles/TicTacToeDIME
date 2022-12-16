@@ -7,12 +7,18 @@ import 'package:app/src/core/dime_process_service.dart';
 import 'package:app/src/data/Data.dart' as Data;
 import 'package:app/src/models/FileReference.dart';
 
-class PublicHome_LmrS0Ej8EeaK4_MRcoLfnwInput extends UserInteractionResponse {
+class GameState_0WZ_gH0pEe2_45_urIT6LmdwAInput extends UserInteractionResponse {
 	
+	Data.GameState gameState = null;
 	
-	PublicHome_LmrS0Ej8EeaK4_MRcoLfnwInput(Map<String,dynamic> map, Map<String,dynamic> cache)
+	GameState_0WZ_gH0pEe2_45_urIT6LmdwAInput(Map<String,dynamic> map, Map<String,dynamic> cache)
 	{
 		 Map<String,dynamic> inputPorts = map['inputs'];
+		if(inputPorts.containsKey('gameState')) {
+			if(inputPorts['gameState']!=null){
+				gameState = Data.GameState.fromJSOG(jsog:inputPorts['gameState'],cache:cache);
+			}
+		}
 	}
 	
 	@override
@@ -20,7 +26,7 @@ class PublicHome_LmrS0Ej8EeaK4_MRcoLfnwInput extends UserInteractionResponse {
 	    return false;
 	}
 	
-	bool inpusChanged(PublicHome_LmrS0Ej8EeaK4_MRcoLfnwInput input) {
-		return false;
+	bool inpusChanged(GameState_0WZ_gH0pEe2_45_urIT6LmdwAInput input) {
+		return gameState != input.gameState;
 	}
 }

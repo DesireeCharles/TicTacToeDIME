@@ -30,7 +30,7 @@ Process _LhjwAXTxEe29EM7zgtpvCg {
   	}
   }
   
-  EndSIB _LhthA3TxEe29EM7zgtpvCg at 340,1090 size 100,65 {
+  EndSIB _LhthA3TxEe29EM7zgtpvCg at 500,1192 size 100,65 {
   	branchName "success"
   }
   
@@ -221,21 +221,36 @@ Process _LhjwAXTxEe29EM7zgtpvCg {
   	}
   }
   
-  DataContext _urQEUXT2Ee29EM7zgtpvCg at -30,127 size 180,205 {
+  DataContext _urQEUXT2Ee29EM7zgtpvCg at -30,127 size 180,248 {
   	dfViewWorkaround true
-  	ComplexVariable _xWdtYXT2Ee29EM7zgtpvCg at 10,53 size 160,51 {
-  		expanded false
+  	ComplexVariable _xWdtYXT2Ee29EM7zgtpvCg at 10,33 size 160,132 {
+  		expanded true
   		libraryComponentUID "_JgYkUW8QEe2x_c6ogIlfZw"
   		name "table"
   		dfViewWorkaround true
   		isList false
-  		ComplexAttribute _zZ5vU3T3Ee29EM7zgtpvCg at 10,23 size 140,25 {
+  		ComplexAttribute _zZ5vU3T3Ee29EM7zgtpvCg at 10,147 size 140,25 {
   			libraryComponentUID "_09OegXSPEe2vmrlDP84GiQ"
   			dfViewWorkaround true
   			-ComplexRead-> _Raui0XTxEe29EM7zgtpvCg  decorate "" at (0,0) {
   				id _0YuIAXT3Ee29EM7zgtpvCg
   				dfViewWorkaround true
   			}
+  		}
+  		
+  		ComplexAttribute _2FHZgX0oEe2-urIT6LmdwA at 10,77 size 140,25 {
+  			libraryComponentUID "_QyVvAW8QEe2x_c6ogIlfZw"
+  			dfViewWorkaround true
+  		}
+  		
+  		ComplexAttribute _2FHZg30oEe2-urIT6LmdwA at 10,23 size 140,25 {
+  			libraryComponentUID "_xyoQoX0oEe2-urIT6LmdwA"
+  			dfViewWorkaround true
+  		}
+  		
+  		PrimitiveAttribute _2FWDAH0oEe2-urIT6LmdwA at 10,50 size 140,25 {
+  			libraryComponentUID "_ypp_QX0oEe2-urIT6LmdwA"
+  			dfViewWorkaround true
   		}
   		-ComplexRead-> _mNuo8XT3Ee29EM7zgtpvCg via (-30,205) (-30,936) decorate "" at (0,0) {
   			id _vkN3MXT3Ee29EM7zgtpvCg
@@ -246,9 +261,14 @@ Process _LhjwAXTxEe29EM7zgtpvCg {
   			id _v8yvQXT3Ee29EM7zgtpvCg
   			dfViewWorkaround true
   		}
+  		
+  		-ComplexRead-> _Yq4LcX1cEe2BL67A2MFPXw via (-30,226) (-30,1126) decorate "" at (0,0) {
+  			id _nZIIkX1cEe2BL67A2MFPXw
+  			dfViewWorkaround true
+  		}
   	}
   	
-  	ComplexVariable _1Sv8wXT2Ee29EM7zgtpvCg at 10,150 size 160,25 {
+  	ComplexVariable _1Sv8wXT2Ee29EM7zgtpvCg at 10,193 size 160,25 {
   		expanded false
   		libraryComponentUID "_KEKm0W8QEe2x_c6ogIlfZw"
   		name "tableentry"
@@ -318,8 +338,8 @@ Process _LhjwAXTxEe29EM7zgtpvCg {
   
   Branch _mPaD8XT3Ee29EM7zgtpvCg at 190,978 size 120,25 {
   	name "success"
-  	-ControlFlow-> _LhthA3TxEe29EM7zgtpvCg via (180,990) (180,1122) decorate "" at (0,0) {
-  		id _ss6S4XT3Ee29EM7zgtpvCg
+  	-ControlFlow-> _YqfJ4X1cEe2BL67A2MFPXw  decorate "" at (0,0) {
+  		id _ZBDPwX1cEe2BL67A2MFPXw
   		concurrent true
   	}
   }
@@ -347,8 +367,40 @@ Process _LhjwAXTxEe29EM7zgtpvCg {
   
   Branch _mnraAXT3Ee29EM7zgtpvCg at 330,978 size 120,25 {
   	name "success"
+  	-ControlFlow-> _YqfJ4X1cEe2BL67A2MFPXw  decorate "" at (0,0) {
+  		id _ZWNAYX1cEe2BL67A2MFPXw
+  		concurrent true
+  	}
+  }
+  
+  ProcessSIB _YqfJ4X1cEe2BL67A2MFPXw at 260,1050 size 120,90 {
+  	libraryComponentUID "_9XpDwX1bEe2BL67A2MFPXw"
+  	label "checkDraw"
+  	ignoredBranch [  ]
+  	ComplexInputPort _Yq4LcX1cEe2BL67A2MFPXw at 5,67 size 110,18 {
+  		libraryComponentUID "_JgYkUW8QEe2x_c6ogIlfZw"
+  		isList false
+  		name "table"
+  	}
+  	-BranchConnector-> _YrVecX1cEe2BL67A2MFPXw   {
+  		id _YrVec31cEe2BL67A2MFPXw
+  		concurrent true
+  	}
+  }
+  
+  Branch _YrVecX1cEe2BL67A2MFPXw at 260,1200 size 120,50 {
+  	name "success"
+  	ComplexOutputPort _YrkH8X1cEe2BL67A2MFPXw at 5,27 size 110,18 {
+  		libraryComponentUID "_rGQfQX0oEe2-urIT6LmdwA"
+  		isList false
+  		name "state"
+  		-ComplexUpdate-> _2FHZg30oEe2-urIT6LmdwA via (-20,1236) (-20,195) decorate "" at (0,0) {
+  			id _sceGoX1cEe2BL67A2MFPXw
+  			dfViewWorkaround true
+  		}
+  	}
   	-ControlFlow-> _LhthA3TxEe29EM7zgtpvCg  decorate "" at (0,0) {
-  		id _s-kqoXT3Ee29EM7zgtpvCg
+  		id _daWyUX1cEe2BL67A2MFPXw
   		concurrent true
   	}
   }

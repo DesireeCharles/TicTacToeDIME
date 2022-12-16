@@ -26,7 +26,7 @@ public class TableImpl implements Table {
 
 	
 	/* MAIN ATTRIBUTES START */
-	@de.ls5.dywa.annotations.IdRef(id = 15L)
+	@de.ls5.dywa.annotations.IdRef(id = 16L)
 	@org.hibernate.annotations.Cascade(org.hibernate.annotations.CascadeType.PERSIST)
 	@javax.persistence.JoinTable(name="r_Table_TableRow__qyvvaw8qee2x_c6", joinColumns = { @javax.persistence.JoinColumn(name = "r1_Table_id") }, inverseJoinColumns = { @javax.persistence.JoinColumn(name = "r2_TableRow_id") })
 	@org.hibernate.annotations.ManyToAny(metaColumn=@javax.persistence.Column(name="m_TableRow_Type__qyvvaw8qee2x_c6"))
@@ -38,11 +38,25 @@ public class TableImpl implements Table {
 	)
 	private java.util.List<de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TableRow> tableRow  = new java.util.ArrayList<>();
 	
-	@de.ls5.dywa.annotations.IdRef(id = 16L)
+	@de.ls5.dywa.annotations.IdRef(id = 17L)
 	@org.hibernate.annotations.Cascade(org.hibernate.annotations.CascadeType.PERSIST)
 	@javax.persistence.JoinColumn(name = "a_TurnState__09oegxspee2vmrl")
 	@javax.persistence.ManyToOne
 	private de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TurnStateEntity turnState;
+	
+	@de.ls5.dywa.annotations.IdRef(id = 18L)
+	@org.hibernate.annotations.Cascade(org.hibernate.annotations.CascadeType.PERSIST)
+	@javax.persistence.JoinColumn(name = "a_GameState__xyoqox0oee2_uri")
+	@javax.persistence.ManyToOne
+	private de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.GameStateEntity gameState;
+	
+	@de.ls5.dywa.annotations.IdRef(id = 19L)
+	@javax.persistence.Column(name = "a_MoveCounter__ypp_qx0oee2_uri", columnDefinition="bigint")
+	private java.lang.Long moveCounter;
+	
+	@de.ls5.dywa.annotations.IdRef(id = 20L)
+	@javax.persistence.Column(name = "a_IsWin__dzyeex1zee2bl67", columnDefinition="boolean")
+	private java.lang.Boolean isWin;
 	
 	/* MAIN ATTRIBUTES END */
 	
@@ -130,6 +144,50 @@ public class TableImpl implements Table {
 	
 	protected de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TurnStateEntity getturnState_() {
 		return this.turnState;
+	}
+	
+	
+	@java.lang.Override
+	public de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.GameState getgameState() {
+		if (this.gameState != null) {
+			return de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.GameState.valueOf(this.gameState.getDywaName());
+		}
+		return null;
+	}
+	
+	@java.lang.Override
+	public void setgameState(de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.GameState object) {
+		this.gameState = object != null ? object.getEntityAs(GameStateEntity.class) : null;
+	}
+	
+	protected void setgameState_(de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.GameStateEntity object) {
+		this.gameState = object;
+	}
+	
+	protected de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.GameStateEntity getgameState_() {
+		return this.gameState;
+	}
+	
+	
+	@java.lang.Override
+	public java.lang.Long getmoveCounter() {
+		return this.moveCounter;
+	}
+	
+	@java.lang.Override
+	public void setmoveCounter(java.lang.Long object) {
+		this.moveCounter = object;
+	}
+	
+	
+	@java.lang.Override
+	public java.lang.Boolean getisWin() {
+		return this.isWin;
+	}
+	
+	@java.lang.Override
+	public void setisWin(java.lang.Boolean object) {
+		this.isWin = object;
 	}
 	
 	
