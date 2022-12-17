@@ -4,9 +4,9 @@ GUI _AzVAIWnXEe2xCJpb6ooUzA {
   additionalJavaScript [  ]
   additionalStylesheets [  ]
   title "Game"
-  DataContext _AzdjAWnXEe2xCJpb6ooUzA at 10,90 size 180,618 {
+  DataContext _AzdjAWnXEe2xCJpb6ooUzA at 10,90 size 180,621 {
   	dfViewWorkaround true
-  	ComplexVariable _U4lEQW8TEe29MJ2ZfnuTaA at 10,30 size 160,51 {
+  	ComplexVariable _U4lEQW8TEe29MJ2ZfnuTaA at 10,30 size 160,25 {
   		expanded false
   		isLive false
   		libraryComponentUID "_JgYkUW8QEe2x_c6ogIlfZw"
@@ -14,13 +14,6 @@ GUI _AzVAIWnXEe2xCJpb6ooUzA {
   		name "table"
   		dfViewWorkaround true
   		isList false
-  		ComplexAttribute _KvuAU30pEe2-urIT6LmdwA at 10,23 size 140,25 {
-  			libraryComponentUID "_xyoQoX0oEe2-urIT6LmdwA"
-  			isLive false
-  			-ComplexRead-> _jb5lYX1ZEe2BL67A2MFPXw  decorate "" at (0,0) decorate "Text" at (0,0) {
-  				id _BI9E8X0qEe2-urIT6LmdwA
-  			}
-  		}
   		-ComplexAttributeConnector-> _JB9wsW8VEe29MJ2ZfnuTaA  decorate "Ellipse" at (0,0) {
   			id _JCA0AW8VEe29MJ2ZfnuTaA
   			associationName "tableRow"
@@ -28,6 +21,10 @@ GUI _AzVAIWnXEe2xCJpb6ooUzA {
   		
   		-ComplexRead-> _yLOEEX1aEe2BL67A2MFPXw  decorate "" at (0,0) decorate "Text" at (0,0) {
   			id _lg-bgX1ZEe2BL67A2MFPXw
+  		}
+  		
+  		-ComplexRead-> _x6OmAX3vEe2ONMPeQEJUSA  decorate "" at (0,0) decorate "Text" at (0,0) {
+  			id _vzVK8X3vEe2ONMPeQEJUSA
   		}
   	}
   	
@@ -90,19 +87,19 @@ GUI _AzVAIWnXEe2xCJpb6ooUzA {
   		name "tableEntry"
   		dfViewWorkaround true
   		isList true
-  		ComplexListAttribute _L1vf4W8VEe29MJ2ZfnuTaA at 10,23 size 140,25 {
+  		ComplexListAttribute _VeNSUX3kEe2ONMPeQEJUSA at 10,50 size 140,25 {
   			attributeName last
   			libraryComponentUID "_KEKm0W8QEe2x_c6ogIlfZw"
   			isLive false
   		}
   		
-  		ComplexListAttribute _L10_cW8VEe29MJ2ZfnuTaA at 10,50 size 140,25 {
+  		ComplexListAttribute _VeXDUX3kEe2ONMPeQEJUSA at 10,23 size 140,25 {
   			attributeName first
   			libraryComponentUID "_KEKm0W8QEe2x_c6ogIlfZw"
   			isLive false
   		}
   		
-  		PrimitiveListAttribute _L12NkW8VEe29MJ2ZfnuTaA at 10,77 size 140,25 {
+  		PrimitiveListAttribute _VehbYX3kEe2ONMPeQEJUSA at 10,77 size 140,25 {
   			attributeName size
   			primitiveType Integer
   			libraryComponentUID "_KEKm0W8QEe2x_c6ogIlfZw"
@@ -119,7 +116,7 @@ GUI _AzVAIWnXEe2xCJpb6ooUzA {
   		}
   	}
   	
-  	ComplexVariable _NKcpAW8VEe29MJ2ZfnuTaA at 10,510 size 160,78 {
+  	ComplexVariable _NKcpAW8VEe29MJ2ZfnuTaA at 10,510 size 151,81 {
   		expanded true
   		isLive false
   		libraryComponentUID "_KEKm0W8QEe2x_c6ogIlfZw"
@@ -127,13 +124,13 @@ GUI _AzVAIWnXEe2xCJpb6ooUzA {
   		name "current"
   		dfViewWorkaround true
   		isList false
-  		PrimitiveAttribute _8UfVonKPEe2rzNRUfilttw at 10,23 size 140,25 {
-  			libraryComponentUID "_Rwbu8W8QEe2x_c6ogIlfZw"
+  		ComplexAttribute _V5YLYX3kEe2ONMPeQEJUSA at 10,23 size 131,25 {
+  			libraryComponentUID "_suTD4XKPEe2rzNRUfilttw"
   			isLive false
   		}
   		
-  		ComplexAttribute _6cG64XKTEe2rzNRUfilttw at 10,50 size 140,25 {
-  			libraryComponentUID "_suTD4XKPEe2rzNRUfilttw"
+  		PrimitiveAttribute _V5YLY33kEe2ONMPeQEJUSA at 10,50 size 131,25 {
+  			libraryComponentUID "_Rwbu8W8QEe2x_c6ogIlfZw"
   			isLive false
   		}
   		-ComplexRead-> _yK5T8X1aEe2BL67A2MFPXw via (380,569) (380,236) decorate "" at (0,0) decorate "Text" at (0,0) {
@@ -142,7 +139,7 @@ GUI _AzVAIWnXEe2xCJpb6ooUzA {
   	}
   }
   
-  Template _AzhNYWnXEe2xCJpb6ooUzA at 240,10 size 500,876 {
+  Template _AzhNYWnXEe2xCJpb6ooUzA at 240,10 size 500,696 {
   	blockName ""
   	disableAutoLayout false
   	generalStyle GeneralStyling _AzoiIGnXEe2xCJpb6ooUzA {
@@ -182,7 +179,7 @@ GUI _AzVAIWnXEe2xCJpb6ooUzA {
   		}
   	}
   	
-  	Row __mftoXbcEe2qntwH9Ijd8A at 10,676 size 480,170 {
+  	Row __mftoXbcEe2qntwH9Ijd8A at 10,496 size 480,170 {
   		generalStyle GeneralStyling __mpeoHbcEe2qntwH9Ijd8A {
   				tallness Fitting
   				marginBottom None
@@ -298,70 +295,6 @@ GUI _AzVAIWnXEe2xCJpb6ooUzA {
   		}
   	}
   	
-  	Row _P9cpcX0pEe2-urIT6LmdwA at 10,496 size 250,170 {
-  		generalStyle GeneralStyling _P9macH0pEe2-urIT6LmdwA {
-  				tallness Fitting
-  				marginBottom None
-  				attributes [  ]
-  				marginTop None
-  			}
-  		MoveUp _P9cpc30pEe2-urIT6LmdwA at 2,2 size 14,7 {
-  		}
-  		
-  		MoveDown _P9cpdX0pEe2-urIT6LmdwA at 2,10 size 14,7 {
-  		}
-  		
-  		Col _P9cpd30pEe2-urIT6LmdwA at 10,30 size 220,120 {
-  			wideness Full
-  			layout Layout _P9cpfX0pEe2-urIT6LmdwA {
-  					size Default
-  					offset None
-  					alignment Left
-  				}
-  			generalStyle GeneralStyling _P9cpfH0pEe2-urIT6LmdwA {
-  					tallness Fitting
-  					marginBottom None
-  					attributes [  ]
-  					marginTop None
-  				}
-  			MoveLeft _P9cpeX0pEe2-urIT6LmdwA at 2,2 size 7,14 {
-  			}
-  			
-  			MoveRight _P9cpe30pEe2-urIT6LmdwA at 10,2 size 7,14 {
-  			}
-  			
-  			Text _QqiY8X0pEe2-urIT6LmdwA at 10,30 size 200,60 {
-  				content [ StaticContent _QqmDVX0pEe2-urIT6LmdwA {
-  						renderMarkdown false
-  						maxChars 0
-  						html false
-  						rawContent "{{table.moveCounter}}"
-  						styling TextStyling _QqmDVn0pEe2-urIT6LmdwA {
-  								small false
-  								highlight false
-  								deleted false
-  								underline false
-  								bold false
-  								alignment Left
-  								italic false
-  								color Default
-  							}
-  					} ]
-  				generalStyle GeneralStyling _QqmDVH0pEe2-urIT6LmdwA {
-  						tallness Fitting
-  						marginBottom None
-  						attributes [  ]
-  						marginTop None
-  					}
-  				MoveUp _QqmDUX0pEe2-urIT6LmdwA at 2,2 size 14,7 {
-  				}
-  				
-  				MoveDown _QqmDU30pEe2-urIT6LmdwA at 2,10 size 14,7 {
-  				}
-  			}
-  		}
-  	}
-  	
   	Row _wZ-mMX0pEe2-urIT6LmdwA at 10,90 size 430,396 {
   		generalStyle GeneralStyling _wZ-mPn0pEe2-urIT6LmdwA {
   				tallness Fitting
@@ -376,7 +309,7 @@ GUI _AzVAIWnXEe2xCJpb6ooUzA {
   		}
   		
   		Col _wZ-mN30pEe2-urIT6LmdwA at 10,30 size 220,346 {
-  			wideness Full
+  			wideness Third
   			layout Layout _wZ-mPX0pEe2-urIT6LmdwA {
   					size Default
   					offset None
@@ -431,7 +364,7 @@ GUI _AzVAIWnXEe2xCJpb6ooUzA {
   						libraryComponentUID "_ZlXgoXKOEe2rzNRUfilttw"
   						label "badge"
   						generalStyle GeneralStyling _eK46RHKOEe2rzNRUfilttw {
-  								tallness Half
+  								tallness Third
   								marginBottom None
   								attributes [  ]
   								marginTop None
@@ -468,7 +401,7 @@ GUI _AzVAIWnXEe2xCJpb6ooUzA {
   		}
   		
   		Col _xaaIcX0pEe2-urIT6LmdwA at 240,30 size 170,150 {
-  			wideness Full
+  			wideness Third
   			layout Layout _xaaId30pEe2-urIT6LmdwA {
   					size Default
   					offset None
@@ -486,25 +419,25 @@ GUI _AzVAIWnXEe2xCJpb6ooUzA {
   			MoveRight _xaaIdX0pEe2-urIT6LmdwA at 10,2 size 7,14 {
   			}
   			
-  			GUISIB _jbVksX1ZEe2BL67A2MFPXw at 10,30 size 150,90 {
+  			GUISIB _x57rEX3vEe2ONMPeQEJUSA at 10,30 size 150,90 {
   				libraryComponentUID "_0WZ_gH0pEe2-urIT6LmdwA"
   				label "GameState"
   				generalStyle GeneralStyling _ALJY5H0qEe2-urIT6LmdwA {
-  						tallness Half
+  						tallness Third
   						marginBottom None
   						attributes [  ]
   						marginTop None
   					}
-  				ComplexInputPort _jb5lYX1ZEe2BL67A2MFPXw at 5,67 size 90,18 {
-  					libraryComponentUID "_rGQfQX0oEe2-urIT6LmdwA"
+  				ComplexInputPort _x6OmAX3vEe2ONMPeQEJUSA at 5,67 size 90,18 {
+  					libraryComponentUID "_JgYkUW8QEe2x_c6ogIlfZw"
   					isList false
-  					name "gameState"
+  					name "table"
   				}
   				
-  				MoveUp _jcR_4X1ZEe2BL67A2MFPXw at 2,2 size 14,7 {
+  				MoveUp _x6iIAX3vEe2ONMPeQEJUSA at 2,2 size 14,7 {
   				}
   				
-  				MoveDown _jcR_431ZEe2BL67A2MFPXw at 2,10 size 14,7 {
+  				MoveDown _x6iIA33vEe2ONMPeQEJUSA at 2,10 size 14,7 {
   				}
   			}
   		}

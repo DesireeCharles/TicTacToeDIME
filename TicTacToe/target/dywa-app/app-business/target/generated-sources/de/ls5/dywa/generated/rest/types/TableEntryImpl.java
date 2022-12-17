@@ -31,29 +31,54 @@ public class TableEntryImpl extends info.scce.dime.rest.RESTBaseImpl implements 
 		this.isentryStateSet = true;
 	}
 
-	private java.lang.String
-	 value;
-	private boolean isvalueSet;
+	private java.lang.Long
+	 stateValue;
+	private boolean isstateValueSet;
 	
-	@com.fasterxml.jackson.annotation.JsonProperty("value")
-	@info.scce.dime.rest.JsonRenderIndicator("isvalueSet")
+	@com.fasterxml.jackson.annotation.JsonProperty("stateValue")
+	@info.scce.dime.rest.JsonRenderIndicator("isstateValueSet")
 	@java.lang.Override
-	public java.lang.String
-	 getvalue() {
-		return this.value;
+	public java.lang.Long
+	 getstateValue() {
+		return this.stateValue;
 	}
 	
 	@com.fasterxml.jackson.annotation.JsonIgnore
-	public boolean isvalueSet() {
-		return this.isvalueSet;
+	public boolean isstateValueSet() {
+		return this.isstateValueSet;
 	}
 
-	@com.fasterxml.jackson.annotation.JsonProperty("value")
+	@com.fasterxml.jackson.annotation.JsonProperty("stateValue")
 	@java.lang.Override
-	public void setvalue(final java.lang.String
-	 value) {
-		this.value = value;
-		this.isvalueSet = true;
+	public void setstateValue(final java.lang.Long
+	 stateValue) {
+		this.stateValue = stateValue;
+		this.isstateValueSet = true;
+	}
+
+	private java.lang.Boolean
+	 winningEntry;
+	private boolean iswinningEntrySet;
+	
+	@com.fasterxml.jackson.annotation.JsonProperty("winningEntry")
+	@info.scce.dime.rest.JsonRenderIndicator("iswinningEntrySet")
+	@java.lang.Override
+	public java.lang.Boolean
+	 getwinningEntry() {
+		return this.winningEntry;
+	}
+	
+	@com.fasterxml.jackson.annotation.JsonIgnore
+	public boolean iswinningEntrySet() {
+		return this.iswinningEntrySet;
+	}
+
+	@com.fasterxml.jackson.annotation.JsonProperty("winningEntry")
+	@java.lang.Override
+	public void setwinningEntry(final java.lang.Boolean
+	 winningEntry) {
+		this.winningEntry = winningEntry;
+		this.iswinningEntrySet = true;
 	}
 
 	

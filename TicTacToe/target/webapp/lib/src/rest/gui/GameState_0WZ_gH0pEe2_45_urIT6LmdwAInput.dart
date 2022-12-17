@@ -9,14 +9,14 @@ import 'package:app/src/models/FileReference.dart';
 
 class GameState_0WZ_gH0pEe2_45_urIT6LmdwAInput extends UserInteractionResponse {
 	
-	Data.GameState gameState = null;
+	Data.Table table = null;
 	
 	GameState_0WZ_gH0pEe2_45_urIT6LmdwAInput(Map<String,dynamic> map, Map<String,dynamic> cache)
 	{
 		 Map<String,dynamic> inputPorts = map['inputs'];
-		if(inputPorts.containsKey('gameState')) {
-			if(inputPorts['gameState']!=null){
-				gameState = Data.GameState.fromJSOG(jsog:inputPorts['gameState'],cache:cache);
+		if(inputPorts.containsKey('table')) {
+			if(inputPorts['table']!=null){
+				table = Data.Table.fromJSOG(jsog:inputPorts['table'],cache:cache);
 			}
 		}
 	}
@@ -27,6 +27,6 @@ class GameState_0WZ_gH0pEe2_45_urIT6LmdwAInput extends UserInteractionResponse {
 	}
 	
 	bool inpusChanged(GameState_0WZ_gH0pEe2_45_urIT6LmdwAInput input) {
-		return gameState != input.gameState;
+		return table != input.table;
 	}
 }

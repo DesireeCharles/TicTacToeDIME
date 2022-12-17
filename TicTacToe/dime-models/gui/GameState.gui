@@ -4,35 +4,39 @@ GUI _0WZ_gH0pEe2-urIT6LmdwA {
   additionalJavaScript [  ]
   additionalStylesheets [  ]
   title "GameState"
-  DataContext _0WcbwX0pEe2-urIT6LmdwA at 10,10 size 180,115 {
+  DataContext _0WcbwX0pEe2-urIT6LmdwA at 10,10 size 180,121 {
   	dfViewWorkaround true
-  	ComplexVariable _1WOdwX0pEe2-urIT6LmdwA at 10,60 size 160,25 {
+  	ComplexVariable _qg-ggX3vEe2ONMPeQEJUSA at 10,40 size 160,51 {
   		expanded false
   		isLive false
-  		libraryComponentUID "_rGQfQX0oEe2-urIT6LmdwA"
+  		libraryComponentUID "_JgYkUW8QEe2x_c6ogIlfZw"
   		isInput true
-  		name "gameState"
+  		name "table"
   		dfViewWorkaround true
   		isList false
-  		-IS-> _3TMgwX0pEe2-urIT6LmdwA  decorate "" at (0,0) decorate "Text" at (0,0) {
-  			id _9L71wX0pEe2-urIT6LmdwA
-  			exactMatch false
-  			negate false
-  			matchingType "_tPcZUX0oEe2-urIT6LmdwA"
-  		}
-  		
-  		-IS-> _3hT1QX0pEe2-urIT6LmdwA  decorate "" at (0,0) decorate "Text" at (0,0) {
-  			id _9dEpEX0pEe2-urIT6LmdwA
-  			exactMatch false
-  			negate false
-  			matchingType "_tjL0sX0oEe2-urIT6LmdwA"
-  		}
-  		
-  		-IS-> _3zKaQX0pEe2-urIT6LmdwA  decorate "" at (0,0) decorate "Text" at (0,0) {
-  			id _9tQaIX0pEe2-urIT6LmdwA
-  			exactMatch false
-  			negate false
-  			matchingType "_tzBAcX0oEe2-urIT6LmdwA"
+  		ComplexAttribute _rLigdX3vEe2ONMPeQEJUSA at 10,23 size 140,25 {
+  			libraryComponentUID "_xyoQoX0oEe2-urIT6LmdwA"
+  			isLive false
+  			-IS-> _3TMgwX0pEe2-urIT6LmdwA  decorate "" at (0,0) decorate "Text" at (0,0) {
+  				id _rob30X3vEe2ONMPeQEJUSA
+  				exactMatch false
+  				negate false
+  				matchingType "_tPcZUX0oEe2-urIT6LmdwA"
+  			}
+  			
+  			-IS-> _3hT1QX0pEe2-urIT6LmdwA  decorate "" at (0,0) decorate "Text" at (0,0) {
+  				id _r_YYMX3vEe2ONMPeQEJUSA
+  				exactMatch false
+  				negate false
+  				matchingType "_tjL0sX0oEe2-urIT6LmdwA"
+  			}
+  			
+  			-IS-> _3zKaQX0pEe2-urIT6LmdwA  decorate "" at (0,0) decorate "Text" at (0,0) {
+  				id _sZ8NQX3vEe2ONMPeQEJUSA
+  				exactMatch false
+  				negate false
+  				matchingType "_tzBAcX0oEe2-urIT6LmdwA"
+  			}
   		}
   	}
   }
@@ -51,7 +55,7 @@ GUI _0WZ_gH0pEe2-urIT6LmdwA {
   				renderMarkdown false
   				maxChars 0
   				html false
-  				rawContent "Win!!\n"
+  				rawContent "{{table.turnText}} Wins!!\n"
   				styling TextStyling _3TWRxn0pEe2-urIT6LmdwA {
   						small false
   						highlight false

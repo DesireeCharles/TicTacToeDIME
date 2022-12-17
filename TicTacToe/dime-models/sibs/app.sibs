@@ -8,3 +8,9 @@ sib drawBoard : info.scce.dime.app.game.Native#createGameBoard
 	height: integer
 	->success
 		Table: data.Table
+		
+sib checkWin : info.scce.dime.app.game.Native#checkWin
+	Table : data.Table
+	->true
+	->false
+		

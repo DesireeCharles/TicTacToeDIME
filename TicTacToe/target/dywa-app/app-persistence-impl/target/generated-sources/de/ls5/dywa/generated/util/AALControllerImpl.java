@@ -59,8 +59,6 @@ public class AALControllerImpl implements AALController {
 	(null);
 	o.setempty
 	(null);
-	o.setempty_dis
-	(null);
 	o.setdywaDisplayName
 	(null);
 	}

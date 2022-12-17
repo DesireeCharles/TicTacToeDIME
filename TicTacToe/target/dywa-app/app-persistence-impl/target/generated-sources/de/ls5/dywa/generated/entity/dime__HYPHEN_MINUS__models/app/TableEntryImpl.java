@@ -26,15 +26,19 @@ public class TableEntryImpl implements TableEntry {
 
 	
 	/* MAIN ATTRIBUTES START */
-	@de.ls5.dywa.annotations.IdRef(id = 22L)
-	@javax.persistence.Column(name = "a_Value__rwbu8w8qee2x_c6", columnDefinition="varchar")
-	private java.lang.String value;
-	
 	@de.ls5.dywa.annotations.IdRef(id = 23L)
+	@javax.persistence.Column(name = "a_StateValue__rwbu8w8qee2x_c6", columnDefinition="bigint")
+	private java.lang.Long stateValue;
+	
+	@de.ls5.dywa.annotations.IdRef(id = 24L)
 	@org.hibernate.annotations.Cascade(org.hibernate.annotations.CascadeType.PERSIST)
 	@javax.persistence.JoinColumn(name = "a_EntryState__sutd4xkpee2rznr")
 	@javax.persistence.ManyToOne
 	private de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryStateEntity entryState;
+	
+	@de.ls5.dywa.annotations.IdRef(id = 25L)
+	@javax.persistence.Column(name = "a_WinningEntry__vmhqyx3wee2onmp", columnDefinition="boolean")
+	private java.lang.Boolean winningEntry;
 	
 	/* MAIN ATTRIBUTES END */
 	
@@ -93,13 +97,13 @@ public class TableEntryImpl implements TableEntry {
 	}
 	
 	@java.lang.Override
-	public java.lang.String getvalue() {
-		return this.value;
+	public java.lang.Long getstateValue() {
+		return this.stateValue;
 	}
 	
 	@java.lang.Override
-	public void setvalue(java.lang.String object) {
-		this.value = object;
+	public void setstateValue(java.lang.Long object) {
+		this.stateValue = object;
 	}
 	
 	
@@ -122,6 +126,17 @@ public class TableEntryImpl implements TableEntry {
 	
 	protected de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryStateEntity getentryState_() {
 		return this.entryState;
+	}
+	
+	
+	@java.lang.Override
+	public java.lang.Boolean getwinningEntry() {
+		return this.winningEntry;
+	}
+	
+	@java.lang.Override
+	public void setwinningEntry(java.lang.Boolean object) {
+		this.winningEntry = object;
 	}
 	
 	

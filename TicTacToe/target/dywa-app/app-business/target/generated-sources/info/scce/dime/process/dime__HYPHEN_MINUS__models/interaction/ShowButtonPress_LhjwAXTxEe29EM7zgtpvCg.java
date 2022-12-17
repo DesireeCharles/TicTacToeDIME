@@ -80,6 +80,13 @@ public final class ShowButtonPress_LhjwAXTxEe29EM7zgtpvCg implements DIMEProcess
 	_mNc8IXT3Ee29EM7zgtpvCg,
 	_mmIh4XT3Ee29EM7zgtpvCg,
 	_YqfJ4X1cEe2BL67A2MFPXw,
+	_KS8tEX3fEe2ONMPeQEJUSA,
+	_PyrFIX3fEe2ONMPeQEJUSA,
+	_eaqXUX3hEe2ONMPeQEJUSA,
+	_e8FCUX3hEe2ONMPeQEJUSA,
+	_vASWsX3qEe2ONMPeQEJUSA,
+	_L1DQoX3tEe2ONMPeQEJUSA,
+	_N7GXIX3tEe2ONMPeQEJUSA,
 		;
 	}
 
@@ -167,6 +174,34 @@ public final class ShowButtonPress_LhjwAXTxEe29EM7zgtpvCg implements DIMEProcess
 				}
 				case _YqfJ4X1cEe2BL67A2MFPXw: {
 					curr = execute_YqfJ4X1cEe2BL67A2MFPXw(ctx);
+					break;
+				}
+				case _KS8tEX3fEe2ONMPeQEJUSA: {
+					curr = execute_KS8tEX3fEe2ONMPeQEJUSA(ctx);
+					break;
+				}
+				case _PyrFIX3fEe2ONMPeQEJUSA: {
+					curr = execute_PyrFIX3fEe2ONMPeQEJUSA(ctx);
+					break;
+				}
+				case _eaqXUX3hEe2ONMPeQEJUSA: {
+					curr = execute_eaqXUX3hEe2ONMPeQEJUSA(ctx);
+					break;
+				}
+				case _e8FCUX3hEe2ONMPeQEJUSA: {
+					curr = execute_e8FCUX3hEe2ONMPeQEJUSA(ctx);
+					break;
+				}
+				case _vASWsX3qEe2ONMPeQEJUSA: {
+					curr = execute_vASWsX3qEe2ONMPeQEJUSA(ctx);
+					break;
+				}
+				case _L1DQoX3tEe2ONMPeQEJUSA: {
+					curr = execute_L1DQoX3tEe2ONMPeQEJUSA(ctx);
+					break;
+				}
+				case _N7GXIX3tEe2ONMPeQEJUSA: {
+					curr = execute_N7GXIX3tEe2ONMPeQEJUSA(ctx);
 					break;
 				}
 				default: {
@@ -290,13 +325,13 @@ public final class ShowButtonPress_LhjwAXTxEe29EM7zgtpvCg implements DIMEProcess
 	public SIB_ID execute_mNc8IXT3Ee29EM7zgtpvCg(final Context ctx) {
 		ctx.table.setturnState(ctx.Get_TurnStateOLiteral_c9n__HYPHEN_MINUS__QXTxEe29EM7zgtpvCg);
 		// branch 'success'
-		return SIB_ID._YqfJ4X1cEe2BL67A2MFPXw;
+		return SIB_ID._eaqXUX3hEe2ONMPeQEJUSA;
 	}
 	// container for SIB 'Set turnState' setting a new attribute value.
 	public SIB_ID execute_mmIh4XT3Ee29EM7zgtpvCg(final Context ctx) {
 		ctx.table.setturnState(ctx.Get_TurnStateXLiteral_dn31IXTxEe29EM7zgtpvCg);
 		// branch 'success'
-		return SIB_ID._YqfJ4X1cEe2BL67A2MFPXw;
+		return SIB_ID._e8FCUX3hEe2ONMPeQEJUSA;
 	}
 	// container for graph abstraction 'checkDraw' and sub process 'checkDraw'.
 	public SIB_ID execute_YqfJ4X1cEe2BL67A2MFPXw(final Context ctx) {
@@ -308,11 +343,58 @@ public final class ShowButtonPress_LhjwAXTxEe29EM7zgtpvCg implements DIMEProcess
 		case "success": {
 			Optional.ofNullable(ctx.table).get().setgameState(result.getSuccessReturn().getState());
 			// branch 'success'
-			return SIB_ID._LhthA3TxEe29EM7zgtpvCg;
+			return SIB_ID._KS8tEX3fEe2ONMPeQEJUSA;
 		}
 			default: throw new IllegalStateException("SIB 'checkDraw' has no successor defined for branch '" + result.getBranchName() + '\'');
 		}
 	}
 	
+	// container for atomic SIB 'checkWin'.
+	public SIB_ID execute_KS8tEX3fEe2ONMPeQEJUSA(final Context ctx) {
+		if (info.scce.dime.app.game.Native.checkWin(ctx.table)) {
+			// branch 'true'
+			return SIB_ID._PyrFIX3fEe2ONMPeQEJUSA;
+		}
+		else {
+			// branch 'false'
+			return SIB_ID._LhthA3TxEe29EM7zgtpvCg;
+		}
+	}
+	// container for retrieve enum literal SIB 'Get GameState'.
+	public SIB_ID execute_PyrFIX3fEe2ONMPeQEJUSA(final Context ctx) {
+		Optional.ofNullable(ctx.table).get().setgameState(de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.GameState.win);
+		// branch 'win'
+		return SIB_ID._vASWsX3qEe2ONMPeQEJUSA;
+	}
+	// container for SIB 'Set stateValue' setting a new attribute value.
+	public SIB_ID execute_eaqXUX3hEe2ONMPeQEJUSA(final Context ctx) {
+		ctx.tableentry.setstateValue(0l);
+		// branch 'success'
+		return SIB_ID._L1DQoX3tEe2ONMPeQEJUSA;
+	}
+	// container for SIB 'Set stateValue' setting a new attribute value.
+	public SIB_ID execute_e8FCUX3hEe2ONMPeQEJUSA(final Context ctx) {
+		ctx.tableentry.setstateValue(1l);
+		// branch 'success'
+		return SIB_ID._N7GXIX3tEe2ONMPeQEJUSA;
+	}
+	// container for SIB 'Set isWin' setting a new attribute value.
+	public SIB_ID execute_vASWsX3qEe2ONMPeQEJUSA(final Context ctx) {
+		ctx.table.setisWin(true);
+		// branch 'success'
+		return SIB_ID._LhthA3TxEe29EM7zgtpvCg;
+	}
+	// container for SIB 'Set turnText' setting a new attribute value.
+	public SIB_ID execute_L1DQoX3tEe2ONMPeQEJUSA(final Context ctx) {
+		ctx.table.setturnText("X");
+		// branch 'success'
+		return SIB_ID._YqfJ4X1cEe2BL67A2MFPXw;
+	}
+	// container for SIB 'Set turnText' setting a new attribute value.
+	public SIB_ID execute_N7GXIX3tEe2ONMPeQEJUSA(final Context ctx) {
+		ctx.table.setturnText("O");
+		// branch 'success'
+		return SIB_ID._YqfJ4X1cEe2BL67A2MFPXw;
+	}
 	
 }  

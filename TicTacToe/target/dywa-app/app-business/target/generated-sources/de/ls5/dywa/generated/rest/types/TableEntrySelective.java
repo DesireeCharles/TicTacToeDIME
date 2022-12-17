@@ -49,7 +49,12 @@ public class TableEntrySelective {
 		{
 			final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TableEntry effectiveFrom = from;
 			final de.ls5.dywa.generated.rest.types.TableEntry effectiveTo = to;
-		effectiveTo.setvalue(effectiveFrom.getvalue());
+		effectiveTo.setstateValue(effectiveFrom.getstateValue());
+		}
+		{
+			final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TableEntry effectiveFrom = from;
+			final de.ls5.dywa.generated.rest.types.TableEntry effectiveTo = to;
+		effectiveTo.setwinningEntry(effectiveFrom.getwinningEntry());
 		}
 	}
 }

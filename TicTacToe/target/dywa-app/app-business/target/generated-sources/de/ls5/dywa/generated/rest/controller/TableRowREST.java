@@ -26,7 +26,7 @@ public class TableRowREST {
 	}
 
 	
-	public de.ls5.dywa.generated.rest.types.TableRow read_GameTableRowSelectivex1x2x2_AzVAIWnXEe2xCJpb6ooUzA(final long id) {
+	public de.ls5.dywa.generated.rest.types.TableRow read_GameTableRowSelectivex1x1x1_AzVAIWnXEe2xCJpb6ooUzA(final long id) {
 		
 		final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TableRow obj = this.TableRowController.read(id);
 		
@@ -40,23 +40,23 @@ public class TableRowREST {
 			result = de.ls5.dywa.generated.rest.types.TableRow.fromDywaEntity(obj, objectCache);
 		}
 		
-		if (!objectCache.containsSelective(result, "GameTableRowSelectivex1x2x2_AzVAIWnXEe2xCJpb6ooUzA")) {
-			de.ls5.dywa.generated.rest.types.GameTableRowSelectivex1x2x2_AzVAIWnXEe2xCJpb6ooUzA.copy(obj, result, objectCache);
+		if (!objectCache.containsSelective(result, "GameTableRowSelectivex1x1x1_AzVAIWnXEe2xCJpb6ooUzA")) {
+			de.ls5.dywa.generated.rest.types.GameTableRowSelectivex1x1x1_AzVAIWnXEe2xCJpb6ooUzA.copy(obj, result, objectCache);
 		}
 
 		return result;
 	}
 
-	public de.ls5.dywa.generated.rest.types.TableRow readTransient_GameTableRowSelectivex1x2x2_AzVAIWnXEe2xCJpb6ooUzA(final de.ls5.dywa.generated.rest.types.TableRow obj) {
+	public de.ls5.dywa.generated.rest.types.TableRow readTransient_GameTableRowSelectivex1x1x1_AzVAIWnXEe2xCJpb6ooUzA(final de.ls5.dywa.generated.rest.types.TableRow obj) {
 
 		final de.ls5.dywa.generated.rest.types.TableRow result;
 		
-		if (this.objectCache.containsSelective(obj, "GameTableRowSelectivex1x2x2_AzVAIWnXEe2xCJpb6ooUzA")) {
+		if (this.objectCache.containsSelective(obj, "GameTableRowSelectivex1x1x1_AzVAIWnXEe2xCJpb6ooUzA")) {
 			return obj;
 		}
 		else {
 			result = obj;
-			this.objectCache.putSelective(obj, "GameTableRowSelectivex1x2x2_AzVAIWnXEe2xCJpb6ooUzA");
+			this.objectCache.putSelective(obj, "GameTableRowSelectivex1x1x1_AzVAIWnXEe2xCJpb6ooUzA");
 		}
 
 		// Update references to persistent objects
@@ -75,11 +75,11 @@ public class TableRowREST {
 							final de.ls5.dywa.generated.rest.types.TableEntry fetchedValue;
 						
 							if (e.getDywaId() > 0) {
-								// read_GameTableEntrySelectivex1x2x2x2x2_AzVAIWnXEe2xCJpb6ooUzA
+								// read_GameTableEntrySelectivex1x1x1x1x1_AzVAIWnXEe2xCJpb6ooUzA
 								fetchedValue = this.TableEntryREST.read_BadgeTableEntrySelectivex1_ZlXgoXKOEe2rzNRUfilttw(e.getDywaId());
 							}
 							else {
-								// readTransient_GameTableEntrySelectivex1x2x2x2x2_AzVAIWnXEe2xCJpb6ooUzA
+								// readTransient_GameTableEntrySelectivex1x1x1x1x1_AzVAIWnXEe2xCJpb6ooUzA
 								fetchedValue = this.TableEntryREST.readTransient_BadgeTableEntrySelectivex1_ZlXgoXKOEe2rzNRUfilttw(e);
 							}
 						
@@ -94,7 +94,7 @@ public class TableRowREST {
 		return result;
 	}
 
-		public java.util.Set<de.ls5.dywa.generated.rest.types.TableRow> readAll_GameTableRowSelectivex1x2x2_AzVAIWnXEe2xCJpb6ooUzA() {
+		public java.util.Set<de.ls5.dywa.generated.rest.types.TableRow> readAll_GameTableRowSelectivex1x1x1_AzVAIWnXEe2xCJpb6ooUzA() {
 			
 			final java.util.Set<de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TableRow> objs =
 			this.TableRowController.fetch();
@@ -108,8 +108,8 @@ public class TableRowREST {
 					cached = de.ls5.dywa.generated.rest.types.TableRow.fromDywaEntity(s, objectCache);
 				}
 				
-				if (!objectCache.containsSelective(cached, "GameTableRowSelectivex1x2x2_AzVAIWnXEe2xCJpb6ooUzA")) {
-					de.ls5.dywa.generated.rest.types.GameTableRowSelectivex1x2x2_AzVAIWnXEe2xCJpb6ooUzA.copy(s, cached, objectCache);
+				if (!objectCache.containsSelective(cached, "GameTableRowSelectivex1x1x1_AzVAIWnXEe2xCJpb6ooUzA")) {
+					de.ls5.dywa.generated.rest.types.GameTableRowSelectivex1x1x1_AzVAIWnXEe2xCJpb6ooUzA.copy(s, cached, objectCache);
 				}
 
 				result.add(cached);
@@ -119,23 +119,23 @@ public class TableRowREST {
 		}
 
 
-	public void update_GameTableRowSelectivex1x2x2_AzVAIWnXEe2xCJpb6ooUzA(final de.ls5.dywa.generated.rest.types.TableRow value) {
+	public void update_GameTableRowSelectivex1x1x1_AzVAIWnXEe2xCJpb6ooUzA(final de.ls5.dywa.generated.rest.types.TableRow value) {
 
 		final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TableRow obj = this.TableRowController.read(value.getDywaId());
 		
-		this.update_GameTableRowSelectivex1x2x2_AzVAIWnXEe2xCJpb6ooUzA(value, obj);
+		this.update_GameTableRowSelectivex1x1x1_AzVAIWnXEe2xCJpb6ooUzA(value, obj);
 	}
 
-	public void update_GameTableRowSelectivex1x2x2_AzVAIWnXEe2xCJpb6ooUzA(final de.ls5.dywa.generated.rest.types.TableRow value, final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TableRow obj) {
+	public void update_GameTableRowSelectivex1x1x1_AzVAIWnXEe2xCJpb6ooUzA(final de.ls5.dywa.generated.rest.types.TableRow value, final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TableRow obj) {
 
 		// for updates, consider a special selective so we don't clash with read-operations
-		if (this.objectCache.containsSelective(obj, "GameTableRowSelectivex1x2x2_AzVAIWnXEe2xCJpb6ooUzA")) {
+		if (this.objectCache.containsSelective(obj, "GameTableRowSelectivex1x1x1_AzVAIWnXEe2xCJpb6ooUzA")) {
 			// We are already getting updated by someone else
 			return;
 		}
 		else {
 			// we don't care for the actual value. key alone is sufficient enough for detection of cycles
-			this.objectCache.putSelective(obj, "GameTableRowSelectivex1x2x2_AzVAIWnXEe2xCJpb6ooUzA");
+			this.objectCache.putSelective(obj, "GameTableRowSelectivex1x1x1_AzVAIWnXEe2xCJpb6ooUzA");
 		}
 
 		if (value.isDywaNameSet()) {
@@ -176,7 +176,7 @@ public class TableRowREST {
 					final long id = TableEntryREST.create(dywaName);
 					item.setDywaId(id);
 				
-					//update_GameTableEntrySelectivex1x2x2x2x2_AzVAIWnXEe2xCJpb6ooUzA
+					//update_GameTableEntrySelectivex1x1x1x1x1_AzVAIWnXEe2xCJpb6ooUzA
 					this.TableEntryREST.update_BadgeTableEntrySelectivex1_ZlXgoXKOEe2rzNRUfilttw(item);
 					entity = this.TableEntryController.read(item.getDywaId());
 				}
@@ -190,7 +190,7 @@ public class TableRowREST {
 				}
 				// lookup regular object
 				else {
-					//update_GameTableEntrySelectivex1x2x2x2x2_AzVAIWnXEe2xCJpb6ooUzA
+					//update_GameTableEntrySelectivex1x1x1x1x1_AzVAIWnXEe2xCJpb6ooUzA
 					this.TableEntryREST.update_BadgeTableEntrySelectivex1_ZlXgoXKOEe2rzNRUfilttw(item);
 					entity = this.TableEntryController.read(item.getDywaId());
 				}

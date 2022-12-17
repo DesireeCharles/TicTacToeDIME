@@ -18,7 +18,7 @@ public class GameStateREST {
 
 
 	
-	public de.ls5.dywa.generated.rest.types.GameState read_GameStateGameStateSelectivex1_0WZ_gH0pEe2__HYPHEN_MINUS__urIT6LmdwA(final long id) {
+	public de.ls5.dywa.generated.rest.types.GameState read_GameStateGameStateSelectivex1x1x1_0WZ_gH0pEe2__HYPHEN_MINUS__urIT6LmdwA(final long id) {
 		
 		final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.GameState obj = this.GameStateController.read(id);
 		
@@ -32,23 +32,23 @@ public class GameStateREST {
 			result = de.ls5.dywa.generated.rest.types.GameState.fromDywaEntity(obj, objectCache);
 		}
 		
-		if (!objectCache.containsSelective(result, "GameStateGameStateSelectivex1_0WZ_gH0pEe2__HYPHEN_MINUS__urIT6LmdwA")) {
-			de.ls5.dywa.generated.rest.types.GameStateGameStateSelectivex1_0WZ_gH0pEe2__HYPHEN_MINUS__urIT6LmdwA.copy(obj, result, objectCache);
+		if (!objectCache.containsSelective(result, "GameStateGameStateSelectivex1x1x1_0WZ_gH0pEe2__HYPHEN_MINUS__urIT6LmdwA")) {
+			de.ls5.dywa.generated.rest.types.GameStateGameStateSelectivex1x1x1_0WZ_gH0pEe2__HYPHEN_MINUS__urIT6LmdwA.copy(obj, result, objectCache);
 		}
 
 		return result;
 	}
 
-	public de.ls5.dywa.generated.rest.types.GameState readTransient_GameStateGameStateSelectivex1_0WZ_gH0pEe2__HYPHEN_MINUS__urIT6LmdwA(final de.ls5.dywa.generated.rest.types.GameState obj) {
+	public de.ls5.dywa.generated.rest.types.GameState readTransient_GameStateGameStateSelectivex1x1x1_0WZ_gH0pEe2__HYPHEN_MINUS__urIT6LmdwA(final de.ls5.dywa.generated.rest.types.GameState obj) {
 
 		final de.ls5.dywa.generated.rest.types.GameState result;
 		
-		if (this.objectCache.containsSelective(obj, "GameStateGameStateSelectivex1_0WZ_gH0pEe2__HYPHEN_MINUS__urIT6LmdwA")) {
+		if (this.objectCache.containsSelective(obj, "GameStateGameStateSelectivex1x1x1_0WZ_gH0pEe2__HYPHEN_MINUS__urIT6LmdwA")) {
 			return obj;
 		}
 		else {
 			result = obj;
-			this.objectCache.putSelective(obj, "GameStateGameStateSelectivex1_0WZ_gH0pEe2__HYPHEN_MINUS__urIT6LmdwA");
+			this.objectCache.putSelective(obj, "GameStateGameStateSelectivex1x1x1_0WZ_gH0pEe2__HYPHEN_MINUS__urIT6LmdwA");
 		}
 
 		// Update references to persistent objects
@@ -56,7 +56,7 @@ public class GameStateREST {
 		return result;
 	}
 
-		public java.util.Set<de.ls5.dywa.generated.rest.types.GameState> readAll_GameStateGameStateSelectivex1_0WZ_gH0pEe2__HYPHEN_MINUS__urIT6LmdwA() {
+		public java.util.Set<de.ls5.dywa.generated.rest.types.GameState> readAll_GameStateGameStateSelectivex1x1x1_0WZ_gH0pEe2__HYPHEN_MINUS__urIT6LmdwA() {
 			
 			final java.util.Set<de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.GameState> objs =
 			new java.util.HashSet<>(java.util.Arrays.asList(de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.GameState.values()));
@@ -70,8 +70,8 @@ public class GameStateREST {
 					cached = de.ls5.dywa.generated.rest.types.GameState.fromDywaEntity(s, objectCache);
 				}
 				
-				if (!objectCache.containsSelective(cached, "GameStateGameStateSelectivex1_0WZ_gH0pEe2__HYPHEN_MINUS__urIT6LmdwA")) {
-					de.ls5.dywa.generated.rest.types.GameStateGameStateSelectivex1_0WZ_gH0pEe2__HYPHEN_MINUS__urIT6LmdwA.copy(s, cached, objectCache);
+				if (!objectCache.containsSelective(cached, "GameStateGameStateSelectivex1x1x1_0WZ_gH0pEe2__HYPHEN_MINUS__urIT6LmdwA")) {
+					de.ls5.dywa.generated.rest.types.GameStateGameStateSelectivex1x1x1_0WZ_gH0pEe2__HYPHEN_MINUS__urIT6LmdwA.copy(s, cached, objectCache);
 				}
 
 				result.add(cached);
@@ -81,23 +81,23 @@ public class GameStateREST {
 		}
 
 
-	public void update_GameStateGameStateSelectivex1_0WZ_gH0pEe2__HYPHEN_MINUS__urIT6LmdwA(final de.ls5.dywa.generated.rest.types.GameState value) {
+	public void update_GameStateGameStateSelectivex1x1x1_0WZ_gH0pEe2__HYPHEN_MINUS__urIT6LmdwA(final de.ls5.dywa.generated.rest.types.GameState value) {
 
 		final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.GameState obj = this.GameStateController.read(value.getDywaId());
 		
-		this.update_GameStateGameStateSelectivex1_0WZ_gH0pEe2__HYPHEN_MINUS__urIT6LmdwA(value, obj);
+		this.update_GameStateGameStateSelectivex1x1x1_0WZ_gH0pEe2__HYPHEN_MINUS__urIT6LmdwA(value, obj);
 	}
 
-	public void update_GameStateGameStateSelectivex1_0WZ_gH0pEe2__HYPHEN_MINUS__urIT6LmdwA(final de.ls5.dywa.generated.rest.types.GameState value, final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.GameState obj) {
+	public void update_GameStateGameStateSelectivex1x1x1_0WZ_gH0pEe2__HYPHEN_MINUS__urIT6LmdwA(final de.ls5.dywa.generated.rest.types.GameState value, final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.GameState obj) {
 
 		// for updates, consider a special selective so we don't clash with read-operations
-		if (this.objectCache.containsSelective(obj, "GameStateGameStateSelectivex1_0WZ_gH0pEe2__HYPHEN_MINUS__urIT6LmdwA")) {
+		if (this.objectCache.containsSelective(obj, "GameStateGameStateSelectivex1x1x1_0WZ_gH0pEe2__HYPHEN_MINUS__urIT6LmdwA")) {
 			// We are already getting updated by someone else
 			return;
 		}
 		else {
 			// we don't care for the actual value. key alone is sufficient enough for detection of cycles
-			this.objectCache.putSelective(obj, "GameStateGameStateSelectivex1_0WZ_gH0pEe2__HYPHEN_MINUS__urIT6LmdwA");
+			this.objectCache.putSelective(obj, "GameStateGameStateSelectivex1x1x1_0WZ_gH0pEe2__HYPHEN_MINUS__urIT6LmdwA");
 		}
 
 		if (value.isDywaNameSet()) {

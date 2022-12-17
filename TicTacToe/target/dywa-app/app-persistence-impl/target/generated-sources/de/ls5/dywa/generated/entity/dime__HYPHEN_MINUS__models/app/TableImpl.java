@@ -58,6 +58,10 @@ public class TableImpl implements Table {
 	@javax.persistence.Column(name = "a_IsWin__dzyeex1zee2bl67", columnDefinition="boolean")
 	private java.lang.Boolean isWin;
 	
+	@de.ls5.dywa.annotations.IdRef(id = 21L)
+	@javax.persistence.Column(name = "a_TurnText__0mk_4x3see2onmp", columnDefinition="varchar")
+	private java.lang.String turnText;
+	
 	/* MAIN ATTRIBUTES END */
 	
 	/* IMPLICIT ATTRIBUTES START */
@@ -188,6 +192,17 @@ public class TableImpl implements Table {
 	@java.lang.Override
 	public void setisWin(java.lang.Boolean object) {
 		this.isWin = object;
+	}
+	
+	
+	@java.lang.Override
+	public java.lang.String getturnText() {
+		return this.turnText;
+	}
+	
+	@java.lang.Override
+	public void setturnText(java.lang.String object) {
+		this.turnText = object;
 	}
 	
 	

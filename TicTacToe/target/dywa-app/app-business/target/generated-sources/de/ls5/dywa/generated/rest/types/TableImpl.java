@@ -137,5 +137,30 @@ public class TableImpl extends info.scce.dime.rest.RESTBaseImpl implements Table
 		this.isisWinSet = true;
 	}
 
+	private java.lang.String
+	 turnText;
+	private boolean isturnTextSet;
+	
+	@com.fasterxml.jackson.annotation.JsonProperty("turnText")
+	@info.scce.dime.rest.JsonRenderIndicator("isturnTextSet")
+	@java.lang.Override
+	public java.lang.String
+	 getturnText() {
+		return this.turnText;
+	}
+	
+	@com.fasterxml.jackson.annotation.JsonIgnore
+	public boolean isturnTextSet() {
+		return this.isturnTextSet;
+	}
+
+	@com.fasterxml.jackson.annotation.JsonProperty("turnText")
+	@java.lang.Override
+	public void setturnText(final java.lang.String
+	 turnText) {
+		this.turnText = turnText;
+		this.isturnTextSet = true;
+	}
+
 	
 }

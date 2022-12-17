@@ -146,7 +146,7 @@ class ConcreteUser extends BaseModel
 			if (jsog.containsKey("dywaSwitchedTo")) {
 				core.Map<core.String,core.dynamic> jsogObj = jsog["dywaSwitchedTo"];
 				if(jsogObj != null) {
-					ConcreteUser valuea0gYaEX1ZEe2BL67A2MFPXw;
+					ConcreteUser valueaJp6R8X3xEe2ONMPeQEJUSA;
 					
 					core.String jsogId;
 					
@@ -157,22 +157,22 @@ class ConcreteUser extends BaseModel
 					 	jsogId = jsogObj['@id'];
 					}
 					if (cache.containsKey(jsogId)) {
-						valuea0gYaEX1ZEe2BL67A2MFPXw = cache[jsogId];
+						valueaJp6R8X3xEe2ONMPeQEJUSA = cache[jsogId];
 					}
 					else {
 						if (jsogObj != null) {
 							if (jsogObj['dywaRuntimeType'] == "de.ls5.dywa.generated.rest.types.ConcreteUserImpl") {
-								valuea0gYaEX1ZEe2BL67A2MFPXw = new ConcreteUser(cache: cache, jsog: jsogObj);
+								valueaJp6R8X3xEe2ONMPeQEJUSA = new ConcreteUser(cache: cache, jsog: jsogObj);
 							}
 							else {
-								valuea0gYaEX1ZEe2BL67A2MFPXw = new ConcreteUser(cache: cache,jsog: jsogObj);
+								valueaJp6R8X3xEe2ONMPeQEJUSA = new ConcreteUser(cache: cache,jsog: jsogObj);
 							}
 						}
 						else {
-							valuea0gYaEX1ZEe2BL67A2MFPXw = new ConcreteUser(cache: cache,jsog: jsogObj);
+							valueaJp6R8X3xEe2ONMPeQEJUSA = new ConcreteUser(cache: cache,jsog: jsogObj);
 						}
 					}
-					this._dywaSwitchedTo = valuea0gYaEX1ZEe2BL67A2MFPXw;
+					this._dywaSwitchedTo = valueaJp6R8X3xEe2ONMPeQEJUSA;
 				}
 			}
 			
@@ -883,6 +883,9 @@ class Table extends BaseModel
 	core.bool _turnStateHasBeenSet = false;
 	core.bool turnStateHasBeenChanged() => _turnStateHasBeenSet||(_turnState==null?false:_turnState.hasChanged()) ;
 	TurnState _turnState;
+	core.bool _turnTextHasBeenSet = false;
+	core.bool turnTextHasBeenChanged() => _turnTextHasBeenSet;
+	core.String _turnText;
 	
 	static Table fromId(core.int id) {
 		var m = new Table();
@@ -899,7 +902,8 @@ class Table extends BaseModel
 	  'isWin': this.isWin, 
 	  'moveCounter': this.moveCounter, 
 	  'tableRow': this.tableRow, 
-	  'turnState': this.turnState
+	  'turnState': this.turnState, 
+	  'turnText': this.turnText
 	  };
 	
 	  if (!propMap.containsKey(prop)) throw NoSuchPropertyException(prop);
@@ -913,6 +917,7 @@ class Table extends BaseModel
 	  case 'moveCounter': this.moveCounter = value; return;
 	  case 'tableRow': this.tableRow = value; return;
 	  case 'turnState': this.turnState = value; return;
+	  case 'turnText': this.turnText = value; return;
 	    default: throw NoSuchPropertyException(prop);
 	  }
 	}
@@ -942,6 +947,7 @@ class Table extends BaseModel
 			this._isWin = false;
 			this._moveCounter = 0;
 			this._tableRow = new DIMEList.monitored(tableRowHasBeenSetted);
+			this._turnText = null;
 		}
 		// from jsog
 		else {
@@ -1099,6 +1105,26 @@ class Table extends BaseModel
 			
 			
 			_turnStateHasBeenSet = false;
+			if (jsog.containsKey("turnText")) {
+				core.String jsogObj = jsog["turnText"];
+				if(jsogObj != null) {
+					core.String valuea0mk_45_4X3sEe2ONMPeQEJUSA;
+					
+					if(jsogObj!=null){
+					valuea0mk_45_4X3sEe2ONMPeQEJUSA = jsogObj.toString();
+					}
+					this._turnText = valuea0mk_45_4X3sEe2ONMPeQEJUSA;
+				}
+				else {
+					this._turnText = null;
+				}
+			}
+			
+			
+			else{
+				this._turnText = null;
+			}
+			_turnTextHasBeenSet = false;
 		}
 	}
 	
@@ -1107,13 +1133,15 @@ class Table extends BaseModel
 	void moveCounterHasBeenSetted() { _moveCounterHasBeenSet=true; }
 	void tableRowHasBeenSetted() { _tableRowHasBeenSet=true; }
 	void turnStateHasBeenSetted() { _turnStateHasBeenSet=true; }
+	void turnTextHasBeenSetted() { _turnTextHasBeenSet=true; }
 	
 	core.bool hasChanged() {
 		return 		_gameStateHasBeenSet || 
 					_isWinHasBeenSet || 
 					_moveCounterHasBeenSet || 
 					_tableRowHasBeenSet || 
-					_turnStateHasBeenSet
+					_turnStateHasBeenSet || 
+					_turnTextHasBeenSet
 			;
 	}
 	
@@ -1156,6 +1184,9 @@ class Table extends BaseModel
 			}
 			if(( isWinHasBeenChanged() && !jsonObj.containsKey('isWin')) && !objects.containsKey(this._isWin)) {
 			jsonObj["isWin"] = this._isWin;
+			}
+			if(( turnTextHasBeenChanged() && !jsonObj.containsKey('turnText')) && !objects.containsKey(this._turnText)) {
+			jsonObj["turnText"] = this._turnText;
 			}
 			return { 
 				'@ref': jsogId.toString()
@@ -1206,6 +1237,9 @@ class Table extends BaseModel
 		}
 		if(( isWinHasBeenChanged() && !jsonObj.containsKey('isWin')) && !objects.containsKey(this._isWin) || this.dywa_id == 0) {
 		jsonObj["isWin"] = this._isWin;
+		}
+		if(( turnTextHasBeenChanged() && !jsonObj.containsKey('turnText')) && !objects.containsKey(this._turnText) || this.dywa_id == 0) {
+		jsonObj["turnText"] = this._turnText;
 		}
 		return jsonObj;
 	}
@@ -1371,6 +1405,33 @@ class Table extends BaseModel
 		void isWinsetValue(core.bool value)
 		{
 			this.isWin = value;
+		}
+		
+	
+	void set turnText (core.String value)
+	{
+		this._turnTextHasBeenSet = true;
+		this._turnText = value;
+	}
+	
+	core.String get turnText
+	{
+		return this._turnText;
+	}
+	
+		core.String initOnDemandturnText()
+		{
+			return this.turnText;
+		}
+		
+		void setValueturnText(core.String value)
+		{
+			this.turnText = value;
+		}
+		
+		void turnTextsetValue(core.String value)
+		{
+			this.turnText = value;
 		}
 		
 	
@@ -1593,9 +1654,12 @@ class TableEntry extends BaseModel
 	core.bool _entryStateHasBeenSet = false;
 	core.bool entryStateHasBeenChanged() => _entryStateHasBeenSet||(_entryState==null?false:_entryState.hasChanged()) ;
 	EntryState _entryState;
-	core.bool _valueHasBeenSet = false;
-	core.bool valueHasBeenChanged() => _valueHasBeenSet;
-	core.String _value;
+	core.bool _stateValueHasBeenSet = false;
+	core.bool stateValueHasBeenChanged() => _stateValueHasBeenSet;
+	core.int _stateValue;
+	core.bool _winningEntryHasBeenSet = false;
+	core.bool winningEntryHasBeenChanged() => _winningEntryHasBeenSet;
+	core.bool _winningEntry;
 	
 	static TableEntry fromId(core.int id) {
 		var m = new TableEntry();
@@ -1609,7 +1673,8 @@ class TableEntry extends BaseModel
 	core.dynamic $$getProperty(core.String prop) {
 	  var propMap = {
 	  'entryState': this.entryState, 
-	  'value': this.value
+	  'stateValue': this.stateValue, 
+	  'winningEntry': this.winningEntry
 	  };
 	
 	  if (!propMap.containsKey(prop)) throw NoSuchPropertyException(prop);
@@ -1619,7 +1684,8 @@ class TableEntry extends BaseModel
 	void $$setProperty(core.String prop, core.dynamic value) {
 	  switch (prop) {
 	  case 'entryState': this.entryState = value; return;
-	  case 'value': this.value = value; return;
+	  case 'stateValue': this.stateValue = value; return;
+	  case 'winningEntry': this.winningEntry = value; return;
 	    default: throw NoSuchPropertyException(prop);
 	  }
 	}
@@ -1646,7 +1712,8 @@ class TableEntry extends BaseModel
 			this.dywa_name = null;
 			
 			// properties
-			this._value = null;
+			this._stateValue = 0;
+			this._winningEntry = false;
 		}
 		// from jsog
 		else {
@@ -1693,35 +1760,57 @@ class TableEntry extends BaseModel
 			
 			
 			_entryStateHasBeenSet = false;
-			if (jsog.containsKey("value")) {
-				core.String jsogObj = jsog["value"];
+			if (jsog.containsKey("stateValue")) {
+				core.int jsogObj = jsog["stateValue"];
 				if(jsogObj != null) {
-					core.String valueaRwbu8W8QEe2x_c6ogIlfZw;
+					core.int valueaRwbu8W8QEe2x_c6ogIlfZw;
 					
 					if(jsogObj!=null){
-					valueaRwbu8W8QEe2x_c6ogIlfZw = jsogObj.toString();
+					valueaRwbu8W8QEe2x_c6ogIlfZw = core.int.parse(jsogObj.toString());
 					}
-					this._value = valueaRwbu8W8QEe2x_c6ogIlfZw;
+					this._stateValue = valueaRwbu8W8QEe2x_c6ogIlfZw;
 				}
 				else {
-					this._value = null;
+					this._stateValue = 0;
 				}
 			}
 			
 			
 			else{
-				this._value = null;
+				this._stateValue = 0;
 			}
-			_valueHasBeenSet = false;
+			_stateValueHasBeenSet = false;
+			if (jsog.containsKey("winningEntry")) {
+				core.bool jsogObj = jsog["winningEntry"];
+				if(jsogObj != null) {
+					core.bool valueaVmhqYX3wEe2ONMPeQEJUSA;
+					
+					if(jsogObj!=null){
+					valueaVmhqYX3wEe2ONMPeQEJUSA = jsogObj.toString().toLowerCase()=='true'?true:false;
+					}
+					this._winningEntry = valueaVmhqYX3wEe2ONMPeQEJUSA;
+				}
+				else {
+					this._winningEntry = false;
+				}
+			}
+			
+			
+			else{
+				this._winningEntry = false;
+			}
+			_winningEntryHasBeenSet = false;
 		}
 	}
 	
 	void entryStateHasBeenSetted() { _entryStateHasBeenSet=true; }
-	void valueHasBeenSetted() { _valueHasBeenSet=true; }
+	void stateValueHasBeenSetted() { _stateValueHasBeenSet=true; }
+	void winningEntryHasBeenSetted() { _winningEntryHasBeenSet=true; }
 	
 	core.bool hasChanged() {
 		return 		_entryStateHasBeenSet || 
-					_valueHasBeenSet
+					_stateValueHasBeenSet || 
+					_winningEntryHasBeenSet
 			;
 	}
 	
@@ -1743,8 +1832,11 @@ class TableEntry extends BaseModel
 				jsonObj["entryState"] = null;
 			}
 			}
-			if(( valueHasBeenChanged() && !jsonObj.containsKey('value')) && !objects.containsKey(this._value)) {
-			jsonObj["value"] = this._value;
+			if(( stateValueHasBeenChanged() && !jsonObj.containsKey('stateValue')) && !objects.containsKey(this._stateValue)) {
+			jsonObj["stateValue"] = this._stateValue;
+			}
+			if(( winningEntryHasBeenChanged() && !jsonObj.containsKey('winningEntry')) && !objects.containsKey(this._winningEntry)) {
+			jsonObj["winningEntry"] = this._winningEntry;
 			}
 			return { 
 				'@ref': jsogId.toString()
@@ -1774,8 +1866,11 @@ class TableEntry extends BaseModel
 			jsonObj["entryState"] = null;
 		}
 		}
-		if(( valueHasBeenChanged() && !jsonObj.containsKey('value')) && !objects.containsKey(this._value) || this.dywa_id == 0) {
-		jsonObj["value"] = this._value;
+		if(( stateValueHasBeenChanged() && !jsonObj.containsKey('stateValue')) && !objects.containsKey(this._stateValue) || this.dywa_id == 0) {
+		jsonObj["stateValue"] = this._stateValue;
+		}
+		if(( winningEntryHasBeenChanged() && !jsonObj.containsKey('winningEntry')) && !objects.containsKey(this._winningEntry) || this.dywa_id == 0) {
+		jsonObj["winningEntry"] = this._winningEntry;
 		}
 		return jsonObj;
 	}
@@ -1824,30 +1919,57 @@ class TableEntry extends BaseModel
 		}
 		
 	
-	void set value (core.String value)
+	void set stateValue (core.int value)
 	{
-		this._valueHasBeenSet = true;
-		this._value = value;
+		this._stateValueHasBeenSet = true;
+		this._stateValue = value;
 	}
 	
-	core.String get value
+	core.int get stateValue
 	{
-		return this._value;
+		return this._stateValue;
 	}
 	
-		core.String initOnDemandvalue()
+		core.int initOnDemandstateValue()
 		{
-			return this.value;
+			return this.stateValue;
 		}
 		
-		void setValuevalue(core.String value)
+		void setValuestateValue(core.int value)
 		{
-			this.value = value;
+			this.stateValue = value;
 		}
 		
-		void valuesetValue(core.String value)
+		void stateValuesetValue(core.int value)
 		{
-			this.value = value;
+			this.stateValue = value;
+		}
+		
+	
+	void set winningEntry (core.bool value)
+	{
+		this._winningEntryHasBeenSet = true;
+		this._winningEntry = value;
+	}
+	
+	core.bool get winningEntry
+	{
+		return this._winningEntry;
+	}
+	
+		core.bool initOnDemandwinningEntry()
+		{
+			return this.winningEntry;
+		}
+		
+		void setValuewinningEntry(core.bool value)
+		{
+			this.winningEntry = value;
+		}
+		
+		void winningEntrysetValue(core.bool value)
+		{
+			this.winningEntry = value;
 		}
 		
 	
@@ -1921,12 +2043,12 @@ class EntryState extends BaseModel
 			if (jsog.containsKey("dywaDisplayName")) {
 				core.String jsogObj = jsog["dywaDisplayName"];
 				if(jsogObj != null) {
-					core.String valuea0gtxQX1ZEe2BL67A2MFPXw;
+					core.String valueaJp_KcX3xEe2ONMPeQEJUSA;
 					
 					if(jsogObj!=null){
-					valuea0gtxQX1ZEe2BL67A2MFPXw = jsogObj.toString();
+					valueaJp_KcX3xEe2ONMPeQEJUSA = jsogObj.toString();
 					}
-					this._dywaDisplayName = valuea0gtxQX1ZEe2BL67A2MFPXw;
+					this._dywaDisplayName = valueaJp_KcX3xEe2ONMPeQEJUSA;
 				}
 				else {
 					this._dywaDisplayName = null;
@@ -1956,8 +2078,6 @@ class EntryState extends BaseModel
 				return "O";
 			case 'empty':
 				return "empty";
-			case 'empty_dis':
-				return "empty_dis";
 		}
 	    	return this.dywa_name;
 	  	}
@@ -2111,12 +2231,12 @@ class TurnState extends BaseModel
 			if (jsog.containsKey("dywaDisplayName")) {
 				core.String jsogObj = jsog["dywaDisplayName"];
 				if(jsogObj != null) {
-					core.String valuea0g_eEX1ZEe2BL67A2MFPXw;
+					core.String valueaJqI7cX3xEe2ONMPeQEJUSA;
 					
 					if(jsogObj!=null){
-					valuea0g_eEX1ZEe2BL67A2MFPXw = jsogObj.toString();
+					valueaJqI7cX3xEe2ONMPeQEJUSA = jsogObj.toString();
 					}
-					this._dywaDisplayName = valuea0g_eEX1ZEe2BL67A2MFPXw;
+					this._dywaDisplayName = valueaJqI7cX3xEe2ONMPeQEJUSA;
 				}
 				else {
 					this._dywaDisplayName = null;
@@ -2297,12 +2417,12 @@ class GameState extends BaseModel
 			if (jsog.containsKey("dywaDisplayName")) {
 				core.String jsogObj = jsog["dywaDisplayName"];
 				if(jsogObj != null) {
-					core.String valuea0hVcUX1ZEe2BL67A2MFPXw;
+					core.String valueaJqSscX3xEe2ONMPeQEJUSA;
 					
 					if(jsogObj!=null){
-					valuea0hVcUX1ZEe2BL67A2MFPXw = jsogObj.toString();
+					valueaJqSscX3xEe2ONMPeQEJUSA = jsogObj.toString();
 					}
-					this._dywaDisplayName = valuea0hVcUX1ZEe2BL67A2MFPXw;
+					this._dywaDisplayName = valueaJqSscX3xEe2ONMPeQEJUSA;
 				}
 				else {
 					this._dywaDisplayName = null;

@@ -65,6 +65,18 @@ public interface Table extends de.ls5.dywa.generated.util.Identifiable {
 	@de.ls5.dywa.annotations.LongDescription(description = "")
 	void setisWin(java.lang.Boolean object);
 	
+	@de.ls5.dywa.annotations.IdRef(id = 21L)
+	@de.ls5.dywa.annotations.OriginalName(name = "turnText")
+	@de.ls5.dywa.annotations.ShortDescription(description = "")
+	@de.ls5.dywa.annotations.LongDescription(description = "")
+	java.lang.String getturnText();
+	
+	@de.ls5.dywa.annotations.IdRef(id = 21L)
+	@de.ls5.dywa.annotations.OriginalName(name = "turnText")
+	@de.ls5.dywa.annotations.ShortDescription(description = "")
+	@de.ls5.dywa.annotations.LongDescription(description = "")
+	void setturnText(java.lang.String object);
+	
 
 	// EXTENSION ATTRIBUTES
 

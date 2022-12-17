@@ -26,7 +26,7 @@ public class EnumMigrator {
         }
         em.flush();
 
-    			setupEntryState(de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryState.X, de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryState.O, de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryState.empty, de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryState.empty_dis);
+    			setupEntryState(de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryState.X, de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryState.O, de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryState.empty);
     			setupTurnState(de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TurnState.X, de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TurnState.O);
     			setupGameState(de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.GameState.win, de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.GameState.tie, de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.GameState.progress);
     }

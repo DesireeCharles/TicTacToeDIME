@@ -6,7 +6,7 @@ package de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app;
 @de.ls5.dywa.annotations.ShortDescription(description = "")
 @de.ls5.dywa.annotations.LongDescription(description = "")
 public enum EntryState implements de.ls5.dywa.generated.util.Identifiable, de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryStateInterface {
-	X(41L), O(42L), empty(43L), empty_dis(44L);
+	X(42L), O(43L), empty(44L);
 	
 	private final long id;
 	private EntryStateInterface internalDelegate;
@@ -81,18 +81,6 @@ public enum EntryState implements de.ls5.dywa.generated.util.Identifiable, de.ls
 		}
 	}
 
-	public de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryState getempty_dis() {
-		loadOrRefresh();
-		return this.internalDelegate != null ? this.internalDelegate.getempty_dis() : null;
-	}
-	
-	public void setempty_dis(de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryState newValue) {
-		loadOrRefresh();
-		if (this.internalDelegate != null) {
-			this.internalDelegate.setempty_dis(newValue);
-		}
-	}
-
 	public java.lang.String getdywaDisplayName() {
 		loadOrRefresh();
 		return this.internalDelegate != null ? this.internalDelegate.getdywaDisplayName() : null;
@@ -137,17 +125,14 @@ public enum EntryState implements de.ls5.dywa.generated.util.Identifiable, de.ls
 	}
 	
 	public static EntryState forId(long id) {
-		if (id == 41) {
+		if (id == 42) {
 			return EntryState.X;
 		} else 
-		if (id == 42) {
+		if (id == 43) {
 			return EntryState.O;
 		} else 
-		if (id == 43) {
-			return EntryState.empty;
-		} else 
 		if (id == 44) {
-			return EntryState.empty_dis;
+			return EntryState.empty;
 		}
 		return null;
 	}

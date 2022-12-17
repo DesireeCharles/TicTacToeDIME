@@ -158,6 +158,18 @@ public class TableSearch implements Table {
 				}
 			this.attributeMap.put(dywaIdToJpqlAttr.get(20L), object);
 	}
+	@java.lang.Override
+	public java.lang.String getturnText() {
+		return (java.lang.String) this.attributeMap.get(dywaIdToJpqlAttr.get(21L));
+	}
+	public void setturnText
+	(java.lang.String object) {
+			
+				if (! (object instanceof java.lang.String)) {
+							throw new java.lang.RuntimeException("Wrong type");
+				}
+			this.attributeMap.put(dywaIdToJpqlAttr.get(21L), object);
+	}
 
 	// EXTENSION ATTRIBUTES
 

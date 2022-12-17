@@ -34,6 +34,66 @@ public class TableREST {
 	}
 
 	
+	public de.ls5.dywa.generated.rest.types.Table read_GameStateTableSelectivex1_0WZ_gH0pEe2__HYPHEN_MINUS__urIT6LmdwA(final long id) {
+		
+		final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.Table obj = this.TableController.read(id);
+		
+		if (obj == null) {
+			return null;
+		}
+
+		de.ls5.dywa.generated.rest.types.Table result = objectCache.getRestTo(obj);
+		
+		if (result == null) {
+			result = de.ls5.dywa.generated.rest.types.Table.fromDywaEntity(obj, objectCache);
+		}
+		
+		if (!objectCache.containsSelective(result, "GameStateTableSelectivex1_0WZ_gH0pEe2__HYPHEN_MINUS__urIT6LmdwA")) {
+			de.ls5.dywa.generated.rest.types.GameStateTableSelectivex1_0WZ_gH0pEe2__HYPHEN_MINUS__urIT6LmdwA.copy(obj, result, objectCache);
+		}
+
+		return result;
+	}
+
+	public de.ls5.dywa.generated.rest.types.Table readTransient_GameStateTableSelectivex1_0WZ_gH0pEe2__HYPHEN_MINUS__urIT6LmdwA(final de.ls5.dywa.generated.rest.types.Table obj) {
+
+		final de.ls5.dywa.generated.rest.types.Table result;
+		
+		if (this.objectCache.containsSelective(obj, "GameStateTableSelectivex1_0WZ_gH0pEe2__HYPHEN_MINUS__urIT6LmdwA")) {
+			return obj;
+		}
+		else {
+			result = obj;
+			this.objectCache.putSelective(obj, "GameStateTableSelectivex1_0WZ_gH0pEe2__HYPHEN_MINUS__urIT6LmdwA");
+		}
+
+		// Update references to persistent objects
+			{
+				{
+					final de.ls5.dywa.generated.rest.types.Table effectiveObj = obj;
+					final de.ls5.dywa.generated.rest.types.Table effectiveResult = result;
+					if (effectiveObj.isgameStateSet()) {
+						final de.ls5.dywa.generated.rest.types.GameState
+						 existing = effectiveObj.getgameState();
+						de.ls5.dywa.generated.rest.types.GameState
+						 newValue;
+
+						if (existing.getDywaId() > 0) {
+							// read_GameStateGameStateSelectivex1x1x1_0WZ_gH0pEe2__HYPHEN_MINUS__urIT6LmdwA
+							newValue = this.GameStateREST.read_GameStateGameStateSelectivex1x1x1_0WZ_gH0pEe2__HYPHEN_MINUS__urIT6LmdwA(existing.getDywaId());
+						}
+						else {
+							// readTransient_GameStateGameStateSelectivex1x1x1_0WZ_gH0pEe2__HYPHEN_MINUS__urIT6LmdwA
+							newValue = this.GameStateREST.readTransient_GameStateGameStateSelectivex1x1x1_0WZ_gH0pEe2__HYPHEN_MINUS__urIT6LmdwA(existing);
+						}
+
+						effectiveResult.setgameState(newValue);
+						}
+					}
+			}
+
+		return result;
+	}
 	public de.ls5.dywa.generated.rest.types.Table read_BadgeTableSelectivex2_ZlXgoXKOEe2rzNRUfilttw(final long id) {
 		
 		final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.Table obj = this.TableController.read(id);
@@ -109,29 +169,6 @@ public class TableREST {
 				{
 					final de.ls5.dywa.generated.rest.types.Table effectiveObj = obj;
 					final de.ls5.dywa.generated.rest.types.Table effectiveResult = result;
-					if (effectiveObj.isgameStateSet()) {
-						final de.ls5.dywa.generated.rest.types.GameState
-						 existing = effectiveObj.getgameState();
-						de.ls5.dywa.generated.rest.types.GameState
-						 newValue;
-
-						if (existing.getDywaId() > 0) {
-							// read_GameGameStateSelectivex1x1x1_AzVAIWnXEe2xCJpb6ooUzA
-							newValue = this.GameStateREST.read_GameStateGameStateSelectivex1_0WZ_gH0pEe2__HYPHEN_MINUS__urIT6LmdwA(existing.getDywaId());
-						}
-						else {
-							// readTransient_GameGameStateSelectivex1x1x1_AzVAIWnXEe2xCJpb6ooUzA
-							newValue = this.GameStateREST.readTransient_GameStateGameStateSelectivex1_0WZ_gH0pEe2__HYPHEN_MINUS__urIT6LmdwA(existing);
-						}
-
-						effectiveResult.setgameState(newValue);
-						}
-					}
-			}
-			{
-				{
-					final de.ls5.dywa.generated.rest.types.Table effectiveObj = obj;
-					final de.ls5.dywa.generated.rest.types.Table effectiveResult = result;
 					if (effectiveObj.istableRow_TableRowSet()) {
 						final java.util.List<de.ls5.dywa.generated.rest.types.TableRow>
 						 existing = effectiveObj.gettableRow_TableRow();
@@ -143,12 +180,12 @@ public class TableREST {
 							final de.ls5.dywa.generated.rest.types.TableRow fetchedValue;
 						
 							if (e.getDywaId() > 0) {
-								// read_GameTableRowSelectivex1x2x2_AzVAIWnXEe2xCJpb6ooUzA
-								fetchedValue = this.TableRowREST.read_GameTableRowSelectivex1x2x2_AzVAIWnXEe2xCJpb6ooUzA(e.getDywaId());
+								// read_GameTableRowSelectivex1x1x1_AzVAIWnXEe2xCJpb6ooUzA
+								fetchedValue = this.TableRowREST.read_GameTableRowSelectivex1x1x1_AzVAIWnXEe2xCJpb6ooUzA(e.getDywaId());
 							}
 							else {
-								// readTransient_GameTableRowSelectivex1x2x2_AzVAIWnXEe2xCJpb6ooUzA
-								fetchedValue = this.TableRowREST.readTransient_GameTableRowSelectivex1x2x2_AzVAIWnXEe2xCJpb6ooUzA(e);
+								// readTransient_GameTableRowSelectivex1x1x1_AzVAIWnXEe2xCJpb6ooUzA
+								fetchedValue = this.TableRowREST.readTransient_GameTableRowSelectivex1x1x1_AzVAIWnXEe2xCJpb6ooUzA(e);
 							}
 						
 							newValue.add(fetchedValue);
@@ -158,10 +195,56 @@ public class TableREST {
 						}
 					}
 			}
+			{
+				{
+					final de.ls5.dywa.generated.rest.types.Table effectiveObj = obj;
+					final de.ls5.dywa.generated.rest.types.Table effectiveResult = result;
+					if (effectiveObj.isgameStateSet()) {
+						final de.ls5.dywa.generated.rest.types.GameState
+						 existing = effectiveObj.getgameState();
+						de.ls5.dywa.generated.rest.types.GameState
+						 newValue;
+
+						if (existing.getDywaId() > 0) {
+							// read_GameGameStateSelectivex1x3_AzVAIWnXEe2xCJpb6ooUzA
+							newValue = this.GameStateREST.read_GameStateGameStateSelectivex1x1x1_0WZ_gH0pEe2__HYPHEN_MINUS__urIT6LmdwA(existing.getDywaId());
+						}
+						else {
+							// readTransient_GameGameStateSelectivex1x3_AzVAIWnXEe2xCJpb6ooUzA
+							newValue = this.GameStateREST.readTransient_GameStateGameStateSelectivex1x1x1_0WZ_gH0pEe2__HYPHEN_MINUS__urIT6LmdwA(existing);
+						}
+
+						effectiveResult.setgameState(newValue);
+						}
+					}
+			}
 
 		return result;
 	}
 
+		public java.util.Set<de.ls5.dywa.generated.rest.types.Table> readAll_GameStateTableSelectivex1_0WZ_gH0pEe2__HYPHEN_MINUS__urIT6LmdwA() {
+			
+			final java.util.Set<de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.Table> objs =
+			this.TableController.fetch();
+	
+			final java.util.Set<de.ls5.dywa.generated.rest.types.Table> result = new java.util.HashSet<>();
+
+			for (final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.Table s : objs) {
+				de.ls5.dywa.generated.rest.types.Table cached = objectCache.getRestTo(s);
+				
+				if (cached == null) {
+					cached = de.ls5.dywa.generated.rest.types.Table.fromDywaEntity(s, objectCache);
+				}
+				
+				if (!objectCache.containsSelective(cached, "GameStateTableSelectivex1_0WZ_gH0pEe2__HYPHEN_MINUS__urIT6LmdwA")) {
+					de.ls5.dywa.generated.rest.types.GameStateTableSelectivex1_0WZ_gH0pEe2__HYPHEN_MINUS__urIT6LmdwA.copy(s, cached, objectCache);
+				}
+
+				result.add(cached);
+			}
+			
+			return result;
+		}
 		public java.util.Set<de.ls5.dywa.generated.rest.types.Table> readAll_BadgeTableSelectivex2_ZlXgoXKOEe2rzNRUfilttw() {
 			
 			final java.util.Set<de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.Table> objs =
@@ -210,6 +293,66 @@ public class TableREST {
 		}
 
 
+	public void update_GameStateTableSelectivex1_0WZ_gH0pEe2__HYPHEN_MINUS__urIT6LmdwA(final de.ls5.dywa.generated.rest.types.Table value) {
+
+		final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.Table obj = this.TableController.read(value.getDywaId());
+		
+		this.update_GameStateTableSelectivex1_0WZ_gH0pEe2__HYPHEN_MINUS__urIT6LmdwA(value, obj);
+	}
+
+	public void update_GameStateTableSelectivex1_0WZ_gH0pEe2__HYPHEN_MINUS__urIT6LmdwA(final de.ls5.dywa.generated.rest.types.Table value, final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.Table obj) {
+
+		// for updates, consider a special selective so we don't clash with read-operations
+		if (this.objectCache.containsSelective(obj, "GameStateTableSelectivex1_0WZ_gH0pEe2__HYPHEN_MINUS__urIT6LmdwA")) {
+			// We are already getting updated by someone else
+			return;
+		}
+		else {
+			// we don't care for the actual value. key alone is sufficient enough for detection of cycles
+			this.objectCache.putSelective(obj, "GameStateTableSelectivex1_0WZ_gH0pEe2__HYPHEN_MINUS__urIT6LmdwA");
+		}
+
+		if (value.isDywaNameSet()) {
+			obj.setDywaName(value.getDywaName());
+		}
+
+		{
+			final de.ls5.dywa.generated.rest.types.Table effectiveValue = value;
+			final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.Table effectiveObj = obj;
+
+		// If values were not specified, ignore them
+		if (effectiveValue.isgameStateSet()) {
+			checkVersion(value, obj);
+			if (effectiveValue.getgameState() == null) {
+				effectiveObj.setgameState(null);
+			}
+			else {
+				final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.GameState
+				 entity;
+				final de.ls5.dywa.generated.rest.types.GameState
+				 item = effectiveValue.getgameState();
+			
+				//update_GameStateGameStateSelectivex1x1x1_0WZ_gH0pEe2__HYPHEN_MINUS__urIT6LmdwA
+				this.GameStateREST.update_GameStateGameStateSelectivex1x1x1_0WZ_gH0pEe2__HYPHEN_MINUS__urIT6LmdwA(item);
+				
+				entity = this.GameStateController.read(item.getDywaId());
+			
+				effectiveObj.setgameState(entity);
+			
+			}
+		}
+	}
+		{
+			final de.ls5.dywa.generated.rest.types.Table effectiveValue = value;
+			final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.Table effectiveObj = obj;
+
+		// If values were not specified, ignore them
+		if (effectiveValue.isturnTextSet()) {
+			checkVersion(value, obj);
+			effectiveObj.setturnText(effectiveValue.getturnText());
+		}
+	}
+	}
 	public void update_BadgeTableSelectivex2_ZlXgoXKOEe2rzNRUfilttw(final de.ls5.dywa.generated.rest.types.Table value) {
 
 		final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.Table obj = this.TableController.read(value.getDywaId());
@@ -272,32 +415,6 @@ public class TableREST {
 			final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.Table effectiveObj = obj;
 
 		// If values were not specified, ignore them
-		if (effectiveValue.isgameStateSet()) {
-			checkVersion(value, obj);
-			if (effectiveValue.getgameState() == null) {
-				effectiveObj.setgameState(null);
-			}
-			else {
-				final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.GameState
-				 entity;
-				final de.ls5.dywa.generated.rest.types.GameState
-				 item = effectiveValue.getgameState();
-			
-				//update_GameGameStateSelectivex1x1x1_AzVAIWnXEe2xCJpb6ooUzA
-				this.GameStateREST.update_GameStateGameStateSelectivex1_0WZ_gH0pEe2__HYPHEN_MINUS__urIT6LmdwA(item);
-				
-				entity = this.GameStateController.read(item.getDywaId());
-			
-				effectiveObj.setgameState(entity);
-			
-			}
-		}
-	}
-		{
-			final de.ls5.dywa.generated.rest.types.Table effectiveValue = value;
-			final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.Table effectiveObj = obj;
-
-		// If values were not specified, ignore them
 		if (effectiveValue.istableRow_TableRowSet()) {
 			checkVersion(value, obj);
 			final java.util.List<de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TableRow>
@@ -327,8 +444,8 @@ public class TableREST {
 					final long id = TableRowREST.create(dywaName);
 					item.setDywaId(id);
 				
-					//update_GameTableRowSelectivex1x2x2_AzVAIWnXEe2xCJpb6ooUzA
-					this.TableRowREST.update_GameTableRowSelectivex1x2x2_AzVAIWnXEe2xCJpb6ooUzA(item);
+					//update_GameTableRowSelectivex1x1x1_AzVAIWnXEe2xCJpb6ooUzA
+					this.TableRowREST.update_GameTableRowSelectivex1x1x1_AzVAIWnXEe2xCJpb6ooUzA(item);
 					entity = this.TableRowController.read(item.getDywaId());
 				}
 				// create transient
@@ -341,8 +458,8 @@ public class TableREST {
 				}
 				// lookup regular object
 				else {
-					//update_GameTableRowSelectivex1x2x2_AzVAIWnXEe2xCJpb6ooUzA
-					this.TableRowREST.update_GameTableRowSelectivex1x2x2_AzVAIWnXEe2xCJpb6ooUzA(item);
+					//update_GameTableRowSelectivex1x1x1_AzVAIWnXEe2xCJpb6ooUzA
+					this.TableRowREST.update_GameTableRowSelectivex1x1x1_AzVAIWnXEe2xCJpb6ooUzA(item);
 					entity = this.TableRowController.read(item.getDywaId());
 				}
 
@@ -357,9 +474,9 @@ public class TableREST {
 			final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.Table effectiveObj = obj;
 
 		// If values were not specified, ignore them
-		if (effectiveValue.ismoveCounterSet()) {
+		if (effectiveValue.isisWinSet()) {
 			checkVersion(value, obj);
-			effectiveObj.setmoveCounter(effectiveValue.getmoveCounter());
+			effectiveObj.setisWin(effectiveValue.getisWin());
 		}
 	}
 		{
@@ -367,9 +484,35 @@ public class TableREST {
 			final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.Table effectiveObj = obj;
 
 		// If values were not specified, ignore them
-		if (effectiveValue.isisWinSet()) {
+		if (effectiveValue.isgameStateSet()) {
 			checkVersion(value, obj);
-			effectiveObj.setisWin(effectiveValue.getisWin());
+			if (effectiveValue.getgameState() == null) {
+				effectiveObj.setgameState(null);
+			}
+			else {
+				final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.GameState
+				 entity;
+				final de.ls5.dywa.generated.rest.types.GameState
+				 item = effectiveValue.getgameState();
+			
+				//update_GameGameStateSelectivex1x3_AzVAIWnXEe2xCJpb6ooUzA
+				this.GameStateREST.update_GameStateGameStateSelectivex1x1x1_0WZ_gH0pEe2__HYPHEN_MINUS__urIT6LmdwA(item);
+				
+				entity = this.GameStateController.read(item.getDywaId());
+			
+				effectiveObj.setgameState(entity);
+			
+			}
+		}
+	}
+		{
+			final de.ls5.dywa.generated.rest.types.Table effectiveValue = value;
+			final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.Table effectiveObj = obj;
+
+		// If values were not specified, ignore them
+		if (effectiveValue.isturnTextSet()) {
+			checkVersion(value, obj);
+			effectiveObj.setturnText(effectiveValue.getturnText());
 		}
 	}
 	}
@@ -527,6 +670,16 @@ public class TableREST {
 			effectiveObj.setisWin(effectiveValue.getisWin());
 		}
 	}
+		{
+			final de.ls5.dywa.generated.rest.types.Table effectiveValue = value;
+			final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.Table effectiveObj = obj;
+
+		// If values were not specified, ignore them
+		if (effectiveValue.isturnTextSet()) {
+			checkVersion(value, obj);
+			effectiveObj.setturnText(effectiveValue.getturnText());
+		}
+	}
 	}
 
 	public de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.Table copyToTransient(final de.ls5.dywa.generated.rest.types.Table value) {
@@ -679,6 +832,16 @@ public class TableREST {
 			if (effectiveValue.isisWinSet()) {
 				checkVersion(value, obj);
 				effectiveObj.setisWin(effectiveValue.getisWin());
+			}
+		}
+			{
+				final de.ls5.dywa.generated.rest.types.Table effectiveValue = value;
+				final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.Table effectiveObj = obj;
+
+			// If values were not specified, ignore them
+			if (effectiveValue.isturnTextSet()) {
+				checkVersion(value, obj);
+				effectiveObj.setturnText(effectiveValue.getturnText());
 			}
 		}
 

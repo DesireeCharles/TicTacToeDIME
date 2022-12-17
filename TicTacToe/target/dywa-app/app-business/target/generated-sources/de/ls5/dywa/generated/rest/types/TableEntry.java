@@ -11,12 +11,18 @@ public interface TableEntry extends info.scce.dime.rest.RESTBaseType  {
 
 	void setentryState(final EntryState
 	 entryState);
-	java.lang.String
-	 getvalue();
-	boolean isvalueSet();
+	java.lang.Long
+	 getstateValue();
+	boolean isstateValueSet();
 
-	void setvalue(final java.lang.String
-	 value);
+	void setstateValue(final java.lang.Long
+	 stateValue);
+	java.lang.Boolean
+	 getwinningEntry();
+	boolean iswinningEntrySet();
+
+	void setwinningEntry(final java.lang.Boolean
+	 winningEntry);
 
 	public static TableEntry fromDywaEntity(final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TableEntry entity, info.scce.dime.rest.ObjectCache objectCache) {
 	

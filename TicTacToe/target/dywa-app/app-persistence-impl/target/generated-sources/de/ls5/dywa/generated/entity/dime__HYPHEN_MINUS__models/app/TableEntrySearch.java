@@ -97,20 +97,20 @@ public class TableEntrySearch implements TableEntry {
 	}
 
 	@java.lang.Override
-	public java.lang.String getvalue() {
-		return (java.lang.String) this.attributeMap.get(dywaIdToJpqlAttr.get(22L));
+	public java.lang.Long getstateValue() {
+		return (java.lang.Long) this.attributeMap.get(dywaIdToJpqlAttr.get(23L));
 	}
-	public void setvalue
-	(java.lang.String object) {
+	public void setstateValue
+	(java.lang.Long object) {
 			
-				if (! (object instanceof java.lang.String)) {
+				if (! (object instanceof java.lang.Long)) {
 							throw new java.lang.RuntimeException("Wrong type");
 				}
-			this.attributeMap.put(dywaIdToJpqlAttr.get(22L), object);
+			this.attributeMap.put(dywaIdToJpqlAttr.get(23L), object);
 	}
 	@java.lang.Override
 	public de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryState getentryState() {
-		return de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryState.forId(((de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryStateEntity) this.attributeMap.get(dywaIdToJpqlAttr.get(23L))).getDywaId());
+		return de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryState.forId(((de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryStateEntity) this.attributeMap.get(dywaIdToJpqlAttr.get(24L))).getDywaId());
 	}
 	public void setentryState
 	(de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryState object) {
@@ -118,7 +118,19 @@ public class TableEntrySearch implements TableEntry {
 				if (! (object instanceof de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryState)) {
 							throw new java.lang.RuntimeException("Wrong type");
 				}
-			this.attributeMap.put(dywaIdToJpqlAttr.get(23L), object != null ? object.getEntityAs(EntryStateEntity.class)/*1*/ : null);
+			this.attributeMap.put(dywaIdToJpqlAttr.get(24L), object != null ? object.getEntityAs(EntryStateEntity.class)/*1*/ : null);
+	}
+	@java.lang.Override
+	public java.lang.Boolean getwinningEntry() {
+		return (java.lang.Boolean) this.attributeMap.get(dywaIdToJpqlAttr.get(25L));
+	}
+	public void setwinningEntry
+	(java.lang.Boolean object) {
+			
+				if (! (object instanceof java.lang.Boolean)) {
+							throw new java.lang.RuntimeException("Wrong type");
+				}
+			this.attributeMap.put(dywaIdToJpqlAttr.get(25L), object);
 	}
 
 	// EXTENSION ATTRIBUTES

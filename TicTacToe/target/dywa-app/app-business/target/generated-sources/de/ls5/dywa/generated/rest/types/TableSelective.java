@@ -102,5 +102,10 @@ public class TableSelective {
 			final de.ls5.dywa.generated.rest.types.Table effectiveTo = to;
 		effectiveTo.setisWin(effectiveFrom.getisWin());
 		}
+		{
+			final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.Table effectiveFrom = from;
+			final de.ls5.dywa.generated.rest.types.Table effectiveTo = to;
+		effectiveTo.setturnText(effectiveFrom.getturnText());
+		}
 	}
 }

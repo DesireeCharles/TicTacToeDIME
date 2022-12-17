@@ -88,7 +88,7 @@ class GameaAzVAIWnXEe2xCJpb6ooUzA extends dime.DIMEComponent implements OnInit, 
   	List<BadgeaZlXgoXKOEe2rzNRUfilttw> componentSIBayKmZAX1aEe2BL67A2MFPXw;
   	/// GUI GameState
   	@ViewChildren(GameStatea0WZ_gH0pEe2_45_urIT6LmdwA)
-  	List<GameStatea0WZ_gH0pEe2_45_urIT6LmdwA> componentSIBajbVksX1ZEe2BL67A2MFPXw;
+  	List<GameStatea0WZ_gH0pEe2_45_urIT6LmdwA> componentSIBax57rEX3vEe2ONMPeQEJUSA;
   	
   	
   	
@@ -148,8 +148,8 @@ class GameaAzVAIWnXEe2xCJpb6ooUzA extends dime.DIMEComponent implements OnInit, 
 			componentSIBayKmZAX1aEe2BL67A2MFPXw.forEach((n)=>n.restartComponent());
 		}
 		/// GUI GameState
-		if(componentSIBajbVksX1ZEe2BL67A2MFPXw!=null) {
-			componentSIBajbVksX1ZEe2BL67A2MFPXw.forEach((n)=>n.restartComponent());
+		if(componentSIBax57rEX3vEe2ONMPeQEJUSA!=null) {
+			componentSIBax57rEX3vEe2ONMPeQEJUSA.forEach((n)=>n.restartComponent());
 		}
 		updateImageHash();
 	}
@@ -159,7 +159,7 @@ class GameaAzVAIWnXEe2xCJpb6ooUzA extends dime.DIMEComponent implements OnInit, 
 		if(updateHidden) {
 		}
 		componentSIBayKmZAX1aEe2BL67A2MFPXw.forEach((n)=>n.updateWithoutInputs());
-		componentSIBajbVksX1ZEe2BL67A2MFPXw.forEach((n)=>n.updateWithoutInputs());
+		componentSIBax57rEX3vEe2ONMPeQEJUSA.forEach((n)=>n.updateWithoutInputs());
 		updateImageHash();
 	}
 	

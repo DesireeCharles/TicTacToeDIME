@@ -26,26 +26,26 @@ public class GameStateEntity implements GameStateInterface {
 	/* DYWA METADATA END */
 	
 	/* MAIN ATTRIBUTES START */
-	@de.ls5.dywa.annotations.IdRef(id = 32L)
+	@de.ls5.dywa.annotations.IdRef(id = 33L)
 	@org.hibernate.annotations.Cascade(org.hibernate.annotations.CascadeType.PERSIST)
 	@javax.persistence.JoinColumn(name = "a_Win__tpczux0oee2_uri")
 	@javax.persistence.ManyToOne
 	private de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.GameStateEntity win;
 	
-	@de.ls5.dywa.annotations.IdRef(id = 33L)
+	@de.ls5.dywa.annotations.IdRef(id = 34L)
 	@org.hibernate.annotations.Cascade(org.hibernate.annotations.CascadeType.PERSIST)
 	@javax.persistence.JoinColumn(name = "a_Tie__tjl0sx0oee2_uri")
 	@javax.persistence.ManyToOne
 	private de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.GameStateEntity tie;
 	
-	@de.ls5.dywa.annotations.IdRef(id = 34L)
+	@de.ls5.dywa.annotations.IdRef(id = 35L)
 	@org.hibernate.annotations.Cascade(org.hibernate.annotations.CascadeType.PERSIST)
 	@javax.persistence.JoinColumn(name = "a_Progress__tzbacx0oee2_uri")
 	@javax.persistence.ManyToOne
 	private de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.GameStateEntity progress;
 	
-	@de.ls5.dywa.annotations.IdRef(id = 35L)
-	@javax.persistence.Column(name = "a_DywaDisplayName__25iicx1cee2bl67", columnDefinition="varchar")
+	@de.ls5.dywa.annotations.IdRef(id = 36L)
+	@javax.persistence.Column(name = "a_DywaDisplayName__kfu10x3yee2onmp", columnDefinition="varchar")
 	private java.lang.String dywaDisplayName;
 	
 	/* MAIN ATTRIBUTES END */

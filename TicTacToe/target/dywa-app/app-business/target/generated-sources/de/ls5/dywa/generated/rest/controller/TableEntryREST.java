@@ -216,9 +216,19 @@ public class TableEntryREST {
 			final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TableEntry effectiveObj = obj;
 
 		// If values were not specified, ignore them
-		if (effectiveValue.isvalueSet()) {
+		if (effectiveValue.isstateValueSet()) {
 			checkVersion(value, obj);
-			effectiveObj.setvalue(effectiveValue.getvalue());
+			effectiveObj.setstateValue(effectiveValue.getstateValue());
+		}
+	}
+		{
+			final de.ls5.dywa.generated.rest.types.TableEntry effectiveValue = value;
+			final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TableEntry effectiveObj = obj;
+
+		// If values were not specified, ignore them
+		if (effectiveValue.iswinningEntrySet()) {
+			checkVersion(value, obj);
+			effectiveObj.setwinningEntry(effectiveValue.getwinningEntry());
 		}
 	}
 	}
@@ -276,9 +286,19 @@ public class TableEntryREST {
 				final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TableEntry effectiveObj = obj;
 
 			// If values were not specified, ignore them
-			if (effectiveValue.isvalueSet()) {
+			if (effectiveValue.isstateValueSet()) {
 				checkVersion(value, obj);
-				effectiveObj.setvalue(effectiveValue.getvalue());
+				effectiveObj.setstateValue(effectiveValue.getstateValue());
+			}
+		}
+			{
+				final de.ls5.dywa.generated.rest.types.TableEntry effectiveValue = value;
+				final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TableEntry effectiveObj = obj;
+
+			// If values were not specified, ignore them
+			if (effectiveValue.iswinningEntrySet()) {
+				checkVersion(value, obj);
+				effectiveObj.setwinningEntry(effectiveValue.getwinningEntry());
 			}
 		}
 

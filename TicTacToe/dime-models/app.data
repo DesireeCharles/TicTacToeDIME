@@ -56,7 +56,7 @@ Data _tH3fEMwMEeWZVvvwxpYu8A {
   	}
   }
   
-  ConcreteType _JgYkUW8QEe2x_c6ogIlfZw at 400,70 size 140,127 {
+  ConcreteType _JgYkUW8QEe2x_c6ogIlfZw at 400,50 size 140,145 {
   	name "Table"
   	ComplexAttribute _QyVvAW8QEe2x_c6ogIlfZw at 5,86 size 130,18 {
   		dataType _J1LIkW8QEe2x_c6ogIlfZw
@@ -70,7 +70,7 @@ Data _tH3fEMwMEeWZVvvwxpYu8A {
   		isList false
   	}
   	
-  	ComplexAttribute _xyoQoX0oEe2-urIT6LmdwA at 5,50 size 130,18 {
+  	ComplexAttribute _xyoQoX0oEe2-urIT6LmdwA at 5,32 size 130,18 {
   		dataType _rGQfQX0oEe2-urIT6LmdwA
   		name "gameState"
   		isList false
@@ -82,9 +82,15 @@ Data _tH3fEMwMEeWZVvvwxpYu8A {
   		isList false
   	}
   	
-  	PrimitiveAttribute _DZYEEX1ZEe2BL67A2MFPXw at 5,32 size 130,18 {
+  	PrimitiveAttribute _DZYEEX1ZEe2BL67A2MFPXw at 5,50 size 130,18 {
   		dataType Boolean
   		name "isWin"
+  		isList false
+  	}
+  	
+  	PrimitiveAttribute _0mk-4X3sEe2ONMPeQEJUSA at 5,122 size 130,18 {
+  		dataType Text
+  		name "turnText"
   		isList false
   	}
   	-Association-> _J1LIkW8QEe2x_c6ogIlfZw  decorate "Text" at (0,0) decorate "" at (0,0) {
@@ -120,17 +126,23 @@ Data _tH3fEMwMEeWZVvvwxpYu8A {
   	}
   }
   
-  ConcreteType _KEKm0W8QEe2x_c6ogIlfZw at 400,390 size 140,73 {
+  ConcreteType _KEKm0W8QEe2x_c6ogIlfZw at 400,390 size 140,91 {
   	name "TableEntry"
-  	PrimitiveAttribute _Rwbu8W8QEe2x_c6ogIlfZw at 5,50 size 130,18 {
-  		dataType Text
-  		name "value"
+  	PrimitiveAttribute _Rwbu8W8QEe2x_c6ogIlfZw at 5,68 size 130,18 {
+  		dataType Integer
+  		name "stateValue"
   		isList false
   	}
   	
-  	ComplexAttribute _suTD4XKPEe2rzNRUfilttw at 5,32 size 130,18 {
+  	ComplexAttribute _suTD4XKPEe2rzNRUfilttw at 5,50 size 130,18 {
   		dataType _m_TgwHKPEe2rzNRUfilttw
   		name "entryState"
+  		isList false
+  	}
+  	
+  	PrimitiveAttribute _VmhqYX3wEe2ONMPeQEJUSA at 5,32 size 130,18 {
+  		dataType Boolean
+  		name "winningEntry"
   		isList false
   	}
   	-Association-> _m_TgwHKPEe2rzNRUfilttw  decorate "Text" at (-18,12) decorate "" at (0,0) {
@@ -140,7 +152,7 @@ Data _tH3fEMwMEeWZVvvwxpYu8A {
   	}
   }
   
-  EnumType _m_TgwHKPEe2rzNRUfilttw at 680,381 size 140,109 {
+  EnumType _m_TgwHKPEe2rzNRUfilttw at 680,381 size 140,91 {
   	name "EntryState"
   	EnumLiteral _oqhFYXKPEe2rzNRUfilttw at 5,50 size 130,18 {
   		displayName ""
@@ -157,12 +169,6 @@ Data _tH3fEMwMEeWZVvvwxpYu8A {
   	EnumLiteral _pPgBwXKPEe2rzNRUfilttw at 5,68 size 130,18 {
   		displayName ""
   		name "empty"
-  		isList false
-  	}
-  	
-  	EnumLiteral _WSkCgX1XEe2BL67A2MFPXw at 5,86 size 130,18 {
-  		displayName ""
-  		name "empty_dis"
   		isList false
   	}
   }

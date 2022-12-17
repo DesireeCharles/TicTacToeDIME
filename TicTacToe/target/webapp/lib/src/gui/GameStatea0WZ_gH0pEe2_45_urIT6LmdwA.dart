@@ -89,9 +89,9 @@ class GameStatea0WZ_gH0pEe2_45_urIT6LmdwA extends dime.DIMEComponent implements 
   	List<modal.Modal> modals;
   	bool hasToSignIn;
 	//DATA CONTEXT
-	//GameState gameState
+	//Table table
 		@Input()
-		Data.GameState gameState;
+		Data.Table table;
 	
 	bool isDestroyed = true;
   
@@ -105,8 +105,8 @@ class GameStatea0WZ_gH0pEe2_45_urIT6LmdwA extends dime.DIMEComponent implements 
 		this.hasToSignIn = false;
 		
 		//DATA CONTEXT
-		// GameState gameState
-		this.gameState = null;
+		// Table table
+		this.table = null;
 						
 						
 		
@@ -123,10 +123,10 @@ class GameStatea0WZ_gH0pEe2_45_urIT6LmdwA extends dime.DIMEComponent implements 
 	}
 	
 	void updateInputs(
-	{Data.GameState pgameState
+	{Data.Table ptable
 	})
 	{
-		gameState = pgameState;
+		table = ptable;
 		
 		updateWithoutInputs(updateHidden:false);
 	}
@@ -172,24 +172,24 @@ class GameStatea0WZ_gH0pEe2_45_urIT6LmdwA extends dime.DIMEComponent implements 
   		
   		
   		
-  		Data.GameState
-  		 initOnDemandgameState()
+  		Data.Table
+  		 initOnDemandtable()
   		{
-  			if(this.gameState==null){
-  				this.gameState = new Data.GameState
+  			if(this.table==null){
+  				this.table = new Data.Table
   				();
   			}
-  			return this.gameState;
+  			return this.table;
   		}
-  		void setValuegameState(Data.GameState
+  		void setValuetable(Data.Table
   		 value)
   		{
-  			this.gameState = value;
+  			this.table = value;
   		}
-  		void gameStatesetValue(Data.GameState
+  		void tablesetValue(Data.Table
   		 value)
   		{
-  			this.setValuegameState(value);
+  			this.setValuetable(value);
   		}
   		
   	
