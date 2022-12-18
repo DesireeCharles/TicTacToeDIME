@@ -3,9 +3,9 @@ package de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app;
 @javax.persistence.Entity
 @javax.persistence.Cacheable
 @org.hibernate.annotations.Cache(usage = org.hibernate.annotations.CacheConcurrencyStrategy.READ_WRITE)
-@javax.persistence.Table(name = "t_TableEntry__kekm0w8qee2x_c6", indexes={@javax.persistence.Index(columnList="meta_inheritance")})
-@de.ls5.dywa.annotations.IdRef(id = 4L)
-public class TableEntryImpl implements TableEntry {
+@javax.persistence.Table(name = "t_Leaderboard__uhrwqx8dee29ivx", indexes={@javax.persistence.Index(columnList="meta_inheritance")})
+@de.ls5.dywa.annotations.IdRef(id = 8L)
+public class LeaderboardImpl implements Leaderboard {
 	@javax.persistence.Id
 	@javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.SEQUENCE)
 	@javax.persistence.Column(name = "meta_id")
@@ -26,15 +26,13 @@ public class TableEntryImpl implements TableEntry {
 
 	
 	/* MAIN ATTRIBUTES START */
-	@de.ls5.dywa.annotations.IdRef(id = 24L)
-	@javax.persistence.Column(name = "a_StateValue__rwbu8w8qee2x_c6", columnDefinition="bigint")
-	private java.lang.Long stateValue;
+	@de.ls5.dywa.annotations.IdRef(id = 37L)
+	@javax.persistence.Column(name = "a_XWins__xgahix8dee29ivx", columnDefinition="bigint")
+	private java.lang.Long xWins;
 	
-	@de.ls5.dywa.annotations.IdRef(id = 25L)
-	@org.hibernate.annotations.Cascade(org.hibernate.annotations.CascadeType.PERSIST)
-	@javax.persistence.JoinColumn(name = "a_EntryState__sutd4xkpee2rznr")
-	@javax.persistence.ManyToOne
-	private de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryStateEntity entryState;
+	@de.ls5.dywa.annotations.IdRef(id = 38L)
+	@javax.persistence.Column(name = "a_OWins__xsgcyx8dee29ivx", columnDefinition="bigint")
+	private java.lang.Long oWins;
 	
 	/* MAIN ATTRIBUTES END */
 	
@@ -51,7 +49,7 @@ public class TableEntryImpl implements TableEntry {
 	/* ADDITIONAL INHERITED MODELS END */
 	
 	// Constructors
-	public TableEntryImpl() {
+	public LeaderboardImpl() {
 	}
 
 
@@ -93,41 +91,30 @@ public class TableEntryImpl implements TableEntry {
 	}
 	
 	@java.lang.Override
-	public java.lang.Long getstateValue() {
-		return this.stateValue;
+	public java.lang.Long getxWins() {
+		return this.xWins;
 	}
 	
 	@java.lang.Override
-	public void setstateValue(java.lang.Long object) {
-		this.stateValue = object;
+	public void setxWins(java.lang.Long object) {
+		this.xWins = object;
 	}
 	
 	
 	@java.lang.Override
-	public de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryState getentryState() {
-		if (this.entryState != null) {
-			return de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryState.valueOf(this.entryState.getDywaName());
-		}
-		return null;
+	public java.lang.Long getoWins() {
+		return this.oWins;
 	}
 	
 	@java.lang.Override
-	public void setentryState(de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryState object) {
-		this.entryState = object != null ? object.getEntityAs(EntryStateEntity.class) : null;
-	}
-	
-	protected void setentryState_(de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryStateEntity object) {
-		this.entryState = object;
-	}
-	
-	protected de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryStateEntity getentryState_() {
-		return this.entryState;
+	public void setoWins(java.lang.Long object) {
+		this.oWins = object;
 	}
 	
 	
 	@java.lang.Override
 	public String toString() {
-		return "TableEntry[id: " + this.id_ + ", name: " + this.name_ + "]";
+		return "Leaderboard[id: " + this.id_ + ", name: " + this.name_ + "]";
 	}
 }
 

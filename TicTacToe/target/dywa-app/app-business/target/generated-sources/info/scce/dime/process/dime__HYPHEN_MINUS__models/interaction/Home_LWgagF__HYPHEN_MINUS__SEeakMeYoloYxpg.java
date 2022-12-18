@@ -32,8 +32,51 @@ import info.scce.dime.util.CDIUtil;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 
+@info.scce.dime.process.RequiresDI
 public final class Home_LWgagF__HYPHEN_MINUS__SEeakMeYoloYxpg implements DIMEProcess {
 
+			// helper context for JSON serialization.
+			@JsonAutoDetect(fieldVisibility = JsonAutoDetect.Visibility.ANY)
+			public static class JSONContext extends info.scce.dime.process.JSONContext {
+
+				// begin context variables
+				// end context variables
+
+				// begin direct dataflow variables
+				private de.ls5.dywa.generated.rest.types.Leaderboard Create_LeaderboardSuccessCreated_gzrbc38FEe29IvxJUcVYFw;
+				// end direct dataflow variables
+
+				// begin index variables of iterate sibs
+				// endindex variables of iterate sibs
+
+				public static JSONContext toJSON(BeanManager bm, Context ctx) {
+					final JSONContext result = new JSONContext();
+					final info.scce.dime.rest.ObjectCache objectCache = new info.scce.dime.rest.ObjectCache();
+
+					if(ctx.Create_LeaderboardSuccessCreated_gzrbc38FEe29IvxJUcVYFw != null) {
+						result.Create_LeaderboardSuccessCreated_gzrbc38FEe29IvxJUcVYFw = de.ls5.dywa.generated.rest.types.Leaderboard.fromDywaEntity(ctx.Create_LeaderboardSuccessCreated_gzrbc38FEe29IvxJUcVYFw, objectCache);
+						de.ls5.dywa.generated.rest.types.LeaderboardSelective.copy(ctx.Create_LeaderboardSuccessCreated_gzrbc38FEe29IvxJUcVYFw, result.Create_LeaderboardSuccessCreated_gzrbc38FEe29IvxJUcVYFw, objectCache);
+					}
+
+					return result;
+				}
+
+				@Override
+		        public Context toContext(BeanManager bm, ProcessCallFrame callStack) {
+					final Context result = new Context();
+		            result.beanManager = bm;
+					result.callStack = callStack;
+
+
+					info.scce.dime.process.ContextTransformer contextTransformer = info.scce.dime.process.ContextTransformer.getInstance(bm);
+
+					if (this.Create_LeaderboardSuccessCreated_gzrbc38FEe29IvxJUcVYFw != null) {
+						result.Create_LeaderboardSuccessCreated_gzrbc38FEe29IvxJUcVYFw = contextTransformer.transform(this.Create_LeaderboardSuccessCreated_gzrbc38FEe29IvxJUcVYFw);
+					}
+
+					return result;
+		        }
+			}
 
 	// attributes shaping the context variables.
 	public static class Context implements DIMEProcessContext {
@@ -53,24 +96,28 @@ public final class Home_LWgagF__HYPHEN_MINUS__SEeakMeYoloYxpg implements DIMEPro
 		// stack variables
 		private ProcessCallFrame callStack = new ProcessCallFrame();
 
+		// direct dataflow variables.
+		private de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.Leaderboard Create_LeaderboardSuccessCreated_gzrbc38FEe29IvxJUcVYFw;
 
 		public info.scce.dime.process.JSONContext toJSON() {
-			// this process has no context variables that need to be preserved
-			return null;
+			return JSONContext.toJSON(beanManager, this);
         }
 	}
 
 	private enum SIB_ID {
 	_e1c9EW8TEe29MJ2ZfnuTaA,
 	_JVFm8XbqEe2qntwH9Ijd8A,
+	_gzKeEX8FEe29IvxJUcVYFw,
 		;
 	}
 
 	private final BeanManager beanManager;
+	private final de.ls5.dywa.generated.controller.dime__HYPHEN_MINUS__models.app.LeaderboardController LeaderboardController;
 
 	@Inject
-	public Home_LWgagF__HYPHEN_MINUS__SEeakMeYoloYxpg(final BeanManager beanManager) {
+	public Home_LWgagF__HYPHEN_MINUS__SEeakMeYoloYxpg(final BeanManager beanManager, de.ls5.dywa.generated.controller.dime__HYPHEN_MINUS__models.app.LeaderboardController LeaderboardController) {
 		this.beanManager = beanManager;
+		this.LeaderboardController = LeaderboardController;
 	}
 
 	private Context createContext() {
@@ -99,10 +146,7 @@ public final class Home_LWgagF__HYPHEN_MINUS__SEeakMeYoloYxpg implements DIMEPro
 
 	@Override
 	public Home_LWgagF__HYPHEN_MINUS__SEeakMeYoloYxpgResult continueExecution(ProcessCallFrame callStack, info.scce.dime.process.JSONContext context, String sibId, Object slgResult) {
-		assert context == null;
-		final Context ctx = new Context();
-		ctx.beanManager = this.beanManager;
-		ctx.callStack = callStack;
+		final Context ctx = ((JSONContext) context).toContext(this.beanManager, callStack);
 
 		switch (sibId) {
 		case "_e1c9EW8TEe29MJ2ZfnuTaA": return executeInternal(ctx, continue_e1c9EW8TEe29MJ2ZfnuTaA(ctx, slgResult));
@@ -121,6 +165,10 @@ public final class Home_LWgagF__HYPHEN_MINUS__SEeakMeYoloYxpg implements DIMEPro
 				}
 				case _JVFm8XbqEe2qntwH9Ijd8A: {
 					curr = execute_JVFm8XbqEe2qntwH9Ijd8A(ctx);
+					break;
+				}
+				case _gzKeEX8FEe29IvxJUcVYFw: {
+					curr = execute_gzKeEX8FEe29IvxJUcVYFw(ctx);
 					break;
 				}
 				default: {
@@ -160,7 +208,7 @@ public final class Home_LWgagF__HYPHEN_MINUS__SEeakMeYoloYxpg implements DIMEPro
 		final CallFrame currentFrame = new CallFrame("info.scce.dime.process.dime__HYPHEN_MINUS__models.interaction.Home_LWgagF__HYPHEN_MINUS__SEeakMeYoloYxpg:_e1c9EW8TEe29MJ2ZfnuTaA", ctx, ctx.lastMajorSIBId);
 		ctx.callStack.getCallFrames().add(currentFrame);
 	
-		final info.scce.dime.process.dime__HYPHEN_MINUS__models.interaction.GamelOGIC_1O3EgW8SEe29MJ2ZfnuTaA.GamelOGIC_1O3EgW8SEe29MJ2ZfnuTaAResult result = instance.execute(ctx.callStack );
+		final info.scce.dime.process.dime__HYPHEN_MINUS__models.interaction.GamelOGIC_1O3EgW8SEe29MJ2ZfnuTaA.GamelOGIC_1O3EgW8SEe29MJ2ZfnuTaAResult result = instance.execute(ctx.callStack , ctx.Create_LeaderboardSuccessCreated_gzrbc38FEe29IvxJUcVYFw);
 	
 		return continue_e1c9EW8TEe29MJ2ZfnuTaA(ctx, result);
 	}
@@ -171,6 +219,10 @@ public final class Home_LWgagF__HYPHEN_MINUS__SEeakMeYoloYxpg implements DIMEPro
 		ctx.callStack.getCallFrames().remove(ctx.callStack.getCallFrames().size() - 1);
 		
 		switch(result.getBranchName()) {
+		case "back": {
+			// branch 'back'
+			return SIB_ID._JVFm8XbqEe2qntwH9Ijd8A;
+		}
 			default: throw new IllegalStateException("SIB 'gamelOGIC' has no successor defined for branch '" + result.getBranchName() + '\'');
 		}
 	}
@@ -211,12 +263,24 @@ public final class Home_LWgagF__HYPHEN_MINUS__SEeakMeYoloYxpg implements DIMEPro
 		final info.scce.dime.gui.dime__HYPHEN_MINUS__models.gui.publichome.PublicHome_LmrS0Ej8EeaK4_MRcoLfnw_INTERNALResult result = (info.scce.dime.gui.dime__HYPHEN_MINUS__models.gui.publichome.PublicHome_LmrS0Ej8EeaK4_MRcoLfnw_INTERNALResult) guiResult;
 		if ("Play".equals(result.getBranchName())) {
 			// branch 'Play'
-			return SIB_ID._e1c9EW8TEe29MJ2ZfnuTaA;
+			return SIB_ID._gzKeEX8FEe29IvxJUcVYFw;
 		}
 		else {
 			// unspecified branch, show same GUI again
 			return execute_JVFm8XbqEe2qntwH9Ijd8A(ctx);
 		}
+	}
+	// container for create SIB 'Create Leaderboard'.
+	public SIB_ID execute_gzKeEX8FEe29IvxJUcVYFw(final Context ctx) {
+		final de.ls5.dywa.generated.controller.dime__HYPHEN_MINUS__models.app.LeaderboardController domController = this.LeaderboardController;
+	
+		final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.Leaderboard createdObj = domController.create("");
+	
+	
+		ctx.Create_LeaderboardSuccessCreated_gzrbc38FEe29IvxJUcVYFw = createdObj;
+	
+		// branch 'success'
+		return SIB_ID._e1c9EW8TEe29MJ2ZfnuTaA;
 	}
 	
 }  

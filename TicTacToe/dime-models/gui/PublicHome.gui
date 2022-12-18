@@ -8,10 +8,10 @@ GUI _LmrS0Ej8EeaK4_MRcoLfnw_INTERNAL {
   	dfViewWorkaround true
   }
   
-  Template _Lm3gEEj8EeaK4_MRcoLfnw_INTERNAL at 270,30 size 650,930 {
+  Template _Lm3gEEj8EeaK4_MRcoLfnw_INTERNAL at 270,30 size 650,1110 {
   	blockName "body"
   	disableAutoLayout false
-  	Jumbotron _6CcloEmAEeaUSpYQeYyxnQ_INTERNAL at 10,30 size 630,870 {
+  	Jumbotron _6CcloEmAEeaUSpYQeYyxnQ_INTERNAL at 10,30 size 630,1050 {
   		generalStyle GeneralStyling _hH5ScTD2EemwX93gZgy7kw {
   				tallness Fitting
   				marginBottom None
@@ -171,7 +171,7 @@ GUI _LmrS0Ej8EeaK4_MRcoLfnw_INTERNAL {
   			}
   		}
   		
-  		Row _LlaTgHbZEe2qntwH9Ijd8A_INTERNAL at 10,240 size 350,600 {
+  		Row _LlaTgHbZEe2qntwH9Ijd8A_INTERNAL at 10,240 size 350,780 {
   			generalStyle GeneralStyling _LlmgwHbZEe2qntwH9Ijd8A {
   					tallness Fitting
   					marginBottom None
@@ -184,7 +184,7 @@ GUI _LmrS0Ej8EeaK4_MRcoLfnw_INTERNAL {
   			MoveDown _Llcvw3bZEe2qntwH9Ijd8A_INTERNAL at 2,10 size 14,7 {
   			}
   			
-  			Col _LlcvxXbZEe2qntwH9Ijd8A_INTERNAL at 10,30 size 320,550 {
+  			Col _LlcvxXbZEe2qntwH9Ijd8A_INTERNAL at 10,30 size 320,730 {
   				wideness Full
   				layout Layout _LlkrkHbZEe2qntwH9Ijd8A {
   						size Default
@@ -314,7 +314,7 @@ GUI _LmrS0Ej8EeaK4_MRcoLfnw_INTERNAL {
   								renderMarkdown false
   								maxChars 0
   								html false
-  								rawContent "The first player to get 3 of her marks in a row (up, down, across, or diagonally) is the winner."
+  								rawContent "The first player to get 3 of their marks in a row (vertically, horizontally, or diagonally) is the winner."
   								styling TextStyling _0P9YlnbvEe2qntwH9Ijd8A {
   										small false
   										highlight false
@@ -398,6 +398,70 @@ GUI _LmrS0Ej8EeaK4_MRcoLfnw_INTERNAL {
   					}
   					
   					MoveDown _Y-1yxXbZEe2qntwH9Ijd8A_INTERNAL at 2,10 size 14,7 {
+  					}
+  				}
+  				
+  				Row _9hBsgX8MEe29IvxJUcVYFw at 10,530 size 250,170 {
+  					generalStyle GeneralStyling _9hN5wH8MEe29IvxJUcVYFw {
+  							tallness Fitting
+  							marginBottom None
+  							attributes [  ]
+  							marginTop None
+  						}
+  					MoveUp _9hBsg38MEe29IvxJUcVYFw at 2,2 size 14,7 {
+  					}
+  					
+  					MoveDown _9hBshX8MEe29IvxJUcVYFw at 2,10 size 14,7 {
+  					}
+  					
+  					Col _9hCTkX8MEe29IvxJUcVYFw at 10,30 size 220,120 {
+  						wideness Full
+  						layout Layout _9hEIwX8MEe29IvxJUcVYFw {
+  								size Default
+  								offset None
+  								alignment Center
+  							}
+  						generalStyle GeneralStyling _9hEIwH8MEe29IvxJUcVYFw {
+  								tallness Fitting
+  								marginBottom None
+  								attributes [  ]
+  								marginTop None
+  							}
+  						MoveLeft _9hCTk38MEe29IvxJUcVYFw at 2,2 size 7,14 {
+  						}
+  						
+  						MoveRight _9hC6oX8MEe29IvxJUcVYFw at 10,2 size 7,14 {
+  						}
+  						
+  						Text _vuW4wH8KEe29IvxJUcVYFw at 10,30 size 200,60 {
+  							content [ StaticContent _vubxQX8KEe29IvxJUcVYFw {
+  									renderMarkdown false
+  									maxChars 0
+  									html false
+  									rawContent "By Dominick Stephens and Desirèe Charles"
+  									styling TextStyling _vubxQn8KEe29IvxJUcVYFw {
+  											small true
+  											highlight false
+  											deleted false
+  											underline false
+  											bold false
+  											alignment Left
+  											italic false
+  											color Default
+  										}
+  								} ]
+  							generalStyle GeneralStyling _vubxQH8KEe29IvxJUcVYFw {
+  									tallness Fitting
+  									marginBottom Double
+  									attributes [  ]
+  									marginTop None
+  								}
+  							MoveUp _vuW4wn8KEe29IvxJUcVYFw at 2,2 size 14,7 {
+  							}
+  							
+  							MoveDown _vuW4xH8KEe29IvxJUcVYFw at 2,10 size 14,7 {
+  							}
+  						}
   					}
   				}
   			}

@@ -17,7 +17,7 @@ public class PublicHomeGUIResumer extends info.scce.dime.process.GUIResumer {
 	@javax.ws.rs.Path("Play/branch/public")
 	@javax.ws.rs.Produces(javax.ws.rs.core.MediaType.APPLICATION_JSON)
 	@javax.ws.rs.Consumes(javax.ws.rs.core.MediaType.APPLICATION_JSON)
-	public javax.ws.rs.core.Response continuePlayBranch(info.scce.dime.rest.gui.model._XDpG0XbYEe2qntwH9Ijd8A_INTERNALBranch output) {
+	public javax.ws.rs.core.Response continuePlayBranch(info.scce.dime.rest.gui.model._i3H0kXbbEe2qntwH9Ijd8ABranch output) {
 		
 		checkAuthentication(output.getCallStack(),"_LmrS0Ej8EeaK4_MRcoLfnw_INTERNAL/Play");
 		

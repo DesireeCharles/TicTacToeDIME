@@ -37,6 +37,8 @@ public static ContextTransformer getInstance(javax.enterprise.inject.spi.BeanMan
 @Inject de.ls5.dywa.generated.rest.controller.TurnStateREST TurnStateREST;
 @Inject de.ls5.dywa.generated.controller.dime__HYPHEN_MINUS__models.app.GameStateController GameStateController;
 @Inject de.ls5.dywa.generated.rest.controller.GameStateREST GameStateREST;
+@Inject de.ls5.dywa.generated.controller.dime__HYPHEN_MINUS__models.app.LeaderboardController LeaderboardController;
+@Inject de.ls5.dywa.generated.rest.controller.LeaderboardREST LeaderboardREST;
 
 @Inject de.ls5.dywa.generated.util.DomainFileController domainFileController;
 
@@ -127,6 +129,17 @@ public de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.GameState tra
 	else {
 		throw new java.lang.IllegalArgumentException("Transient enum types are not allowed");
 	}
+	return obj;
+}
+public de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.Leaderboard transform(de.ls5.dywa.generated.rest.types.Leaderboard o) {
+	final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.Leaderboard obj;
+	if (o.getDywaId() > 0) {
+		obj = LeaderboardController.read(o.getDywaId());
+	}
+	 else if (o instanceof de.ls5.dywa.generated.rest.types.Leaderboard) {
+		obj = LeaderboardREST.copyToTransient((de.ls5.dywa.generated.rest.types.Leaderboard) o);
+	}
+	 else { throw new java.lang.IllegalArgumentException("Unknown type"); } 
 	return obj;
 }
 }

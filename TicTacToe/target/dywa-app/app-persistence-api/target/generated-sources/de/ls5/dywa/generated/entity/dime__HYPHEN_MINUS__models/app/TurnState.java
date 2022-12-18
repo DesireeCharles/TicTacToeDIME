@@ -6,7 +6,7 @@ package de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app;
 @de.ls5.dywa.annotations.ShortDescription(description = "")
 @de.ls5.dywa.annotations.LongDescription(description = "")
 public enum TurnState implements de.ls5.dywa.generated.util.Identifiable, de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TurnStateInterface {
-	X(44L), O(45L);
+	X(47L), O(48L);
 	
 	private final long id;
 	private TurnStateInterface internalDelegate;
@@ -113,10 +113,10 @@ public enum TurnState implements de.ls5.dywa.generated.util.Identifiable, de.ls5
 	}
 	
 	public static TurnState forId(long id) {
-		if (id == 44) {
+		if (id == 47) {
 			return TurnState.X;
 		} else 
-		if (id == 45) {
+		if (id == 48) {
 			return TurnState.O;
 		}
 		return null;

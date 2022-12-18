@@ -26,7 +26,7 @@ public class TableImpl implements Table {
 
 	
 	/* MAIN ATTRIBUTES START */
-	@de.ls5.dywa.annotations.IdRef(id = 16L)
+	@de.ls5.dywa.annotations.IdRef(id = 17L)
 	@org.hibernate.annotations.Cascade(org.hibernate.annotations.CascadeType.PERSIST)
 	@javax.persistence.JoinTable(name="r_Table_TableRow__qyvvaw8qee2x_c6", joinColumns = { @javax.persistence.JoinColumn(name = "r1_Table_id") }, inverseJoinColumns = { @javax.persistence.JoinColumn(name = "r2_TableRow_id") })
 	@org.hibernate.annotations.ManyToAny(metaColumn=@javax.persistence.Column(name="m_TableRow_Type__qyvvaw8qee2x_c6"))
@@ -38,27 +38,27 @@ public class TableImpl implements Table {
 	)
 	private java.util.List<de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TableRow> tableRow  = new java.util.ArrayList<>();
 	
-	@de.ls5.dywa.annotations.IdRef(id = 17L)
+	@de.ls5.dywa.annotations.IdRef(id = 18L)
 	@org.hibernate.annotations.Cascade(org.hibernate.annotations.CascadeType.PERSIST)
 	@javax.persistence.JoinColumn(name = "a_TurnState__09oegxspee2vmrl")
 	@javax.persistence.ManyToOne
 	private de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TurnStateEntity turnState;
 	
-	@de.ls5.dywa.annotations.IdRef(id = 18L)
+	@de.ls5.dywa.annotations.IdRef(id = 19L)
 	@org.hibernate.annotations.Cascade(org.hibernate.annotations.CascadeType.PERSIST)
 	@javax.persistence.JoinColumn(name = "a_GameState__xyoqox0oee2_uri")
 	@javax.persistence.ManyToOne
 	private de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.GameStateEntity gameState;
 	
-	@de.ls5.dywa.annotations.IdRef(id = 19L)
+	@de.ls5.dywa.annotations.IdRef(id = 20L)
 	@javax.persistence.Column(name = "a_MoveCounter__ypp_qx0oee2_uri", columnDefinition="bigint")
 	private java.lang.Long moveCounter;
 	
-	@de.ls5.dywa.annotations.IdRef(id = 20L)
+	@de.ls5.dywa.annotations.IdRef(id = 21L)
 	@javax.persistence.Column(name = "a_IsWin__dzyeex1zee2bl67", columnDefinition="boolean")
 	private java.lang.Boolean isWin;
 	
-	@de.ls5.dywa.annotations.IdRef(id = 21L)
+	@de.ls5.dywa.annotations.IdRef(id = 22L)
 	@javax.persistence.Column(name = "a_TurnText__0mk_4x3see2onmp", columnDefinition="varchar")
 	private java.lang.String turnText;
 	

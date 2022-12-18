@@ -202,4 +202,19 @@ Data _tH3fEMwMEeWZVvvwxpYu8A {
   		isList false
   	}
   }
+  
+  ConcreteType _UhrwQX8DEe29IvxJUcVYFw at 140,245 size 140,73 {
+  	name "Leaderboard"
+  	PrimitiveAttribute _XGAHIX8DEe29IvxJUcVYFw at 5,32 size 130,18 {
+  		dataType Integer
+  		name "xWins"
+  		isList false
+  	}
+  	
+  	PrimitiveAttribute _XSGCYX8DEe29IvxJUcVYFw at 5,50 size 130,18 {
+  		dataType Integer
+  		name "oWins"
+  		isList false
+  	}
+  }
 }

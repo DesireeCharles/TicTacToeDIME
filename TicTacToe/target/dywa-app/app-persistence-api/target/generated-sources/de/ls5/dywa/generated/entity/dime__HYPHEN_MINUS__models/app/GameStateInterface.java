@@ -5,49 +5,49 @@ package de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app;
 @de.ls5.dywa.annotations.ShortDescription(description = "")
 @de.ls5.dywa.annotations.LongDescription(description = "")
 public interface GameStateInterface extends de.ls5.dywa.generated.util.Identifiable {
-	@de.ls5.dywa.annotations.IdRef(id = 32L)
+	@de.ls5.dywa.annotations.IdRef(id = 33L)
 	@de.ls5.dywa.annotations.OriginalName(name = "win")
 	@de.ls5.dywa.annotations.ShortDescription(description = "")
 	@de.ls5.dywa.annotations.LongDescription(description = "")
 	de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.GameState getwin();
 	
-	@de.ls5.dywa.annotations.IdRef(id = 32L)
+	@de.ls5.dywa.annotations.IdRef(id = 33L)
 	@de.ls5.dywa.annotations.OriginalName(name = "win")
 	@de.ls5.dywa.annotations.ShortDescription(description = "")
 	@de.ls5.dywa.annotations.LongDescription(description = "")
 	void setwin(de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.GameState object);
 	
-	@de.ls5.dywa.annotations.IdRef(id = 33L)
+	@de.ls5.dywa.annotations.IdRef(id = 34L)
 	@de.ls5.dywa.annotations.OriginalName(name = "tie")
 	@de.ls5.dywa.annotations.ShortDescription(description = "")
 	@de.ls5.dywa.annotations.LongDescription(description = "")
 	de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.GameState gettie();
 	
-	@de.ls5.dywa.annotations.IdRef(id = 33L)
+	@de.ls5.dywa.annotations.IdRef(id = 34L)
 	@de.ls5.dywa.annotations.OriginalName(name = "tie")
 	@de.ls5.dywa.annotations.ShortDescription(description = "")
 	@de.ls5.dywa.annotations.LongDescription(description = "")
 	void settie(de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.GameState object);
 	
-	@de.ls5.dywa.annotations.IdRef(id = 34L)
+	@de.ls5.dywa.annotations.IdRef(id = 35L)
 	@de.ls5.dywa.annotations.OriginalName(name = "progress")
 	@de.ls5.dywa.annotations.ShortDescription(description = "")
 	@de.ls5.dywa.annotations.LongDescription(description = "")
 	de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.GameState getprogress();
 	
-	@de.ls5.dywa.annotations.IdRef(id = 34L)
+	@de.ls5.dywa.annotations.IdRef(id = 35L)
 	@de.ls5.dywa.annotations.OriginalName(name = "progress")
 	@de.ls5.dywa.annotations.ShortDescription(description = "")
 	@de.ls5.dywa.annotations.LongDescription(description = "")
 	void setprogress(de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.GameState object);
 	
-	@de.ls5.dywa.annotations.IdRef(id = 35L)
+	@de.ls5.dywa.annotations.IdRef(id = 36L)
 	@de.ls5.dywa.annotations.OriginalName(name = "dywaDisplayName")
 	@de.ls5.dywa.annotations.ShortDescription(description = "")
 	@de.ls5.dywa.annotations.LongDescription(description = "")
 	java.lang.String getdywaDisplayName();
 	
-	@de.ls5.dywa.annotations.IdRef(id = 35L)
+	@de.ls5.dywa.annotations.IdRef(id = 36L)
 	@de.ls5.dywa.annotations.OriginalName(name = "dywaDisplayName")
 	@de.ls5.dywa.annotations.ShortDescription(description = "")
 	@de.ls5.dywa.annotations.LongDescription(description = "")

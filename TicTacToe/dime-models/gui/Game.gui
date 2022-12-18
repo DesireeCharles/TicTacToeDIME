@@ -4,7 +4,7 @@ GUI _AzVAIWnXEe2xCJpb6ooUzA {
   additionalJavaScript [  ]
   additionalStylesheets [  ]
   title "Game"
-  DataContext _AzdjAWnXEe2xCJpb6ooUzA at -40,-30 size 180,621 {
+  DataContext _AzdjAWnXEe2xCJpb6ooUzA at -40,-30 size 180,665 {
   	dfViewWorkaround true
   	ComplexVariable _U4lEQW8TEe29MJ2ZfnuTaA at 10,30 size 160,25 {
   		expanded false
@@ -23,7 +23,7 @@ GUI _AzVAIWnXEe2xCJpb6ooUzA {
   			id _lg-bgX1ZEe2BL67A2MFPXw
   		}
   		
-  		-ComplexRead-> _x6OmAX3vEe2ONMPeQEJUSA  decorate "" at (0,0) decorate "Text" at (0,0) {
+  		-ComplexRead-> _x6OmAX3vEe2ONMPeQEJUSA via (-40,12) (-40,556) decorate "" at (0,0) decorate "Text" at (0,0) {
   			id _vzVK8X3vEe2ONMPeQEJUSA
   		}
   	}
@@ -133,13 +133,26 @@ GUI _AzVAIWnXEe2xCJpb6ooUzA {
   			libraryComponentUID "_Rwbu8W8QEe2x_c6ogIlfZw"
   			isLive false
   		}
-  		-ComplexRead-> _yK5T8X1aEe2BL67A2MFPXw via (380,569) (380,236) decorate "" at (0,0) decorate "Text" at (0,0) {
+  		-ComplexRead-> _yK5T8X1aEe2BL67A2MFPXw via (-40,520) (-40,616) decorate "" at (0,0) decorate "Text" at (0,0) {
   			id _HDSU4HSkEe2vmrlDP84GiQ
+  		}
+  	}
+  	
+  	ComplexVariable _sGC9AH8EEe29IvxJUcVYFw at 6,610 size 160,25 {
+  		expanded false
+  		isLive false
+  		libraryComponentUID "_UhrwQX8DEe29IvxJUcVYFw"
+  		isInput true
+  		name "leaderboard"
+  		dfViewWorkaround true
+  		isList false
+  		-ComplexRead-> _qCYC0X8JEe29IvxJUcVYFw via (-50,592) (-50,346) decorate "" at (0,0) decorate "Text" at (0,0) {
+  			id _qlRUgX8JEe29IvxJUcVYFw
   		}
   	}
   }
   
-  Template _AzhNYWnXEe2xCJpb6ooUzA at 240,10 size 500,806 {
+  Template _AzhNYWnXEe2xCJpb6ooUzA at 240,10 size 500,1016 {
   	blockName ""
   	disableAutoLayout false
   	generalStyle GeneralStyling _AzoiIGnXEe2xCJpb6ooUzA {
@@ -148,7 +161,7 @@ GUI _AzVAIWnXEe2xCJpb6ooUzA {
   			attributes [  ]
   			marginTop None
   		}
-  	Row __mftoXbcEe2qntwH9Ijd8A at 10,606 size 480,170 {
+  	Row __mftoXbcEe2qntwH9Ijd8A at 10,816 size 480,170 {
   		generalStyle GeneralStyling __mpeoHbcEe2qntwH9Ijd8A {
   				tallness Fitting
   				marginBottom None
@@ -264,7 +277,7 @@ GUI _AzVAIWnXEe2xCJpb6ooUzA {
   		}
   	}
   	
-  	Row _wZ-mMX0pEe2-urIT6LmdwA at 10,200 size 430,396 {
+  	Row _wZ-mMX0pEe2-urIT6LmdwA at 10,410 size 430,396 {
   		generalStyle GeneralStyling _wZ-mPn0pEe2-urIT6LmdwA {
   				tallness Fitting
   				marginBottom None
@@ -430,7 +443,7 @@ GUI _AzVAIWnXEe2xCJpb6ooUzA {
   			layout Layout _qmnuUH4XEe2ONMPeQEJUSA {
   					size Default
   					offset None
-  					alignment Center
+  					alignment Left
   				}
   			generalStyle GeneralStyling _qmi10n4XEe2ONMPeQEJUSA {
   					tallness Fitting
@@ -472,6 +485,62 @@ GUI _AzVAIWnXEe2xCJpb6ooUzA {
   				}
   				
   				MoveDown _0z0_4WnkEe2xCJpb6ooUzA at 2,10 size 14,7 {
+  				}
+  			}
+  		}
+  	}
+  	
+  	Row _pGmXEX8JEe29IvxJUcVYFw at 10,200 size 200,200 {
+  		generalStyle GeneralStyling _pGwIEH8JEe29IvxJUcVYFw {
+  				tallness Fitting
+  				marginBottom Double
+  				attributes [  ]
+  				marginTop None
+  			}
+  		MoveUp _pGmXE38JEe29IvxJUcVYFw at 2,2 size 14,7 {
+  		}
+  		
+  		MoveDown _pGmXFX8JEe29IvxJUcVYFw at 2,10 size 14,7 {
+  		}
+  		
+  		Col _pGmXF38JEe29IvxJUcVYFw at 10,30 size 170,150 {
+  			wideness Full
+  			layout Layout _pGmXHX8JEe29IvxJUcVYFw {
+  					size Default
+  					offset None
+  					alignment Left
+  				}
+  			generalStyle GeneralStyling _pGmXHH8JEe29IvxJUcVYFw {
+  					tallness Fitting
+  					marginBottom None
+  					attributes [  ]
+  					marginTop None
+  				}
+  			MoveLeft _pGmXGX8JEe29IvxJUcVYFw at 2,2 size 7,14 {
+  			}
+  			
+  			MoveRight _pGmXG38JEe29IvxJUcVYFw at 10,2 size 7,14 {
+  			}
+  			
+  			GUISIB _qBggIX8JEe29IvxJUcVYFw at 10,30 size 150,90 {
+  				libraryComponentUID "_EVQWMX8JEe29IvxJUcVYFw"
+  				label "winCounter"
+  				generalStyle GeneralStyling _qC3yFH8JEe29IvxJUcVYFw {
+  						tallness Fitting
+  						marginBottom None
+  						attributes [  ]
+  						marginTop None
+  					}
+  				ComplexInputPort _qCYC0X8JEe29IvxJUcVYFw at 5,67 size 90,18 {
+  					libraryComponentUID "_UhrwQX8DEe29IvxJUcVYFw"
+  					isList false
+  					name "leaderboard"
+  				}
+  				
+  				MoveUp _qC3yEX8JEe29IvxJUcVYFw at 2,2 size 14,7 {
+  				}
+  				
+  				MoveDown _qC3yE38JEe29IvxJUcVYFw at 2,10 size 14,7 {
   				}
   			}
   		}

@@ -18,6 +18,7 @@
         <class>de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryStateEntity</class>
         <class>de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TurnStateEntity</class>
         <class>de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.GameStateEntity</class>
+        <class>de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.LeaderboardImpl</class>
 
 		<shared-cache-mode>ALL</shared-cache-mode>
 		<properties>

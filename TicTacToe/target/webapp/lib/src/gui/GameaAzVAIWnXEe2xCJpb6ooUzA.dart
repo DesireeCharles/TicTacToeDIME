@@ -43,6 +43,7 @@ import 'package:app/src/panel/Panel.dart' as panel;
 //GUI SIB imports
 import 'package:app/src/gui/BadgeaZlXgoXKOEe2rzNRUfilttw.dart';
 import 'package:app/src/gui/GameStatea0WZ_gH0pEe2_45_urIT6LmdwA.dart';
+import 'package:app/src/gui/WinCounteraEVQWMX8JEe29IvxJUcVYFw.dart';
 //Embedded process SIB imports
 
 import 'dart:js' as js;
@@ -59,6 +60,7 @@ import 'package:app/src/core/AbstractRoutes.dart';
   coreDirectives,panel.Panel,modal.Modal,DimeCustomeAttributes,formDirectives,FileSelect,routerDirectives,MaxLength,login.Login,SafeInnerHtmlDirective,
   BadgeaZlXgoXKOEe2rzNRUfilttw,
   GameStatea0WZ_gH0pEe2_45_urIT6LmdwA,
+  WinCounteraEVQWMX8JEe29IvxJUcVYFw,
   ],
   templateUrl: 'GameaAzVAIWnXEe2xCJpb6ooUzA.html'
 )
@@ -89,6 +91,9 @@ class GameaAzVAIWnXEe2xCJpb6ooUzA extends dime.DIMEComponent implements OnInit, 
   	/// GUI GameState
   	@ViewChildren(GameStatea0WZ_gH0pEe2_45_urIT6LmdwA)
   	List<GameStatea0WZ_gH0pEe2_45_urIT6LmdwA> componentSIBax57rEX3vEe2ONMPeQEJUSA;
+  	/// GUI winCounter
+  	@ViewChildren(WinCounteraEVQWMX8JEe29IvxJUcVYFw)
+  	List<WinCounteraEVQWMX8JEe29IvxJUcVYFw> componentSIBaqBggIX8JEe29IvxJUcVYFw;
   	
   	
   	
@@ -111,6 +116,9 @@ class GameaAzVAIWnXEe2xCJpb6ooUzA extends dime.DIMEComponent implements OnInit, 
 	//Table table
 		@Input()
 		Data.Table table;
+	//Leaderboard leaderboard
+		@Input()
+		Data.Leaderboard leaderboard;
 	
 	bool isDestroyed = true;
   
@@ -126,6 +134,8 @@ class GameaAzVAIWnXEe2xCJpb6ooUzA extends dime.DIMEComponent implements OnInit, 
 		//DATA CONTEXT
 		// Table table
 		this.table = null;
+		// Leaderboard leaderboard
+		this.leaderboard = null;
 						
 						
 		
@@ -151,6 +161,10 @@ class GameaAzVAIWnXEe2xCJpb6ooUzA extends dime.DIMEComponent implements OnInit, 
 		if(componentSIBax57rEX3vEe2ONMPeQEJUSA!=null) {
 			componentSIBax57rEX3vEe2ONMPeQEJUSA.forEach((n)=>n.restartComponent());
 		}
+		/// GUI winCounter
+		if(componentSIBaqBggIX8JEe29IvxJUcVYFw!=null) {
+			componentSIBaqBggIX8JEe29IvxJUcVYFw.forEach((n)=>n.restartComponent());
+		}
 		updateImageHash();
 	}
 	
@@ -160,14 +174,17 @@ class GameaAzVAIWnXEe2xCJpb6ooUzA extends dime.DIMEComponent implements OnInit, 
 		}
 		componentSIBayKmZAX1aEe2BL67A2MFPXw.forEach((n)=>n.updateWithoutInputs());
 		componentSIBax57rEX3vEe2ONMPeQEJUSA.forEach((n)=>n.updateWithoutInputs());
+		componentSIBaqBggIX8JEe29IvxJUcVYFw.forEach((n)=>n.updateWithoutInputs());
 		updateImageHash();
 	}
 	
 	void updateInputs(
-	{Data.Table ptable
+	{Data.Table ptable,
+	Data.Leaderboard pleaderboard
 	})
 	{
 		table = ptable;
+		leaderboard = pleaderboard;
 		
 		updateWithoutInputs(updateHidden:false);
 	}
@@ -246,12 +263,32 @@ class GameaAzVAIWnXEe2xCJpb6ooUzA extends dime.DIMEComponent implements OnInit, 
   		{
   			this.setValuetable(value);
   		}
+  		Data.Leaderboard
+  		 initOnDemandleaderboard()
+  		{
+  			if(this.leaderboard==null){
+  				this.leaderboard = new Data.Leaderboard
+  				();
+  			}
+  			return this.leaderboard;
+  		}
+  		void setValueleaderboard(Data.Leaderboard
+  		 value)
+  		{
+  			this.leaderboard = value;
+  		}
+  		void leaderboardsetValue(Data.Leaderboard
+  		 value)
+  		{
+  			this.setValueleaderboard(value);
+  		}
   		
   	
   		
   		
   		//GUI SIB badge
   		//GUI SIB GameState
+  		//GUI SIB winCounter
   		
   
 	/// returns the surrounding container class for major GUI models

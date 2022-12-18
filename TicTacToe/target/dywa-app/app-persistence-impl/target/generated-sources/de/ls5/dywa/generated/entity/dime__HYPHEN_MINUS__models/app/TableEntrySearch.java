@@ -98,7 +98,7 @@ public class TableEntrySearch implements TableEntry {
 
 	@java.lang.Override
 	public java.lang.Long getstateValue() {
-		return (java.lang.Long) this.attributeMap.get(dywaIdToJpqlAttr.get(23L));
+		return (java.lang.Long) this.attributeMap.get(dywaIdToJpqlAttr.get(24L));
 	}
 	public void setstateValue
 	(java.lang.Long object) {
@@ -106,11 +106,11 @@ public class TableEntrySearch implements TableEntry {
 				if (! (object instanceof java.lang.Long)) {
 							throw new java.lang.RuntimeException("Wrong type");
 				}
-			this.attributeMap.put(dywaIdToJpqlAttr.get(23L), object);
+			this.attributeMap.put(dywaIdToJpqlAttr.get(24L), object);
 	}
 	@java.lang.Override
 	public de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryState getentryState() {
-		return de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryState.forId(((de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryStateEntity) this.attributeMap.get(dywaIdToJpqlAttr.get(24L))).getDywaId());
+		return de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryState.forId(((de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryStateEntity) this.attributeMap.get(dywaIdToJpqlAttr.get(25L))).getDywaId());
 	}
 	public void setentryState
 	(de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryState object) {
@@ -118,7 +118,7 @@ public class TableEntrySearch implements TableEntry {
 				if (! (object instanceof de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryState)) {
 							throw new java.lang.RuntimeException("Wrong type");
 				}
-			this.attributeMap.put(dywaIdToJpqlAttr.get(24L), object != null ? object.getEntityAs(EntryStateEntity.class)/*1*/ : null);
+			this.attributeMap.put(dywaIdToJpqlAttr.get(25L), object != null ? object.getEntityAs(EntryStateEntity.class)/*1*/ : null);
 	}
 
 	// EXTENSION ATTRIBUTES

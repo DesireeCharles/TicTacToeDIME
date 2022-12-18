@@ -98,7 +98,7 @@ public class BaseUserSearch implements BaseUser {
 
 	@java.lang.Override
 	public java.util.List<de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.ConcreteUser> getconcreteUser_ConcreteUser() {
-		return (java.util.List<de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.ConcreteUser>) this.listAttributeMap.get(dywaIdToJpqlAttr.get(10L));
+		return (java.util.List<de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.ConcreteUser>) this.listAttributeMap.get(dywaIdToJpqlAttr.get(11L));
 	}
 	public void setconcreteUser_ConcreteUser
 	(java.util.List<de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.ConcreteUser> object) {
@@ -108,11 +108,11 @@ public class BaseUserSearch implements BaseUser {
 							throw new java.lang.RuntimeException("Wrong type");
 				}
 				}
-			this.listAttributeMap.put(dywaIdToJpqlAttr.get(10L), object);
+			this.listAttributeMap.put(dywaIdToJpqlAttr.get(11L), object);
 	}
 	@java.lang.Override
 	public java.lang.String getpassword() {
-		return (java.lang.String) this.attributeMap.get(dywaIdToJpqlAttr.get(11L));
+		return (java.lang.String) this.attributeMap.get(dywaIdToJpqlAttr.get(12L));
 	}
 	public void setpassword
 	(java.lang.String object) {
@@ -120,11 +120,11 @@ public class BaseUserSearch implements BaseUser {
 				if (! (object instanceof java.lang.String)) {
 							throw new java.lang.RuntimeException("Wrong type");
 				}
-			this.attributeMap.put(dywaIdToJpqlAttr.get(11L), object);
+			this.attributeMap.put(dywaIdToJpqlAttr.get(12L), object);
 	}
 	@java.lang.Override
 	public de.ls5.dywa.generated.util.FileReference getimage() {
-		return new de.ls5.dywa.generated.util.FileReference((de.ls5.dywa.generated.util.DomainFile) this.attributeMap.get(dywaIdToJpqlAttr.get(12L)));
+		return new de.ls5.dywa.generated.util.FileReference((de.ls5.dywa.generated.util.DomainFile) this.attributeMap.get(dywaIdToJpqlAttr.get(13L)));
 	}
 	public void setimage
 	(de.ls5.dywa.generated.util.FileReference object) {
@@ -132,25 +132,13 @@ public class BaseUserSearch implements BaseUser {
 				if (! (object instanceof de.ls5.dywa.generated.util.FileReference)) {
 							throw new java.lang.RuntimeException("Wrong type");
 				}
-			this.attributeMap.put(dywaIdToJpqlAttr.get(12L), object != null ? object.getDelegate() : null);
+			this.attributeMap.put(dywaIdToJpqlAttr.get(13L), object != null ? object.getDelegate() : null);
 	}
 	@java.lang.Override
 	public java.lang.String getfirstName() {
-		return (java.lang.String) this.attributeMap.get(dywaIdToJpqlAttr.get(13L));
-	}
-	public void setfirstName
-	(java.lang.String object) {
-			
-				if (! (object instanceof java.lang.String)) {
-							throw new java.lang.RuntimeException("Wrong type");
-				}
-			this.attributeMap.put(dywaIdToJpqlAttr.get(13L), object);
-	}
-	@java.lang.Override
-	public java.lang.String getlastName() {
 		return (java.lang.String) this.attributeMap.get(dywaIdToJpqlAttr.get(14L));
 	}
-	public void setlastName
+	public void setfirstName
 	(java.lang.String object) {
 			
 				if (! (object instanceof java.lang.String)) {
@@ -159,8 +147,20 @@ public class BaseUserSearch implements BaseUser {
 			this.attributeMap.put(dywaIdToJpqlAttr.get(14L), object);
 	}
 	@java.lang.Override
-	public java.lang.String getusername() {
+	public java.lang.String getlastName() {
 		return (java.lang.String) this.attributeMap.get(dywaIdToJpqlAttr.get(15L));
+	}
+	public void setlastName
+	(java.lang.String object) {
+			
+				if (! (object instanceof java.lang.String)) {
+							throw new java.lang.RuntimeException("Wrong type");
+				}
+			this.attributeMap.put(dywaIdToJpqlAttr.get(15L), object);
+	}
+	@java.lang.Override
+	public java.lang.String getusername() {
+		return (java.lang.String) this.attributeMap.get(dywaIdToJpqlAttr.get(16L));
 	}
 	public void setusername
 	(java.lang.String object) {
@@ -168,7 +168,7 @@ public class BaseUserSearch implements BaseUser {
 				if (! (object instanceof java.lang.String)) {
 							throw new java.lang.RuntimeException("Wrong type");
 				}
-			this.attributeMap.put(dywaIdToJpqlAttr.get(15L), object);
+			this.attributeMap.put(dywaIdToJpqlAttr.get(16L), object);
 	}
 
 	// EXTENSION ATTRIBUTES

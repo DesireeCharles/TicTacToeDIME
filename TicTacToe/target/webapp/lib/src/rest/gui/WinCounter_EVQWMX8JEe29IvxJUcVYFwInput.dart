@@ -7,22 +7,16 @@ import 'package:app/src/core/dime_process_service.dart';
 import 'package:app/src/data/Data.dart' as Data;
 import 'package:app/src/models/FileReference.dart';
 
-class Game_AzVAIWnXEe2xCJpb6ooUzAInput extends UserInteractionResponse {
+class WinCounter_EVQWMX8JEe29IvxJUcVYFwInput extends UserInteractionResponse {
 	
-	Data.Table table = null;
 	Data.Leaderboard leaderboard = null;
 	
-	Game_AzVAIWnXEe2xCJpb6ooUzAInput(Map<String,dynamic> map, Map<String,dynamic> cache)
+	WinCounter_EVQWMX8JEe29IvxJUcVYFwInput(Map<String,dynamic> map, Map<String,dynamic> cache)
 	{
 		 Map<String,dynamic> inputPorts = map['inputs'];
 		if(inputPorts.containsKey('leaderboard')) {
 			if(inputPorts['leaderboard']!=null){
 				leaderboard = Data.Leaderboard.fromJSOG(jsog:inputPorts['leaderboard'],cache:cache);
-			}
-		}
-		if(inputPorts.containsKey('table')) {
-			if(inputPorts['table']!=null){
-				table = Data.Table.fromJSOG(jsog:inputPorts['table'],cache:cache);
 			}
 		}
 	}
@@ -32,7 +26,7 @@ class Game_AzVAIWnXEe2xCJpb6ooUzAInput extends UserInteractionResponse {
 	    return false;
 	}
 	
-	bool inpusChanged(Game_AzVAIWnXEe2xCJpb6ooUzAInput input) {
-		return table != input.table || leaderboard != input.leaderboard;
+	bool inpusChanged(WinCounter_EVQWMX8JEe29IvxJUcVYFwInput input) {
+		return leaderboard != input.leaderboard;
 	}
 }

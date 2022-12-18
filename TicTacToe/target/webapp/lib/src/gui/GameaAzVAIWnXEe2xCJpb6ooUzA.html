@@ -3,7 +3,7 @@
 <div
 
 [ngStyle]="{ 'margin-bottom':'30px' }"
-class="col-md-12 text-center"
+class="col-md-12 text-left"
 >
 <h1
 
@@ -11,11 +11,31 @@ class="col-md-12 text-center"
 <span aria-live="polite" aria-atomic="true" class="text-justify">
 <strong>
 <u>
-TicTacToe
+Tic Tac Toe
 </u>
 </strong>
 </span>
 </h1>
+</div>
+</div>
+<div 
+ [ngStyle]="{ 'margin-bottom':'30px' }"
+class="row">
+<div
+
+class="col-md-12 text-left"
+>
+	
+	<wincounter-tag
+		
+		[modalDialog]="false"
+	  	[currentbranch]="currentbranch"
+	  	[ismajorpage]="false"
+	  	[runtimeId]="runtimeId"
+	  	[guiId]="guiId"
+	  	[leaderboard]="leaderboard"
+	  >
+	  </wincounter-tag>
 </div>
 </div>
 <div 
@@ -87,8 +107,8 @@ type="button"
 (click)="actionbackeventai3H0kXbbEe2qntwH9Ijd8AEventTrigger()
 "
 class="btn btn-default btn-md">
+<span aria-hidden="true" aria-label="icon arrow-left" class="glyphicon glyphicon-arrow-left" style="right:2px"></span>
  Back
- <span aria-hidden="true" aria-label="icon arrow-left" class="glyphicon glyphicon-arrow-left" style="left:2px"></span>
 </button>
 <!-- end button Back -->
 </div>

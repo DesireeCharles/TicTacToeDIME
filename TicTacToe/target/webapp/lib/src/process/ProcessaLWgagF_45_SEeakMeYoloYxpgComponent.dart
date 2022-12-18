@@ -45,19 +45,10 @@ import 'package:app/src/gui/GameaAzVAIWnXEe2xCJpb6ooUzA.dart';
 		>
 		</publichome-tag>
 		<!-- Process gamelOGIC -->
-		<publichome-tag
-			*ngIf="isVisible(majorSIB,'_DQiDgXbqEe2qntwH9Ijd8A')"
-			[guiId]="'_LmrS0Ej8EeaK4_MRcoLfnw_INTERNAL'"
-			[runtimeId]="runtimeId"
-			[currentbranch]="currentBranch"
-			[modalDialog]="false"
-			[ismajorpage]="true"
-			(actionplayevent) = "eventaDQr0gXbqEe2qntwH9Ijd8APlayTrigger(\$event)"
-		>
-		</publichome-tag>
 		<game-tag
 			*ngIf="isVisible(majorSIB,'_XiL-0XbqEe2qntwH9Ijd8A')"
 			[table]="majoraXiL_45_0XbqEe2qntwH9Ijd8AInput.table"
+			[leaderboard]="majoraXiL_45_0XbqEe2qntwH9Ijd8AInput.leaderboard"
 			[guiId]="'_AzVAIWnXEe2xCJpb6ooUzA'"
 			[runtimeId]="runtimeId"
 			[currentbranch]="currentBranch"
@@ -105,8 +96,6 @@ class ProcessaLWgagF_45_SEeakMeYoloYxpgComponent extends GUIProcess implements O
 	
 	PublicHome_LmrS0Ej8EeaK4_MRcoLfnw_INTERNALInput majoraJVFm8XbqEe2qntwH9Ijd8AInput;
 	PublicHome_LmrS0Ej8EeaK4_MRcoLfnw_INTERNALInput minoraJVFm8XbqEe2qntwH9Ijd8AInput;
-	PublicHome_LmrS0Ej8EeaK4_MRcoLfnw_INTERNALInput majoraDQiDgXbqEe2qntwH9Ijd8AInput;
-	PublicHome_LmrS0Ej8EeaK4_MRcoLfnw_INTERNALInput minoraDQiDgXbqEe2qntwH9Ijd8AInput;
 	Game_AzVAIWnXEe2xCJpb6ooUzAInput majoraXiL_45_0XbqEe2qntwH9Ijd8AInput;
 	Game_AzVAIWnXEe2xCJpb6ooUzAInput minoraXiL_45_0XbqEe2qntwH9Ijd8AInput;
 	
@@ -121,10 +110,6 @@ class ProcessaLWgagF_45_SEeakMeYoloYxpgComponent extends GUIProcess implements O
 	// GUISIB PublicHome
 	@ViewChildren(PublicHomeaLmrS0Ej8EeaK4_MRcoLfnw_INTERNAL)
 	List<PublicHomeaLmrS0Ej8EeaK4_MRcoLfnw_INTERNAL> componentaJVFm8XbqEe2qntwH9Ijd8A;
-	// GUISIBs of Process gamelOGIC
-	// GUISIB PublicHome
-	@ViewChildren(PublicHomeaLmrS0Ej8EeaK4_MRcoLfnw_INTERNAL)
-	List<PublicHomeaLmrS0Ej8EeaK4_MRcoLfnw_INTERNAL> componentaDQiDgXbqEe2qntwH9Ijd8A;
 	// GUISIBs of Process gamelOGIC
 	// GUISIB Game
 	@ViewChildren(GameaAzVAIWnXEe2xCJpb6ooUzA)
@@ -190,29 +175,12 @@ class ProcessaLWgagF_45_SEeakMeYoloYxpgComponent extends GUIProcess implements O
 				}
 			}
 		}
-		if(isVisible(majorSIB,'_DQiDgXbqEe2qntwH9Ijd8A')) {
-			majoraDQiDgXbqEe2qntwH9Ijd8AInput = majorInput as PublicHome_LmrS0Ej8EeaK4_MRcoLfnw_INTERNALInput;
-			if(componentaDQiDgXbqEe2qntwH9Ijd8A != null) {
-				componentaDQiDgXbqEe2qntwH9Ijd8A.forEach((n)=>n.updateInputs(
-				));
-			}
-		} else if(isVisible(minorSIB,'_DQiDgXbqEe2qntwH9Ijd8A')) {
-			PublicHome_LmrS0Ej8EeaK4_MRcoLfnw_INTERNALInput newInput = minorInput as PublicHome_LmrS0Ej8EeaK4_MRcoLfnw_INTERNALInput;
-			bool hasChanged = minoraDQiDgXbqEe2qntwH9Ijd8AInput!=null?minoraDQiDgXbqEe2qntwH9Ijd8AInput.inpusChanged(newInput):true;
-			minoraDQiDgXbqEe2qntwH9Ijd8AInput = newInput;
-			if(componentaDQiDgXbqEe2qntwH9Ijd8A != null) {
-				componentaDQiDgXbqEe2qntwH9Ijd8A.forEach((n)=>n.updateInputs(
-				));
-				if(hasChanged) {
-					componentaDQiDgXbqEe2qntwH9Ijd8A.forEach((n)=>n.restartComponent());			
-				}
-			}
-		}
 		if(isVisible(majorSIB,'_XiL-0XbqEe2qntwH9Ijd8A')) {
 			majoraXiL_45_0XbqEe2qntwH9Ijd8AInput = majorInput as Game_AzVAIWnXEe2xCJpb6ooUzAInput;
 			if(componentaXiL_45_0XbqEe2qntwH9Ijd8A != null) {
 				componentaXiL_45_0XbqEe2qntwH9Ijd8A.forEach((n)=>n.updateInputs(
-					ptable:majoraXiL_45_0XbqEe2qntwH9Ijd8AInput.table
+					ptable:majoraXiL_45_0XbqEe2qntwH9Ijd8AInput.table,
+					pleaderboard:majoraXiL_45_0XbqEe2qntwH9Ijd8AInput.leaderboard
 				));
 			}
 		} else if(isVisible(minorSIB,'_XiL-0XbqEe2qntwH9Ijd8A')) {
@@ -221,7 +189,8 @@ class ProcessaLWgagF_45_SEeakMeYoloYxpgComponent extends GUIProcess implements O
 			minoraXiL_45_0XbqEe2qntwH9Ijd8AInput = newInput;
 			if(componentaXiL_45_0XbqEe2qntwH9Ijd8A != null) {
 				componentaXiL_45_0XbqEe2qntwH9Ijd8A.forEach((n)=>n.updateInputs(
-					ptable:minoraXiL_45_0XbqEe2qntwH9Ijd8AInput.table
+					ptable:minoraXiL_45_0XbqEe2qntwH9Ijd8AInput.table,
+					pleaderboard:minoraXiL_45_0XbqEe2qntwH9Ijd8AInput.leaderboard
 				));
 				if(hasChanged) {
 					componentaXiL_45_0XbqEe2qntwH9Ijd8A.forEach((n)=>n.restartComponent());			
@@ -234,24 +203,6 @@ class ProcessaLWgagF_45_SEeakMeYoloYxpgComponent extends GUIProcess implements O
 	// Branches for GUISIB PublicHome of Process Home
 	// Branch Play
 	void eventaJVG1EXbqEe2qntwH9Ijd8APlayTrigger(Map<String,dynamic> map)
-	{
-		var result = new PublicHome_LmrS0Ej8EeaK4_MRcoLfnw_INTERNALBranch.forPlayBranch(
-		);
-		_processService.continueProcess(
-			deserializer,
-			getActiveProcesses()[runtimeId].runtime,
-			getRuntimeId(),
-			'_LmrS0Ej8EeaK4_MRcoLfnw_INTERNAL',
-			'Play/branch/public',
-			result.toJSOG(),
-			parentRuntimeId:getParentRuntimeId()
-		)
-		.then((cpr)=>processResponse(_processService,cpr))
-		.catchError((e)=>processError(e));
-	}
-	// Branches for GUISIB PublicHome of Process gamelOGIC
-	// Branch Play
-	void eventaDQr0gXbqEe2qntwH9Ijd8APlayTrigger(Map<String,dynamic> map)
 	{
 		var result = new PublicHome_LmrS0Ej8EeaK4_MRcoLfnw_INTERNALBranch.forPlayBranch(
 		);

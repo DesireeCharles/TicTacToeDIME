@@ -56,6 +56,7 @@ public final class ShowButtonPress_LhjwAXTxEe29EM7zgtpvCg implements DIMEProcess
 		// context variables.
 		private de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.Table table;
 		private de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TableEntry tableentry;
+		private de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.Leaderboard leaderboard;
 		// direct dataflow variables.
 		private de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryState Get_EntryStateXLiteral_YatzwXTxEe29EM7zgtpvCg;
 		private de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryState Get_EntryStateOLiteral_ZGZ1E3TxEe29EM7zgtpvCg;
@@ -87,6 +88,9 @@ public final class ShowButtonPress_LhjwAXTxEe29EM7zgtpvCg implements DIMEProcess
 	_vASWsX3qEe2ONMPeQEJUSA,
 	_L1DQoX3tEe2ONMPeQEJUSA,
 	_N7GXIX3tEe2ONMPeQEJUSA,
+	_hxEisX8DEe29IvxJUcVYFw,
+	_5U71oX8DEe29IvxJUcVYFw,
+	_6OkMUX8DEe29IvxJUcVYFw,
 		;
 	}
 
@@ -97,19 +101,20 @@ public final class ShowButtonPress_LhjwAXTxEe29EM7zgtpvCg implements DIMEProcess
 		this.beanManager = beanManager;
 	}
 
-	private Context createContext(de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TableEntry entry, de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.Table table) {
+	private Context createContext(de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TableEntry entry, de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.Leaderboard leaderboard, de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.Table table) {
 		final Context ctx = new Context();
 		ctx.beanManager = this.beanManager;
 
 		// store inputs
 		ctx.tableentry = entry;
+		ctx.leaderboard = leaderboard;
 		ctx.table = table;
 		
 		return ctx;
 	}
 
-	public ShowButtonPress_LhjwAXTxEe29EM7zgtpvCgResult execute(boolean isAuthenticationRequired,de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TableEntry entry, de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.Table table) {
-		final Context ctx = createContext(entry, table);
+	public ShowButtonPress_LhjwAXTxEe29EM7zgtpvCgResult execute(boolean isAuthenticationRequired,de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TableEntry entry, de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.Leaderboard leaderboard, de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.Table table) {
+		final Context ctx = createContext(entry, leaderboard, table);
 		ctx.callStack.setAuthenticationRequired(isAuthenticationRequired);
 
 		return executeInternal(ctx, SIB_ID._Rakx0XTxEe29EM7zgtpvCg);
@@ -202,6 +207,18 @@ public final class ShowButtonPress_LhjwAXTxEe29EM7zgtpvCg implements DIMEProcess
 				}
 				case _N7GXIX3tEe2ONMPeQEJUSA: {
 					curr = execute_N7GXIX3tEe2ONMPeQEJUSA(ctx);
+					break;
+				}
+				case _hxEisX8DEe29IvxJUcVYFw: {
+					curr = execute_hxEisX8DEe29IvxJUcVYFw(ctx);
+					break;
+				}
+				case _5U71oX8DEe29IvxJUcVYFw: {
+					curr = execute_5U71oX8DEe29IvxJUcVYFw(ctx);
+					break;
+				}
+				case _6OkMUX8DEe29IvxJUcVYFw: {
+					curr = execute_6OkMUX8DEe29IvxJUcVYFw(ctx);
 					break;
 				}
 				default: {
@@ -382,7 +399,7 @@ public final class ShowButtonPress_LhjwAXTxEe29EM7zgtpvCg implements DIMEProcess
 	public SIB_ID execute_vASWsX3qEe2ONMPeQEJUSA(final Context ctx) {
 		ctx.table.setisWin(true);
 		// branch 'success'
-		return SIB_ID._LhthA3TxEe29EM7zgtpvCg;
+		return SIB_ID._hxEisX8DEe29IvxJUcVYFw;
 	}
 	// container for SIB 'Set turnText' setting a new attribute value.
 	public SIB_ID execute_L1DQoX3tEe2ONMPeQEJUSA(final Context ctx) {
@@ -395,6 +412,50 @@ public final class ShowButtonPress_LhjwAXTxEe29EM7zgtpvCg implements DIMEProcess
 		ctx.table.setturnText("O");
 		// branch 'success'
 		return SIB_ID._YqfJ4X1cEe2BL67A2MFPXw;
+	}
+	// container for switch enum SIB 'Switch TurnState'.
+	public SIB_ID execute_hxEisX8DEe29IvxJUcVYFw(final Context ctx) {
+		if(Optional.ofNullable(ctx.table).map(de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.Table::getturnState).orElse(null) == null) {
+			// branch 'else'
+			return SIB_ID._LhthA3TxEe29EM7zgtpvCg;
+		}
+	
+		switch(Optional.ofNullable(ctx.table).map(de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.Table::getturnState).orElse(null).toString()){
+			case "X": // branch 'X'
+			return SIB_ID._5U71oX8DEe29IvxJUcVYFw;
+			case "O": // branch 'O'
+			return SIB_ID._6OkMUX8DEe29IvxJUcVYFw;
+			default : // branch 'else'
+			return SIB_ID._LhthA3TxEe29EM7zgtpvCg;
+		}
+	}
+	// container for atomic SIB 'IntegerAdd'.
+	public SIB_ID execute_5U71oX8DEe29IvxJUcVYFw(final Context ctx) {
+		try {
+			final java.lang.Long result = info.scce.dime.common.CommonNativeIntegerServiceLibrary.add(Optional.ofNullable(ctx.leaderboard).map(de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.Leaderboard::getoWins).orElse(0l), 1l);
+			Optional.ofNullable(ctx.leaderboard).get().setoWins(result);
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+			// branch 'failure'
+			throw new IllegalStateException("SIB 'IntegerAdd' has no successor defined for branch 'failure'");
+		}
+		// branch 'success'
+		return SIB_ID._LhthA3TxEe29EM7zgtpvCg;
+	}
+	// container for atomic SIB 'IntegerAdd'.
+	public SIB_ID execute_6OkMUX8DEe29IvxJUcVYFw(final Context ctx) {
+		try {
+			final java.lang.Long result = info.scce.dime.common.CommonNativeIntegerServiceLibrary.add(Optional.ofNullable(ctx.leaderboard).map(de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.Leaderboard::getxWins).orElse(0l), 1l);
+			Optional.ofNullable(ctx.leaderboard).get().setxWins(result);
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+			// branch 'failure'
+			throw new IllegalStateException("SIB 'IntegerAdd' has no successor defined for branch 'failure'");
+		}
+		// branch 'success'
+		return SIB_ID._LhthA3TxEe29EM7zgtpvCg;
 	}
 	
 }  

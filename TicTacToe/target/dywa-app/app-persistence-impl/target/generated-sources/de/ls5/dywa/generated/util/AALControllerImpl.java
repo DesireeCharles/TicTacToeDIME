@@ -28,6 +28,8 @@ public class AALControllerImpl implements AALController {
 	private de.ls5.dywa.generated.controller.dime__HYPHEN_MINUS__models.app.TurnStateController TurnStateController;
 	@Inject
 	private de.ls5.dywa.generated.controller.dime__HYPHEN_MINUS__models.app.GameStateController GameStateController;
+	@Inject
+	private de.ls5.dywa.generated.controller.dime__HYPHEN_MINUS__models.app.LeaderboardController LeaderboardController;
 
 	@Override
 	public void reset() {
@@ -81,6 +83,9 @@ public class AALControllerImpl implements AALController {
 	(null);
 	o.setdywaDisplayName
 	(null);
+	}
+	for (final de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.Leaderboard o : LeaderboardController.fetch()) {
+	LeaderboardController.deleteWithIncomingReferences(o);
 	}
 
 		this.entityManager.setFlushMode(oldFlushMode);

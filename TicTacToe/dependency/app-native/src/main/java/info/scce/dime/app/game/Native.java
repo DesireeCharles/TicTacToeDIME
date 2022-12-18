@@ -126,7 +126,6 @@ public class Native {
 	}
 	
     public static boolean checkWin(Table _table) {
-    	System.err.println("Test");
 
         Long[][] table = new Long[3][3];
 
@@ -135,40 +134,27 @@ public class Native {
                 table[i][j] = _table.gettableRow_TableRow().get(i).gettableEntry_TableEntry().get(j).getstateValue();
             }
         }
-
         //vertical
         for(int i = 0; i < 3; i++) {
             if(table[i][0] == table[i][1] && table[i][1] == table[i][2]) {
                 return true;
             }
         }
-
         //horizontal
         for (int i = 0; i < 3; i++) {
             if(table[0][i] == table[1][i] && table[1][i] == table[2][i]) {
                 return true;
-            }
-            
+            }   
         }
-
         //diagonal /
-
         if(table[0][0] == table[1][1] && table[1][1] == table[2][2]) {
-        	
             return true;
         }
-
         //diagonal \
-        
         if(table[0][2] == table[1][1] && table[1][1] == table[2][0]) {
             return true;
         }
-
-
         //no win
         return false;
-
     }
-	
-
 }
