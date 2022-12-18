@@ -120,18 +120,6 @@ public class TableEntrySearch implements TableEntry {
 				}
 			this.attributeMap.put(dywaIdToJpqlAttr.get(24L), object != null ? object.getEntityAs(EntryStateEntity.class)/*1*/ : null);
 	}
-	@java.lang.Override
-	public java.lang.Boolean getwinningEntry() {
-		return (java.lang.Boolean) this.attributeMap.get(dywaIdToJpqlAttr.get(25L));
-	}
-	public void setwinningEntry
-	(java.lang.Boolean object) {
-			
-				if (! (object instanceof java.lang.Boolean)) {
-							throw new java.lang.RuntimeException("Wrong type");
-				}
-			this.attributeMap.put(dywaIdToJpqlAttr.get(25L), object);
-	}
 
 	// EXTENSION ATTRIBUTES
 

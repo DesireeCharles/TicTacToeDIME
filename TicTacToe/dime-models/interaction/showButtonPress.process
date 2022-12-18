@@ -262,7 +262,7 @@ Process _LhjwAXTxEe29EM7zgtpvCg {
   			dfViewWorkaround true
   		}
   		
-  		-ComplexRead-> _vA5asX3qEe2ONMPeQEJUSA via (-30,199) (-30,2176) decorate "" at (0,0) {
+  		-ComplexRead-> _vA5asX3qEe2ONMPeQEJUSA via (-30,199) (-31,2044) decorate "" at (0,0) {
   			id _0LNjcX3qEe2ONMPeQEJUSA
   			dfViewWorkaround true
   		}
@@ -445,7 +445,7 @@ Process _LhjwAXTxEe29EM7zgtpvCg {
   	}
   }
   
-  Branch _KTwlYX3fEe2ONMPeQEJUSA at 260,1830 size 120,25 {
+  Branch _KTwlYX3fEe2ONMPeQEJUSA at 260,1770 size 120,25 {
   	name "true"
   	-ControlFlow-> _PyrFIX3fEe2ONMPeQEJUSA  decorate "" at (0,0) {
   		id _RjfigX3fEe2ONMPeQEJUSA
@@ -461,7 +461,7 @@ Process _LhjwAXTxEe29EM7zgtpvCg {
   	}
   }
   
-  RetrieveEnumLiteralSIB _PyrFIX3fEe2ONMPeQEJUSA at 260,1910 size 120,65 {
+  RetrieveEnumLiteralSIB _PyrFIX3fEe2ONMPeQEJUSA at 260,1810 size 120,65 {
   	libraryComponentUID "_tPcZUX0oEe2-urIT6LmdwA"
   	label "Get GameState"
   	ignoredBranch [  ]
@@ -471,13 +471,13 @@ Process _LhjwAXTxEe29EM7zgtpvCg {
   	}
   }
   
-  Branch _Py02IX3fEe2ONMPeQEJUSA at 260,2020 size 120,50 {
+  Branch _Py02IX3fEe2ONMPeQEJUSA at 260,1890 size 120,50 {
   	name "win"
   	ComplexOutputPort _PzCRgX3fEe2ONMPeQEJUSA at 5,27 size 110,18 {
   		libraryComponentUID "_rGQfQX0oEe2-urIT6LmdwA"
   		isList false
   		name "literal"
-  		-ComplexUpdate-> _2FHZg30oEe2-urIT6LmdwA via (-20,2056) (-20,195) decorate "" at (0,0) {
+  		-ComplexUpdate-> _2FHZg30oEe2-urIT6LmdwA via (-20,1924) (-20,195) decorate "" at (0,0) {
   			id _VK9_gX3fEe2ONMPeQEJUSA
   			dfViewWorkaround true
   		}
@@ -544,7 +544,7 @@ Process _LhjwAXTxEe29EM7zgtpvCg {
   	}
   }
   
-  SetAttributeValueSIB _vASWsX3qEe2ONMPeQEJUSA at 260,2100 size 120,108 {
+  SetAttributeValueSIB _vASWsX3qEe2ONMPeQEJUSA at 259,1970 size 120,108 {
   	libraryComponentUID "_DZYEEX1ZEe2BL67A2MFPXw"
   	label "Set isWin"
   	ignoredBranch [  ]
@@ -564,9 +564,9 @@ Process _LhjwAXTxEe29EM7zgtpvCg {
   	}
   }
   
-  Branch _vB-YwX3qEe2ONMPeQEJUSA at 260,2228 size 120,25 {
+  Branch _vB-YwX3qEe2ONMPeQEJUSA at 260,2100 size 120,25 {
   	name "success"
-  	-ControlFlow-> _LhthA3TxEe29EM7zgtpvCg via (620,2240) (620,1614) decorate "" at (0,0) {
+  	-ControlFlow-> _LhthA3TxEe29EM7zgtpvCg via (620,2109) (620,1614) decorate "" at (0,0) {
   		id _p_X6MX3tEe2ONMPeQEJUSA
   		concurrent true
   	}

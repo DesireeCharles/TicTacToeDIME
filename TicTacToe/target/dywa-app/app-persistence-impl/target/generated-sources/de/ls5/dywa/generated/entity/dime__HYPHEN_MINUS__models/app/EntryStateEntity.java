@@ -26,26 +26,26 @@ public class EntryStateEntity implements EntryStateInterface {
 	/* DYWA METADATA END */
 	
 	/* MAIN ATTRIBUTES START */
-	@de.ls5.dywa.annotations.IdRef(id = 26L)
+	@de.ls5.dywa.annotations.IdRef(id = 25L)
 	@org.hibernate.annotations.Cascade(org.hibernate.annotations.CascadeType.PERSIST)
 	@javax.persistence.JoinColumn(name = "a_X__oqhfyxkpee2rznr")
 	@javax.persistence.ManyToOne
 	private de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryStateEntity X;
 	
-	@de.ls5.dywa.annotations.IdRef(id = 27L)
+	@de.ls5.dywa.annotations.IdRef(id = 26L)
 	@org.hibernate.annotations.Cascade(org.hibernate.annotations.CascadeType.PERSIST)
 	@javax.persistence.JoinColumn(name = "a_O__o_tsqxkpee2rznr")
 	@javax.persistence.ManyToOne
 	private de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryStateEntity O;
 	
-	@de.ls5.dywa.annotations.IdRef(id = 28L)
+	@de.ls5.dywa.annotations.IdRef(id = 27L)
 	@org.hibernate.annotations.Cascade(org.hibernate.annotations.CascadeType.PERSIST)
 	@javax.persistence.JoinColumn(name = "a_Empty__ppgbwxkpee2rznr")
 	@javax.persistence.ManyToOne
 	private de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryStateEntity empty;
 	
-	@de.ls5.dywa.annotations.IdRef(id = 29L)
-	@javax.persistence.Column(name = "a_DywaDisplayName__kfwbux3yee2onmp", columnDefinition="varchar")
+	@de.ls5.dywa.annotations.IdRef(id = 28L)
+	@javax.persistence.Column(name = "a_DywaDisplayName__q70jex4iee2onmp", columnDefinition="varchar")
 	private java.lang.String dywaDisplayName;
 	
 	/* MAIN ATTRIBUTES END */

@@ -54,7 +54,6 @@ public class TypeInfo {
 		java.util.Map<Long, String> map4 = new java.util.HashMap<Long, String>();
 		map4.put(23L, "stateValue");
 		map4.put(24L, "entryState");
-		map4.put(25L, "winningEntry");
 		typeFieldNamesMap.put(4L, map4);
 		/* DBType _m_tgwhkpee2rznr */
 		typeNamesMap.put(5L, "EntryState");
@@ -62,10 +61,10 @@ public class TypeInfo {
 		enumTypes.add(5L);
 		allTypes.add(5L);
 		java.util.Map<Long, String> map5 = new java.util.HashMap<Long, String>();
-		map5.put(26L, "X");
-		map5.put(27L, "O");
-		map5.put(28L, "empty");
-		map5.put(29L, "dywaDisplayName");
+		map5.put(25L, "X");
+		map5.put(26L, "O");
+		map5.put(27L, "empty");
+		map5.put(28L, "dywaDisplayName");
 		typeFieldNamesMap.put(5L, map5);
 		/* DBType _x66fwxpoee2egku */
 		typeNamesMap.put(6L, "TurnState");
@@ -73,9 +72,9 @@ public class TypeInfo {
 		enumTypes.add(6L);
 		allTypes.add(6L);
 		java.util.Map<Long, String> map6 = new java.util.HashMap<Long, String>();
-		map6.put(30L, "X");
-		map6.put(31L, "O");
-		map6.put(32L, "dywaDisplayName");
+		map6.put(29L, "X");
+		map6.put(30L, "O");
+		map6.put(31L, "dywaDisplayName");
 		typeFieldNamesMap.put(6L, map6);
 		/* DBType _rgqfqx0oee2_uri */
 		typeNamesMap.put(7L, "GameState");
@@ -83,10 +82,10 @@ public class TypeInfo {
 		enumTypes.add(7L);
 		allTypes.add(7L);
 		java.util.Map<Long, String> map7 = new java.util.HashMap<Long, String>();
-		map7.put(33L, "win");
-		map7.put(34L, "tie");
-		map7.put(35L, "progress");
-		map7.put(36L, "dywaDisplayName");
+		map7.put(32L, "win");
+		map7.put(33L, "tie");
+		map7.put(34L, "progress");
+		map7.put(35L, "dywaDisplayName");
 		typeFieldNamesMap.put(7L, map7);
 	}
 	

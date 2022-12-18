@@ -26,20 +26,20 @@ public class TurnStateEntity implements TurnStateInterface {
 	/* DYWA METADATA END */
 	
 	/* MAIN ATTRIBUTES START */
-	@de.ls5.dywa.annotations.IdRef(id = 30L)
+	@de.ls5.dywa.annotations.IdRef(id = 29L)
 	@org.hibernate.annotations.Cascade(org.hibernate.annotations.CascadeType.PERSIST)
 	@javax.persistence.JoinColumn(name = "a_X__znsxsxpoee2egku")
 	@javax.persistence.ManyToOne
 	private de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TurnStateEntity X;
 	
-	@de.ls5.dywa.annotations.IdRef(id = 31L)
+	@de.ls5.dywa.annotations.IdRef(id = 30L)
 	@org.hibernate.annotations.Cascade(org.hibernate.annotations.CascadeType.PERSIST)
 	@javax.persistence.JoinColumn(name = "a_O__z97gyxpoee2egku")
 	@javax.persistence.ManyToOne
 	private de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.TurnStateEntity O;
 	
-	@de.ls5.dywa.annotations.IdRef(id = 32L)
-	@javax.persistence.Column(name = "a_DywaDisplayName__kfle0x3yee2onmp", columnDefinition="varchar")
+	@de.ls5.dywa.annotations.IdRef(id = 31L)
+	@javax.persistence.Column(name = "a_DywaDisplayName__q8awux4iee2onmp", columnDefinition="varchar")
 	private java.lang.String dywaDisplayName;
 	
 	/* MAIN ATTRIBUTES END */

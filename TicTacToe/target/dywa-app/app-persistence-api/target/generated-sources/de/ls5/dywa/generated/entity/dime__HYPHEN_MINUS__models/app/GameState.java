@@ -6,7 +6,7 @@ package de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app;
 @de.ls5.dywa.annotations.ShortDescription(description = "")
 @de.ls5.dywa.annotations.LongDescription(description = "")
 public enum GameState implements de.ls5.dywa.generated.util.Identifiable, de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.GameStateInterface {
-	win(39L), tie(40L), progress(41L);
+	win(38L), tie(39L), progress(40L);
 	
 	private final long id;
 	private GameStateInterface internalDelegate;
@@ -125,13 +125,13 @@ public enum GameState implements de.ls5.dywa.generated.util.Identifiable, de.ls5
 	}
 	
 	public static GameState forId(long id) {
-		if (id == 39) {
+		if (id == 38) {
 			return GameState.win;
 		} else 
-		if (id == 40) {
+		if (id == 39) {
 			return GameState.tie;
 		} else 
-		if (id == 41) {
+		if (id == 40) {
 			return GameState.progress;
 		}
 		return null;

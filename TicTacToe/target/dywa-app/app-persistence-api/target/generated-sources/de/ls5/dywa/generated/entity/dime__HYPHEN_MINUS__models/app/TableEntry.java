@@ -29,18 +29,6 @@ public interface TableEntry extends de.ls5.dywa.generated.util.Identifiable {
 	@de.ls5.dywa.annotations.LongDescription(description = "")
 	void setentryState(de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryState object);
 	
-	@de.ls5.dywa.annotations.IdRef(id = 25L)
-	@de.ls5.dywa.annotations.OriginalName(name = "winningEntry")
-	@de.ls5.dywa.annotations.ShortDescription(description = "")
-	@de.ls5.dywa.annotations.LongDescription(description = "")
-	java.lang.Boolean getwinningEntry();
-	
-	@de.ls5.dywa.annotations.IdRef(id = 25L)
-	@de.ls5.dywa.annotations.OriginalName(name = "winningEntry")
-	@de.ls5.dywa.annotations.ShortDescription(description = "")
-	@de.ls5.dywa.annotations.LongDescription(description = "")
-	void setwinningEntry(java.lang.Boolean object);
-	
 
 	// EXTENSION ATTRIBUTES
 

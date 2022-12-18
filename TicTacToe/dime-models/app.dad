@@ -1,7 +1,7 @@
 DAD _9G1SoMwLEeWZVvvwxpYu8A {
   mode Development
   postScripts [  ]
-  appName "NewDIME App"
+  appName "Tic Tac Toe"
   errorMessage ""
   additionalStylesheets [  ]
   preScripts [  ]

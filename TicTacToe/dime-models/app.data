@@ -105,7 +105,7 @@ Data _tH3fEMwMEeWZVvvwxpYu8A {
   		sourceAttr _09OegXSPEe2vmrlDP84GiQ
   	}
   	
-  	-Association-> _rGQfQX0oEe2-urIT6LmdwA  decorate "Text" at (-83,21) decorate "" at (0,0) {
+  	-Association-> _rGQfQX0oEe2-urIT6LmdwA  decorate "Text" at (-85,0) decorate "" at (0,0) {
   		id _xya1QX0oEe2-urIT6LmdwA
   		isHidden false
   		sourceAttr _xyoQoX0oEe2-urIT6LmdwA
@@ -126,23 +126,17 @@ Data _tH3fEMwMEeWZVvvwxpYu8A {
   	}
   }
   
-  ConcreteType _KEKm0W8QEe2x_c6ogIlfZw at 400,390 size 140,91 {
+  ConcreteType _KEKm0W8QEe2x_c6ogIlfZw at 400,390 size 140,73 {
   	name "TableEntry"
-  	PrimitiveAttribute _Rwbu8W8QEe2x_c6ogIlfZw at 5,68 size 130,18 {
+  	PrimitiveAttribute _Rwbu8W8QEe2x_c6ogIlfZw at 5,50 size 130,18 {
   		dataType Integer
   		name "stateValue"
   		isList false
   	}
   	
-  	ComplexAttribute _suTD4XKPEe2rzNRUfilttw at 5,50 size 130,18 {
+  	ComplexAttribute _suTD4XKPEe2rzNRUfilttw at 5,32 size 130,18 {
   		dataType _m_TgwHKPEe2rzNRUfilttw
   		name "entryState"
-  		isList false
-  	}
-  	
-  	PrimitiveAttribute _VmhqYX3wEe2ONMPeQEJUSA at 5,32 size 130,18 {
-  		dataType Boolean
-  		name "winningEntry"
   		isList false
   	}
   	-Association-> _m_TgwHKPEe2rzNRUfilttw  decorate "Text" at (-18,12) decorate "" at (0,0) {
@@ -173,7 +167,7 @@ Data _tH3fEMwMEeWZVvvwxpYu8A {
   	}
   }
   
-  EnumType _X66fwXPoEe2eGKutfpiSKw at 680,70 size 140,73 {
+  EnumType _X66fwXPoEe2eGKutfpiSKw at 680,86 size 140,73 {
   	name "TurnState"
   	EnumLiteral _ZnsxsXPoEe2eGKutfpiSKw at 5,50 size 130,18 {
   		displayName ""
@@ -188,7 +182,7 @@ Data _tH3fEMwMEeWZVvvwxpYu8A {
   	}
   }
   
-  EnumType _rGQfQX0oEe2-urIT6LmdwA at 130,70 size 140,91 {
+  EnumType _rGQfQX0oEe2-urIT6LmdwA at 140,77 size 140,91 {
   	name "GameState"
   	EnumLiteral _tPcZUX0oEe2-urIT6LmdwA at 5,68 size 130,18 {
   		displayName ""

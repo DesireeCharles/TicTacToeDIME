@@ -36,10 +36,6 @@ public class TableEntryImpl implements TableEntry {
 	@javax.persistence.ManyToOne
 	private de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryStateEntity entryState;
 	
-	@de.ls5.dywa.annotations.IdRef(id = 25L)
-	@javax.persistence.Column(name = "a_WinningEntry__vmhqyx3wee2onmp", columnDefinition="boolean")
-	private java.lang.Boolean winningEntry;
-	
 	/* MAIN ATTRIBUTES END */
 	
 	/* IMPLICIT ATTRIBUTES START */
@@ -126,17 +122,6 @@ public class TableEntryImpl implements TableEntry {
 	
 	protected de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.EntryStateEntity getentryState_() {
 		return this.entryState;
-	}
-	
-	
-	@java.lang.Override
-	public java.lang.Boolean getwinningEntry() {
-		return this.winningEntry;
-	}
-	
-	@java.lang.Override
-	public void setwinningEntry(java.lang.Boolean object) {
-		this.winningEntry = object;
 	}
 	
 	

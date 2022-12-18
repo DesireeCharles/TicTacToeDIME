@@ -235,7 +235,7 @@ GUI _LmrS0Ej8EeaK4_MRcoLfnw_INTERNAL {
   				}
   				
   				Box _RGmrMHbZEe2qntwH9Ijd8A_INTERNAL at 10,90 size 220,360 {
-  					invisible false
+  					invisible true
   					generalStyle GeneralStyling _RGqVkHbZEe2qntwH9Ijd8A {
   							tallness Quarter
   							marginBottom Double

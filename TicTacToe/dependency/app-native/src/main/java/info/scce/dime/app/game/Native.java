@@ -93,19 +93,15 @@ public class Native {
 		for (int x = 0; x < width; x++) {
 			TableRow tableRow = getBean(TableRowController.class).create(null);
 			System.err.println("inside for loop x =" + x);
-//			TableRow tableRow = trController.create("Hello");
 			List<TableEntry> tableEntryList = new ArrayList<TableEntry>();
 			for (int y = 0; y < height; y++) {
 
 				System.err.println("inside nested for loop y =" + y);
 				TableEntry tableEntry = getBean(TableEntryController.class).create(null);
-//				TableEntry tableEntry = teController.create("Hello");
 				EntryState entryState = EntryState.empty;
 				tableEntry.setentryState(entryState);
-				//System.err.println(tableEntry.getentryState);
 				tableEntry.setstateValue(counter + 10);
 				counter++;
-				tableEntry.setwinningEntry(false);
 				tableEntryList.add(tableEntry);
 			}
 
@@ -136,7 +132,7 @@ public class Native {
 
         for(int i = 0; i < 3; i++) {
             for(int j = 0; j < 3; j++) {
-                table[i][j] = _table.gettableRow_TableRow().get(i).gettableEntry_TableEntry().get(j).getstateValue(); //Broken
+                table[i][j] = _table.gettableRow_TableRow().get(i).gettableEntry_TableEntry().get(j).getstateValue();
             }
         }
 

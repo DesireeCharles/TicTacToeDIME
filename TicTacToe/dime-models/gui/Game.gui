@@ -4,7 +4,7 @@ GUI _AzVAIWnXEe2xCJpb6ooUzA {
   additionalJavaScript [  ]
   additionalStylesheets [  ]
   title "Game"
-  DataContext _AzdjAWnXEe2xCJpb6ooUzA at 10,90 size 180,621 {
+  DataContext _AzdjAWnXEe2xCJpb6ooUzA at -40,-30 size 180,621 {
   	dfViewWorkaround true
   	ComplexVariable _U4lEQW8TEe29MJ2ZfnuTaA at 10,30 size 160,25 {
   		expanded false
@@ -139,7 +139,7 @@ GUI _AzVAIWnXEe2xCJpb6ooUzA {
   	}
   }
   
-  Template _AzhNYWnXEe2xCJpb6ooUzA at 240,10 size 500,696 {
+  Template _AzhNYWnXEe2xCJpb6ooUzA at 240,10 size 500,806 {
   	blockName ""
   	disableAutoLayout false
   	generalStyle GeneralStyling _AzoiIGnXEe2xCJpb6ooUzA {
@@ -148,38 +148,7 @@ GUI _AzVAIWnXEe2xCJpb6ooUzA {
   			attributes [  ]
   			marginTop None
   		}
-  	Headline _0zu5QGnkEe2xCJpb6ooUzA at 10,30 size 300,50 {
-  		size Big
-  		content [ StaticContent _00AmEGnkEe2xCJpb6ooUzA {
-  				renderMarkdown false
-  				maxChars 0
-  				html false
-  				rawContent "TicTacToe\n"
-  				styling TextStyling _00B0MGnkEe2xCJpb6ooUzA {
-  						small false
-  						highlight false
-  						deleted false
-  						underline true
-  						bold true
-  						alignment Center
-  						italic false
-  						color Default
-  					}
-  			} ]
-  		generalStyle GeneralStyling _0z21EGnkEe2xCJpb6ooUzA {
-  				tallness Fitting
-  				marginBottom None
-  				attributes [  ]
-  				marginTop None
-  			}
-  		MoveUp _0zzxwWnkEe2xCJpb6ooUzA at 2,2 size 14,7 {
-  		}
-  		
-  		MoveDown _0z0_4WnkEe2xCJpb6ooUzA at 2,10 size 14,7 {
-  		}
-  	}
-  	
-  	Row __mftoXbcEe2qntwH9Ijd8A at 10,496 size 480,170 {
+  	Row __mftoXbcEe2qntwH9Ijd8A at 10,606 size 480,170 {
   		generalStyle GeneralStyling __mpeoHbcEe2qntwH9Ijd8A {
   				tallness Fitting
   				marginBottom None
@@ -226,8 +195,8 @@ GUI _AzVAIWnXEe2xCJpb6ooUzA {
   					}
   				disabled false
   				icon Icon _i3WeEHbbEe2qntwH9Ijd8A {
-  						postIcon ArrowLeft
-  						preIcon None
+  						postIcon None
+  						preIcon ArrowLeft
   					}
   				generalStyle GeneralStyling _i3TawHbbEe2qntwH9Ijd8A {
   						tallness Fitting
@@ -295,7 +264,7 @@ GUI _AzVAIWnXEe2xCJpb6ooUzA {
   		}
   	}
   	
-  	Row _wZ-mMX0pEe2-urIT6LmdwA at 10,90 size 430,396 {
+  	Row _wZ-mMX0pEe2-urIT6LmdwA at 10,200 size 430,396 {
   		generalStyle GeneralStyling _wZ-mPn0pEe2-urIT6LmdwA {
   				tallness Fitting
   				marginBottom None
@@ -438,6 +407,71 @@ GUI _AzVAIWnXEe2xCJpb6ooUzA {
   				}
   				
   				MoveDown _x6iIA33vEe2ONMPeQEJUSA at 2,10 size 14,7 {
+  				}
+  			}
+  		}
+  	}
+  	
+  	Row _qmE7wX4XEe2ONMPeQEJUSA at 10,30 size 350,160 {
+  		generalStyle GeneralStyling _qmnuUX4XEe2ONMPeQEJUSA {
+  				tallness Fitting
+  				marginBottom None
+  				attributes [  ]
+  				marginTop None
+  			}
+  		MoveUp _qmLpcX4XEe2ONMPeQEJUSA at 2,2 size 14,7 {
+  		}
+  		
+  		MoveDown _qmRwEH4XEe2ONMPeQEJUSA at 2,10 size 14,7 {
+  		}
+  		
+  		Col _qmd9UH4XEe2ONMPeQEJUSA at 10,30 size 320,110 {
+  			wideness Full
+  			layout Layout _qmnuUH4XEe2ONMPeQEJUSA {
+  					size Default
+  					offset None
+  					alignment Center
+  				}
+  			generalStyle GeneralStyling _qmi10n4XEe2ONMPeQEJUSA {
+  					tallness Fitting
+  					marginBottom Double
+  					attributes [  ]
+  					marginTop None
+  				}
+  			MoveLeft _qmd9Un4XEe2ONMPeQEJUSA at 2,2 size 7,14 {
+  			}
+  			
+  			MoveRight _qmi10X4XEe2ONMPeQEJUSA at 10,2 size 7,14 {
+  			}
+  			
+  			Headline _0zu5QGnkEe2xCJpb6ooUzA at 10,30 size 300,50 {
+  				size Big
+  				content [ StaticContent _00AmEGnkEe2xCJpb6ooUzA {
+  						renderMarkdown false
+  						maxChars 0
+  						html false
+  						rawContent "Tic Tac Toe\n"
+  						styling TextStyling _00B0MGnkEe2xCJpb6ooUzA {
+  								small false
+  								highlight false
+  								deleted false
+  								underline true
+  								bold true
+  								alignment Justified
+  								italic false
+  								color Default
+  							}
+  					} ]
+  				generalStyle GeneralStyling _0z21EGnkEe2xCJpb6ooUzA {
+  						tallness Fitting
+  						marginBottom None
+  						attributes [  ]
+  						marginTop None
+  					}
+  				MoveUp _0zzxwWnkEe2xCJpb6ooUzA at 2,2 size 14,7 {
+  				}
+  				
+  				MoveDown _0z0_4WnkEe2xCJpb6ooUzA at 2,10 size 14,7 {
   				}
   			}
   		}

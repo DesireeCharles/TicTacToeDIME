@@ -56,30 +56,5 @@ public class TableEntryImpl extends info.scce.dime.rest.RESTBaseImpl implements 
 		this.isstateValueSet = true;
 	}
 
-	private java.lang.Boolean
-	 winningEntry;
-	private boolean iswinningEntrySet;
-	
-	@com.fasterxml.jackson.annotation.JsonProperty("winningEntry")
-	@info.scce.dime.rest.JsonRenderIndicator("iswinningEntrySet")
-	@java.lang.Override
-	public java.lang.Boolean
-	 getwinningEntry() {
-		return this.winningEntry;
-	}
-	
-	@com.fasterxml.jackson.annotation.JsonIgnore
-	public boolean iswinningEntrySet() {
-		return this.iswinningEntrySet;
-	}
-
-	@com.fasterxml.jackson.annotation.JsonProperty("winningEntry")
-	@java.lang.Override
-	public void setwinningEntry(final java.lang.Boolean
-	 winningEntry) {
-		this.winningEntry = winningEntry;
-		this.iswinningEntrySet = true;
-	}
-
 	
 }

@@ -146,7 +146,7 @@ class ConcreteUser extends BaseModel
 			if (jsog.containsKey("dywaSwitchedTo")) {
 				core.Map<core.String,core.dynamic> jsogObj = jsog["dywaSwitchedTo"];
 				if(jsogObj != null) {
-					ConcreteUser valueaJp6R8X3xEe2ONMPeQEJUSA;
+					ConcreteUser valuea74s28X4TEe2ONMPeQEJUSA;
 					
 					core.String jsogId;
 					
@@ -157,22 +157,22 @@ class ConcreteUser extends BaseModel
 					 	jsogId = jsogObj['@id'];
 					}
 					if (cache.containsKey(jsogId)) {
-						valueaJp6R8X3xEe2ONMPeQEJUSA = cache[jsogId];
+						valuea74s28X4TEe2ONMPeQEJUSA = cache[jsogId];
 					}
 					else {
 						if (jsogObj != null) {
 							if (jsogObj['dywaRuntimeType'] == "de.ls5.dywa.generated.rest.types.ConcreteUserImpl") {
-								valueaJp6R8X3xEe2ONMPeQEJUSA = new ConcreteUser(cache: cache, jsog: jsogObj);
+								valuea74s28X4TEe2ONMPeQEJUSA = new ConcreteUser(cache: cache, jsog: jsogObj);
 							}
 							else {
-								valueaJp6R8X3xEe2ONMPeQEJUSA = new ConcreteUser(cache: cache,jsog: jsogObj);
+								valuea74s28X4TEe2ONMPeQEJUSA = new ConcreteUser(cache: cache,jsog: jsogObj);
 							}
 						}
 						else {
-							valueaJp6R8X3xEe2ONMPeQEJUSA = new ConcreteUser(cache: cache,jsog: jsogObj);
+							valuea74s28X4TEe2ONMPeQEJUSA = new ConcreteUser(cache: cache,jsog: jsogObj);
 						}
 					}
-					this._dywaSwitchedTo = valueaJp6R8X3xEe2ONMPeQEJUSA;
+					this._dywaSwitchedTo = valuea74s28X4TEe2ONMPeQEJUSA;
 				}
 			}
 			
@@ -1657,9 +1657,6 @@ class TableEntry extends BaseModel
 	core.bool _stateValueHasBeenSet = false;
 	core.bool stateValueHasBeenChanged() => _stateValueHasBeenSet;
 	core.int _stateValue;
-	core.bool _winningEntryHasBeenSet = false;
-	core.bool winningEntryHasBeenChanged() => _winningEntryHasBeenSet;
-	core.bool _winningEntry;
 	
 	static TableEntry fromId(core.int id) {
 		var m = new TableEntry();
@@ -1673,8 +1670,7 @@ class TableEntry extends BaseModel
 	core.dynamic $$getProperty(core.String prop) {
 	  var propMap = {
 	  'entryState': this.entryState, 
-	  'stateValue': this.stateValue, 
-	  'winningEntry': this.winningEntry
+	  'stateValue': this.stateValue
 	  };
 	
 	  if (!propMap.containsKey(prop)) throw NoSuchPropertyException(prop);
@@ -1685,7 +1681,6 @@ class TableEntry extends BaseModel
 	  switch (prop) {
 	  case 'entryState': this.entryState = value; return;
 	  case 'stateValue': this.stateValue = value; return;
-	  case 'winningEntry': this.winningEntry = value; return;
 	    default: throw NoSuchPropertyException(prop);
 	  }
 	}
@@ -1713,7 +1708,6 @@ class TableEntry extends BaseModel
 			
 			// properties
 			this._stateValue = 0;
-			this._winningEntry = false;
 		}
 		// from jsog
 		else {
@@ -1780,37 +1774,15 @@ class TableEntry extends BaseModel
 				this._stateValue = 0;
 			}
 			_stateValueHasBeenSet = false;
-			if (jsog.containsKey("winningEntry")) {
-				core.bool jsogObj = jsog["winningEntry"];
-				if(jsogObj != null) {
-					core.bool valueaVmhqYX3wEe2ONMPeQEJUSA;
-					
-					if(jsogObj!=null){
-					valueaVmhqYX3wEe2ONMPeQEJUSA = jsogObj.toString().toLowerCase()=='true'?true:false;
-					}
-					this._winningEntry = valueaVmhqYX3wEe2ONMPeQEJUSA;
-				}
-				else {
-					this._winningEntry = false;
-				}
-			}
-			
-			
-			else{
-				this._winningEntry = false;
-			}
-			_winningEntryHasBeenSet = false;
 		}
 	}
 	
 	void entryStateHasBeenSetted() { _entryStateHasBeenSet=true; }
 	void stateValueHasBeenSetted() { _stateValueHasBeenSet=true; }
-	void winningEntryHasBeenSetted() { _winningEntryHasBeenSet=true; }
 	
 	core.bool hasChanged() {
 		return 		_entryStateHasBeenSet || 
-					_stateValueHasBeenSet || 
-					_winningEntryHasBeenSet
+					_stateValueHasBeenSet
 			;
 	}
 	
@@ -1834,9 +1806,6 @@ class TableEntry extends BaseModel
 			}
 			if(( stateValueHasBeenChanged() && !jsonObj.containsKey('stateValue')) && !objects.containsKey(this._stateValue)) {
 			jsonObj["stateValue"] = this._stateValue;
-			}
-			if(( winningEntryHasBeenChanged() && !jsonObj.containsKey('winningEntry')) && !objects.containsKey(this._winningEntry)) {
-			jsonObj["winningEntry"] = this._winningEntry;
 			}
 			return { 
 				'@ref': jsogId.toString()
@@ -1868,9 +1837,6 @@ class TableEntry extends BaseModel
 		}
 		if(( stateValueHasBeenChanged() && !jsonObj.containsKey('stateValue')) && !objects.containsKey(this._stateValue) || this.dywa_id == 0) {
 		jsonObj["stateValue"] = this._stateValue;
-		}
-		if(( winningEntryHasBeenChanged() && !jsonObj.containsKey('winningEntry')) && !objects.containsKey(this._winningEntry) || this.dywa_id == 0) {
-		jsonObj["winningEntry"] = this._winningEntry;
 		}
 		return jsonObj;
 	}
@@ -1946,33 +1912,6 @@ class TableEntry extends BaseModel
 		}
 		
 	
-	void set winningEntry (core.bool value)
-	{
-		this._winningEntryHasBeenSet = true;
-		this._winningEntry = value;
-	}
-	
-	core.bool get winningEntry
-	{
-		return this._winningEntry;
-	}
-	
-		core.bool initOnDemandwinningEntry()
-		{
-			return this.winningEntry;
-		}
-		
-		void setValuewinningEntry(core.bool value)
-		{
-			this.winningEntry = value;
-		}
-		
-		void winningEntrysetValue(core.bool value)
-		{
-			this.winningEntry = value;
-		}
-		
-	
 }
 
 class EntryState extends BaseModel
@@ -2043,12 +1982,12 @@ class EntryState extends BaseModel
 			if (jsog.containsKey("dywaDisplayName")) {
 				core.String jsogObj = jsog["dywaDisplayName"];
 				if(jsogObj != null) {
-					core.String valueaJp_KcX3xEe2ONMPeQEJUSA;
+					core.String valuea744dIX4TEe2ONMPeQEJUSA;
 					
 					if(jsogObj!=null){
-					valueaJp_KcX3xEe2ONMPeQEJUSA = jsogObj.toString();
+					valuea744dIX4TEe2ONMPeQEJUSA = jsogObj.toString();
 					}
-					this._dywaDisplayName = valueaJp_KcX3xEe2ONMPeQEJUSA;
+					this._dywaDisplayName = valuea744dIX4TEe2ONMPeQEJUSA;
 				}
 				else {
 					this._dywaDisplayName = null;
@@ -2231,12 +2170,12 @@ class TurnState extends BaseModel
 			if (jsog.containsKey("dywaDisplayName")) {
 				core.String jsogObj = jsog["dywaDisplayName"];
 				if(jsogObj != null) {
-					core.String valueaJqI7cX3xEe2ONMPeQEJUSA;
+					core.String valuea75DcQX4TEe2ONMPeQEJUSA;
 					
 					if(jsogObj!=null){
-					valueaJqI7cX3xEe2ONMPeQEJUSA = jsogObj.toString();
+					valuea75DcQX4TEe2ONMPeQEJUSA = jsogObj.toString();
 					}
-					this._dywaDisplayName = valueaJqI7cX3xEe2ONMPeQEJUSA;
+					this._dywaDisplayName = valuea75DcQX4TEe2ONMPeQEJUSA;
 				}
 				else {
 					this._dywaDisplayName = null;
@@ -2417,12 +2356,12 @@ class GameState extends BaseModel
 			if (jsog.containsKey("dywaDisplayName")) {
 				core.String jsogObj = jsog["dywaDisplayName"];
 				if(jsogObj != null) {
-					core.String valueaJqSscX3xEe2ONMPeQEJUSA;
+					core.String valuea75KxAX4TEe2ONMPeQEJUSA;
 					
 					if(jsogObj!=null){
-					valueaJqSscX3xEe2ONMPeQEJUSA = jsogObj.toString();
+					valuea75KxAX4TEe2ONMPeQEJUSA = jsogObj.toString();
 					}
-					this._dywaDisplayName = valueaJqSscX3xEe2ONMPeQEJUSA;
+					this._dywaDisplayName = valuea75KxAX4TEe2ONMPeQEJUSA;
 				}
 				else {
 					this._dywaDisplayName = null;

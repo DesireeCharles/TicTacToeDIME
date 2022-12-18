@@ -105,7 +105,6 @@ public class Native {
 				//System.err.println(tableEntry.getentryState);
 				tableEntry.setstateValue(counter + 10);
 				counter++;
-				tableEntry.setwinningEntry(false);
 				tableEntryList.add(tableEntry);
 			}
 

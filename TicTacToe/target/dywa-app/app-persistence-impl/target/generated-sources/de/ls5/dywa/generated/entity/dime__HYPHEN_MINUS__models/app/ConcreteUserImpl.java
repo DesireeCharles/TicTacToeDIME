@@ -42,8 +42,8 @@ public class ConcreteUserImpl implements ConcreteUser {
 	
 	@de.ls5.dywa.annotations.IdRef(id = 9L)
 	@org.hibernate.annotations.Cascade(org.hibernate.annotations.CascadeType.PERSIST)
-	@javax.persistence.JoinColumn(name = "a_DywaSwitchedTo__kfmqux3yee2onmp")
-	@org.hibernate.annotations.Any(metaColumn=@javax.persistence.Column(name="m_DywaSwitchedTo_Type__kfmqux3yee2onmp"))
+	@javax.persistence.JoinColumn(name = "a_DywaSwitchedTo__q7ipmx4iee2onmp")
+	@org.hibernate.annotations.Any(metaColumn=@javax.persistence.Column(name="m_DywaSwitchedTo_Type__q7ipmx4iee2onmp"))
 	@org.hibernate.annotations.AnyMetaDef(
 		idType="long", metaType="string",
 		metaValues={

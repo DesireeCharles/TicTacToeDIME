@@ -41,7 +41,7 @@ GUI _0WZ_gH0pEe2-urIT6LmdwA {
   	}
   }
   
-  Template _0Wdp4X0pEe2-urIT6LmdwA at 240,10 size 220,260 {
+  Template _0Wdp4X0pEe2-urIT6LmdwA at 240,10 size 270,370 {
   	blockName ""
   	disableAutoLayout false
   	generalStyle GeneralStyling _0We4AH0pEe2-urIT6LmdwA {
@@ -50,93 +50,129 @@ GUI _0WZ_gH0pEe2-urIT6LmdwA {
   			attributes [  ]
   			marginTop None
   		}
-  	Text _3TMgwX0pEe2-urIT6LmdwA at 10,30 size 200,60 {
-  		content [ StaticContent _3TWRxX0pEe2-urIT6LmdwA {
-  				renderMarkdown false
-  				maxChars 0
-  				html false
-  				rawContent "{{table.turnText}} Wins!!\n"
-  				styling TextStyling _3TWRxn0pEe2-urIT6LmdwA {
-  						small false
-  						highlight false
-  						deleted false
-  						underline false
-  						bold false
-  						alignment Left
-  						italic false
-  						color Default
-  					}
-  			} ]
-  		generalStyle GeneralStyling _3TWRxH0pEe2-urIT6LmdwA {
+  	Row _BxPiMX4VEe2ONMPeQEJUSA at 10,30 size 250,310 {
+  		generalStyle GeneralStyling _BxnVon4VEe2ONMPeQEJUSA {
   				tallness Fitting
   				marginBottom None
   				attributes [  ]
-  				marginTop None
+  				marginTop Triple
   			}
-  		MoveUp _3TWRwX0pEe2-urIT6LmdwA at 2,2 size 14,7 {
+  		MoveUp _BxVo0X4VEe2ONMPeQEJUSA at 2,2 size 14,7 {
   		}
   		
-  		MoveDown _3TWRw30pEe2-urIT6LmdwA at 2,10 size 14,7 {
+  		MoveDown _BxVo034VEe2ONMPeQEJUSA at 2,10 size 14,7 {
   		}
-  	}
-  	
-  	Text _3hT1QX0pEe2-urIT6LmdwA at 10,100 size 200,60 {
-  		content [ StaticContent _3hT1R30pEe2-urIT6LmdwA {
-  				renderMarkdown false
-  				maxChars 0
-  				html false
-  				rawContent "Tie!!\n"
-  				styling TextStyling _3hT1SH0pEe2-urIT6LmdwA {
-  						small false
-  						highlight false
-  						deleted false
-  						underline false
-  						bold false
-  						alignment Left
-  						italic false
-  						color Default
+  		
+  		Col _BxbIYX4VEe2ONMPeQEJUSA at 10,30 size 220,260 {
+  			wideness Full
+  			layout Layout _BxnVoX4VEe2ONMPeQEJUSA {
+  					size Default
+  					offset None
+  					alignment Left
+  				}
+  			generalStyle GeneralStyling _BxnVoH4VEe2ONMPeQEJUSA {
+  					tallness Fitting
+  					marginBottom None
+  					attributes [  ]
+  					marginTop None
+  				}
+  			MoveLeft _BxgA4X4VEe2ONMPeQEJUSA at 2,2 size 7,14 {
+  			}
+  			
+  			MoveRight _BxidIX4VEe2ONMPeQEJUSA at 10,2 size 7,14 {
+  			}
+  			
+  			Text _3TMgwX0pEe2-urIT6LmdwA at 10,30 size 200,60 {
+  				content [ StaticContent _3TWRxX0pEe2-urIT6LmdwA {
+  						renderMarkdown false
+  						maxChars 0
+  						html false
+  						rawContent "{{table.turnText}} Wins!!\n"
+  						styling TextStyling _3TWRxn0pEe2-urIT6LmdwA {
+  								small false
+  								highlight false
+  								deleted false
+  								underline false
+  								bold true
+  								alignment Center
+  								italic false
+  								color Default
+  							}
+  					} ]
+  				generalStyle GeneralStyling _3TWRxH0pEe2-urIT6LmdwA {
+  						tallness Fitting
+  						marginBottom None
+  						attributes [  ]
+  						marginTop None
+  						rawContent "font-size: x-large;"
   					}
-  			} ]
-  		generalStyle GeneralStyling _3hT1Rn0pEe2-urIT6LmdwA {
-  				tallness Fitting
-  				marginBottom None
-  				attributes [  ]
-  				marginTop None
+  				MoveUp _3TWRwX0pEe2-urIT6LmdwA at 2,2 size 14,7 {
+  				}
+  				
+  				MoveDown _3TWRw30pEe2-urIT6LmdwA at 2,10 size 14,7 {
+  				}
   			}
-  		MoveUp _3hT1Q30pEe2-urIT6LmdwA at 2,2 size 14,7 {
-  		}
-  		
-  		MoveDown _3hT1RX0pEe2-urIT6LmdwA at 2,10 size 14,7 {
-  		}
-  	}
-  	
-  	Text _3zKaQX0pEe2-urIT6LmdwA at 10,170 size 200,60 {
-  		content [ StaticContent _3zKaR30pEe2-urIT6LmdwA {
-  				renderMarkdown false
-  				maxChars 0
-  				html false
-  				rawContent ""
-  				styling TextStyling _3zKaSH0pEe2-urIT6LmdwA {
-  						small false
-  						highlight false
-  						deleted false
-  						underline false
-  						bold false
-  						alignment Left
-  						italic false
-  						color Default
+  			
+  			Text _3hT1QX0pEe2-urIT6LmdwA at 10,100 size 200,60 {
+  				content [ StaticContent _3hT1R30pEe2-urIT6LmdwA {
+  						renderMarkdown false
+  						maxChars 0
+  						html false
+  						rawContent "Tie!!\n"
+  						styling TextStyling _3hT1SH0pEe2-urIT6LmdwA {
+  								small false
+  								highlight false
+  								deleted false
+  								underline false
+  								bold true
+  								alignment Center
+  								italic false
+  								color Default
+  							}
+  					} ]
+  				generalStyle GeneralStyling _3hT1Rn0pEe2-urIT6LmdwA {
+  						tallness Fitting
+  						marginBottom None
+  						attributes [  ]
+  						marginTop None
+  						rawContent "font-size: x-large;"
   					}
-  			} ]
-  		generalStyle GeneralStyling _3zKaRn0pEe2-urIT6LmdwA {
-  				tallness Fitting
-  				marginBottom None
-  				attributes [  ]
-  				marginTop None
+  				MoveUp _3hT1Q30pEe2-urIT6LmdwA at 2,2 size 14,7 {
+  				}
+  				
+  				MoveDown _3hT1RX0pEe2-urIT6LmdwA at 2,10 size 14,7 {
+  				}
   			}
-  		MoveUp _3zKaQ30pEe2-urIT6LmdwA at 2,2 size 14,7 {
-  		}
-  		
-  		MoveDown _3zKaRX0pEe2-urIT6LmdwA at 2,10 size 14,7 {
+  			
+  			Text _3zKaQX0pEe2-urIT6LmdwA at 10,170 size 200,60 {
+  				content [ StaticContent _3zKaR30pEe2-urIT6LmdwA {
+  						renderMarkdown false
+  						maxChars 0
+  						html false
+  						rawContent ""
+  						styling TextStyling _3zKaSH0pEe2-urIT6LmdwA {
+  								small false
+  								highlight false
+  								deleted false
+  								underline false
+  								bold false
+  								alignment Left
+  								italic false
+  								color Default
+  							}
+  					} ]
+  				generalStyle GeneralStyling _3zKaRn0pEe2-urIT6LmdwA {
+  						tallness Fitting
+  						marginBottom None
+  						attributes [  ]
+  						marginTop None
+  					}
+  				MoveUp _3zKaQ30pEe2-urIT6LmdwA at 2,2 size 14,7 {
+  				}
+  				
+  				MoveDown _3zKaRX0pEe2-urIT6LmdwA at 2,10 size 14,7 {
+  				}
+  			}
   		}
   	}
   }

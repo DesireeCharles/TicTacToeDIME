@@ -4,9 +4,9 @@ Process _9XpDwX1bEe2BL67A2MFPXw {
   dataFlowView true
   processType Basic
   isStateful false
-  DataContext _9XpDw31bEe2BL67A2MFPXw at 20,20 size 210,199 {
+  DataContext _9XpDw31bEe2BL67A2MFPXw at 20,20 size 210,131 {
   	dfViewWorkaround true
-  	ComplexVariable _SJ-DMX1cEe2BL67A2MFPXw at 10,118 size 190,51 {
+  	ComplexVariable _SJ-DMX1cEe2BL67A2MFPXw at 10,50 size 190,51 {
   		expanded false
   		libraryComponentUID "_JgYkUW8QEe2x_c6ogIlfZw"
   		name "table"
@@ -15,7 +15,7 @@ Process _9XpDwX1bEe2BL67A2MFPXw {
   		PrimitiveAttribute _SRzJh31cEe2BL67A2MFPXw at 10,23 size 170,25 {
   			libraryComponentUID "_ypp_QX0oEe2-urIT6LmdwA"
   			dfViewWorkaround true
-  			-PrimitiveRead-> _EaFLwX1cEe2BL67A2MFPXw  decorate "" at (0,0) {
+  			-PrimitiveRead-> _EaFLwX1cEe2BL67A2MFPXw via (30,105) (30,216) decorate "" at (0,0) {
   				id _VdqokX1cEe2BL67A2MFPXw
   				dfViewWorkaround true
   			}
@@ -39,7 +39,7 @@ Process _9XpDwX1bEe2BL67A2MFPXw {
   	}
   }
   
-  EndSIB _9Xt8QX1bEe2BL67A2MFPXw at 413,760 size 100,90 {
+  EndSIB _9Xt8QX1bEe2BL67A2MFPXw at 500,670 size 100,90 {
   	branchName "success"
   	ComplexInputPort _OPZrEX1cEe2BL67A2MFPXw at 5,67 size 90,18 {
   		libraryComponentUID "_rGQfQX0oEe2-urIT6LmdwA"
@@ -48,7 +48,7 @@ Process _9XpDwX1bEe2BL67A2MFPXw {
   	}
   }
   
-  AtomicSIB _EZsxQX1cEe2BL67A2MFPXw at 328,148 size 120,108 {
+  AtomicSIB _EZsxQX1cEe2BL67A2MFPXw at 320,140 size 120,108 {
   	libraryComponentUID "common.IntegerAdd"
   	label "IntegerAdd"
   	ignoredBranch [ IgnoreBranch _EZ7awH1cEe2BL67A2MFPXw {
@@ -70,18 +70,18 @@ Process _9XpDwX1bEe2BL67A2MFPXw {
   	}
   }
   
-  Branch _EaYtwX1cEe2BL67A2MFPXw at 328,266 size 120,50 {
+  Branch _EaYtwX1cEe2BL67A2MFPXw at 320,260 size 120,50 {
   	name "success"
   	PrimitiveOutputPort _EadmQX1cEe2BL67A2MFPXw at 5,27 size 110,18 {
   		dataType Integer
   		isList false
   		name "result"
-  		-PrimitiveDirectDataFlow-> _FpBEEX1cEe2BL67A2MFPXw via (313,302) (313,445) decorate "" at (0,0) {
+  		-PrimitiveDirectDataFlow-> _FpBEEX1cEe2BL67A2MFPXw via (305,296) (310,445) decorate "" at (0,0) {
   			id _Gljk0X1cEe2BL67A2MFPXw
   			dfViewWorkaround true
   		}
   		
-  		-PrimitiveUpdate-> _SRzJh31cEe2BL67A2MFPXw  decorate "" at (0,0) {
+  		-PrimitiveUpdate-> _SRzJh31cEe2BL67A2MFPXw via (30,296) (30,105) decorate "" at (0,0) {
   			id _UP2KkX1cEe2BL67A2MFPXw
   			dfViewWorkaround true
   		}
@@ -92,7 +92,7 @@ Process _9XpDwX1bEe2BL67A2MFPXw {
   	}
   }
   
-  AtomicSIB _Fo8LkX1cEe2BL67A2MFPXw at 323,369 size 120,108 {
+  AtomicSIB _Fo8LkX1cEe2BL67A2MFPXw at 320,369 size 120,108 {
   	libraryComponentUID "common.IntegerGreaterOrEquals"
   	label "IntegerGreaterOrEquals"
   	ignoredBranch [  ]
@@ -117,7 +117,7 @@ Process _9XpDwX1bEe2BL67A2MFPXw {
   	}
   }
   
-  Branch _FpUmEX1cEe2BL67A2MFPXw at 300,500 size 120,25 {
+  Branch _FpUmEX1cEe2BL67A2MFPXw at 320,500 size 120,25 {
   	name "true"
   	-ControlFlow-> _LipJ4X1cEe2BL67A2MFPXw  decorate "" at (0,0) {
   		id _MDJ18X1cEe2BL67A2MFPXw
@@ -125,7 +125,7 @@ Process _9XpDwX1bEe2BL67A2MFPXw {
   	}
   }
   
-  Branch _FpUmFX1cEe2BL67A2MFPXw at 403,487 size 120,25 {
+  Branch _FpUmFX1cEe2BL67A2MFPXw at 490,410 size 120,25 {
   	name "false"
   	-ControlFlow-> _9Xt8QX1bEe2BL67A2MFPXw  decorate "" at (0,0) {
   		id _IxHdcX1cEe2BL67A2MFPXw
@@ -133,7 +133,7 @@ Process _9XpDwX1bEe2BL67A2MFPXw {
   	}
   }
   
-  RetrieveEnumLiteralSIB _LipJ4X1cEe2BL67A2MFPXw at 300,580 size 120,65 {
+  RetrieveEnumLiteralSIB _LipJ4X1cEe2BL67A2MFPXw at 320,580 size 120,65 {
   	libraryComponentUID "_tjL0sX0oEe2-urIT6LmdwA"
   	label "Get GameState"
   	ignoredBranch [  ]
@@ -143,13 +143,13 @@ Process _9XpDwX1bEe2BL67A2MFPXw {
   	}
   }
   
-  Branch _LiuCYX1cEe2BL67A2MFPXw at 300,655 size 120,50 {
+  Branch _LiuCYX1cEe2BL67A2MFPXw at 320,690 size 120,50 {
   	name "tie"
   	ComplexOutputPort _Liy64X1cEe2BL67A2MFPXw at 5,27 size 110,18 {
   		libraryComponentUID "_rGQfQX0oEe2-urIT6LmdwA"
   		isList false
   		name "literal"
-  		-ComplexDirectDataFlow-> _OPZrEX1cEe2BL67A2MFPXw via (290,691) (290,836) decorate "" at (0,0) {
+  		-ComplexDirectDataFlow-> _OPZrEX1cEe2BL67A2MFPXw via (310,726) (310,746) decorate "" at (0,0) {
   			id _OtLMMX1cEe2BL67A2MFPXw
   			dfViewWorkaround true
   		}
