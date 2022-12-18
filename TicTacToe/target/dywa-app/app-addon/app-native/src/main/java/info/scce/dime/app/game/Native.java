@@ -126,7 +126,6 @@ public class Native {
 	}
 	
     public static boolean checkWin(Table _table) {
-    	System.err.println("Test");
 
         Long[][] table = new Long[3][3];
 

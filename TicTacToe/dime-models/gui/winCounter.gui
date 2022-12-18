@@ -68,7 +68,7 @@ GUI _EVQWMX8JEe29IvxJUcVYFw {
   			}
   			
   			Badge _GMyfkX8JEe29IvxJUcVYFw at 10,30 size 365,74 index 3 {
-  				color Red
+  				color Blue
   				content [ StaticContent _GM8QlX8JEe29IvxJUcVYFw {
   						renderMarkdown false
   						maxChars 0
@@ -131,7 +131,7 @@ GUI _EVQWMX8JEe29IvxJUcVYFw {
   					}
   					
   					Badge _G20UAX8JEe29IvxJUcVYFw at 10,30 size 364,74 {
-  						color Blue
+  						color Red
   						content [ StaticContent _G25MgH8JEe29IvxJUcVYFw {
   								renderMarkdown false
   								maxChars 0
