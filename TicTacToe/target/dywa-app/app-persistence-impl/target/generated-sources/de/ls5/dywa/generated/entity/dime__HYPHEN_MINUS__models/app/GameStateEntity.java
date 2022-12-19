@@ -45,7 +45,7 @@ public class GameStateEntity implements GameStateInterface {
 	private de.ls5.dywa.generated.entity.dime__HYPHEN_MINUS__models.app.GameStateEntity progress;
 	
 	@de.ls5.dywa.annotations.IdRef(id = 36L)
-	@javax.persistence.Column(name = "a_DywaDisplayName__hcsywx8oee29ivx", columnDefinition="varchar")
+	@javax.persistence.Column(name = "a_DywaDisplayName__cvoimx_qee29ivx", columnDefinition="varchar")
 	private java.lang.String dywaDisplayName;
 	
 	/* MAIN ATTRIBUTES END */

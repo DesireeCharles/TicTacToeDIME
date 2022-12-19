@@ -26,7 +26,7 @@ GUI _EVQWMX8JEe29IvxJUcVYFw {
   	}
   }
   
-  Template _EVaHMX8JEe29IvxJUcVYFw at 240,10 size 484,438 {
+  Template _EVaHMX8JEe29IvxJUcVYFw at 240,10 size 829,244 {
   	blockName ""
   	disableAutoLayout false
   	generalStyle GeneralStyling _EVaHMn8JEe29IvxJUcVYFw {
@@ -35,7 +35,7 @@ GUI _EVQWMX8JEe29IvxJUcVYFw {
   			attributes [  ]
   			marginTop None
   		}
-  	Row _RFypcX8JEe29IvxJUcVYFw at 10,30 size 464,378 {
+  	Row _RFypcX8JEe29IvxJUcVYFw at 10,30 size 809,184 {
   		generalStyle GeneralStyling _RF8acH8JEe29IvxJUcVYFw {
   				tallness Fitting
   				marginBottom None
@@ -48,8 +48,8 @@ GUI _EVQWMX8JEe29IvxJUcVYFw {
   		MoveDown _RFypdX8JEe29IvxJUcVYFw at 2,10 size 14,7 {
   		}
   		
-  		Col _RF1swX8JEe29IvxJUcVYFw at 10,30 size 434,328 {
-  			wideness Full
+  		Col _RF1swX8JEe29IvxJUcVYFw at 10,30 size 385,134 {
+  			wideness Twelfth
   			layout Layout _RF1sx38JEe29IvxJUcVYFw {
   					size Default
   					offset None
@@ -67,7 +67,7 @@ GUI _EVQWMX8JEe29IvxJUcVYFw {
   			MoveRight _RF1sxX8JEe29IvxJUcVYFw at 10,2 size 7,14 {
   			}
   			
-  			Badge _GMyfkX8JEe29IvxJUcVYFw at 10,30 size 365,74 index 3 {
+  			Badge _GMyfkX8JEe29IvxJUcVYFw at 10,30 size 365,74 {
   				color Blue
   				content [ StaticContent _GM8QlX8JEe29IvxJUcVYFw {
   						renderMarkdown false
@@ -97,69 +97,55 @@ GUI _EVQWMX8JEe29IvxJUcVYFw {
   				MoveDown _GM8Qk38JEe29IvxJUcVYFw at 2,10 size 14,7 {
   				}
   			}
+  		}
+  		
+  		Col _Yt0VEX-pEe29IvxJUcVYFw at 405,30 size 384,134 {
+  			wideness Twelfth
+  			layout Layout _Yt2xUX-pEe29IvxJUcVYFw {
+  					size Default
+  					offset None
+  					alignment Left
+  				}
+  			generalStyle GeneralStyling _Yt2xUH-pEe29IvxJUcVYFw {
+  					tallness Fitting
+  					marginBottom None
+  					attributes [  ]
+  					marginTop None
+  				}
+  			MoveLeft _Yt0VE3-pEe29IvxJUcVYFw at 2,2 size 7,14 {
+  			}
   			
-  			Row _hq2-QX8JEe29IvxJUcVYFw at 10,114 size 414,184 index 2 {
-  				generalStyle GeneralStyling _hrAvQH8JEe29IvxJUcVYFw {
+  			MoveRight _Yt08IX-pEe29IvxJUcVYFw at 10,2 size 7,14 {
+  			}
+  			
+  			Badge _G20UAX8JEe29IvxJUcVYFw at 10,30 size 364,74 {
+  				color Red
+  				content [ StaticContent _G25MgH8JEe29IvxJUcVYFw {
+  						renderMarkdown false
+  						maxChars 0
+  						html false
+  						rawContent "O Wins: {{leaderboard.oWins}}"
+  						styling TextStyling _G25MgX8JEe29IvxJUcVYFw {
+  								small false
+  								highlight false
+  								deleted false
+  								underline false
+  								bold false
+  								alignment Left
+  								italic false
+  								color Default
+  							}
+  					} ]
+  				generalStyle GeneralStyling _G20UBn8JEe29IvxJUcVYFw {
   						tallness Fitting
   						marginBottom None
   						attributes [  ]
   						marginTop None
   					}
-  				MoveUp _hq2-Q38JEe29IvxJUcVYFw at 2,2 size 14,7 {
+  				MoveUp _G20UA38JEe29IvxJUcVYFw at 2,2 size 14,7 {
   				}
   				
-  				MoveDown _hq2-RX8JEe29IvxJUcVYFw at 2,10 size 14,7 {
-  				}
-  				
-  				Col _hq2-R38JEe29IvxJUcVYFw at 10,30 size 384,134 {
-  					wideness Full
-  					layout Layout _hq72wX8JEe29IvxJUcVYFw {
-  							size Default
-  							offset None
-  							alignment Left
-  						}
-  					generalStyle GeneralStyling _hq72wH8JEe29IvxJUcVYFw {
-  							tallness Fitting
-  							marginBottom None
-  							attributes [  ]
-  							marginTop None
-  						}
-  					MoveLeft _hq2-SX8JEe29IvxJUcVYFw at 2,2 size 7,14 {
-  					}
-  					
-  					MoveRight _hq2-S38JEe29IvxJUcVYFw at 10,2 size 7,14 {
-  					}
-  					
-  					Badge _G20UAX8JEe29IvxJUcVYFw at 10,30 size 364,74 {
-  						color Red
-  						content [ StaticContent _G25MgH8JEe29IvxJUcVYFw {
-  								renderMarkdown false
-  								maxChars 0
-  								html false
-  								rawContent "O Wins: {{leaderboard.oWins}}"
-  								styling TextStyling _G25MgX8JEe29IvxJUcVYFw {
-  										small false
-  										highlight false
-  										deleted false
-  										underline false
-  										bold false
-  										alignment Left
-  										italic false
-  										color Default
-  									}
-  							} ]
-  						generalStyle GeneralStyling _G20UBn8JEe29IvxJUcVYFw {
-  								tallness Fitting
-  								marginBottom None
-  								attributes [  ]
-  								marginTop None
-  							}
-  						MoveUp _G20UA38JEe29IvxJUcVYFw at 2,2 size 14,7 {
-  						}
-  						
-  						MoveDown _G20UBX8JEe29IvxJUcVYFw at 2,10 size 14,7 {
-  						}
-  					}
+  				MoveDown _G20UBX8JEe29IvxJUcVYFw at 2,10 size 14,7 {
   				}
   			}
   		}

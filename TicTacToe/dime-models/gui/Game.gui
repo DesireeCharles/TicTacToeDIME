@@ -19,7 +19,7 @@ GUI _AzVAIWnXEe2xCJpb6ooUzA {
   			associationName "tableRow"
   		}
   		
-  		-ComplexRead-> _yLOEEX1aEe2BL67A2MFPXw  decorate "" at (0,0) decorate "Text" at (0,0) {
+  		-ComplexRead-> _yLOEEX1aEe2BL67A2MFPXw via (-40,12) (-40,634) decorate "" at (0,0) decorate "Text" at (0,0) {
   			id _lg-bgX1ZEe2BL67A2MFPXw
   		}
   		
@@ -59,7 +59,7 @@ GUI _AzVAIWnXEe2xCJpb6ooUzA {
   			attributeName current
   		}
   		
-  		-FOR-> _FtVXMW8VEe29MJ2ZfnuTaA  decorate "" at (0,0) decorate "Text" at (0,0) {
+  		-FOR-> _FtVXMW8VEe29MJ2ZfnuTaA via (-40,192) (-40,623) decorate "" at (0,0) decorate "Text" at (0,0) {
   			id _YfyJkG8VEe29MJ2ZfnuTaA
   			index "index"
   		}
@@ -110,7 +110,7 @@ GUI _AzVAIWnXEe2xCJpb6ooUzA {
   			attributeName current
   		}
   		
-  		-FOR-> _FtqHUW8VEe29MJ2ZfnuTaA via (100,510) (345,510) decorate "" at (0,0) decorate "Text" at (0,0) {
+  		-FOR-> _FtqHUW8VEe29MJ2ZfnuTaA via (-40,392) (-40,628) decorate "" at (0,0) decorate "Text" at (0,0) {
   			id _Z5w0QW8VEe29MJ2ZfnuTaA
   			index "index1"
   		}
@@ -152,7 +152,7 @@ GUI _AzVAIWnXEe2xCJpb6ooUzA {
   	}
   }
   
-  Template _AzhNYWnXEe2xCJpb6ooUzA at 240,10 size 500,1016 {
+  Template _AzhNYWnXEe2xCJpb6ooUzA at 240,10 size 550,1216 {
   	blockName ""
   	disableAutoLayout false
   	generalStyle GeneralStyling _AzoiIGnXEe2xCJpb6ooUzA {
@@ -161,386 +161,420 @@ GUI _AzVAIWnXEe2xCJpb6ooUzA {
   			attributes [  ]
   			marginTop None
   		}
-  	Row __mftoXbcEe2qntwH9Ijd8A at 10,816 size 480,170 {
-  		generalStyle GeneralStyling __mpeoHbcEe2qntwH9Ijd8A {
+  	Row _7qQ7wX-nEe29IvxJUcVYFw at 10,30 size 530,1156 {
+  		generalStyle GeneralStyling _7qTYAn-nEe29IvxJUcVYFw {
   				tallness Fitting
   				marginBottom None
   				attributes [  ]
   				marginTop None
   			}
-  		MoveUp __mfto3bcEe2qntwH9Ijd8A at 2,2 size 14,7 {
+  		MoveUp _7qRi0X-nEe29IvxJUcVYFw at 2,2 size 14,7 {
   		}
   		
-  		MoveDown __mftpXbcEe2qntwH9Ijd8A at 2,10 size 14,7 {
+  		MoveDown _7qRi03-nEe29IvxJUcVYFw at 2,10 size 14,7 {
   		}
   		
-  		Col __mftp3bcEe2qntwH9Ijd8A at 10,30 size 220,120 {
-  			wideness Quarter
-  			layout Layout __ml0QXbcEe2qntwH9Ijd8A {
+  		Col _7qSJ4X-nEe29IvxJUcVYFw at 10,30 size 500,1106 {
+  			wideness Full
+  			layout Layout _7qTYAX-nEe29IvxJUcVYFw {
   					size Default
-  					offset None
-  					alignment Left
+  					offset Third
+  					alignment Center
   				}
-  			generalStyle GeneralStyling __ml0QHbcEe2qntwH9Ijd8A {
+  			generalStyle GeneralStyling _7qTYAH-nEe29IvxJUcVYFw {
   					tallness Fitting
   					marginBottom None
   					attributes [  ]
   					marginTop None
   				}
-  			MoveLeft __mftqXbcEe2qntwH9Ijd8A at 2,2 size 7,14 {
+  			MoveLeft _7qSw8X-nEe29IvxJUcVYFw at 2,2 size 7,14 {
   			}
   			
-  			MoveRight __mftq3bcEe2qntwH9Ijd8A at 10,2 size 7,14 {
+  			MoveRight _7qSw83-nEe29IvxJUcVYFw at 10,2 size 7,14 {
   			}
   			
-  			Button _i3H0kXbbEe2qntwH9Ijd8A at 10,30 size 200,60 {
-  				displayLabel "Back"
-  				label "Back"
-  				styling ButtonStyling _i3cksHbbEe2qntwH9Ijd8A {
-  						fullWidth false
-  						size Medium
-  						disabled false
-  						color Default
-  					}
-  				options ButtonOptions _i3fA8HbbEe2qntwH9Ijd8A {
-  						isLink false
-  						submitsForm true
-  					}
-  				disabled false
-  				icon Icon _i3WeEHbbEe2qntwH9Ijd8A {
-  						postIcon None
-  						preIcon ArrowLeft
-  					}
-  				generalStyle GeneralStyling _i3TawHbbEe2qntwH9Ijd8A {
+  			Row _yao_8X-mEe29IvxJUcVYFw at 10,816 size 480,260 {
+  				generalStyle GeneralStyling _yasqUn-mEe29IvxJUcVYFw {
   						tallness Fitting
   						marginBottom None
   						attributes [  ]
   						marginTop None
   					}
-  				MoveUp _i3SzsXbbEe2qntwH9Ijd8A at 2,2 size 14,7 {
+  				MoveUp _yapnAX-mEe29IvxJUcVYFw at 2,2 size 14,7 {
   				}
   				
-  				MoveDown _i3Szs3bbEe2qntwH9Ijd8A at 2,10 size 14,7 {
-  				}
-  			}
-  		}
-  		
-  		Col _lbcLcXbbEe2qntwH9Ijd8A at 240,30 size 220,120 {
-  			wideness Quarter
-  			layout Layout _lbiSEHbbEe2qntwH9Ijd8A {
-  					size Default
-  					offset None
-  					alignment Left
-  				}
-  			generalStyle GeneralStyling _lbcLdnbbEe2qntwH9Ijd8A {
-  					tallness Fitting
-  					marginBottom None
-  					attributes [  ]
-  					marginTop None
-  				}
-  			MoveLeft _lbcLc3bbEe2qntwH9Ijd8A at 2,2 size 7,14 {
-  			}
-  			
-  			MoveRight _lbcLdXbbEe2qntwH9Ijd8A at 10,2 size 7,14 {
-  			}
-  			
-  			Button _mFQkgXbbEe2qntwH9Ijd8A at 10,30 size 200,60 {
-  				displayLabel "Restart"
-  				label "Restart"
-  				styling ButtonStyling _mFiRUHbbEe2qntwH9Ijd8A {
-  						fullWidth false
-  						size Medium
-  						disabled false
-  						color Lightblue
-  					}
-  				options ButtonOptions _mFl7sHbbEe2qntwH9Ijd8A {
-  						isLink false
-  						submitsForm true
-  					}
-  				disabled false
-  				icon Icon _mFZHYHbbEe2qntwH9Ijd8A {
-  						postIcon Repeat
-  						preIcon None
-  					}
-  				generalStyle GeneralStyling _mFTAxHbbEe2qntwH9Ijd8A {
-  						tallness Fitting
-  						marginBottom None
-  						attributes [  ]
-  						marginTop None
-  					}
-  				MoveUp _mFTAwXbbEe2qntwH9Ijd8A at 2,2 size 14,7 {
+  				MoveDown _yapnA3-mEe29IvxJUcVYFw at 2,10 size 14,7 {
   				}
   				
-  				MoveDown _mFTAw3bbEe2qntwH9Ijd8A at 2,10 size 14,7 {
-  				}
-  			}
-  		}
-  	}
-  	
-  	Row _wZ-mMX0pEe2-urIT6LmdwA at 10,410 size 430,396 {
-  		generalStyle GeneralStyling _wZ-mPn0pEe2-urIT6LmdwA {
-  				tallness Fitting
-  				marginBottom None
-  				attributes [  ]
-  				marginTop None
-  			}
-  		MoveUp _wZ-mM30pEe2-urIT6LmdwA at 2,2 size 14,7 {
-  		}
-  		
-  		MoveDown _wZ-mNX0pEe2-urIT6LmdwA at 2,10 size 14,7 {
-  		}
-  		
-  		Col _wZ-mN30pEe2-urIT6LmdwA at 10,30 size 220,346 {
-  			wideness Third
-  			layout Layout _wZ-mPX0pEe2-urIT6LmdwA {
-  					size Default
-  					offset None
-  					alignment Left
-  				}
-  			generalStyle GeneralStyling _wZ-mPH0pEe2-urIT6LmdwA {
-  					tallness Fitting
-  					marginBottom None
-  					attributes [  ]
-  					marginTop None
-  				}
-  			MoveLeft _wZ-mOX0pEe2-urIT6LmdwA at 2,2 size 7,14 {
-  			}
-  			
-  			MoveRight _wZ-mO30pEe2-urIT6LmdwA at 10,2 size 7,14 {
-  			}
-  			
-  			Row _FtVXMW8VEe29MJ2ZfnuTaA at 10,30 size 200,286 {
-  				generalStyle GeneralStyling _Ft4w0G8VEe29MJ2ZfnuTaA {
-  						tallness Fitting
-  						marginBottom None
-  						attributes [  ]
-  						marginTop None
-  					}
-  				MoveUp _FtiykW8VEe29MJ2ZfnuTaA at 2,2 size 14,7 {
-  				}
-  				
-  				MoveDown _FtknwW8VEe29MJ2ZfnuTaA at 2,10 size 14,7 {
-  				}
-  				
-  				Col _FtqHUW8VEe29MJ2ZfnuTaA at 10,30 size 170,236 {
-  					wideness Full
-  					layout Layout _Ft27oG8VEe29MJ2ZfnuTaA {
-  							size Large
+  				Col _yaq1IX-mEe29IvxJUcVYFw at 10,30 size 220,210 {
+  					wideness Twelfth
+  					layout Layout _yasqUX-mEe29IvxJUcVYFw {
+  							size Default
   							offset None
-  							alignment Center
+  							alignment Left
   						}
-  					generalStyle GeneralStyling _Ft1tgG8VEe29MJ2ZfnuTaA {
+  					generalStyle GeneralStyling _yasqUH-mEe29IvxJUcVYFw {
   							tallness Fitting
   							marginBottom None
   							attributes [  ]
   							marginTop None
-  							rawContent "width:75px;\nheight:75px;\nborder:10px solid block;"
   						}
-  					MoveLeft _FtwN8W8VEe29MJ2ZfnuTaA at 2,2 size 7,14 {
+  					MoveLeft _yarcMX-mEe29IvxJUcVYFw at 2,2 size 7,14 {
   					}
   					
-  					MoveRight _Ftw1AW8VEe29MJ2ZfnuTaA at 10,2 size 7,14 {
+  					MoveRight _yasDQH-mEe29IvxJUcVYFw at 10,2 size 7,14 {
   					}
   					
-  					GUISIB _yKmZAX1aEe2BL67A2MFPXw at 10,30 size 150,176 {
-  						libraryComponentUID "_ZlXgoXKOEe2rzNRUfilttw"
-  						label "badge"
-  						generalStyle GeneralStyling _eK46RHKOEe2rzNRUfilttw {
+  					Button _i3H0kXbbEe2qntwH9Ijd8A at 10,30 size 200,60 {
+  						displayLabel "Back"
+  						label "Back"
+  						styling ButtonStyling _i3cksHbbEe2qntwH9Ijd8A {
+  								fullWidth false
+  								size Small
+  								disabled false
+  								color Default
+  							}
+  						options ButtonOptions _i3fA8HbbEe2qntwH9Ijd8A {
+  								isLink false
+  								submitsForm true
+  							}
+  						disabled false
+  						icon Icon _i3WeEHbbEe2qntwH9Ijd8A {
+  								postIcon None
+  								preIcon ArrowLeft
+  							}
+  						generalStyle GeneralStyling _i3TawHbbEe2qntwH9Ijd8A {
+  								tallness Fitting
+  								marginBottom None
+  								attributes [  ]
+  								marginTop None
+  							}
+  						MoveUp _i3SzsXbbEe2qntwH9Ijd8A at 2,2 size 14,7 {
+  						}
+  						
+  						MoveDown _i3Szs3bbEe2qntwH9Ijd8A at 2,10 size 14,7 {
+  						}
+  					}
+  				}
+  				
+  				Col _zquHwH-mEe29IvxJUcVYFw at 240,30 size 220,120 {
+  					wideness Twelfth
+  					layout Layout _zqvV4X-mEe29IvxJUcVYFw {
+  							size Default
+  							offset None
+  							alignment Left
+  						}
+  					generalStyle GeneralStyling _zqvV4H-mEe29IvxJUcVYFw {
+  							tallness Fitting
+  							marginBottom None
+  							attributes [  ]
+  							marginTop None
+  						}
+  					MoveLeft _zquu0X-mEe29IvxJUcVYFw at 2,2 size 7,14 {
+  					}
+  					
+  					MoveRight _zquu03-mEe29IvxJUcVYFw at 10,2 size 7,14 {
+  					}
+  					
+  					Button _mFQkgXbbEe2qntwH9Ijd8A at 10,30 size 200,60 {
+  						displayLabel "Restart"
+  						label "Restart"
+  						styling ButtonStyling _mFiRUHbbEe2qntwH9Ijd8A {
+  								fullWidth false
+  								size Small
+  								disabled false
+  								color Lightblue
+  							}
+  						options ButtonOptions _mFl7sHbbEe2qntwH9Ijd8A {
+  								isLink false
+  								submitsForm true
+  							}
+  						disabled false
+  						icon Icon _mFZHYHbbEe2qntwH9Ijd8A {
+  								postIcon Repeat
+  								preIcon None
+  							}
+  						generalStyle GeneralStyling _mFTAxHbbEe2qntwH9Ijd8A {
+  								tallness Fitting
+  								marginBottom None
+  								attributes [  ]
+  								marginTop None
+  							}
+  						MoveUp _mFTAwXbbEe2qntwH9Ijd8A at 2,2 size 14,7 {
+  						}
+  						
+  						MoveDown _mFTAw3bbEe2qntwH9Ijd8A at 2,10 size 14,7 {
+  						}
+  					}
+  				}
+  			}
+  			
+  			Row _wZ-mMX0pEe2-urIT6LmdwA at 10,410 size 430,396 {
+  				generalStyle GeneralStyling _wZ-mPn0pEe2-urIT6LmdwA {
+  						tallness Fitting
+  						marginBottom None
+  						attributes [  ]
+  						marginTop None
+  					}
+  				MoveUp _wZ-mM30pEe2-urIT6LmdwA at 2,2 size 14,7 {
+  				}
+  				
+  				MoveDown _wZ-mNX0pEe2-urIT6LmdwA at 2,10 size 14,7 {
+  				}
+  				
+  				Col _wZ-mN30pEe2-urIT6LmdwA at 10,30 size 220,346 {
+  					wideness Third
+  					layout Layout _wZ-mPX0pEe2-urIT6LmdwA {
+  							size Default
+  							offset None
+  							alignment Left
+  						}
+  					generalStyle GeneralStyling _wZ-mPH0pEe2-urIT6LmdwA {
+  							tallness Fitting
+  							marginBottom None
+  							attributes [  ]
+  							marginTop None
+  						}
+  					MoveLeft _wZ-mOX0pEe2-urIT6LmdwA at 2,2 size 7,14 {
+  					}
+  					
+  					MoveRight _wZ-mO30pEe2-urIT6LmdwA at 10,2 size 7,14 {
+  					}
+  					
+  					Row _FtVXMW8VEe29MJ2ZfnuTaA at 10,30 size 200,286 {
+  						generalStyle GeneralStyling _Ft4w0G8VEe29MJ2ZfnuTaA {
+  								tallness Fitting
+  								marginBottom None
+  								attributes [  ]
+  								marginTop None
+  							}
+  						MoveUp _FtiykW8VEe29MJ2ZfnuTaA at 2,2 size 14,7 {
+  						}
+  						
+  						MoveDown _FtknwW8VEe29MJ2ZfnuTaA at 2,10 size 14,7 {
+  						}
+  						
+  						Col _FtqHUW8VEe29MJ2ZfnuTaA at 10,30 size 170,236 {
+  							wideness Full
+  							layout Layout _Ft27oG8VEe29MJ2ZfnuTaA {
+  									size Large
+  									offset None
+  									alignment Center
+  								}
+  							generalStyle GeneralStyling _Ft1tgG8VEe29MJ2ZfnuTaA {
+  									tallness Fitting
+  									marginBottom None
+  									attributes [  ]
+  									marginTop None
+  									rawContent "width:75px;\nheight:75px;\nborder:10px solid block;"
+  								}
+  							MoveLeft _FtwN8W8VEe29MJ2ZfnuTaA at 2,2 size 7,14 {
+  							}
+  							
+  							MoveRight _Ftw1AW8VEe29MJ2ZfnuTaA at 10,2 size 7,14 {
+  							}
+  							
+  							GUISIB _yKmZAX1aEe2BL67A2MFPXw at 10,30 size 150,176 {
+  								libraryComponentUID "_ZlXgoXKOEe2rzNRUfilttw"
+  								label "badge"
+  								generalStyle GeneralStyling _eK46RHKOEe2rzNRUfilttw {
+  										tallness Third
+  										marginBottom None
+  										attributes [  ]
+  										marginTop None
+  									}
+  								ComplexInputPort _yK5T8X1aEe2BL67A2MFPXw at 5,67 size 90,18 {
+  									libraryComponentUID "_KEKm0W8QEe2x_c6ogIlfZw"
+  									isList false
+  									name "tableEntry"
+  								}
+  								
+  								ComplexInputPort _yLOEEX1aEe2BL67A2MFPXw at 5,85 size 90,18 {
+  									libraryComponentUID "_JgYkUW8QEe2x_c6ogIlfZw"
+  									isList false
+  									name "table"
+  								}
+  								
+  								Branch _yLiNIX1aEe2BL67A2MFPXw at 5,108 size 100,50 {
+  									name "empty"
+  									ComplexOutputPort _yLslMX1aEe2BL67A2MFPXw at 5,27 size 90,18 {
+  										libraryComponentUID "_KEKm0W8QEe2x_c6ogIlfZw"
+  										name "tableEntry"
+  										isList false
+  									}
+  								}
+  								
+  								MoveUp _yL2WMX1aEe2BL67A2MFPXw at 2,2 size 14,7 {
+  								}
+  								
+  								MoveDown _yL2WM31aEe2BL67A2MFPXw at 2,10 size 14,7 {
+  								}
+  							}
+  						}
+  					}
+  				}
+  				
+  				Col _xaaIcX0pEe2-urIT6LmdwA at 240,30 size 170,150 {
+  					wideness Third
+  					layout Layout _xaaId30pEe2-urIT6LmdwA {
+  							size Default
+  							offset None
+  							alignment Left
+  						}
+  					generalStyle GeneralStyling _xaaIdn0pEe2-urIT6LmdwA {
+  							tallness Fitting
+  							marginBottom None
+  							attributes [  ]
+  							marginTop None
+  						}
+  					MoveLeft _xaaIc30pEe2-urIT6LmdwA at 2,2 size 7,14 {
+  					}
+  					
+  					MoveRight _xaaIdX0pEe2-urIT6LmdwA at 10,2 size 7,14 {
+  					}
+  					
+  					GUISIB _x57rEX3vEe2ONMPeQEJUSA at 10,30 size 150,90 {
+  						libraryComponentUID "_0WZ_gH0pEe2-urIT6LmdwA"
+  						label "GameState"
+  						generalStyle GeneralStyling _ALJY5H0qEe2-urIT6LmdwA {
   								tallness Third
   								marginBottom None
   								attributes [  ]
   								marginTop None
   							}
-  						ComplexInputPort _yK5T8X1aEe2BL67A2MFPXw at 5,67 size 90,18 {
-  							libraryComponentUID "_KEKm0W8QEe2x_c6ogIlfZw"
-  							isList false
-  							name "tableEntry"
-  						}
-  						
-  						ComplexInputPort _yLOEEX1aEe2BL67A2MFPXw at 5,85 size 90,18 {
+  						ComplexInputPort _x6OmAX3vEe2ONMPeQEJUSA at 5,67 size 90,18 {
   							libraryComponentUID "_JgYkUW8QEe2x_c6ogIlfZw"
   							isList false
   							name "table"
   						}
   						
-  						Branch _yLiNIX1aEe2BL67A2MFPXw at 5,108 size 100,50 {
-  							name "empty"
-  							ComplexOutputPort _yLslMX1aEe2BL67A2MFPXw at 5,27 size 90,18 {
-  								libraryComponentUID "_KEKm0W8QEe2x_c6ogIlfZw"
-  								name "tableEntry"
-  								isList false
-  							}
+  						MoveUp _x6iIAX3vEe2ONMPeQEJUSA at 2,2 size 14,7 {
   						}
   						
-  						MoveUp _yL2WMX1aEe2BL67A2MFPXw at 2,2 size 14,7 {
-  						}
-  						
-  						MoveDown _yL2WM31aEe2BL67A2MFPXw at 2,10 size 14,7 {
+  						MoveDown _x6iIA33vEe2ONMPeQEJUSA at 2,10 size 14,7 {
   						}
   					}
   				}
   			}
-  		}
-  		
-  		Col _xaaIcX0pEe2-urIT6LmdwA at 240,30 size 170,150 {
-  			wideness Third
-  			layout Layout _xaaId30pEe2-urIT6LmdwA {
-  					size Default
-  					offset None
-  					alignment Left
-  				}
-  			generalStyle GeneralStyling _xaaIdn0pEe2-urIT6LmdwA {
-  					tallness Fitting
-  					marginBottom None
-  					attributes [  ]
-  					marginTop None
-  				}
-  			MoveLeft _xaaIc30pEe2-urIT6LmdwA at 2,2 size 7,14 {
-  			}
   			
-  			MoveRight _xaaIdX0pEe2-urIT6LmdwA at 10,2 size 7,14 {
-  			}
-  			
-  			GUISIB _x57rEX3vEe2ONMPeQEJUSA at 10,30 size 150,90 {
-  				libraryComponentUID "_0WZ_gH0pEe2-urIT6LmdwA"
-  				label "GameState"
-  				generalStyle GeneralStyling _ALJY5H0qEe2-urIT6LmdwA {
-  						tallness Third
-  						marginBottom None
+  			Row _pGmXEX8JEe29IvxJUcVYFw at 10,200 size 200,200 {
+  				generalStyle GeneralStyling _pGwIEH8JEe29IvxJUcVYFw {
+  						tallness Fitting
+  						marginBottom Double
   						attributes [  ]
   						marginTop None
   					}
-  				ComplexInputPort _x6OmAX3vEe2ONMPeQEJUSA at 5,67 size 90,18 {
-  					libraryComponentUID "_JgYkUW8QEe2x_c6ogIlfZw"
-  					isList false
-  					name "table"
+  				MoveUp _pGmXE38JEe29IvxJUcVYFw at 2,2 size 14,7 {
   				}
   				
-  				MoveUp _x6iIAX3vEe2ONMPeQEJUSA at 2,2 size 14,7 {
+  				MoveDown _pGmXFX8JEe29IvxJUcVYFw at 2,10 size 14,7 {
   				}
   				
-  				MoveDown _x6iIA33vEe2ONMPeQEJUSA at 2,10 size 14,7 {
-  				}
-  			}
-  		}
-  	}
-  	
-  	Row _qmE7wX4XEe2ONMPeQEJUSA at 10,30 size 350,160 {
-  		generalStyle GeneralStyling _qmnuUX4XEe2ONMPeQEJUSA {
-  				tallness Fitting
-  				marginBottom None
-  				attributes [  ]
-  				marginTop None
-  			}
-  		MoveUp _qmLpcX4XEe2ONMPeQEJUSA at 2,2 size 14,7 {
-  		}
-  		
-  		MoveDown _qmRwEH4XEe2ONMPeQEJUSA at 2,10 size 14,7 {
-  		}
-  		
-  		Col _qmd9UH4XEe2ONMPeQEJUSA at 10,30 size 320,110 {
-  			wideness Full
-  			layout Layout _qmnuUH4XEe2ONMPeQEJUSA {
-  					size Default
-  					offset None
-  					alignment Left
-  				}
-  			generalStyle GeneralStyling _qmi10n4XEe2ONMPeQEJUSA {
-  					tallness Fitting
-  					marginBottom Double
-  					attributes [  ]
-  					marginTop None
-  				}
-  			MoveLeft _qmd9Un4XEe2ONMPeQEJUSA at 2,2 size 7,14 {
-  			}
-  			
-  			MoveRight _qmi10X4XEe2ONMPeQEJUSA at 10,2 size 7,14 {
-  			}
-  			
-  			Headline _0zu5QGnkEe2xCJpb6ooUzA at 10,30 size 300,50 {
-  				size Big
-  				content [ StaticContent _00AmEGnkEe2xCJpb6ooUzA {
-  						renderMarkdown false
-  						maxChars 0
-  						html false
-  						rawContent "Tic Tac Toe\n"
-  						styling TextStyling _00B0MGnkEe2xCJpb6ooUzA {
-  								small false
-  								highlight false
-  								deleted false
-  								underline true
-  								bold true
-  								alignment Justified
-  								italic false
-  								color Default
+  				Col _pGmXF38JEe29IvxJUcVYFw at 10,30 size 170,150 {
+  					wideness Full
+  					layout Layout _pGmXHX8JEe29IvxJUcVYFw {
+  							size Default
+  							offset None
+  							alignment Left
+  						}
+  					generalStyle GeneralStyling _pGmXHH8JEe29IvxJUcVYFw {
+  							tallness Fitting
+  							marginBottom None
+  							attributes [  ]
+  							marginTop None
+  						}
+  					MoveLeft _pGmXGX8JEe29IvxJUcVYFw at 2,2 size 7,14 {
+  					}
+  					
+  					MoveRight _pGmXG38JEe29IvxJUcVYFw at 10,2 size 7,14 {
+  					}
+  					
+  					GUISIB _qBggIX8JEe29IvxJUcVYFw at 10,30 size 150,90 {
+  						libraryComponentUID "_EVQWMX8JEe29IvxJUcVYFw"
+  						label "winCounter"
+  						generalStyle GeneralStyling _qC3yFH8JEe29IvxJUcVYFw {
+  								tallness Fitting
+  								marginBottom None
+  								attributes [  ]
+  								marginTop None
   							}
-  					} ]
-  				generalStyle GeneralStyling _0z21EGnkEe2xCJpb6ooUzA {
+  						ComplexInputPort _qCYC0X8JEe29IvxJUcVYFw at 5,67 size 90,18 {
+  							libraryComponentUID "_UhrwQX8DEe29IvxJUcVYFw"
+  							isList false
+  							name "leaderboard"
+  						}
+  						
+  						MoveUp _qC3yEX8JEe29IvxJUcVYFw at 2,2 size 14,7 {
+  						}
+  						
+  						MoveDown _qC3yE38JEe29IvxJUcVYFw at 2,10 size 14,7 {
+  						}
+  					}
+  				}
+  			}
+  			
+  			Row _qmE7wX4XEe2ONMPeQEJUSA at 10,30 size 350,160 {
+  				generalStyle GeneralStyling _qmnuUX4XEe2ONMPeQEJUSA {
   						tallness Fitting
   						marginBottom None
   						attributes [  ]
   						marginTop None
   					}
-  				MoveUp _0zzxwWnkEe2xCJpb6ooUzA at 2,2 size 14,7 {
+  				MoveUp _qmLpcX4XEe2ONMPeQEJUSA at 2,2 size 14,7 {
   				}
   				
-  				MoveDown _0z0_4WnkEe2xCJpb6ooUzA at 2,10 size 14,7 {
+  				MoveDown _qmRwEH4XEe2ONMPeQEJUSA at 2,10 size 14,7 {
   				}
-  			}
-  		}
-  	}
-  	
-  	Row _pGmXEX8JEe29IvxJUcVYFw at 10,200 size 200,200 {
-  		generalStyle GeneralStyling _pGwIEH8JEe29IvxJUcVYFw {
-  				tallness Fitting
-  				marginBottom Double
-  				attributes [  ]
-  				marginTop None
-  			}
-  		MoveUp _pGmXE38JEe29IvxJUcVYFw at 2,2 size 14,7 {
-  		}
-  		
-  		MoveDown _pGmXFX8JEe29IvxJUcVYFw at 2,10 size 14,7 {
-  		}
-  		
-  		Col _pGmXF38JEe29IvxJUcVYFw at 10,30 size 170,150 {
-  			wideness Full
-  			layout Layout _pGmXHX8JEe29IvxJUcVYFw {
-  					size Default
-  					offset None
-  					alignment Left
-  				}
-  			generalStyle GeneralStyling _pGmXHH8JEe29IvxJUcVYFw {
-  					tallness Fitting
-  					marginBottom None
-  					attributes [  ]
-  					marginTop None
-  				}
-  			MoveLeft _pGmXGX8JEe29IvxJUcVYFw at 2,2 size 7,14 {
-  			}
-  			
-  			MoveRight _pGmXG38JEe29IvxJUcVYFw at 10,2 size 7,14 {
-  			}
-  			
-  			GUISIB _qBggIX8JEe29IvxJUcVYFw at 10,30 size 150,90 {
-  				libraryComponentUID "_EVQWMX8JEe29IvxJUcVYFw"
-  				label "winCounter"
-  				generalStyle GeneralStyling _qC3yFH8JEe29IvxJUcVYFw {
-  						tallness Fitting
-  						marginBottom None
-  						attributes [  ]
-  						marginTop None
+  				
+  				Col _qmd9UH4XEe2ONMPeQEJUSA at 10,30 size 320,110 {
+  					wideness Full
+  					layout Layout _qmnuUH4XEe2ONMPeQEJUSA {
+  							size Default
+  							offset None
+  							alignment Left
+  						}
+  					generalStyle GeneralStyling _qmi10n4XEe2ONMPeQEJUSA {
+  							tallness Fitting
+  							marginBottom Double
+  							attributes [  ]
+  							marginTop None
+  						}
+  					MoveLeft _qmd9Un4XEe2ONMPeQEJUSA at 2,2 size 7,14 {
   					}
-  				ComplexInputPort _qCYC0X8JEe29IvxJUcVYFw at 5,67 size 90,18 {
-  					libraryComponentUID "_UhrwQX8DEe29IvxJUcVYFw"
-  					isList false
-  					name "leaderboard"
-  				}
-  				
-  				MoveUp _qC3yEX8JEe29IvxJUcVYFw at 2,2 size 14,7 {
-  				}
-  				
-  				MoveDown _qC3yE38JEe29IvxJUcVYFw at 2,10 size 14,7 {
+  					
+  					MoveRight _qmi10X4XEe2ONMPeQEJUSA at 10,2 size 7,14 {
+  					}
+  					
+  					Headline _0zu5QGnkEe2xCJpb6ooUzA at 10,30 size 300,50 {
+  						size Big
+  						content [ StaticContent _00AmEGnkEe2xCJpb6ooUzA {
+  								renderMarkdown false
+  								maxChars 0
+  								html false
+  								rawContent "Tic-Tac-Toe\n"
+  								styling TextStyling _00B0MGnkEe2xCJpb6ooUzA {
+  										small false
+  										highlight false
+  										deleted false
+  										underline true
+  										bold true
+  										alignment Justified
+  										italic false
+  										color Default
+  									}
+  							} ]
+  						generalStyle GeneralStyling _0z21EGnkEe2xCJpb6ooUzA {
+  								tallness Fitting
+  								marginBottom None
+  								attributes [  ]
+  								marginTop None
+  							}
+  						MoveUp _0zzxwWnkEe2xCJpb6ooUzA at 2,2 size 14,7 {
+  						}
+  						
+  						MoveDown _0z0_4WnkEe2xCJpb6ooUzA at 2,10 size 14,7 {
+  						}
+  					}
   				}
   			}
   		}

@@ -62,7 +62,7 @@ GUI _LmrS0Ej8EeaK4_MRcoLfnw_INTERNAL {
   							renderMarkdown false
   							maxChars 0
   							html false
-  							rawContent "Tic Tac Toe"
+  							rawContent "Tic-Tac-Toe"
   							styling TextStyling _QC-gdnbYEe2qntwH9Ijd8A {
   									small false
   									highlight false
@@ -109,7 +109,7 @@ GUI _LmrS0Ej8EeaK4_MRcoLfnw_INTERNAL {
   				
   				Image _BMUBoHbtEe2qntwH9Ijd8A at 10,30 size 100,90 {
   					dimensionX 300
-  					path "initFiles/home1.png"
+  					path "initFiles/grid.png"
   					dimensionY 300
   					styling ImageStyling _BMhdAXbtEe2qntwH9Ijd8A {
   							border Default
@@ -150,7 +150,7 @@ GUI _LmrS0Ej8EeaK4_MRcoLfnw_INTERNAL {
   				
   				Image _fe8nwXbvEe2qntwH9Ijd8A at 10,30 size 100,90 {
   					dimensionX 300
-  					path "initFiles/home.png"
+  					path "initFiles/filled_grid.png"
   					dimensionY 300
   					styling ImageStyling _fe_rEXbvEe2qntwH9Ijd8A {
   							border Default

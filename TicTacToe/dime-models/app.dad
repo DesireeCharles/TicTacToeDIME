@@ -1,7 +1,7 @@
 DAD _9G1SoMwLEeWZVvvwxpYu8A {
   mode Development
   postScripts [  ]
-  appName "Tic Tac Toe"
+  appName "Tic-Tac-Toe"
   errorMessage ""
   additionalStylesheets [  ]
   preScripts [  ]
@@ -24,7 +24,7 @@ DAD _9G1SoMwLEeWZVvvwxpYu8A {
   	libraryComponentUID "_tH3fEMwMEeWZVvvwxpYu8A"
   }
   
-  SystemUser _DyCqAF4SEear0NzybbrMtw at 260,80 size 128,32 {
+  SystemUser _DyCqAF4SEear0NzybbrMtw at 250,80 size 128,32 {
   	libraryComponentUID "_UdYs4MwNEeWZVvvwxpYu8A"
   }
   
